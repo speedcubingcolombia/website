@@ -1,0 +1,29 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import Avatar from "@components/avatar.astro"
+import LinksLayout from "@layouts/LinksLayout.astro"
+import Link from "@components/Links.astro"
+import Social from "@components/Social.astro"
+---
+
+<MainLayout title='Astro LinkTree Clone'>
+  <Avatar />
+  <LinksLayout>
+    <Link
+      linkTitle='🧑‍🚀 WCA '
+      linkDescription='WCA Homepage'
+      linkUrl='https://www.worldcubeassociation.org'
+    />
+    <Link
+      linkTitle='🌍 Torneos en Colombia'
+      linkDescription='Torneos en Colombia'
+      linkUrl='https://www.worldcubeassociation.org/competitions?region=CO'
+    />
+    <Link
+      linkTitle='WCA Live'
+      linkDescription='WCA Live'
+      linkUrl='https://live.worldcubeassociation.org'
+    />
+  </LinksLayout>
+  <Social />
+</MainLayout>
