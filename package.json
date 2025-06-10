@@ -10,8 +10,13 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
-    "astro": "^5.8.2",
+    "astro": "^5.9.2",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.8"
-  }
+  },
+  "description": "```sh npm create astro@latest -- --template minimal ```",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
