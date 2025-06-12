@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.2.3",
-    "@tailwindcss/vite": "^4.1.9",
+    "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.2",
     "astro-icon": "^1.1.5",
-    "tailwindcss": "^4.1.9"
+    "tailwindcss": "^4.1.10"
   },
   "description": "```sh npm create astro@latest -- --template minimal ```",
   "main": "tailwind.config.js",
