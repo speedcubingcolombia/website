@@ -11,3 +11,4 @@ export default function LinkAlternativo({ title, url }) {
     </div>
   );
 }
+

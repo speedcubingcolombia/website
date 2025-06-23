@@ -19,17 +19,22 @@ export default function AlternadorLinks() {
   const linksParaMostrar = mostrarAlternativos ? linksAlternativos : linksOriginales;
 
   return (
-    <div className="flex flex-col items-center gap-6 w-full">
-      {linksParaMostrar.map((link, index) => (
-        <LinkAlternativo key={index} title={link.title} url={link.url} />
-      ))}
+    
+      <div className="flex flex-col items-center gap-y-8">
+        {linksParaMostrar.map((link, index) => (
+          <LinkAlternativo key={index} title={link.title} url={link.url} />
+        ))}
 
-      <button
-        onClick={() => setMostrarAlternativos(!mostrarAlternativos)}
-        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-xl transition"
-      >
-        {mostrarAlternativos ? "Volver" : "Más recursos"}
-      </button>
-    </div>
+        <div className="flex flex-col justify-center cursor-pointer w-full p-4 text-sm text-center text-white transition-all duration-500 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl lg:text-xl hover:bg-opacity-40 hover:scale-110">
+          <button
+            onClick={() => setMostrarAlternativos(!mostrarAlternativos)}
+          >
+            <span className="font-semibold">
+              {mostrarAlternativos ? "Volver" : "Más recursos"}
+            </span>
+          </button>
+        </div>
+      </div>
+    
   );
 }

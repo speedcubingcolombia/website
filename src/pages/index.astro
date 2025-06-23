@@ -1,7 +1,7 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro"
 import Avatar from "@components/avatar.astro"
-import LinksLayout from "@layouts/LinksLayout.astro"
+//import LinksLayout from "@layouts/LinksLayout.astro"
 //import Link from "@components/Links.astro"
 import Social from "@components/Social.astro"
 //import BotonA from "@components/botonAlternador.astro"
@@ -10,9 +10,11 @@ import AlternadorLinks from "@components/alternadorLinks.jsx";
 
 
 <MainLayout title="Astro LinkTree Clone">
+  
   <Avatar />
   <Social />
   <AlternadorLinks client:load />
+  
 </MainLayout>
 
 
