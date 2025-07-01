@@ -10,12 +10,12 @@ export default function LinkAlternativo({ title, url }) {
                   background: #fffdef;
                   border: none;
                   color: black;
-                  margin: 1rem 0;
-                  padding: 1rem 5rem;
+                  margin: 0.75rem 0;
+                  padding: 1rem 5.5rem;
                   font-size: 1rem;
                   transition: transform 0.2s ease-in-out;
                   cursor: pointer;
-                  border-radius: 0.4rem;
+                  border-radius: 0.5rem;
                   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
                   font-family: 'Inter', sans-serif;
                   font-weight: 500;
