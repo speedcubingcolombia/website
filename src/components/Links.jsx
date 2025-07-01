@@ -3,7 +3,7 @@ export default function LinkAlternativo({ title, url }) {
     <div className="flex flex-col items-center justify-center w-full gap-y-8">
       <div className="flex flex-col justify-center cursor-pointer w-full max-w-md">
         <a href={url}>
-          <button class="w-full h-full flex items-center justify-center gap-2">
+          <button className="w-full h-full flex items-center justify-center gap-2 whitespace-nowrap">
             <style>
               {`
                 button {
@@ -35,6 +35,13 @@ export default function LinkAlternativo({ title, url }) {
               `}
             </style>
             <span className="font-semibold">{title}</span>
+
+            <img
+                  src="/Icons/2222.svg"
+                  alt=""
+                  className="scale-40"
+            />
+
           </button>
         </a>
       </div>
