@@ -25,7 +25,7 @@ export default function AlternadorLinks() {
           <LinkAlternativo key={index} title={link.title} url={link.url} />
         ))}
 
-        <div className="flex flex-col justify-center cursor-pointer w-full p-4 text-sm text-center text-white transition-all duration-500 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl lg:text-xl hover:bg-opacity-40 hover:scale-110">
+        <div className="flex flex-col justify-center cursor-pointer w-full max-w-md">
           <button
             onClick={() => setMostrarAlternativos(!mostrarAlternativos)}
           >
