@@ -37,7 +37,7 @@ export default function AlternadorLinks() {
 
           <button
             onClick={() => setMostrarAlternativos(!mostrarAlternativos)}
-            className="flex items-center gap-2 h-auto whitespace-nowrap px-4 py-2"
+            className="w-full h-full flex items-center justify-center whitespace-nowrap"
           >
                 <span className="font-semibold">
                   {mostrarAlternativos ? "Volver" : "Más recursos"}
@@ -46,7 +46,6 @@ export default function AlternadorLinks() {
                 <img
                   src="/Icons/2222.svg"
                   alt=""
-                  className="h-4 w-4 object-scale-down"
                 />
 
           </button>
