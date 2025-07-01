@@ -2,30 +2,49 @@
 import { Icon } from 'astro-icon/components'
 ---
 
-<div class='mb-4 sm:mb-6 md:mb-10 lg:mb-16 justify-center'>
+<div class='flex flex-row items-center justify-center w-full gap-y-8'>
+  <style>
+    a {
+      color: #1a202c; /* Dark gray for better contrast */
+      font-size: 1.5rem;
+      line-height: 1.5; 
+      cursor: pointer;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      padding: 5px;
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+
+    a svg {
+      width: 2rem;
+      height: 2rem;
+    }
+    a svg:hover {
+      color: #2d3748; /* Darker gray on hover */
+    } 
+  </style>
+
   <a
-    class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://youtube.com/@speedcubingcolombiaofficial?si=0iLXDvl2H-q_ZcdF'
   >
     <Icon name='mdi:youtube' />
   </a>
 
   <a
-    class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://youtube.com/@speedcubingcolombiaofficial?si=0iLXDvl2H-q_ZcdF'
   >
     <Icon name='mdi:whatsapp' />
   </a>
   
   <a
-    class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://www.instagram.com/speedcubingcolombia?igsh=MXZlOHNkc3J2cTU1eA=='
   >
     <Icon name='mdi:instagram' />
   </a>
   
   <a
-    class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://www.instagram.com/speedcubingcolombia?igsh=MXZlOHNkc3J2cTU1eA=='
   >
     <Icon name='mdi:facebook' />

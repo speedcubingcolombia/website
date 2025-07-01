@@ -1,9 +1,39 @@
 export default function LinkAlternativo({ title, url }) {
   return (
-    <div className="flex flex-col items-center w-full gap-y-8">
-      <div className="flex flex-col justify-center cursor-pointer w-full p-4 text-sm text-center text-white transition-all duration-500 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl lg:text-xl hover:bg-opacity-40 hover:scale-110">
+    <div className="flex flex-col items-center justify-center w-full gap-y-8">
+      <div className="flex flex-col justify-center cursor-pointer w-full max-w-md">
         <a href={url}>
-          <button>
+          <button class="w-full h-full flex items-center justify-center gap-2">
+            <style>
+              {`
+                button {
+                  background: #fffdef;
+                  border: none;
+                  color: black;
+                  margin: 0.75rem 0;
+                  padding: 1rem 5.5rem;
+                  font-size: 1rem;
+                  transition: transform 0.2s ease-in-out;
+                  cursor: pointer;
+                  border-radius: 0.5rem;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+                  font-family: 'Inter', sans-serif;
+                  font-weight: 500;
+                }
+
+                button:hover {
+                  transform: scale(1.05);
+                }
+                
+                button:focus {
+                  outline: none;
+                }
+
+                button:active {
+                  transform: scale(0.95);
+                }
+              `}
+            </style>
             <span className="font-semibold">{title}</span>
           </button>
         </a>
