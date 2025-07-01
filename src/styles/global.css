@@ -1,7 +1,6 @@
-@talwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  background: rgb(255, 254, 185)
+  background: #fffbd1;
 }
