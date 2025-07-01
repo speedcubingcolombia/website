@@ -1,1 +1,10 @@
 # website
++-- @astrojs/react@4.3.0
++-- @iconify-json/mdi@1.2.3
++-- @iconify-json/ph@1.2.2
++-- @tailwindcss/vite@4.1.11
++-- astro-icon@1.1.5
++-- astro@5.10.1
++-- react-dom@19.1.0
++-- react@19.1.0
+`-- tailwindcss@4.1.11

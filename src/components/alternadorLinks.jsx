@@ -16,7 +16,15 @@ export default function AlternadorLinks() {
     { title: "YouTube", url: "https://youtube.com" },
   ];
 
-  const linksParaMostrar = mostrarAlternativos ? linksAlternativos : linksOriginales;
+
+  let linksParaMostrar;
+
+  if (mostrarAlternativos) {
+    linksParaMostrar = linksAlternativos;
+  } else {
+    linksParaMostrar = linksOriginales;
+  }
+
 
   return (
     
