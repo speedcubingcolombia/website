@@ -1,0 +1,10 @@
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #fffbd1;
+}
+button img {
+  width: 4.5rem;
+  height: 4.5rem;
+}

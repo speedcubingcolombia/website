@@ -1,0 +1,97 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import Avatar from "@components/avatar.astro"
+//import LinksLayout from "@layouts/LinksLayout.astro"
+//import Link from "@components/Links.astro"
+import Social from "@components/Social.astro"
+//import BotonA from "@components/botonAlternador.astro"
+import AlternadorLinks from "@components/alternadorLinks.jsx";
+---
+
+
+<MainLayout title="Speedcubing Colombia">
+  
+  <Avatar />
+  <Social />
+  <AlternadorLinks client:load />
+
+</MainLayout>
+
+
+<!--
+<MainLayout title="Astro LinkTree Clone">
+  <Avatar />
+  <Social />
+
+  <LinksLayout>
+
+    <div id="contenedor_links">
+      <Link
+        linkTitle="WCA Página Oficial"
+        linkUrl="https://www.worldcubeassociation.org"
+      />
+      <Link
+        linkTitle="Torneos Oficiales co"
+        linkUrl="https://www.worldcubeassociation.org/competitions?region=CO"
+      />
+      <Link
+        linkTitle="WCA Live"
+        linkUrl="https://live.worldcubeassociation.org"
+      />
+    </div>
+  </LinksLayout>
+
+  <div id="contenedor_boton">
+    <BotonA buttonTitle="Más Recursos" />
+  </div>
+
+ 
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const boton = document.getElementById("alternador");
+
+      boton?.addEventListener("click", () => {
+        const contenedorLinks = document.getElementById("contenedor_links");
+
+        // Nuevo contenido: solo los <a>, con clases del componente <Link>
+        contenedorLinks.innerHTML = `
+         <div class="flex flex-col items-center w-full gap-y-8">
+        <div class="flex flex-col justify-center cursor-pointer w-full p-4 text-sm text-center text-white transition-all duration-500 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl lg:text-xl hover:bg-opacity-40 hover:scale-110">
+          <a href="https://cubeskills.com">
+            <button>
+              <span class="font-semibold">CubeSkills</span>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center w-full gap-y-8">
+        <div class="flex flex-col justify-center cursor-pointer w-full p-4 text-sm text-center text-white transition-all duration-500 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl lg:text-xl hover:bg-opacity-40 hover:scale-110">
+          <a href="https://cstimer.net">
+            <button>
+              <span class="font-semibold">CsTimer</span>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center w-full gap-y-8">
+        <div class="flex flex-col justify-center cursor-pointer w-full p-4 text-sm text-center text-white transition-all duration-500 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl lg:text-xl hover:bg-opacity-40 hover:scale-110">
+          <a href="https://youtube.com">
+            <button>
+              <span class="font-semibold">YouTube</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    `;
+
+        // Opcional: cambiar el botón por un mensaje
+        const contenedorBoton = document.getElementById("contenedor_boton");
+        contenedorBoton.innerHTML = `<p class="text-center text-gray-500 text-sm">Recursos alternativos cargados ✅</p>`;
+      });
+    });
+  </script>
+</MainLayout>
+-->
+

@@ -1,0 +1,19 @@
+---
+import "@styles/global.css"
+const { title } = Astro.props
+---
+
+<html lang='es'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/png' href='/speedcubingcolombia.png' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class='flex flex-col items-center w-full'>
+        <slot />
+    </div>
+  </body>
+</html>
