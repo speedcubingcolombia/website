@@ -8,12 +8,13 @@ export default function AlternadorLinks() {
     { title: "WCA Página Oficial", url: "https://www.worldcubeassociation.org" },
     { title: "Torneos Oficiales CO", url: "https://www.worldcubeassociation.org/competitions?region=CO" },
     { title: "WCA Live", url: "https://live.worldcubeassociation.org" },
+    { title: "Material Público", url: "https://drive.google.com/drive/folders/1--Mlcs9igFmSw_VhX2ZhVGfJYAjRLqN5?usp=sharing" },
   ];
 
   const linksAlternativos = [
     { title: "CubeSkills", url: "https://cubeskills.com" },
     { title: "CsTimer", url: "https://cstimer.net" },
-    { title: "YouTube", url: "https://youtube.com" },
+    { title: "Cubolandia", url: "https://cubolandia.web.app/" },
   ];
 
 
