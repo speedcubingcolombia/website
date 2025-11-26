@@ -1,16 +1,16 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
   return [
-    { params: { slug: 'new-dashboard-features' } },
-    { params: { slug: 'mobile-app-launch' } },
-    { params: { slug: 'api-improvements' } },
-    { params: { slug: 'team-collaboration-tools' } },
-    { params: { slug: 'security-enhancements' } },
-    { params: { slug: 'integration-marketplace' } },
+    { params: { slug: "new-dashboard-features" } },
+    { params: { slug: "mobile-app-launch" } },
+    { params: { slug: "api-improvements" } },
+    { params: { slug: "team-collaboration-tools" } },
+    { params: { slug: "security-enhancements" } },
+    { params: { slug: "integration-marketplace" } },
   ];
 }
 
@@ -18,14 +18,15 @@ const { slug } = Astro.params;
 
 // This would normally come from a CMS or database
 const posts = {
-  'new-dashboard-features': {
-    title: 'New Dashboard Features Released',
-    date: 'May 15, 2025',
-    author: 'Sarah Johnson',
-    authorRole: 'Product Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/32.jpg',
-    category: 'Product Updates',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  "new-dashboard-features": {
+    title: "New Dashboard Features Released",
+    date: "May 15, 2025",
+    author: "Sarah Johnson",
+    authorRole: "Product Manager",
+    authorAvatar: "https://randomuser.me/api/portraits/women/32.jpg",
+    category: "Product Updates",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     content: `
       <p class="mb-4">We're excited to announce the release of our new dashboard features designed to help you gain deeper insights into your business performance. These updates are based on feedback from our users and are aimed at making data analysis more intuitive and actionable.</p>
       
@@ -72,16 +73,17 @@ const posts = {
       <p class="mb-4">We value your feedback and many of these features were developed based on suggestions from our user community. If you have ideas for how we can make our platform even better, please don't hesitate to reach out to our product team.</p>
       
       <p>Thank you for being a valued customer. We're committed to continually improving our platform to help your business succeed.</p>
-    `
+    `,
   },
-  'mobile-app-launch': {
-    title: 'Introducing Our Mobile App',
-    date: 'April 28, 2025',
-    author: 'Michael Chen',
-    authorRole: 'CTO',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/46.jpg',
-    category: 'New Features',
-    image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  "mobile-app-launch": {
+    title: "Introducing Our Mobile App",
+    date: "April 28, 2025",
+    author: "Michael Chen",
+    authorRole: "CTO",
+    authorAvatar: "https://randomuser.me/api/portraits/men/46.jpg",
+    category: "New Features",
+    image:
+      "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     content: `
       <p class="mb-4">Today marks an exciting milestone for our platform as we launch our mobile app for iOS and Android devices. Now you can access your workspace from anywhere, ensuring you never miss an important update or opportunity.</p>
       
@@ -144,16 +146,17 @@ const posts = {
       <p class="mb-4">We're committed to making our mobile app as powerful as our web platform while maintaining the simplicity and ease of use that our customers love.</p>
       
       <p>We'd love to hear your feedback as you use the app. Please share your thoughts and suggestions through the feedback form in the app settings or contact our support team.</p>
-    `
+    `,
   },
-  'api-improvements': {
-    title: 'API Improvements and New Endpoints',
-    date: 'April 10, 2025',
-    author: 'Emily Rodriguez',
-    authorRole: 'Lead Developer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/65.jpg',
-    category: 'Developer Updates',
-    image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  "api-improvements": {
+    title: "API Improvements and New Endpoints",
+    date: "April 10, 2025",
+    author: "Emily Rodriguez",
+    authorRole: "Lead Developer",
+    authorAvatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    category: "Developer Updates",
+    image:
+      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     content: `
       <p class="mb-4">We're excited to announce significant improvements to our API along with new endpoints to help developers build more powerful integrations with our platform.</p>
       
@@ -225,16 +228,17 @@ const posts = {
       <p class="mb-4">We recommend migrating to API v2 as soon as possible to take advantage of the new features and improvements.</p>
       
       <p>If you have any questions or need assistance with the migration, please don't hesitate to reach out to our developer support team.</p>
-    `
+    `,
   },
-  'team-collaboration-tools': {
-    title: 'Enhanced Team Collaboration Tools',
-    date: 'March 22, 2025',
-    author: 'David Wilson',
-    authorRole: 'Product Designer',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/22.jpg',
-    category: 'Product Updates',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  "team-collaboration-tools": {
+    title: "Enhanced Team Collaboration Tools",
+    date: "March 22, 2025",
+    author: "David Wilson",
+    authorRole: "Product Designer",
+    authorAvatar: "https://randomuser.me/api/portraits/men/22.jpg",
+    category: "Product Updates",
+    image:
+      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     content: `
       <p class="mb-4">We're thrilled to announce a major update to our collaboration features, designed to help teams work together more effectively and efficiently.</p>
       
@@ -307,16 +311,17 @@ const posts = {
       <p class="mb-4">These new collaboration features are available to all customers on Business and Enterprise plans, with limited functionality available on the Professional plan.</p>
       
       <p>We're excited to see how these tools help your team work more effectively together. As always, we welcome your feedback as you explore these new capabilities.</p>
-    `
+    `,
   },
-  'security-enhancements': {
-    title: 'Security Enhancements and Compliance Updates',
-    date: 'March 5, 2025',
-    author: 'Jessica Lee',
-    authorRole: 'Security Officer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
-    category: 'Security',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  "security-enhancements": {
+    title: "Security Enhancements and Compliance Updates",
+    date: "March 5, 2025",
+    author: "Jessica Lee",
+    authorRole: "Security Officer",
+    authorAvatar: "https://randomuser.me/api/portraits/women/45.jpg",
+    category: "Security",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     content: `
       <p class="mb-4">At SaaSify, security is our top priority. We're pleased to announce several important security enhancements and compliance updates that further strengthen the protection of your data.</p>
       
@@ -416,16 +421,17 @@ const posts = {
       <p class="mb-4">These security enhancements reflect our ongoing commitment to protecting your data and maintaining your trust. We will continue to invest in security and compliance as a core part of our platform.</p>
       
       <p>If you have any questions about these security updates or need assistance implementing any of the new features, please contact our security team.</p>
-    `
+    `,
   },
-  'integration-marketplace': {
-    title: 'Introducing Our Integration Marketplace',
-    date: 'February 18, 2025',
-    author: 'Robert Kim',
-    authorRole: 'Partnership Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/67.jpg',
-    category: 'Integrations',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  "integration-marketplace": {
+    title: "Introducing Our Integration Marketplace",
+    date: "February 18, 2025",
+    author: "Robert Kim",
+    authorRole: "Partnership Manager",
+    authorAvatar: "https://randomuser.me/api/portraits/men/67.jpg",
+    category: "Integrations",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     content: `
       <p class="mb-4">We're excited to announce the launch of our Integration Marketplace, featuring over 50 partner integrations that extend the functionality of our platform and connect with your favorite tools and services.</p>
       
@@ -570,12 +576,12 @@ const posts = {
       <p class="mb-4">We're continuously adding new integrations to the marketplace. If there's a specific integration you'd like to see, please let us know through our feature request form.</p>
       
       <p>We're excited to see how these integrations help streamline your workflows and look forward to your feedback as you explore the marketplace.</p>
-    `
-  }
+    `,
+  },
 };
 
 const post = posts[slug];
-if (!post) return Astro.redirect('/404');
+if (!post) return Astro.redirect("/404");
 ---
 
 <Layout title={`${post.title} - SaaSify Blog`} description={post.title}>
@@ -584,66 +590,134 @@ if (!post) return Astro.redirect('/404');
     <article class="pt-32 pb-16 md:pt-40 md:pb-24">
       <div class="container-custom max-w-4xl">
         <div class="mb-8">
-          <a href="/blog" class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+          <a
+            href="/blog"
+            class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                clip-rule="evenodd"></path>
             </svg>
             Back to Blog
           </a>
         </div>
-        
+
         <div class="flex items-center mb-6">
-          <span class="inline-block px-3 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm">
+          <span
+            class="inline-block px-3 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm"
+          >
             {post.category}
           </span>
           <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
           <span class="text-gray-600 dark:text-gray-400">{post.date}</span>
         </div>
-        
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white">{post.title}</h1>
-        
+
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white"
+        >
+          {post.title}
+        </h1>
+
         <div class="flex items-center mb-8">
-          <img 
-            src={post.authorAvatar} 
-            alt={post.author} 
+          <img
+            src={post.authorAvatar}
+            alt={post.author}
             class="w-12 h-12 rounded-full mr-4 object-cover"
           />
           <div>
-            <p class="font-semibold text-gray-900 dark:text-white">{post.author}</p>
+            <p class="font-semibold text-gray-900 dark:text-white">
+              {post.author}
+            </p>
             <p class="text-gray-600 dark:text-gray-400">{post.authorRole}</p>
           </div>
         </div>
-        
-        <img 
-          src={post.image} 
+
+        <img
+          src={post.image}
           alt={post.title}
           class="w-full h-auto rounded-xl mb-10 object-cover"
           style="max-height: 500px;"
         />
-        
-        <div class="prose prose-lg dark:prose-invert max-w-none" set:html={post.content} />
-        
+
+        <div
+          class="prose prose-lg dark:prose-invert max-w-none"
+          set:html={post.content}
+        />
+
         <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Share this article</h3>
+          <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">
+            Share this article
+          </h3>
           <div class="flex space-x-4">
-            <a href="#" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors" aria-label="Share on Twitter">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+            <a
+              href="#"
+              class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
+              aria-label="Share on Twitter"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                ></path>
               </svg>
             </a>
-            <a href="#" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors" aria-label="Share on LinkedIn">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+            <a
+              href="#"
+              class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
+              aria-label="Share on LinkedIn"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                ></path>
               </svg>
             </a>
-            <a href="#" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors" aria-label="Share on Facebook">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+            <a
+              href="#"
+              class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
+              aria-label="Share on Facebook"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                ></path>
               </svg>
             </a>
-            <a href="#" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors" aria-label="Share via Email">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+            <a
+              href="#"
+              class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
+              aria-label="Share via Email"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                ></path>
               </svg>
             </a>
           </div>
