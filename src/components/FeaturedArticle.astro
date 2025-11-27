@@ -23,7 +23,7 @@ const formattedDate = new Intl.DateTimeFormat("es-CO", {
 }).format(featuredArticle.data.date);
 ---
 
-<section class="section bg-secondary-50 dark:bg-secondary-950">
+<section class="section bg-secondary-200 dark:bg-secondary-950">
   <div class="container-custom">
     <div class="text-center mb-12">
       <h2
@@ -34,8 +34,8 @@ const formattedDate = new Intl.DateTimeFormat("es-CO", {
       <p
         class="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto"
       >
-        Contenido seleccionado especialmente para ayudarte a mejorar en el
-        Speedcubing
+        No te pierdas de las noticias más importantes y actualizaciones del
+        mundo del Speedcubing en Colombia.
       </p>
     </div>
 
@@ -43,7 +43,7 @@ const formattedDate = new Intl.DateTimeFormat("es-CO", {
       <article class="card overflow-hidden">
         <div class="grid md:grid-cols-2 gap-0">
           <!-- Imagen del artículo -->
-          <div class="relative h-64 md:h-full">
+          <div class="relative h-48 md:h-full">
             <img
               src={featuredArticle.data.image}
               alt={featuredArticle.data.title}
