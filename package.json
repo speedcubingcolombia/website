@@ -1,7 +1,7 @@
 {
-  "name": "popular-planet",
-  "description": "A template for creating a SaaS landing page with Astro and Tailwind CSS",
-  "author": "Larry Xue",
+  "name": "speedcubingcolombia-website",
+  "description": "Sitio web oficial de Speedcubing Colombia",
+  "author": "Speedcubing Colombia",
   "license": "MIT",
   "homepage": "https://astro-sassify.larryxue.dev/",
   "repository": {
