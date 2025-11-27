@@ -15,12 +15,7 @@ const {
 ---
 
 <!doctype html>
-<html
-  lang="en"
-  x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }"
-  x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))"
-  :class="{ 'dark': darkMode }"
->
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,22 +32,15 @@ const {
     <ClientRouter />
   </head>
   <body
-    class="antialiased bg-white dark:bg-secondary-950 text-secondary-900 dark:text-secondary-100 transition-colors duration-300"
+    class="antialiased bg-white text-secondary-900 transition-colors duration-300"
   >
     <div id="page-wrapper" class="page-transition-wrapper">
       <slot />
     </div>
     <script>
-      // Check for user preference
-      if (localStorage.getItem("darkMode") === null) {
-        // Check system preference
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          localStorage.setItem("darkMode", "true");
-          document.documentElement.classList.add("dark");
-        } else {
-          localStorage.setItem("darkMode", "false");
-        }
-      }
+      // Always enforce light mode for now
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("darkMode", "false");
 
       // Handle page transitions
       document.addEventListener("astro:page-load", () => {
