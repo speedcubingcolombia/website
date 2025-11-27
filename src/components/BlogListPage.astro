@@ -1,0 +1,247 @@
+---
+import Layout from "../layouts/Layout.astro";
+import type { BlogListEntry } from "../utils/blog";
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
+import HeroSection from "./HeroSection.astro";
+
+interface PaginationInfo {
+  current: number;
+  total: number;
+}
+
+const { posts, pagination } = Astro.props as {
+  posts: BlogListEntry[];
+  pagination: PaginationInfo;
+};
+
+const normalizeCategory = (category: string) =>
+  category
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+
+const categories = [...new Set(posts.map((post) => post.data.category))];
+const pageNumbers = Array.from(
+  { length: pagination.total },
+  (_, index) => index + 1
+);
+
+const getPageHref = (pageNumber: number) =>
+  pageNumber === 1 ? "/blog/" : `/blog/page/${pageNumber}/`;
+
+const prevHref =
+  pagination.current > 1 ? getPageHref(pagination.current - 1) : undefined;
+const nextHref =
+  pagination.current < pagination.total
+    ? getPageHref(pagination.current + 1)
+    : undefined;
+---
+
+<Layout
+  title="Blog - Speedcubing Colombia"
+  description="Actualizaciones, lanzamientos y noticias del ecosistema Speedcubing en Colombia."
+>
+  <Header />
+  <main>
+    <HeroSection
+      title="Publicaciones y Noticias"
+      highlightText="Publicaciones"
+      description="Entérate de las últimas noticias alrededor del Speedcubing colombiano."
+    />
+
+    <div class="container-custom py-8">
+      {
+        categories.length > 0 && (
+          <div class="flex flex-wrap gap-4 justify-center mb-12">
+            <button
+              type="button"
+              class="category-pill px-4 py-2 rounded-full font-medium text-sm transition-colors bg-primary-600 text-white shadow-sm"
+              data-category-filter
+              data-category="all"
+              data-active
+            >
+              Todas las publicaciones
+            </button>
+            {categories.map((category) => (
+              <button
+                type="button"
+                class="category-pill px-4 py-2 rounded-full font-medium text-sm transition-colors bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                data-category-filter
+                data-category={normalizeCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        )
+      }
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          posts.map((post, index) => (
+            <div
+              class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up"
+              data-post-card
+              data-category={normalizeCategory(post.data.category)}
+              style={`animation-delay: ${index * 100}ms;`}
+            >
+              <a href={`/blog/${post.slug}`} class="block">
+                <img
+                  src={post.data.image}
+                  alt={post.data.title}
+                  class="w-full h-48 object-cover"
+                  loading="lazy"
+                />
+              </a>
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <span class="text-sm font-medium text-primary-600 dark:text-primary-400">
+                    {post.data.category}
+                  </span>
+                  <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
+                  <span class="text-sm text-gray-500 dark:text-gray-400">
+                    {post.formattedDate}
+                  </span>
+                </div>
+                <a href={`/blog/${post.slug}`} class="block mb-3">
+                  <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                    {post.data.title}
+                  </h2>
+                </a>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                  {post.data.excerpt}
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src={post.data.authorAvatar}
+                    alt={post.data.author}
+                    class="w-10 h-10 rounded-full mr-3 object-cover"
+                    loading="lazy"
+                  />
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">
+                      {post.data.author}
+                    </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      {post.data.authorRole}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      {
+        pagination.total > 1 && (
+          <nav
+            class="mt-12 flex justify-center"
+            aria-label="Paginación del blog"
+          >
+            <ul class="flex items-center gap-2">
+              {prevHref && (
+                <li>
+                  <a href={prevHref} class="btn-outline px-4 py-2">
+                    Anterior
+                  </a>
+                </li>
+              )}
+              {pageNumbers.map((number) => (
+                <li>
+                  <a
+                    href={getPageHref(number)}
+                    class={`px-4 py-2 rounded-lg border transition-colors ${
+                      number === pagination.current
+                        ? "bg-primary-600 text-white border-primary-600"
+                        : "border-gray-200 text-gray-700 hover:border-primary-400"
+                    }`}
+                  >
+                    {number}
+                  </a>
+                </li>
+              ))}
+              {nextHref && (
+                <li>
+                  <a href={nextHref} class="btn-outline px-4 py-2">
+                    Siguiente
+                  </a>
+                </li>
+              )}
+            </ul>
+          </nav>
+        )
+      }
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<script is:inline>
+  const initCategoryFilters = () => {
+    const filterButtons = Array.from(
+      document.querySelectorAll("[data-category-filter]")
+    );
+    const cards = Array.from(document.querySelectorAll("[data-post-card]"));
+
+    if (!filterButtons.length || !cards.length) {
+      return;
+    }
+
+    const setActive = (button, active) => {
+      if (!button) return;
+      button.toggleAttribute("data-active", active);
+      button.classList.toggle("bg-primary-600", active);
+      button.classList.toggle("text-white", active);
+      button.classList.toggle("shadow-sm", active);
+      button.classList.toggle("bg-gray-100", !active);
+      button.classList.toggle("dark:bg-gray-800", !active);
+      button.classList.toggle("text-gray-700", !active);
+      button.classList.toggle("dark:text-gray-300", !active);
+    };
+
+    const applyFilter = (category) => {
+      cards.forEach((card) => {
+        const matches =
+          category === "all" || card.dataset.category === category;
+        card.classList.toggle("hidden", !matches);
+      });
+    };
+
+    filterButtons.forEach((button) => {
+      if (button.dataset.bound === "true") {
+        return;
+      }
+
+      button.dataset.bound = "true";
+
+      button.addEventListener("click", () => {
+        const { category = "all" } = button.dataset;
+        filterButtons.forEach((btn) => setActive(btn, btn === button));
+        applyFilter(category);
+      });
+    });
+
+    const activeButton =
+      filterButtons.find((button) => button.hasAttribute("data-active")) ||
+      filterButtons[0];
+
+    if (activeButton) {
+      filterButtons.forEach((btn) => setActive(btn, btn === activeButton));
+      applyFilter(activeButton.dataset.category || "all");
+    }
+  };
+
+  if (document.readyState !== "loading") {
+    initCategoryFilters();
+  } else {
+    document.addEventListener("DOMContentLoaded", initCategoryFilters);
+  }
+
+  document.addEventListener("astro:page-load", () => {
+    initCategoryFilters();
+  });
+</script>
