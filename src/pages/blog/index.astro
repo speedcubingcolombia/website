@@ -1,23 +1,40 @@
 ---
+import { getCollection, type CollectionEntry } from "astro:content";
 import Footer from "../../components/Footer.astro";
 import Header from "../../components/Header.astro";
 import HeroSection from "../../components/HeroSection.astro";
-import { posts } from "../../data/posts.js";
 import Layout from "../../layouts/Layout.astro";
 
-const categories = [...new Set(posts.map((post) => post.category))];
+type BlogPost = CollectionEntry<"blog"> & {
+  formattedDate: string;
+};
+
+const dateFormatter = new Intl.DateTimeFormat("es-CO", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .map((post) => ({
+    ...post,
+    formattedDate: dateFormatter.format(post.data.date),
+  })) satisfies BlogPost[];
+
+const categories = [...new Set(posts.map((post) => post.data.category))];
 ---
 
 <Layout
-  title="Blog - SaaSify"
-  description="Latest product updates, feature releases, and company news from SaaSify."
+  title="Blog - Speedcubing Colombia"
+  description="Actualizaciones, lanzamientos y noticias del ecosistema speedcubing en Colombia."
 >
   <Header />
   <main>
     <HeroSection
-      title="Latest Updates & News"
-      highlightText="Updates"
-      description="Stay up to date with our latest product updates, feature releases, and company news."
+      title="Actualizaciones y noticias"
+      highlightText="Blog"
+      description="Entérate de los últimos lanzamientos, historias y aprendizajes alrededor del speedcubing colombiano."
     />
 
     <!-- Category Filter -->
@@ -27,7 +44,7 @@ const categories = [...new Set(posts.map((post) => post.category))];
           href="#"
           class="px-4 py-2 rounded-full bg-primary-600 text-white font-medium text-sm hover:bg-primary-700 transition-colors"
         >
-          All Posts
+          Todas las publicaciones
         </a>
         {
           categories.map((category) => (
@@ -48,10 +65,10 @@ const categories = [...new Set(posts.map((post) => post.category))];
               class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up"
               style={"animation-delay: " + index * 100 + "ms"}
             >
-              <a href={"/blog/" + post.id} class="block">
+              <a href={"/blog/" + post.slug} class="block">
                 <img
-                  src={post.image}
-                  alt={post.title}
+                  src={post.data.image}
+                  alt={post.data.title}
                   class="w-full h-48 object-cover"
                   loading="lazy"
                 />
@@ -59,34 +76,34 @@ const categories = [...new Set(posts.map((post) => post.category))];
               <div class="p-6">
                 <div class="flex items-center mb-4">
                   <span class="text-sm font-medium text-primary-600 dark:text-primary-400">
-                    {post.category}
+                    {post.data.category}
                   </span>
                   <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
                   <span class="text-sm text-gray-500 dark:text-gray-400">
-                    {post.date}
+                    {post.formattedDate}
                   </span>
                 </div>
-                <a href={"/blog/" + post.id} class="block mb-3">
+                <a href={"/blog/" + post.slug} class="block mb-3">
                   <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    {post.title}
+                    {post.data.title}
                   </h2>
                 </a>
                 <p class="text-gray-600 dark:text-gray-300 mb-6">
-                  {post.excerpt}
+                  {post.data.excerpt}
                 </p>
                 <div class="flex items-center">
                   <img
-                    src={post.authorAvatar}
-                    alt={post.author}
+                    src={post.data.authorAvatar}
+                    alt={post.data.author}
                     class="w-10 h-10 rounded-full mr-3 object-cover"
                     loading="lazy"
                   />
                   <div>
                     <p class="font-medium text-gray-900 dark:text-white">
-                      {post.author}
+                      {post.data.author}
                     </p>
                     <p class="text-sm text-gray-500 dark:text-gray-400">
-                      {post.authorRole}
+                      {post.data.authorRole}
                     </p>
                   </div>
                 </div>
@@ -98,7 +115,7 @@ const categories = [...new Set(posts.map((post) => post.category))];
 
       <div class="mt-12 flex justify-center">
         <a href="#" class="btn-outline">
-          Load More Articles
+          Ver más artículos
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5 ml-2"

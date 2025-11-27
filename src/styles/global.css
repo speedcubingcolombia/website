@@ -169,6 +169,49 @@
   }
 }
 
+@layer base {
+  .prose {
+    @apply text-secondary-800 dark:text-secondary-100 leading-relaxed;
+  }
+
+  .prose > * + * {
+    @apply mt-6;
+  }
+
+  .prose h2 {
+    @apply text-3xl font-semibold text-secondary-900 dark:text-white mt-10 mb-4;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-semibold text-secondary-900 dark:text-white mt-8 mb-3;
+  }
+
+  .prose p {
+    @apply text-base md:text-lg text-secondary-700 dark:text-secondary-200 leading-relaxed;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply pl-6 mb-6 text-secondary-700 dark:text-secondary-200;
+  }
+
+  .prose ul {
+    list-style-type: disc;
+  }
+
+  .prose ol {
+    list-style-type: decimal;
+  }
+
+  .prose li + li {
+    @apply mt-2;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-primary-500 pl-4 italic text-secondary-700 dark:text-secondary-200;
+  }
+}
+
 /* Animations */
 .fade-in {
   @apply animate-fade-in;
