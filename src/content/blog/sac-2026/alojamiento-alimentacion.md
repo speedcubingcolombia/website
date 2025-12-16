@@ -1,0 +1,297 @@
+---
+title: "Alojamiento y Alimentación SAC 2026"
+excerpt: "Opciones de hospedaje recomendadas, restaurantes cercanos y dónde comer durante el evento."
+date: 2025-11-26
+author: "Equipo Speedcubing Colombia"
+authorRole: "Organización SAC 2026"
+authorAvatar: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=facearea&w=400&h=400&q=80"
+category: "Eventos"
+image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2070&q=80"
+multiSection: true
+tabLabel: "Alojamiento y Alimentación"
+---
+
+# Alojamiento y Alimentación
+
+## Hoteles recomendados
+
+Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos de precio. Todos están a máximo 15 minutos del Colegio Teresiano.
+
+### Hoteles cercanos (Radio de 2 km)
+
+#### Hotel de lujo ($$$$)
+
+**Hotel Four Points by Sheraton Bogotá**
+
+- 📍 Distancia: 1.5 km del venue
+- 💰 Precio aproximado: $150-200 USD/noche
+- ⭐ Incluye: Desayuno, Wi-Fi, gimnasio, piscina
+- 📞 Reservas: +57 1 XXX XXXX
+- 🏷️ Código promocional SAC2026: 10% de descuento
+
+**GHL Hotel Bioxury**
+
+- 📍 Distancia: 2 km del venue
+- 💰 Precio aproximado: $130-180 USD/noche
+- ⭐ Incluye: Desayuno buffet, spa, estacionamiento
+- 📞 Reservas: +57 1 XXX XXXX
+
+#### Hoteles de rango medio ($$$)
+
+**Hotel Dann Carlton Bogotá**
+
+- 📍 Distancia: 3 km del venue
+- 💰 Precio aproximado: $80-120 USD/noche
+- ⭐ Incluye: Desayuno, Wi-Fi, centro de negocios
+- 🏷️ **Tarifa especial SAC:** $75 USD/noche (habitación doble)
+
+**Hotel Estelar La Fontana**
+
+- 📍 Distancia: 4 km del venue
+- 💰 Precio aproximado: $70-100 USD/noche
+- ⭐ Incluye: Desayuno, estacionamiento, gimnasio
+
+**Sonesta Hotel Bogotá**
+
+- 📍 Distancia: 3.5 km del venue
+- 💰 Precio aproximado: $65-90 USD/noche
+- ⭐ Incluye: Desayuno continental, Wi-Fi
+
+#### Hoteles económicos ($$)
+
+**Hotel Viaggio 617**
+
+- 📍 Distancia: 2.5 km del venue
+- 💰 Precio aproximado: $40-60 USD/noche
+- ⭐ Incluye: Wi-Fi, desayuno básico
+
+**Hotel Comfort Inn & Suites**
+
+- 📍 Distancia: 5 km del venue
+- 💰 Precio aproximado: $45-65 USD/noche
+- ⭐ Incluye: Desayuno, estacionamiento gratuito
+
+### Hostales y opciones budget ($)
+
+**Selina Parque 93**
+
+- 📍 Distancia: 6 km del venue
+- 💰 Dormitorios: $15-25 USD/noche
+- 💰 Habitaciones privadas: $35-50 USD/noche
+- ⭐ Ambiente juvenil, coworking, bar
+
+**Masaya Hostel Bogotá**
+
+- 📍 Distancia: 8 km (zona Chapinero)
+- 💰 Dormitorios: $12-20 USD/noche
+- 💰 Habitaciones privadas: $30-45 USD/noche
+- ⭐ Excelente para conocer otros viajeros
+
+**Cranky Croc Hostel**
+
+- 📍 Distancia: 10 km (zona La Candelaria)
+- 💰 Dormitorios: $10-18 USD/noche
+- 💰 Habitaciones privadas: $25-40 USD/noche
+- ⭐ Ubicación céntrica para turismo
+
+## Airbnb y apartamentos
+
+Si prefieres más espacio o viajas en grupo, Airbnb es una excelente opción:
+
+### Zonas recomendadas para buscar en Airbnb
+
+1. **Usaquén** (ideal, más cercano al venue)
+   - Apartamentos completos: $60-120 USD/noche
+   - Habitaciones privadas: $25-50 USD/noche
+
+2. **Chicó / Virrey**
+   - Apartamentos completos: $70-140 USD/noche
+   - Zona segura, muchos restaurantes
+
+3. **Parque de la 93**
+   - Apartamentos completos: $80-150 USD/noche
+   - Vida nocturna, restaurantes, muy turístico
+
+4. **Cedritos**
+   - Apartamentos completos: $50-100 USD/noche
+   - Más económico, cerca del venue
+
+### Tips para reservar en Airbnb
+
+- Busca "Superhost" para mejor experiencia
+- Lee las reseñas cuidadosamente
+- Verifica la distancia real al venue usando Google Maps
+- Pregunta al anfitrión sobre transporte al Colegio Teresiano
+- Considera compartir apartamento con otros competidores
+
+## Compartir alojamiento
+
+### Grupo de coordinación
+
+Hemos creado un grupo de WhatsApp/Telegram para que competidores puedan:
+
+- Encontrar roommates
+- Compartir apartamentos
+- Organizar transporte compartido
+- Ahorrar costos
+
+🔗 Únete aquí: [Link próximamente]
+
+## Alimentación durante el evento
+
+### En el venue
+
+**Cafetería del Colegio Teresiano:**
+
+- Menú del día: $15,000-20,000 COP ($4-5 USD)
+- Snacks y bebidas: $2,000-8,000 COP ($0.50-2 USD)
+- Horario: Durante todo el evento
+
+**Food trucks:**
+
+- Variedad de opciones colombianas e internacionales
+- Precio: $12,000-25,000 COP ($3-6 USD)
+
+**Vending machines:**
+
+- Snacks, bebidas y agua
+- Disponible 24/7 durante el evento
+
+### Restaurantes cercanos (10-15 min)
+
+#### Centro Comercial Parque La Colina
+
+**Opciones de comida rápida:**
+
+- McDonald's, Subway, KFC
+- Precio: $15,000-25,000 COP ($4-6 USD)
+
+**Restaurantes casual:**
+
+- Crepes & Waffles (postres y comida)
+- Juan Valdez Café (café y sándwiches)
+- Precio: $20,000-40,000 COP ($5-10 USD)
+
+#### Zona Usaquén (Centro Histórico)
+
+**Restaurantes típicos colombianos:**
+
+- Andrés Carne de Res (experiencia única)
+- La Puerta de la Catedral
+- Precio: $30,000-60,000 COP ($8-15 USD)
+
+**Restaurantes internacionales:**
+
+- Wok (asiático)
+- Di Lucca (italiano)
+- BBC (Bogotá Beer Company - pub)
+- Precio: $35,000-70,000 COP ($9-18 USD)
+
+#### Corredor Calle 140-147
+
+**Menús ejecutivos:**
+
+- Variedad de restaurantes colombianos
+- Menú del día (almuerzo completo): $15,000-25,000 COP ($4-6 USD)
+- Horario: 11:30 AM - 3:00 PM
+
+### Supermercados cercanos
+
+Si prefieres comprar comida:
+
+**Éxito Calle 147:**
+
+- Distancia: 2 km
+- Horario: 8:00 AM - 9:00 PM
+- Productos preparados, frutas, snacks
+
+**Carulla Usaquén:**
+
+- Distancia: 3 km
+- Horario: 7:00 AM - 10:00 PM
+- Mayor variedad
+
+**Tiendas de barrio:**
+
+- Múltiples opciones cerca del venue
+- Snacks, bebidas, básicos
+- Precio más económico
+
+## Comida típica colombiana que debes probar
+
+Durante tu estadía, no te pierdas:
+
+🍲 **Ajiaco:** Sopa típica bogotana con pollo, papas criollas y mazorca  
+🥟 **Empanadas:** Fritas, de carne o pollo  
+🌭 **Salchipapa:** Comida callejera, salchichas y papas fritas  
+☕ **Café colombiano:** El mejor del mundo  
+🍰 **Obleas:** Postre típico con arequipe  
+🥤 **Agua de panela con limón:** Bebida tradicional
+
+## Opciones vegetarianas y veganas
+
+Bogotá tiene excelente oferta para vegetarianos y veganos:
+
+**Restaurantes especializados cerca del venue:**
+
+- Quinua y Amaranto (vegano, Usaquén)
+- Salud y Vida (vegetariano, varios locales)
+- El Macrobiotico (naturista)
+
+**Apps útiles:**
+
+- HappyCow: Encuentra restaurantes veganos/vegetarianos
+- Rappi/Uber Eats: Delivery con filtros dietary
+
+## Presupuesto diario recomendado
+
+**Económico:**
+
+- Desayuno: $8,000 COP ($2 USD)
+- Almuerzo: $15,000 COP ($4 USD)
+- Cena: $15,000 COP ($4 USD)
+- Snacks: $10,000 COP ($2.50 USD)
+- **Total: ~$50,000 COP (~$12 USD/día)**
+
+**Moderado:**
+
+- Desayuno: $15,000 COP ($4 USD)
+- Almuerzo: $30,000 COP ($8 USD)
+- Cena: $40,000 COP ($10 USD)
+- Snacks/café: $15,000 COP ($4 USD)
+- **Total: ~$100,000 COP (~$26 USD/día)**
+
+**Cómodo:**
+
+- Desayuno: $25,000 COP ($6 USD)
+- Almuerzo: $50,000 COP ($13 USD)
+- Cena: $60,000 COP ($15 USD)
+- Café/snacks: $25,000 COP ($6 USD)
+- **Total: ~$160,000 COP (~$40 USD/día)**
+
+## Métodos de pago
+
+- 💳 **Tarjetas:** Ampliamente aceptadas (Visa, Mastercard)
+- 💵 **Efectivo:** Útil para tiendas pequeñas y transporte
+- 📱 **Apps de pago:** Nequi, Daviplata (si tienes cuenta colombiana)
+
+**Cambio de moneda:**
+
+- Casas de cambio en el aeropuerto
+- Bancos en la ciudad
+- ATMs disponibles (comisiones aplican)
+
+## Tips adicionales
+
+- **Propinas:** 10% sugerido en restaurantes (a veces incluido en la cuenta)
+- **Agua:** El agua del grifo en Bogotá es potable, pero muchos prefieren embotellada
+- **Alergias:** Siempre comunica alergias alimentarias en español: "Soy alérgico/a a..."
+
+## Contacto
+
+¿Preguntas sobre alojamiento o alimentación?
+
+📧 Email: <alojamiento@sac2026.com>  
+💬 WhatsApp: +57 XXX XXX XXXX
+
+¡Disfruta la gastronomía bogotana! 🍽️

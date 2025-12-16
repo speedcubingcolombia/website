@@ -11,6 +11,10 @@ const blog = defineCollection({
     authorAvatar: z.string().url(),
     category: z.string(),
     image: z.string().url(),
+    // Opcional: indica si este artículo tiene múltiples secciones
+    multiSection: z.boolean().optional(),
+    // Para artículos con secciones: orden de las pestañas
+    tabLabel: z.string().optional(),
   }),
 });
 

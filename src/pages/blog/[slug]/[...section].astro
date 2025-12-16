@@ -1,67 +1,73 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
-import ArticleTabs from "../../components/ArticleTabs.astro";
-import Footer from "../../components/Footer.astro";
-import Header from "../../components/Header.astro";
-import Layout from "../../layouts/Layout.astro";
+import ArticleTabs from "../../../components/ArticleTabs.astro";
+import Footer from "../../../components/Footer.astro";
+import Header from "../../../components/Header.astro";
+import Layout from "../../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const allPosts = await getCollection("blog");
+  const paths: any[] = [];
 
-  // Artículos sin secciones múltiples (archivos .md simples)
-  const simplePosts = posts.filter((post) => !post.data.multiSection);
+  // Agrupar posts por slug base (carpeta)
+  const postsByBase = new Map<string, CollectionEntry<"blog">[]>();
 
-  // Artículos con secciones múltiples (agrupar por base slug)
-  const multiSectionPosts = new Map<string, CollectionEntry<"blog">[]>();
-  posts.forEach((post) => {
-    if (post.data.multiSection) {
-      // Obtener el base slug (antes del / si existe, sino el slug completo)
-      const baseSlug = post.slug.includes("/")
-        ? post.slug.split("/")[0]
-        : post.slug;
-      if (!multiSectionPosts.has(baseSlug)) {
-        multiSectionPosts.set(baseSlug, []);
+  allPosts.forEach((post) => {
+    // Identificar si el slug contiene '/' (está en una carpeta)
+    const parts = post.slug.split("/");
+    if (parts.length > 1) {
+      const baseSlug = parts[0];
+      if (!postsByBase.has(baseSlug)) {
+        postsByBase.set(baseSlug, []);
       }
-      multiSectionPosts.get(baseSlug)!.push(post);
+      postsByBase.get(baseSlug)!.push(post);
     }
   });
 
-  const paths: any[] = [];
-
-  // Rutas para artículos simples
-  simplePosts.forEach((post) => {
-    paths.push({
-      params: { slug: post.slug },
-      props: { post, multiSection: false },
-    });
-  });
-
-  // Rutas para el index de artículos multi-sección
-  multiSectionPosts.forEach((sections, baseSlug) => {
-    // Ordenar: sin slash primero (index normalizado), luego index explícito, luego alfabéticamente
-    sections.sort((a, b) => {
-      const aIsNormalizedIndex = !a.slug.includes("/");
-      const bIsNormalizedIndex = !b.slug.includes("/");
+  // Generar rutas para artículos con múltiples secciones
+  postsByBase.forEach((posts, baseSlug) => {
+    // Ordenar: index.md primero, luego alfabéticamente
+    posts.sort((a, b) => {
       const aIsIndex = a.slug.endsWith("/index");
       const bIsIndex = b.slug.endsWith("/index");
-
-      if (aIsNormalizedIndex) return -1;
-      if (bIsNormalizedIndex) return 1;
       if (aIsIndex) return -1;
       if (bIsIndex) return 1;
       return a.slug.localeCompare(b.slug);
     });
 
-    // El index es el primero después de ordenar
-    const indexPost = sections[0];
-    paths.push({
-      params: { slug: baseSlug },
-      props: {
-        post: indexPost,
-        multiSection: true,
-        allSections: sections,
-        baseSlug,
-      },
+    posts.forEach((post, index) => {
+      const sectionSlug = post.slug.split("/")[1];
+      const isIndex = sectionSlug === "index";
+
+      // Para el index, crear ruta sin el parámetro section (solo slug)
+      // Para las secciones, crear ruta con section
+      if (isIndex) {
+        paths.push({
+          params: {
+            slug: baseSlug,
+            section: undefined, // Esto hace que la ruta sea /blog/[slug]
+          },
+          props: {
+            post,
+            allSections: posts,
+            baseSlug,
+            currentSection: sectionSlug,
+          },
+        });
+      } else {
+        paths.push({
+          params: {
+            slug: baseSlug,
+            section: sectionSlug,
+          },
+          props: {
+            post,
+            allSections: posts,
+            baseSlug,
+            currentSection: sectionSlug,
+          },
+        });
+      }
     });
   });
 
@@ -72,50 +78,55 @@ type BlogPost = CollectionEntry<"blog">;
 
 interface Props {
   post: BlogPost;
-  multiSection: boolean;
-  allSections?: BlogPost[];
-  baseSlug?: string;
+  allSections: BlogPost[];
+  baseSlug: string;
+  currentSection: string;
 }
 
-const { post, multiSection, allSections, baseSlug } = Astro.props;
+const { post, allSections, baseSlug, currentSection } = Astro.props;
 const { Content } = await post.render();
+
+// Obtener el post principal (index) directamente desde la colección
+// Astro normaliza sac-2026/index a solo sac-2026
+const allPosts = await getCollection("blog");
+const mainPost =
+  allPosts.find((p) => p.slug === baseSlug) ||
+  allPosts.find((p) => p.slug === `${baseSlug}/index`) ||
+  post;
+
 const formattedDate = new Intl.DateTimeFormat("es-CO", {
   day: "numeric",
   month: "long",
   year: "numeric",
-}).format(post.data.date);
-const canonicalUrl = Astro.site
-  ? new URL(`/blog/${post.slug}`, Astro.site).toString()
-  : `/blog/${post.slug}`;
+}).format(mainPost.data.date);
 
-// Si es multi-sección, preparar las pestañas
-let tabs: any[] = [];
-if (multiSection && allSections && baseSlug) {
-  tabs = [
-    // Agregar el tab de Inicio usando el post actual (que es el index)
-    {
-      label: post.data.tabLabel || post.data.title,
-      slug: "index",
-      isActive: true, // Siempre activo en esta página
-    },
-    // Agregar el resto de las secciones (solo las que tienen '/' en el slug, excluyendo el index normalizado)
-    ...allSections
-      .filter((section) => section.slug.includes("/")) // Solo subsecciones con '/'
-      .map((section) => {
-        const sectionSlug = section.slug.split("/")[1];
-        return {
-          label: section.data.tabLabel || section.data.title,
-          slug: sectionSlug,
-          isActive: false, // Nunca activas en la página index
-        };
-      }),
-  ];
-}
+// Preparar las pestañas - incluir manualmente el index ya que allSections no lo tiene
+const tabs = [
+  // Agregar el tab de Inicio usando mainPost
+  {
+    label: mainPost.data.tabLabel || mainPost.data.title,
+    slug: "index",
+    isActive: currentSection === "index",
+  },
+  // Agregar el resto de las secciones
+  ...allSections.map((section) => {
+    const sectionSlug = section.slug.split("/")[1];
+    return {
+      label: section.data.tabLabel || section.data.title,
+      slug: sectionSlug,
+      isActive: sectionSlug === currentSection,
+    };
+  }),
+];
+
+const canonicalUrl = Astro.site
+  ? new URL(`/blog/${mainPost.slug}`, Astro.site).toString()
+  : `/blog/${mainPost.slug}`;
 ---
 
 <Layout
-  title={`${post.data.title} | Speedcubing Colombia`}
-  description={post.data.excerpt}
+  title={`${mainPost.data.title} | Speedcubing Colombia`}
+  description={mainPost.data.excerpt}
 >
   <Header />
   <main>
@@ -145,7 +156,7 @@ if (multiSection && allSections && baseSlug) {
           <span
             class="inline-block px-3 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm"
           >
-            {post.data.category}
+            {mainPost.data.category}
           </span>
           <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
           <span class="text-gray-600 dark:text-gray-400">{formattedDate}</span>
@@ -154,43 +165,30 @@ if (multiSection && allSections && baseSlug) {
         <h1
           class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white"
         >
-          {post.data.title}
+          {mainPost.data.title}
         </h1>
 
-        <div class={`flex items-center ${multiSection ? "mb-0" : "mb-8"}`}>
+        <div class="flex items-center mb-0">
           <img
-            src={post.data.authorAvatar}
-            alt={post.data.author}
+            src={mainPost.data.authorAvatar}
+            alt={mainPost.data.author}
             class="w-12 h-12 rounded-full mr-4 object-cover"
           />
           <div>
             <p class="font-semibold text-gray-900 dark:text-white">
-              {post.data.author}
+              {mainPost.data.author}
             </p>
             <p class="text-gray-600 dark:text-gray-400">
-              {post.data.authorRole}
+              {mainPost.data.authorRole}
             </p>
           </div>
         </div>
-
-        {
-          !multiSection && (
-            <img
-              src={post.data.image}
-              alt={post.data.title}
-              class="w-full h-auto rounded-xl mb-10 object-cover"
-              style="max-height: 500px;"
-            />
-          )
-        }
       </div>
 
-      {
-        multiSection && tabs.length > 0 && (
-          <ArticleTabs tabs={tabs} baseSlug={baseSlug!} />
-        )
-      }
+      <!-- Navegación con pestañas -->
+      <ArticleTabs tabs={tabs} baseSlug={baseSlug} />
 
+      <!-- Contenido de la sección actual -->
       <div class="container-custom max-w-4xl">
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <Content />

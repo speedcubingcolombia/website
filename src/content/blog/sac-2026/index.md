@@ -1,19 +1,63 @@
 ---
-title: "SAC 2026: Bogotá recibe el campeonato sudamericano"
-excerpt: "Todo lo que necesitas saber sobre el South American Championship 2026: sede, fechas, logística, turismo y servicios."
+title: "SAC 2026: South American Championship Bogotá"
+excerpt: "Todo lo que necesitas saber sobre el South American Championship 2026: registro, sede, alojamiento, cronograma y turismo en Bogotá."
 date: 2025-11-26
 author: "Equipo Speedcubing Colombia"
 authorRole: "Organización SAC 2026"
 authorAvatar: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=facearea&w=400&h=400&q=80"
 category: "Eventos"
 image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2070&q=80"
+multiSection: true
+tabLabel: "Inicio"
 ---
 
-El South American Championship 2026 (SAC26) llega a Colombia y convertirá a Bogotá en el epicentro del cubo durante cuatro días llenos de competición, cultura y comunidad. A continuación reunimos toda la información clave para competidores, staff y acompañantes.
+# Bienvenidos al SAC 2026
+
+¡Nos complace anunciar que Colombia será sede del **South American Championship 2026** (SAC26) del 12 al 15 de junio de 2026 en Bogotá!
+
+Esta competencia reunirá a los mejores speedcubers de Sudamérica en el icónico **Colegio Teresiano**, ubicado en la localidad de Usaquén en el norte de Bogotá.
+
+## Información clave
+
+📅 **Fechas:** 12, 13, 14 y 15 de Junio de 2026  
+📍 **Sede:** Colegio Teresiano Bogotá (Coliseo Teremun IX)  
+📌 **Dirección:** Calle 152 # 20-42, Usaquén  
+👥 **Capacidad:** 350 competidores de todo el continente  
+🏆 **Eventos:** Todos los eventos oficiales WCA
+
+## Qué encontrarás en esta guía
+
+Navega por las pestañas superiores para acceder a toda la información:
+
+- **📝 Registro**: Cómo registrarse, costos y fechas límite
+- **🏢 Sede y Transporte**: Ubicación, cómo llegar y opciones de transporte
+- **🏨 Alojamiento y Alimentación**: Opciones de hospedaje y restaurantes cercanos
+- **📅 Cronograma**: Horarios de eventos y actividades
+- **🗺️ Turismo**: Lugares imperdibles para visitar en Bogotá
+
+## Sobre el SAC
+
+El South American Championship es la competencia más prestigiosa de Sudamérica, reuniendo a los mejores competidores de la región. SAC 2026 será una oportunidad única para:
+
+- Competir contra los mejores speedcubers sudamericanos
+- Establecer nuevos récords continentales
+- Conocer y conectar con la comunidad regional
+- Disfrutar de la cultura y hospitalidad colombiana
+
+## Organizadores
+
+**Speedcubing Colombia** junto con la **Asociación Ecuatoriana de Speedcubing** están trabajando para ofrecerles una experiencia inolvidable.
+
+**Delegados WCA:**
+
+- Eduard Esteban García Domínguez (2011edua01)
+- Catalina Herrera López (2017lope31)
+
+¡Estamos emocionados de recibirlos en Bogotá! 🇨🇴
 
 ## Datos generales
 
-- **Fechas:** 12, 13, 14 y 15 de junio de 2026.
+- **Fechas:** 12, 13, 14 y 15 de Junio de 2026.
 - **Ciudad:** Bogotá D.C., Colombia.
 - **Sede:** Colegio Teresiano Bogotá, localidad de Usaquén.
 - **Dirección:** Calle 152 # 20-42.

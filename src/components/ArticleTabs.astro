@@ -1,0 +1,138 @@
+---
+interface Tab {
+  label: string;
+  slug: string;
+  isActive: boolean;
+}
+
+interface Props {
+  tabs: Tab[];
+  baseSlug: string;
+}
+
+const { tabs, baseSlug } = Astro.props;
+const activeTab = tabs.find((tab) => tab.isActive);
+---
+
+<nav
+  class="sticky top-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 mb-6 pt-2"
+>
+  <div class="container-custom max-w-4xl">
+    <!-- Móvil: Menú hamburguesa -->
+    <div class="md:hidden pb-2">
+      <button
+        id="tabs-menu-button"
+        class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+        aria-expanded="false"
+      >
+        <span>{activeTab?.label || "Menú"}</span>
+        <svg
+          class="w-5 h-5 transition-transform"
+          id="tabs-menu-icon"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+
+      <!-- Menú desplegable móvil -->
+      <div
+        id="tabs-menu-dropdown"
+        class="hidden absolute left-0 right-0 mt-2 mx-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden"
+      >
+        {
+          tabs.map((tab) => (
+            <a
+              href={
+                tab.slug === "index"
+                  ? `/blog/${baseSlug}`
+                  : `/blog/${baseSlug}/${tab.slug}`
+              }
+              class={`
+              block px-4 py-3 text-sm font-medium transition-colors
+              ${
+                tab.isActive
+                  ? "bg-primary-600 text-white"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
+              }
+            `}
+            >
+              {tab.label}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Desktop: Pestañas horizontales -->
+    <div class="hidden md:flex gap-2 pb-2">
+      {
+        tabs.map((tab) => (
+          <a
+            href={
+              tab.slug === "index"
+                ? `/blog/${baseSlug}`
+                : `/blog/${baseSlug}/${tab.slug}`
+            }
+            class={`
+            px-4 py-2 rounded-lg font-medium text-sm whitespace-nowrap transition-colors
+            ${
+              tab.isActive
+                ? "bg-primary-600 text-white shadow-sm"
+                : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            }
+          `}
+          >
+            {tab.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle del menú hamburguesa
+  const menuButton = document.getElementById("tabs-menu-button");
+  const menuDropdown = document.getElementById("tabs-menu-dropdown");
+  const menuIcon = document.getElementById("tabs-menu-icon");
+
+  if (menuButton && menuDropdown && menuIcon) {
+    menuButton.addEventListener("click", () => {
+      const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+
+      menuButton.setAttribute("aria-expanded", (!isExpanded).toString());
+      menuDropdown.classList.toggle("hidden");
+      menuIcon.style.transform = isExpanded ? "rotate(0deg)" : "rotate(180deg)";
+    });
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener("click", (e) => {
+      if (
+        !menuButton.contains(e.target as Node) &&
+        !menuDropdown.contains(e.target as Node)
+      ) {
+        menuButton.setAttribute("aria-expanded", "false");
+        menuDropdown.classList.add("hidden");
+        menuIcon.style.transform = "rotate(0deg)";
+      }
+    });
+  }
+</script>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+</style>
