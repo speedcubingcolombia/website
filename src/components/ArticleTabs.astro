@@ -22,12 +22,12 @@ const activeTab = tabs.find((tab) => tab.isActive);
     <div class="md:hidden pb-2">
       <button
         id="tabs-menu-button"
-        class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+        class="flex items-center justify-between w-full px-5 py-3 text-base font-semibold text-white bg-primary-600 rounded-lg hover:bg-primary-700 active:bg-primary-800 shadow-md transition-all"
         aria-expanded="false"
       >
         <span>{activeTab?.label || "Menú"}</span>
         <svg
-          class="w-5 h-5 transition-transform"
+          class="w-6 h-6 transition-transform"
           id="tabs-menu-icon"
           fill="none"
           stroke="currentColor"
@@ -97,33 +97,54 @@ const activeTab = tabs.find((tab) => tab.isActive);
   </div>
 </nav>
 
-<script>
-  // Toggle del menú hamburguesa
-  const menuButton = document.getElementById("tabs-menu-button");
-  const menuDropdown = document.getElementById("tabs-menu-dropdown");
-  const menuIcon = document.getElementById("tabs-menu-icon");
+<script is:inline>
+  function initTabsMenu() {
+    const menuButton = document.getElementById("tabs-menu-button");
+    const menuDropdown = document.getElementById("tabs-menu-dropdown");
+    const menuIcon = document.getElementById("tabs-menu-icon");
 
-  if (menuButton && menuDropdown && menuIcon) {
-    menuButton.addEventListener("click", () => {
-      const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+    if (menuButton && menuDropdown && menuIcon) {
+      // Remover listeners previos si existen
+      const newMenuButton = menuButton.cloneNode(true);
+      menuButton.parentNode.replaceChild(newMenuButton, menuButton);
 
-      menuButton.setAttribute("aria-expanded", (!isExpanded).toString());
-      menuDropdown.classList.toggle("hidden");
-      menuIcon.style.transform = isExpanded ? "rotate(0deg)" : "rotate(180deg)";
-    });
+      newMenuButton.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isExpanded =
+          newMenuButton.getAttribute("aria-expanded") === "true";
 
-    // Cerrar menú al hacer clic fuera
-    document.addEventListener("click", (e) => {
-      if (
-        !menuButton.contains(e.target as Node) &&
-        !menuDropdown.contains(e.target as Node)
-      ) {
-        menuButton.setAttribute("aria-expanded", "false");
-        menuDropdown.classList.add("hidden");
-        menuIcon.style.transform = "rotate(0deg)";
-      }
-    });
+        newMenuButton.setAttribute("aria-expanded", (!isExpanded).toString());
+        menuDropdown.classList.toggle("hidden");
+        menuIcon.style.transform = isExpanded
+          ? "rotate(0deg)"
+          : "rotate(180deg)";
+      });
+
+      // Cerrar menú al hacer clic fuera
+      document.addEventListener("click", (e) => {
+        const target = e.target;
+        if (
+          target &&
+          !newMenuButton.contains(target) &&
+          !menuDropdown.contains(target)
+        ) {
+          newMenuButton.setAttribute("aria-expanded", "false");
+          menuDropdown.classList.add("hidden");
+          menuIcon.style.transform = "rotate(0deg)";
+        }
+      });
+    }
   }
+
+  // Inicializar en carga inicial
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initTabsMenu);
+  } else {
+    initTabsMenu();
+  }
+
+  // Reinicializar después de transiciones de Astro
+  document.addEventListener("astro:after-swap", initTabsMenu);
 </script>
 
 <style>
