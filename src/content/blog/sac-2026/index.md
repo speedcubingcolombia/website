@@ -17,6 +17,8 @@ tabLabel: "Inicio"
 
 Esta competencia reunirá a los mejores speedcubers de Sudamérica en el icónico **Colegio Teresiano**, ubicado en la localidad de Usaquén en el norte de Bogotá.
 
+![Logo_Banner](public/sac/compilado_horizontal.png)
+
 ## Información clave
 
 📅 **Fechas:** 12, 13, 14 y 15 de Junio de 2026  
