@@ -140,9 +140,6 @@ Utilize apenas **táxis oficiais do aeroporto** ou aplicativos. Evite táxis inf
 _Evento oficial World Cube Association_  
 _Organiza: Speedcubing Colombia_
 
-</details>
-
----
-
-_Evento oficial World Cube Association_  
-_Organiza: Speedcubing Colombia_
+<p align="center">
+<img src="images-sac-2026/wca.svg" width="200">
+<img src="images-sac-2026/ssc.PNG" width="200">
