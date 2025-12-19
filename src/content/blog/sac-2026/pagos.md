@@ -13,11 +13,12 @@ tabLabel: "Pagos"
 ![SAC 2026 – Pagos](images-sac-2026/mascotapagos.png)
 # 💳 PAGOS E INSCRIPCIONES — PASO A PASO
 
+Sigue las instrucciones según tu idioma. Haz clic para desplegar la información correspondiente.
+
 ---
 
-![Idioma Español](images-sac-2026/lang-es.png)
-
-## 🇪🇸 ESPAÑOL
+<details open>
+<summary>🇪🇸 Español</summary>
 
 Sigue estos pasos para completar correctamente tu inscripción al  
 **Campeonato Sudamericano WCA 2026 (SAC 2026)**.
@@ -59,7 +60,6 @@ Una vez realizado el pago, envía un correo electrónico a:
 
 Nombre Completo // WCA ID (si aplica) // SAC 2026
 
-
 **En el cuerpo del correo debes incluir:**
 
 - **Comprobante de pago**
@@ -72,13 +72,12 @@ Nombre Completo // WCA ID (si aplica) // SAC 2026
 
 > ⚠️ La inscripción solo será considerada válida una vez el pago haya sido verificado por el equipo organizador.
 
----
+</details>
 
 ---
 
-![English Language](images-sac-2026/lang-en.png)
-
-## 🇺🇸 ENGLISH
+<details>
+<summary>🇺🇸 US English</summary>
 
 Follow these steps to complete your registration for the  
 **WCA South American Championship 2026 (SAC 2026)**.
@@ -120,7 +119,6 @@ After completing the payment, send an email to:
 
 Full Name // WCA ID (if applicable) // SAC 2026
 
-
 **Email body must include:**
 
 - **Proof of payment**
@@ -133,13 +131,12 @@ Full Name // WCA ID (if applicable) // SAC 2026
 
 > ⚠️ Registration is only valid once payment has been verified by the organizing team.
 
----
+</details>
 
 ---
 
-![Idioma Português](images-sac-2026/lang-pt.png)
-
-## 🇧🇷 PORTUGUÊS
+<details>
+<summary>🇧🇷 Português</summary>
 
 Siga estes passos para concluir corretamente sua inscrição no  
 **Campeonato Sul-Americano WCA 2026 (SAC 2026)**.
@@ -178,4 +175,27 @@ Após realizar o pagamento, envie um e-mail para:
 **📩 staff@speedcubingcolombia.org**
 
 **Assunto do e-mail (formato obrigatório):**
+
+Nome Completo // WCA ID (se aplicável) // SAC 2026
+
+**No corpo do e-mail inclua:**
+
+- **Comprovante de pagamento**
+- **Qualquer informação adicional relevante**  
+  _(pagamento internacional, pagamento em grupo, correção de dados, etc.)_
+
+---
+
+### 🟢 PASSO 4 — VERIFICAÇÃO
+
+> ⚠️ A inscrição só será válida após a confirmação do pagamento pela equipe organizadora.
+
+</details>
+
+---
+
+_Evento oficial World Cube Association_  
+_Organiza: Speedcubing Colombia_
+
+
 
