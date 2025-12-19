@@ -22,7 +22,7 @@ Sigue las instrucciones según tu idioma. Haz clic para desplegar la informació
 
 ---
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>🇪🇸 Español</summary><br> 
 
 Sigue estos pasos para completar correctamente tu inscripción al  
 **Campeonato Sudamericano WCA 2026 (SAC 2026)**.
@@ -81,7 +81,7 @@ Nombre Completo // WCA ID (si aplica) // SAC 2026
 ---
 
 <details>
-<summary>🇺🇸 US English</summary>
+<summary>🇺🇸 US English</summary><br> 
 
 Follow these steps to complete your registration for the  
 **WCA South American Championship 2026 (SAC 2026)**.
@@ -140,7 +140,7 @@ Full Name // WCA ID (if applicable) // SAC 2026
 ---
 
 <details>
-<summary>🇧🇷 Português</summary>
+<summary>🇧🇷 Português</summary><br> 
 
 Siga estes passos para concluir corretamente sua inscrição no  
 **Campeonato Sul-Americano WCA 2026 (SAC 2026)**.
@@ -200,6 +200,7 @@ Nome Completo // WCA ID (se aplicável) // SAC 2026
 
 _Evento oficial World Cube Association_  
 _Organiza: Speedcubing Colombia_
+
 
 
 
