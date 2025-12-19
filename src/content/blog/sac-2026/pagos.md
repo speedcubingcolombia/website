@@ -10,57 +10,172 @@ image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format
 multiSection: true
 tabLabel: "Pagos"
 ---
-![SAC 2026 – Campeonato Sudamericano WCA](images-sac-2026/Pago.png)
+![SAC 2026 – Pagos](images-sac-2026/mascotapagos.png)
+# 💳 PAGOS E INSCRIPCIONES — PASO A PASO
 
-## 💳 Pagos e Inscripciones
+---
 
-En esta sección encontrarás toda la información necesaria para realizar el pago de la inscripción al  
+![Idioma Español](images-sac-2026/lang-es.png)
+
+## 🇪🇸 ESPAÑOL
+
+Sigue estos pasos para completar correctamente tu inscripción al  
 **Campeonato Sudamericano WCA 2026 (SAC 2026)**.
 
 ---
 
-### 💰 Valores
+### 🟢 PASO 1 — VALORES
 
-- **Inscripción competidores:** **COP $80.000**  
-  *(≈ USD $20 – valor de referencia, sujeto a la tasa de cambio vigente)*
+**Competidores**
 
-- **Entrada espectadores:** **COP $5.000 por persona por evento**  
-  *(Pago presencial durante el evento, sujeto a disponibilidad)*
+- **COP $80.000**  
+  _(≈ USD $20 – valor de referencia, sujeto a la tasa de cambio vigente)_
+
+**Espectadores**
+
+- **COP $5.000 por persona, por día**  
+  _(Pago presencial durante el evento, sujeto a disponibilidad)_
 
 ---
 
-### 🏦 Información bancaria
+### 🟢 PASO 2 — REALIZA EL PAGO
 
-Los pagos deben realizarse mediante transferencia bancaria a la siguiente cuenta:
+El pago debe realizarse **únicamente** mediante transferencia bancaria a la siguiente cuenta:
 
 - **Banco:** Davivienda  
 - **Tipo de cuenta:** Ahorros  
 - **Número de cuenta:** **0550108900738049**  
-- **Nombre:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
+- **Titular:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
 
 ---
 
-### 📧 Confirmación del pago (obligatoria)
+### 🟢 PASO 3 — ENVÍA EL CORREO DE CONFIRMACIÓN
 
-Una vez realizado el pago, debes enviar un correo electrónico a:
+Una vez realizado el pago, envía un correo electrónico a:
 
 **📩 staff@speedcubingcolombia.org**
 
-**Asunto del correo (formato requerido):**
+**Asunto del correo (formato obligatorio):**
 
-Juan Pérez + 2019PERE01 + SAC 2026
+Nombre Completo // WCA ID (si aplica) // SAC 2026
 
 
 **En el cuerpo del correo debes incluir:**
-- **Comprobante de pago**
-- **Cualquier otro detalle que desees agregar**  
-  *(por ejemplo: pago internacional, pago grupal, corrección de datos, etc.)*
 
-⚠️ La inscripción solo será considerada válida una vez el pago haya sido verificado por el equipo organizador.
+- **Comprobante de pago**
+- **Cualquier información adicional relevante**  
+  _(pago internacional, pago grupal, corrección de datos, etc.)_
 
 ---
 
-*Evento oficial World Cube Association*  
-*Organiza: Speedcubing Colombia*
+### 🟢 PASO 4 — VERIFICACIÓN
 
+> ⚠️ La inscripción solo será considerada válida una vez el pago haya sido verificado por el equipo organizador.
+
+---
+
+---
+
+![English Language](images-sac-2026/lang-en.png)
+
+## 🇺🇸 ENGLISH
+
+Follow these steps to complete your registration for the  
+**WCA South American Championship 2026 (SAC 2026)**.
+
+---
+
+### 🟢 STEP 1 — FEES
+
+**Competitors**
+
+- **COP $80,000**  
+  _(≈ USD $20 – reference value, subject to exchange rate changes)_
+
+**Spectators**
+
+- **COP $5,000 per person, per day**  
+  _(On-site payment during the event, subject to availability)_
+
+---
+
+### 🟢 STEP 2 — MAKE THE PAYMENT
+
+Payment must be made **exclusively** via bank transfer to the following account:
+
+- **Bank:** Davivienda  
+- **Account type:** Savings  
+- **Account number:** **0550108900738049**  
+- **Account holder:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
+
+---
+
+### 🟢 STEP 3 — SEND CONFIRMATION EMAIL
+
+After completing the payment, send an email to:
+
+**📩 staff@speedcubingcolombia.org**
+
+**Email subject (required format):**
+
+Full Name // WCA ID (if applicable) // SAC 2026
+
+
+**Email body must include:**
+
+- **Proof of payment**
+- **Any additional relevant information**  
+  _(international payment, group payment, data correction, etc.)_
+
+---
+
+### 🟢 STEP 4 — VERIFICATION
+
+> ⚠️ Registration is only valid once payment has been verified by the organizing team.
+
+---
+
+---
+
+![Idioma Português](images-sac-2026/lang-pt.png)
+
+## 🇧🇷 PORTUGUÊS
+
+Siga estes passos para concluir corretamente sua inscrição no  
+**Campeonato Sul-Americano WCA 2026 (SAC 2026)**.
+
+---
+
+### 🟢 PASSO 1 — VALORES
+
+**Competidores**
+
+- **COP $80.000**  
+  _(≈ USD $20 – valor de referência, sujeito à taxa de câmbio)_
+
+**Espectadores**
+
+- **COP $5.000 por pessoa, por dia**  
+  _(Pagamento presencial durante o evento, sujeito à disponibilidade)_
+
+---
+
+### 🟢 PASSO 2 — REALIZE O PAGAMENTO
+
+O pagamento deve ser feito **exclusivamente** por transferência bancária para a seguinte conta:
+
+- **Banco:** Davivienda  
+- **Tipo de conta:** Poupança  
+- **Número da conta:** **0550108900738049**  
+- **Titular:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
+
+---
+
+### 🟢 PASSO 3 — ENVIE O E-MAIL DE CONFIRMAÇÃO
+
+Após realizar o pagamento, envie um e-mail para:
+
+**📩 staff@speedcubingcolombia.org**
+
+**Assunto do e-mail (formato obrigatório):**
 
