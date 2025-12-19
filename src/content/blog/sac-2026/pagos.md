@@ -10,6 +10,8 @@ image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format
 multiSection: true
 tabLabel: "Pagos"
 ---
+![SAC 2026 – Campeonato Sudamericano WCA](images-sac-2026/Pago.png)
+
 ## 💳 Pagos e Inscripciones
 
 En esta sección encontrarás toda la información necesaria para realizar el pago de la inscripción al  
@@ -60,4 +62,5 @@ Juan Pérez + 2019PERE01 + SAC 2026
 
 *Evento oficial World Cube Association*  
 *Organiza: Speedcubing Colombia*
+
 
