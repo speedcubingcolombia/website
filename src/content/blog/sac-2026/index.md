@@ -134,4 +134,10 @@ novas histórias são escritas e o cubo é vivido no mais alto nível competitiv
 _Evento oficial World Cube Association_  
 _Organiza: Speedcubing Colombia_
 
+<p align="center">
+<img src="images-sac-2026/wca.svg" width="200">
+<img src="images-sac-2026/ssc.PNG" width="200">
+
+
+
 
