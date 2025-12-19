@@ -18,7 +18,7 @@ tabLabel: "Sede y Transporte"
 # 🏫 COLEGIO TERESIANO — BOGOTÁ, COLOMBIA
 
 Sede oficial del  
-** WCA South American Championship 2026 (SAC 2026)**
+**WCA South American Championship 2026 (SAC 2026)**
 
 </div>
 
