@@ -11,12 +11,16 @@ multiSection: true
 tabLabel: "Pagos"
 ---
 ![SAC 2026 – Pagos](images-sac-2026/mascotapagos.png)
+
+<div align="center">
+
 # 💳 PAGOS E INSCRIPCIONES — PASO A PASO
 
 Sigue las instrucciones según tu idioma. Haz clic para desplegar la información correspondiente.
+ 
+</div>
 
 ---
-
 <details open>
 <summary>🇪🇸 Español</summary>
 
@@ -196,6 +200,7 @@ Nome Completo // WCA ID (se aplicável) // SAC 2026
 
 _Evento oficial World Cube Association_  
 _Organiza: Speedcubing Colombia_
+
 
 
 
