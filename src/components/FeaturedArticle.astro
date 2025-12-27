@@ -1,26 +1,27 @@
 ---
-import { getCollection, getEntryBySlug } from "astro:content";
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+import { formatDate } from "../utils/blog";
 
 const FEATURED_ARTICLE_SLUG = "sac-2026";
 
-let featuredArticle = await getEntryBySlug("blog", FEATURED_ARTICLE_SLUG);
+async function getFeaturedArticle(): Promise<CollectionEntry<"blog">> {
+  const entry = await getEntry("blog", FEATURED_ARTICLE_SLUG);
+  if (entry) return entry;
 
-if (!featuredArticle) {
   const posts = await getCollection("blog");
-  featuredArticle = posts.sort(
+  const sorted = posts.sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-  )[0];
+  );
+
+  if (sorted.length === 0) {
+    throw new Error("No blog posts available to feature");
+  }
+
+  return sorted[0];
 }
 
-if (!featuredArticle) {
-  throw new Error("No blog posts available to feature");
-}
-
-const formattedDate = new Intl.DateTimeFormat("es-CO", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-}).format(featuredArticle.data.date);
+const featuredArticle = await getFeaturedArticle();
+const formattedDate = formatDate(featuredArticle.data.date);
 ---
 
 <section class="section bg-secondary-200 dark:bg-secondary-950">

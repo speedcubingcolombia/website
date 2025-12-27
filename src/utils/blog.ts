@@ -6,11 +6,22 @@ export type BlogListEntry = CollectionEntry<"blog"> & {
   formattedDate: string;
 };
 
-const dateFormatter = new Intl.DateTimeFormat("es-CO", {
+/**
+ * Formateador de fechas reutilizable para todo el sitio
+ * Formato: "27 de diciembre de 2025"
+ */
+export const dateFormatter = new Intl.DateTimeFormat("es-CO", {
   day: "numeric",
   month: "long",
   year: "numeric",
 });
+
+/**
+ * Formatea una fecha usando el formato estándar del sitio
+ */
+export function formatDate(date: Date): string {
+  return dateFormatter.format(date);
+}
 
 export async function getBlogPosts(): Promise<BlogListEntry[]> {
   const posts = await getCollection("blog");
