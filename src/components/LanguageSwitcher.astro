@@ -3,14 +3,23 @@
  * LanguageSwitcher component for multi-language support
  * Shows flags for available languages and allows switching between them
  * Only renders if there are translations available (more than 1 language)
+ * 
+ * @see https://docs.astro.build/en/guides/internationalization/
  */
-import { SLUG_TRANSLATIONS } from "../utils/blog";
+import { 
+  languages as langConfig, 
+  type SupportedLanguage,
+  t 
+} from "../i18n";
+import { getLocalizedBlogUrl } from "../utils/blog";
 
 interface Props {
-  currentLang?: string;
+  /** Current language code */
+  currentLang?: SupportedLanguage;
+  /** Canonical slug (Spanish) for the current content */
   currentSlug?: string;
-  /** List of available language codes for this content (e.g., ['es', 'en', 'pt']) */
-  availableLanguages?: string[];
+  /** List of available language codes for this content */
+  availableLanguages?: SupportedLanguage[];
   class?: string;
 }
 
@@ -21,44 +30,22 @@ const {
   class: className = '' 
 } = Astro.props;
 
-// Define all available languages with their properties
-const allLanguages = [
-  { code: 'es', flag: '🇨🇴', name: 'Español', prefix: '' },
-  { code: 'en', flag: '🇺🇸', name: 'English', prefix: '/en' },
-  { code: 'pt', flag: '🇧🇷', name: 'Português', prefix: '/pt' }
-];
-
 // Only show languages that have translations for this content
-const languages = availableLanguages.length > 0
-  ? allLanguages.filter(lang => availableLanguages.includes(lang.code))
-  : allLanguages;
+const displayLanguages = availableLanguages.length > 0
+  ? Object.values(langConfig).filter(lang => availableLanguages.includes(lang.code))
+  : Object.values(langConfig);
 
 // Don't render if only one language available (no translations)
-const hasTranslations = languages.length > 1;
+const hasTranslations = displayLanguages.length > 1;
 
 /**
- * Get the URL for a specific language
+ * Get the URL for a specific language using centralized helpers
  */
-function getLanguageUrl(targetLang: string): string {
-  // currentSlug is already in canonical (Spanish) form
-  const canonicalSlug = currentSlug;
-  
-  // Get the translated slug for target language
-  let targetSlug = canonicalSlug;
-  const translations = SLUG_TRANSLATIONS[canonicalSlug];
-  if (targetLang !== 'es' && translations) {
-    const translatedSlug = translations[targetLang as 'es' | 'en' | 'pt'];
-    if (translatedSlug) {
-      targetSlug = translatedSlug;
-    }
-  }
-  
-  // Build the URL with language prefix
-  const lang = allLanguages.find(l => l.code === targetLang);
-  const prefix = lang?.prefix || '';
-  
-  return `${prefix}/blog/${targetSlug}`;
+function getLanguageUrl(targetLang: SupportedLanguage): string {
+  return getLocalizedBlogUrl(currentSlug, targetLang);
 }
+
+const ariaLabel = t(currentLang, 'lang.switchTo');
 ---
 
 {hasTranslations && (
@@ -68,12 +55,12 @@ function getLanguageUrl(targetLang: string): string {
         @click="open = !open"
         @click.outside="open = false"
         class="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors"
-        aria-label="Cambiar idioma"
+        aria-label={ariaLabel}
         aria-expanded="false"
         :aria-expanded="open.toString()"
       >
-        <span class="text-lg" role="img" aria-label={languages.find(l => l.code === currentLang)?.name}>
-          {languages.find(l => l.code === currentLang)?.flag}
+        <span class="text-lg" role="img" aria-label={langConfig[currentLang].name}>
+          {langConfig[currentLang].flag}
         </span>
         <svg 
           class="w-4 h-4 text-secondary-500 transition-transform"
@@ -96,9 +83,9 @@ function getLanguageUrl(targetLang: string): string {
         x-transition:leave-end="transform opacity-0 scale-95"
         class="absolute right-0 mt-2 py-1 w-40 bg-white dark:bg-secondary-800 rounded-lg shadow-lg border border-secondary-200 dark:border-secondary-700 z-50"
         role="menu"
-        aria-label="Selector de idioma"
+        aria-label={ariaLabel}
       >
-        {languages.map((lang) => (
+        {displayLanguages.map((lang) => (
           <a
             href={getLanguageUrl(lang.code)}
             class:list={[
