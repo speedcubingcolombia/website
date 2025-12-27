@@ -10,13 +10,13 @@ image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format
 multiSection: true
 tabLabel: "Inicio"
 ---
-![SAC 2026 – Campeonato Sudamericano WCA](images-sac-2026/Compilado%20Horizontal.png)
+![SAC 2026 – Campeonato Sudamericano WCA](/sac/compilado_horizontal.png)
 
 <div align="center">
 
 # **CAMPEONATO SUDAMERICANO WCA 2026**
 
-## WCA South American Championship • Bogotá, Colombia <br> 
+## WCA South American Championship • Bogotá, Colombia <br>
 
 </div>
 
@@ -27,7 +27,7 @@ Conoce la información general del evento. Selecciona tu idioma para ver los det
 ---
 
 <details open>
-<summary>🇪🇸 Español</summary> <br> 
+<summary>🇪🇸 Español</summary> <br>
 
 Bienvenidos a la **página oficial del South American Championship 2026 (SAC 2026)**,  
 el evento de Speedcubing más importante de Sudamérica y una competencia oficial de la  
@@ -62,7 +62,7 @@ se escriben nuevas historias y se vive el cubo al más alto nivel competitivo.
 ---
 
 <details>
-<summary>🇺🇸 US English</summary><br> 
+<summary>🇺🇸 US English</summary><br>
 
 Welcome to the **official page of the South American Championship 2026 (SAC 2026)**,  
 the most important Speedcubing event in South America and an official competition of the  
@@ -97,7 +97,7 @@ new stories are written, and cubing is experienced at the highest competitive le
 ---
 
 <details>
-<summary>🇧🇷 Português</summary><br> 
+<summary>🇧🇷 Português</summary><br>
 
 Bem-vindos à **página oficial do South American Championship 2026 (SAC 2026)**,  
 o evento de Speedcubing mais importante da América do Sul e uma competição oficial da  
@@ -135,9 +135,5 @@ _Evento oficial World Cube Association_
 _Organiza: Speedcubing Colombia_
 
 <p align="center">
-<img src="images-sac-2026/wca.svg" width="200">
-<img src="images-sac-2026/ssc.PNG" width="200">
-
-
-
-
+<img src="/sac/wca.svg" width="200" alt="World Cube Association">
+<img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">

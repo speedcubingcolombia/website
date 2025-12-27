@@ -1,17 +1,10 @@
 ---
-title: "Sede y Transporte SAC 2026"
-excerpt: "Ubicación del venue, cómo llegar a Bogotá y al Colegio Teresiano, opciones de transporte y mapa interactivo."
-date: 2025-11-26
-author: "Equipo Speedcubing Colombia"
-authorRole: "Organización SAC 2026"
-authorAvatar: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=facearea&w=400&h=400&q=80"
-category: "Eventos"
-image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2070&q=80"
+title: "Sede y Transporte"
 multiSection: true
-tabLabel: "Sede y Transporte"
+tabLabel: "Sede"
 ---
 
-![SAC 2026 – Pagos](images-sac-2026/mascotavenue.png)
+![SAC 2026 – Sede y Transporte](/sac/mascota_venue.png)
 
 <div align="center">
 
@@ -38,6 +31,7 @@ Sede oficial del
 ### 🚍 Cómo llegar
 
 **Opción más económica — TransMilenio**
+
 - Estación más cercana: **Mazurén**
 - Valor del pasaje: **COP $3.200** (≈ **USD $0.80**)
 - Desde la estación:
@@ -45,14 +39,16 @@ Sede oficial del
   - Caminata: 15–20 minutos
 
 **Desde el Aeropuerto Internacional El Dorado (BOG)**
+
 - **Taxi / App de transporte**
   - Costo aproximado: **COP $60.000 – $80.000** (≈ **USD $15 – $20**)
   - Tiempo estimado: 45–90 minutos (según tráfico)
 
 **Apps de transporte recomendadas**
-- Uber: https://m.uber.com/ul/
-- DiDi: https://web.didiglobal.com/
-- inDrive: https://indrive.com/
+
+- Uber: <https://m.uber.com/ul/>
+- DiDi: <https://web.didiglobal.com/>
+- inDrive: <https://indrive.com/>
 
 ⚠️ **Recomendación de seguridad:**  
 Utiliza únicamente **taxis oficiales del aeropuerto** o aplicaciones de transporte. Evita taxis informales.
@@ -76,6 +72,7 @@ Utiliza únicamente **taxis oficiales del aeropuerto** o aplicaciones de transpo
 ### 🚍 Getting there
 
 **Most affordable option — TransMilenio**
+
 - Nearest station: **Mazurén**
 - Fare: **COP $3,200** (≈ **USD $0.80**)
 - From the station:
@@ -83,14 +80,16 @@ Utiliza únicamente **taxis oficiales del aeropuerto** o aplicaciones de transpo
   - Walking: 15–20 minutes
 
 **From El Dorado International Airport (BOG)**
+
 - **Taxi / Ride-hailing app**
   - Estimated cost: **COP $60,000 – $80,000** (≈ **USD $15 – $20**)
   - Estimated time: 45–90 minutes (traffic dependent)
 
 **Recommended ride-hailing apps**
-- Uber: https://m.uber.com/ul/
-- DiDi: https://web.didiglobal.com/
-- inDrive: https://indrive.com/
+
+- Uber: <https://m.uber.com/ul/>
+- DiDi: <https://web.didiglobal.com/>
+- inDrive: <https://indrive.com/>
 
 ⚠️ **Safety recommendation:**  
 Use **official airport taxis** or ride-hailing apps only. Avoid informal taxis.
@@ -114,6 +113,7 @@ Use **official airport taxis** or ride-hailing apps only. Avoid informal taxis.
 ### 🚍 Como chegar
 
 **Opção mais econômica — TransMilenio**
+
 - Estação mais próxima: **Mazurén**
 - Tarifa: **COP $3.200** (≈ **USD $0.80**)
 - A partir da estação:
@@ -121,14 +121,16 @@ Use **official airport taxis** or ride-hailing apps only. Avoid informal taxis.
   - Caminhada: 15–20 minutos
 
 **Do Aeroporto Internacional El Dorado (BOG)**
+
 - **Táxi / Aplicativo**
   - Custo aproximado: **COP $60.000 – $80.000** (≈ **USD $15 – $20**)
   - Tempo estimado: 45–90 minutos (dependendo do trânsito)
 
 **Aplicativos recomendados**
-- Uber: https://m.uber.com/ul/
-- DiDi: https://web.didiglobal.com/
-- inDrive: https://indrive.com/
+
+- Uber: <https://m.uber.com/ul/>
+- DiDi: <https://web.didiglobal.com/>
+- inDrive: <https://indrive.com/>
 
 ⚠️ **Recomendação de segurança:**  
 Utilize apenas **táxis oficiais do aeroporto** ou aplicativos. Evite táxis informais.
@@ -141,5 +143,5 @@ _Evento oficial World Cube Association_
 _Organiza: Speedcubing Colombia_
 
 <p align="center">
-<img src="images-sac-2026/wca.svg" width="200">
-<img src="images-sac-2026/ssc.PNG" width="200">
+<img src="/sac/wca.svg" width="200" alt="World Cube Association">
+<img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">

@@ -1,28 +1,21 @@
 ---
 title: "Pagos"
-excerpt: "Opciones de pagos para los participantes"
-date: 2025-11-26
-author: "Equipo Speedcubing Colombia"
-authorRole: "Organización SAC 2026"
-authorAvatar: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=facearea&w=400&h=400&q=80"
-category: "Eventos"
-image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2070&q=80"
 multiSection: true
 tabLabel: "Pagos"
 ---
-![SAC 2026 – Pagos](images-sac-2026/mascotapagos.png)
+![SAC 2026 – Pagos](/sac/mascota_pagos.png)
 
 <div align="center">
 
 # 💳 PAGOS E INSCRIPCIONES — PASO A PASO
 
 Sigue las instrucciones según tu idioma. Haz clic para desplegar la información correspondiente.
- 
+
 </div>
 
 ---
 <details open>
-<summary>🇪🇸 Español</summary><br> 
+<summary>🇪🇸 Español</summary><br>
 
 Sigue estos pasos para completar correctamente tu inscripción al  
 **Campeonato Sudamericano WCA 2026 (SAC 2026)**.
@@ -58,7 +51,7 @@ El pago debe realizarse **únicamente** mediante transferencia bancaria a la sig
 
 Una vez realizado el pago, envía un correo electrónico a:
 
-**📩 staff@speedcubingcolombia.org**
+**📩 <staff@speedcubingcolombia.org>**
 
 **Asunto del correo (formato obligatorio):**
 
@@ -81,7 +74,7 @@ Nombre Completo // WCA ID (si aplica) // SAC 2026
 ---
 
 <details>
-<summary>🇺🇸 US English</summary><br> 
+<summary>🇺🇸 US English</summary><br>
 
 Follow these steps to complete your registration for the  
 **WCA South American Championship 2026 (SAC 2026)**.
@@ -117,7 +110,7 @@ Payment must be made **exclusively** via bank transfer to the following account:
 
 After completing the payment, send an email to:
 
-**📩 staff@speedcubingcolombia.org**
+**📩 <staff@speedcubingcolombia.org>**
 
 **Email subject (required format):**
 
@@ -140,7 +133,7 @@ Full Name // WCA ID (if applicable) // SAC 2026
 ---
 
 <details>
-<summary>🇧🇷 Português</summary><br> 
+<summary>🇧🇷 Português</summary><br>
 
 Siga estes passos para concluir corretamente sua inscrição no  
 **Campeonato Sul-Americano WCA 2026 (SAC 2026)**.
@@ -176,7 +169,7 @@ O pagamento deve ser feito **exclusivamente** por transferência bancária para 
 
 Após realizar o pagamento, envie um e-mail para:
 
-**📩 staff@speedcubingcolombia.org**
+**📩 <staff@speedcubingcolombia.org>**
 
 **Assunto do e-mail (formato obrigatório):**
 
@@ -202,10 +195,5 @@ _Evento oficial World Cube Association_
 _Organiza: Speedcubing Colombia_
 
 <p align="center">
-<img src="images-sac-2026/wca.svg" width="200">
-<img src="images-sac-2026/ssc.PNG" width="200">
-
-
-
-
-
+<img src="/sac/wca.svg" width="200" alt="World Cube Association">
+<img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
