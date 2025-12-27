@@ -1,4 +1,6 @@
 ---
+import { NAV_ITEMS } from "../config/site";
+
 // Obtener la URL actual para determinar la página activa
 const currentPath = new URL(Astro.request.url).pathname;
 
@@ -10,28 +12,23 @@ const isActive = (path: string) => {
   if (path !== "/" && currentPath.startsWith(path)) return true;
   return false;
 };
-
-// Configuración de navegación principal
-const navItems = [
-  { text: "Inicio", url: "/" },
-  { text: "Publicaciones", url: "/blog" },
-  { text: "Preguntas Frecuentes", url: "/faqs" },
-  { text: "Sobre Nosotros", url: "/company" },
-  { text: "Contacto", url: "/contact" },
-];
 ---
 
 <header
   class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300"
+  role="banner"
 >
   <div class="container-custom flex items-center justify-between">
-    <a href="/" class="flex items-center" aria-label="Go to homepage">
+    <a href="/" class="flex items-center" aria-label="Ir al inicio">
       <img src="/navbar_logo.png" alt="Speedcubing Colombia Logo" />
     </a>
 
-    <nav class="hidden md:flex items-center space-x-8">
+    <nav
+      class="hidden md:flex items-center space-x-8"
+      aria-label="Navegación principal"
+    >
       {
-        navItems.map((item) => (
+        NAV_ITEMS.map((item) => (
           <a
             href={item.url}
             class={`font-medium transition-colors ${
@@ -52,7 +49,8 @@ const navItems = [
         <button
           @click="open = !open"
           class="md:hidden p-2 rounded-md text-secondary-600 hover:text-secondary-900 dark:text-secondary-300 dark:hover:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500"
-          aria-label="Toggle menu"
+          aria-label="Abrir menú de navegación"
+          :aria-expanded="open"
         >
           <svg
             x-show="!open"
@@ -96,7 +94,7 @@ const navItems = [
           x-cloak
         >
           {
-            navItems.map((item) => (
+            NAV_ITEMS.map((item) => (
               <a
                 href={item.url}
                 class={`block px-4 py-2 text-sm transition-colors ${
@@ -116,33 +114,8 @@ const navItems = [
 </header>
 
 <style>
-  /* Add styles for dark mode SVG in the header */
-  @media (prefers-color-scheme: dark) {
-    .dark\:fill-slate-800 {
-      fill: #1e293b;
-    }
-    .dark\:fill-slate-600 {
-      fill: #475569;
-    }
-    .dark\:fill-slate-500 {
-      fill: #64748b;
-    }
-    .dark\:fill-slate-700 {
-      fill: #334155;
-    }
-    .dark\:stroke-slate-300 {
-      stroke: #cbd5e1;
-    }
-    .dark\:stroke-teal-500 {
-      stroke: #14b8a6;
-    }
-    .dark\:fill-white {
-      fill: #ffffff;
-    }
-  }
-
   /* Add hover animation to the logo */
-  header a:hover svg {
+  header a:hover img {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
