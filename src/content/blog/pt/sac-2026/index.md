@@ -13,7 +13,7 @@ tabLabel: "Início"
 
 <div align="center">
 
-![South American Championship 2026](/sac/mascota_bienvenida.png)
+![South American Championship 2026](/sac/compilado_horizontal.png)
 
 # 🏆 SOUTH AMERICAN CHAMPIONSHIP 2026 🌎
 
