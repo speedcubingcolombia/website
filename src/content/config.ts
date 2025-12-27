@@ -10,9 +10,11 @@ const blog = defineCollection({
     date: z.date().optional(),
     author: z.string().optional(),
     authorRole: z.string().optional(),
-    authorAvatar: z.string().url().optional(),
+    // Acepta URLs completas o rutas locales (ej: /sac/logo.png)
+    authorAvatar: z.string().optional(),
     category: z.string().optional(),
-    image: z.string().url().optional(),
+    // Acepta URLs completas o rutas locales (ej: /sac/imagen.png)
+    image: z.string().optional(),
     // Indica si este artículo tiene múltiples secciones
     multiSection: z.boolean().optional(),
     // Para artículos con secciones: texto de la pestaña
