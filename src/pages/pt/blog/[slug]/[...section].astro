@@ -1,25 +1,25 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
-import ArticleTabs from "../../../components/ArticleTabs.astro";
-import Footer from "../../../components/Footer.astro";
-import Header from "../../../components/Header.astro";
-import Layout from "../../../layouts/Layout.astro";
-import LanguageSwitcher from "../../../components/LanguageSwitcher.astro";
-import { getAvailableLanguages, SLUG_TRANSLATIONS } from "../../../utils/blog";
+import ArticleTabs from "../../../../components/ArticleTabs.astro";
+import Footer from "../../../../components/Footer.astro";
+import Header from "../../../../components/Header.astro";
+import Layout from "../../../../layouts/Layout.astro";
+import LanguageSwitcher from "../../../../components/LanguageSwitcher.astro";
+import { getAvailableLanguages, getCanonicalSlug } from "../../../../utils/blog";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
   const paths: any[] = [];
 
-  // Filter only Spanish posts (no language prefix)
-  const spanishPosts = allPosts.filter((post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/"));
+  // Filter only Portuguese posts
+  const portuguesePosts = allPosts.filter((post) => post.slug.startsWith("pt/"));
 
-  // Agrupar posts por slug base (carpeta)
+  // Group posts by base slug (folder)
   const postsByBase = new Map<string, CollectionEntry<"blog">[]>();
 
-  spanishPosts.forEach((post) => {
-    // Identificar si el slug contiene '/' (está en una carpeta)
-    const parts = post.slug.split("/");
+  portuguesePosts.forEach((post) => {
+    const slugWithoutLang = post.slug.replace("pt/", "");
+    const parts = slugWithoutLang.split("/");
     if (parts.length > 1) {
       const baseSlug = parts[0];
       if (!postsByBase.has(baseSlug)) {
@@ -29,37 +29,25 @@ export async function getStaticPaths() {
     }
   });
 
-  // Generar rutas para artículos con múltiples secciones
+  // Generate routes for multi-section articles
   postsByBase.forEach((posts, baseSlug) => {
-    // Ordenar: index.md primero, luego alfabéticamente
+    // Sort: index.md first, then alphabetically
     posts.sort((a, b) => {
-      const aIsIndex = a.slug.endsWith("/index");
-      const bIsIndex = b.slug.endsWith("/index");
+      const aSlug = a.slug.replace("pt/", "");
+      const bSlug = b.slug.replace("pt/", "");
+      const aIsIndex = aSlug.endsWith("/index");
+      const bIsIndex = bSlug.endsWith("/index");
       if (aIsIndex) return -1;
       if (bIsIndex) return 1;
       return a.slug.localeCompare(b.slug);
     });
 
-    posts.forEach((post, index) => {
-      const sectionSlug = post.slug.split("/")[1];
+    posts.forEach((post) => {
+      const slugWithoutLang = post.slug.replace("pt/", "");
+      const sectionSlug = slugWithoutLang.split("/")[1];
       const isIndex = sectionSlug === "index";
 
-      // Para el index, crear ruta sin el parámetro section (solo slug)
-      // Para las secciones, crear ruta con section
-      if (isIndex) {
-        paths.push({
-          params: {
-            slug: baseSlug,
-            section: undefined, // Esto hace que la ruta sea /blog/[slug]
-          },
-          props: {
-            post,
-            allSections: posts,
-            baseSlug,
-            currentSection: sectionSlug,
-          },
-        });
-      } else {
+      if (!isIndex) {
         paths.push({
           params: {
             slug: baseSlug,
@@ -91,57 +79,54 @@ interface Props {
 const { post, allSections, baseSlug, currentSection } = Astro.props;
 const { Content } = await post.render();
 
-// Obtener el post principal (index) directamente desde la colección
-// Astro normaliza sac-2026/index a solo sac-2026
+// Get the main post (index)
 const allPosts = await getCollection("blog");
 const mainPost =
-  allPosts.find((p) => p.slug === baseSlug) ||
-  allPosts.find((p) => p.slug === `${baseSlug}/index`) ||
+  allPosts.find((p) => p.slug === `pt/${baseSlug}`) ||
+  allPosts.find((p) => p.slug === `pt/${baseSlug}/index`) ||
   post;
 
-const formattedDate = new Intl.DateTimeFormat("es-CO", {
+const formattedDate = new Intl.DateTimeFormat("pt-BR", {
   day: "numeric",
   month: "long",
   year: "numeric",
 }).format(mainPost.data.date);
 
-// Preparar las pestañas - incluir manualmente el index ya que allSections no lo tiene
+// Prepare tabs
 const tabs = [
-  // Agregar el tab de Inicio usando mainPost
   {
     label: mainPost.data.tabLabel || mainPost.data.title,
     slug: "index",
-    isActive: currentSection === "index",
+    isActive: false,
   },
-  // Agregar el resto de las secciones
-  ...allSections.map((section) => {
-    const sectionSlug = section.slug.split("/")[1];
-    return {
-      label: section.data.tabLabel || section.data.title,
-      slug: sectionSlug,
-      isActive: sectionSlug === currentSection,
-    };
-  }),
+  ...allSections
+    .filter((section) => {
+      const slugWithoutLang = section.slug.replace("pt/", "");
+      return slugWithoutLang.includes("/");
+    })
+    .map((section) => {
+      const slugWithoutLang = section.slug.replace("pt/", "");
+      const sectionSlug = slugWithoutLang.split("/")[1];
+      return {
+        label: section.data.tabLabel || section.data.title,
+        slug: sectionSlug,
+        isActive: sectionSlug === currentSection,
+      };
+    }),
 ];
 
 const canonicalUrl = Astro.site
-  ? new URL(`/blog/${mainPost.slug}`, Astro.site).toString()
-  : `/blog/${mainPost.slug}`;
+  ? new URL(`/pt/blog/${baseSlug}/${currentSection}`, Astro.site).toString()
+  : `/pt/blog/${baseSlug}/${currentSection}`;
 
-// Get current full slug for language switcher (in Spanish canonical form)
-const currentFullSlug = currentSection === 'index' ? baseSlug : `${baseSlug}/${currentSection}`;
-
-// Convert to canonical Spanish slug if needed (for sub-sections with Spanish names)
-const canonicalSlug = SLUG_TRANSLATIONS[currentFullSlug] 
-  ? currentFullSlug 
-  : Object.keys(SLUG_TRANSLATIONS).find(key => key === currentFullSlug) || currentFullSlug;
-
-// Get available languages for this content
+// Get current full slug for language switcher (convert Portuguese slug to canonical Spanish)
+const currentPortugueseSlug = `${baseSlug}/${currentSection}`;
+const canonicalSlug = getCanonicalSlug(currentPortugueseSlug, 'pt');
 const availableLanguages = await getAvailableLanguages(canonicalSlug);
 ---
 
 <Layout
-  title={`${mainPost.data.title} | Speedcubing Colombia`}
+  title={`${post.data.title} - ${mainPost.data.title} | Speedcubing Colombia`}
   description={mainPost.data.excerpt}
   image={mainPost.data.image}
   type="article"
@@ -152,7 +137,7 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
       <div class="container-custom max-w-4xl">
         <div class="mb-8 flex justify-between items-center">
           <a
-            href="/blog"
+            href="/pt/blog"
             class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
           >
             <svg
@@ -166,10 +151,10 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
                 d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
                 clip-rule="evenodd"></path>
             </svg>
-            Volver al blog
+            Voltar ao blog
           </a>
           <LanguageSwitcher 
-            currentLang="es" 
+            currentLang="pt" 
             currentSlug={canonicalSlug} 
             availableLanguages={availableLanguages}
           />
@@ -208,10 +193,8 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
         </div>
       </div>
 
-      <!-- Navegación con pestañas -->
-      <ArticleTabs tabs={tabs} baseSlug={baseSlug} />
+      <ArticleTabs tabs={tabs} baseSlug={baseSlug} langPrefix="/pt" />
 
-      <!-- Contenido de la sección actual -->
       <div class="container-custom max-w-4xl">
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <Content />
@@ -219,13 +202,13 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
 
         <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">
-            Comparte este artículo
+            Compartilhe este artigo
           </h3>
           <div class="flex flex-wrap gap-4">
             <a
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(canonicalUrl)}`}
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(mainPost.data.title)}&url=${encodeURIComponent(canonicalUrl)}`}
               class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
-              aria-label="Compartir en Twitter"
+              aria-label="Compartilhar no Twitter"
             >
               <svg
                 class="w-5 h-5"
@@ -239,9 +222,9 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
               </svg>
             </a>
             <a
-              href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(canonicalUrl)}&title=${encodeURIComponent(post.data.title)}`}
+              href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(canonicalUrl)}&title=${encodeURIComponent(mainPost.data.title)}`}
               class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
-              aria-label="Compartir en LinkedIn"
+              aria-label="Compartilhar no LinkedIn"
             >
               <svg
                 class="w-5 h-5"
@@ -257,7 +240,7 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
             <a
               href={`https://www.facebook.com/sharer.php?u=${encodeURIComponent(canonicalUrl)}`}
               class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
-              aria-label="Compartir en Facebook"
+              aria-label="Compartilhar no Facebook"
             >
               <svg
                 class="w-5 h-5"
