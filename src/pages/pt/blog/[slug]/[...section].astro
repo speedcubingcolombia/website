@@ -3,16 +3,21 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import ArticleTabs from "../../../../components/ArticleTabs.astro";
 import Footer from "../../../../components/Footer.astro";
 import Header from "../../../../components/Header.astro";
-import Layout from "../../../../layouts/Layout.astro";
 import LanguageSwitcher from "../../../../components/LanguageSwitcher.astro";
-import { getAvailableLanguages, getCanonicalSlug } from "../../../../utils/blog";
+import Layout from "../../../../layouts/Layout.astro";
+import {
+  getAvailableLanguages,
+  getCanonicalSlug,
+} from "../../../../utils/blog";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
   const paths: any[] = [];
 
   // Filter only Portuguese posts
-  const portuguesePosts = allPosts.filter((post) => post.slug.startsWith("pt/"));
+  const portuguesePosts = allPosts.filter((post) =>
+    post.slug.startsWith("pt/")
+  );
 
   // Group posts by base slug (folder)
   const postsByBase = new Map<string, CollectionEntry<"blog">[]>();
@@ -121,7 +126,7 @@ const canonicalUrl = Astro.site
 
 // Get current full slug for language switcher (convert Portuguese slug to canonical Spanish)
 const currentPortugueseSlug = `${baseSlug}/${currentSection}`;
-const canonicalSlug = getCanonicalSlug(currentPortugueseSlug, 'pt');
+const canonicalSlug = getCanonicalSlug(currentPortugueseSlug, "pt");
 const availableLanguages = await getAvailableLanguages(canonicalSlug);
 ---
 
@@ -153,9 +158,9 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
             </svg>
             Voltar ao blog
           </a>
-          <LanguageSwitcher 
-            currentLang="pt" 
-            currentSlug={canonicalSlug} 
+          <LanguageSwitcher
+            currentLang="pt"
+            currentSlug={canonicalSlug}
             availableLanguages={availableLanguages}
           />
         </div>

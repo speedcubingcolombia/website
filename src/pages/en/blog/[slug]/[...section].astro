@@ -3,9 +3,12 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import ArticleTabs from "../../../../components/ArticleTabs.astro";
 import Footer from "../../../../components/Footer.astro";
 import Header from "../../../../components/Header.astro";
-import Layout from "../../../../layouts/Layout.astro";
 import LanguageSwitcher from "../../../../components/LanguageSwitcher.astro";
-import { getAvailableLanguages, getCanonicalSlug } from "../../../../utils/blog";
+import Layout from "../../../../layouts/Layout.astro";
+import {
+  getAvailableLanguages,
+  getCanonicalSlug,
+} from "../../../../utils/blog";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
@@ -121,7 +124,7 @@ const canonicalUrl = Astro.site
 
 // Get current full slug for language switcher (convert English slug to canonical Spanish)
 const currentEnglishSlug = `${baseSlug}/${currentSection}`;
-const canonicalSlug = getCanonicalSlug(currentEnglishSlug, 'en');
+const canonicalSlug = getCanonicalSlug(currentEnglishSlug, "en");
 const availableLanguages = await getAvailableLanguages(canonicalSlug);
 ---
 
@@ -153,9 +156,9 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
             </svg>
             Back to blog
           </a>
-          <LanguageSwitcher 
-            currentLang="en" 
-            currentSlug={canonicalSlug} 
+          <LanguageSwitcher
+            currentLang="en"
+            currentSlug={canonicalSlug}
             availableLanguages={availableLanguages}
           />
         </div>

@@ -3,15 +3,17 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import ArticleTabs from "../../components/ArticleTabs.astro";
 import Footer from "../../components/Footer.astro";
 import Header from "../../components/Header.astro";
-import Layout from "../../layouts/Layout.astro";
 import LanguageSwitcher from "../../components/LanguageSwitcher.astro";
+import Layout from "../../layouts/Layout.astro";
 import { getAvailableLanguages } from "../../utils/blog";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
-  
+
   // Filter only Spanish posts (no language prefix like en/ or pt/)
-  const posts = allPosts.filter((post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/"));
+  const posts = allPosts.filter(
+    (post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/")
+  );
 
   // Artículos sin secciones múltiples (archivos .md simples)
   const simplePosts = posts.filter((post) => !post.data.multiSection);
@@ -150,9 +152,9 @@ if (multiSection && allSections && baseSlug) {
             </svg>
             Volver al blog
           </a>
-          <LanguageSwitcher 
-            currentLang="es" 
-            currentSlug={canonicalSlug} 
+          <LanguageSwitcher
+            currentLang="es"
+            currentSlug={canonicalSlug}
             availableLanguages={availableLanguages}
           />
         </div>
@@ -202,7 +204,7 @@ if (multiSection && allSections && baseSlug) {
       </div>
 
       {
-        multiSection && tabs.length > 0 && (
+        multiSection && tabs.length > 1 && (
           <ArticleTabs tabs={tabs} baseSlug={baseSlug!} />
         )
       }

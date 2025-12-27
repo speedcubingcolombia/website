@@ -3,8 +3,8 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import ArticleTabs from "../../../components/ArticleTabs.astro";
 import Footer from "../../../components/Footer.astro";
 import Header from "../../../components/Header.astro";
-import Layout from "../../../layouts/Layout.astro";
 import LanguageSwitcher from "../../../components/LanguageSwitcher.astro";
+import Layout from "../../../layouts/Layout.astro";
 import { getAvailableLanguages, SLUG_TRANSLATIONS } from "../../../utils/blog";
 
 export async function getStaticPaths() {
@@ -12,7 +12,9 @@ export async function getStaticPaths() {
   const paths: any[] = [];
 
   // Filter only Spanish posts (no language prefix)
-  const spanishPosts = allPosts.filter((post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/"));
+  const spanishPosts = allPosts.filter(
+    (post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/")
+  );
 
   // Agrupar posts por slug base (carpeta)
   const postsByBase = new Map<string, CollectionEntry<"blog">[]>();
@@ -129,12 +131,14 @@ const canonicalUrl = Astro.site
   : `/blog/${mainPost.slug}`;
 
 // Get current full slug for language switcher (in Spanish canonical form)
-const currentFullSlug = currentSection === 'index' ? baseSlug : `${baseSlug}/${currentSection}`;
+const currentFullSlug =
+  currentSection === "index" ? baseSlug : `${baseSlug}/${currentSection}`;
 
 // Convert to canonical Spanish slug if needed (for sub-sections with Spanish names)
-const canonicalSlug = SLUG_TRANSLATIONS[currentFullSlug] 
-  ? currentFullSlug 
-  : Object.keys(SLUG_TRANSLATIONS).find(key => key === currentFullSlug) || currentFullSlug;
+const canonicalSlug = SLUG_TRANSLATIONS[currentFullSlug]
+  ? currentFullSlug
+  : Object.keys(SLUG_TRANSLATIONS).find((key) => key === currentFullSlug) ||
+    currentFullSlug;
 
 // Get available languages for this content
 const availableLanguages = await getAvailableLanguages(canonicalSlug);
@@ -168,9 +172,9 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
             </svg>
             Volver al blog
           </a>
-          <LanguageSwitcher 
-            currentLang="es" 
-            currentSlug={canonicalSlug} 
+          <LanguageSwitcher
+            currentLang="es"
+            currentSlug={canonicalSlug}
             availableLanguages={availableLanguages}
           />
         </div>

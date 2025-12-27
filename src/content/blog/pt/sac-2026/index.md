@@ -23,7 +23,7 @@ tabLabel: "Início"
 
 ---
 
-## Welcome!
+## Welcome
 
 The **WCA South American Championship 2026** arrives in Bogotá, Colombia, bringing together the best speedcubers from across the continent to compete in the most anticipated event of the year.
 

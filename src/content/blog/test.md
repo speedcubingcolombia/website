@@ -7,6 +7,4 @@ authorRole: "SAC 2026 Organization"
 authorAvatar: "/sac/ssc.png"
 category: "Events"
 image: "/sac/compilado_horizontal.png"
-multiSection: true
-tabLabel: "Home"
 ---

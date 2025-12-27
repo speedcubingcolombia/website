@@ -3,8 +3,8 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import ArticleTabs from "../../../components/ArticleTabs.astro";
 import Footer from "../../../components/Footer.astro";
 import Header from "../../../components/Header.astro";
-import Layout from "../../../layouts/Layout.astro";
 import LanguageSwitcher from "../../../components/LanguageSwitcher.astro";
+import Layout from "../../../layouts/Layout.astro";
 import { getAvailableLanguages, getCanonicalSlug } from "../../../utils/blog";
 
 export async function getStaticPaths() {
@@ -109,7 +109,7 @@ if (multiSection && allSections && baseSlug) {
 }
 
 // Get canonical Spanish slug and available translations
-const canonicalSlug = getCanonicalSlug(baseSlug || '', 'en');
+const canonicalSlug = getCanonicalSlug(baseSlug || "", "en");
 const availableLanguages = await getAvailableLanguages(canonicalSlug);
 ---
 
@@ -141,9 +141,9 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
             </svg>
             Back to blog
           </a>
-          <LanguageSwitcher 
-            currentLang="en" 
-            currentSlug={canonicalSlug} 
+          <LanguageSwitcher
+            currentLang="en"
+            currentSlug={canonicalSlug}
             availableLanguages={availableLanguages}
           />
         </div>
@@ -193,7 +193,7 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
       </div>
 
       {
-        multiSection && tabs.length > 0 && (
+        multiSection && tabs.length > 1 && (
           <ArticleTabs tabs={tabs} baseSlug={baseSlug} langPrefix="/en" />
         )
       }

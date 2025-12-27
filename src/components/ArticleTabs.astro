@@ -12,7 +12,7 @@ interface Props {
   langPrefix?: string;
 }
 
-const { tabs, baseSlug, langPrefix = '' } = Astro.props;
+const { tabs, baseSlug, langPrefix = "" } = Astro.props;
 const activeTab = tabs.find((tab) => tab.isActive);
 const basePath = `${langPrefix}/blog`;
 ---
