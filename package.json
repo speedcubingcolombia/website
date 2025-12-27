@@ -1,12 +1,12 @@
 {
   "name": "speedcubingcolombia-website",
-  "description": "Sitio web oficial de Speedcubing Colombia",
+  "description": "Sitio web oficial de Speedcubing Colombia - Organización oficial de la WCA en Colombia",
   "author": "Speedcubing Colombia",
   "license": "MIT",
-  "homepage": "https://astro-sassify.larryxue.dev/",
+  "homepage": "https://speedcubingcolombia.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/larry-xue/astro-sassify-template.git"
+    "url": "https://github.com/speedcubingcolombia/website.git"
   },
   "type": "module",
   "version": "1.0.0",
