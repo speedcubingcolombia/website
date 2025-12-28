@@ -15,17 +15,9 @@ tabLabel: "Início"
 
 ![South American Championship 2026](/sac/compilado_horizontal.png)
 
-# 🏆 SOUTH AMERICAN CHAMPIONSHIP 2026 🌎
-
-**📍 Bogotá, Colombia — June 12-15, 2026**
-
 </div>
 
----
-
-## Boas-vindas
-
-O **WCA South American Championship 2026** chega a Bogotá, Colômbia, reunindo os melhores speedcubers de todo o continente para competir no evento mais aguardado do ano.
+Boas-vindas o **WCA South American Championship 2026** chega a Bogotá, Colômbia, reunindo os melhores speedcubers de todo o continente para competir no evento mais aguardado do ano.
 
 🗓️ **Datas:** 12 a 15 de junho de 2026  
 📍 **Local:** Colegio Teresiano – Bogotá, Colômbia  
@@ -68,7 +60,7 @@ O **WCA South American Championship 2026** chega a Bogotá, Colômbia, reunindo 
 _Evento oficial da World Cube Association_  
 _Organizado por: Speedcubing Colombia_
 
-<p align="center">
-<img src="/sac/wca.svg" width="200" alt="World Cube Association">
-<img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
-</p>
+<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
+ <img src="/sac/wca.svg" width="200" alt="World Cube Association">
+ <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+</div>

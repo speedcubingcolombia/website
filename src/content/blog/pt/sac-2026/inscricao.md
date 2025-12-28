@@ -4,7 +4,7 @@ multiSection: true
 tabLabel: "Inscrição"
 ---
 
-# Inscrição para o SAC 2026
+# Inscrição
 
 ## Datas Importantes
 

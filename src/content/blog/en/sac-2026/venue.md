@@ -8,10 +8,9 @@ tabLabel: "Venue"
 
 <div align="center">
 
-# 🏫 COLEGIO TERESIANO — BOGOTÁ, COLOMBIA
+# 🏫 COLEGIO TERESIANO
 
-Official venue of the  
-**WCA South American Championship 2026 (SAC 2026)**
+## BOGOTÁ, COLOMBIA
 
 </div>
 
@@ -57,7 +56,7 @@ Use **official airport taxis** or ride-hailing apps only. Avoid informal taxis.
 _Official World Cube Association Event_  
 _Organized by: Speedcubing Colombia_
 
-<p align="center">
-<img src="/sac/wca.svg" width="200" alt="World Cube Association">
-<img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
-</p>
+<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
+ <img src="/sac/wca.svg" width="200" alt="World Cube Association">
+ <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+</div>

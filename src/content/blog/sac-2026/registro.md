@@ -4,7 +4,7 @@ multiSection: true
 tabLabel: "Registro"
 ---
 
-# Registro para SAC 2026
+# Registro
 
 ## Fechas importantes
 
