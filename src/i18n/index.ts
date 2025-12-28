@@ -1,47 +1,50 @@
 /**
  * Internationalization (i18n) utilities
- * 
+ *
  * Centralized module for all i18n functionality following Astro best practices.
  * @see https://docs.astro.build/en/guides/internationalization/
  */
 
-export const SUPPORTED_LANGUAGES = ['es', 'en', 'pt'] as const;
+export const SUPPORTED_LANGUAGES = ["es", "en", "pt"] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
-export const DEFAULT_LANGUAGE: SupportedLanguage = 'es';
+export const DEFAULT_LANGUAGE: SupportedLanguage = "es";
 
 /**
  * Language configuration with metadata
  */
-export const languages: Record<SupportedLanguage, {
-  code: SupportedLanguage;
-  name: string;
-  flag: string;
-  /** URL prefix (empty for default language) */
-  prefix: string;
-  /** Date formatter locale */
-  dateLocale: string;
-}> = {
+export const languages: Record<
+  SupportedLanguage,
+  {
+    code: SupportedLanguage;
+    name: string;
+    flag: string;
+    /** URL prefix (empty for default language) */
+    prefix: string;
+    /** Date formatter locale */
+    dateLocale: string;
+  }
+> = {
   es: {
-    code: 'es',
-    name: 'Español',
-    flag: '🇨🇴',
-    prefix: '',
-    dateLocale: 'es-CO',
+    code: "es",
+    name: "Español",
+    flag: "🇨🇴",
+    prefix: "",
+    dateLocale: "es-CO",
   },
   en: {
-    code: 'en',
-    name: 'English',
-    flag: '🇺🇸',
-    prefix: '/en',
-    dateLocale: 'en-US',
+    code: "en",
+    name: "English",
+    flag: "🇺🇸",
+    prefix: "/en",
+    dateLocale: "en-US",
   },
   pt: {
-    code: 'pt',
-    name: 'Português',
-    flag: '🇧🇷',
-    prefix: '/pt',
-    dateLocale: 'pt-BR',
+    code: "pt",
+    name: "Português",
+    flag: "🇧🇷",
+    prefix: "/pt",
+    dateLocale: "pt-BR",
   },
 };
 
@@ -51,47 +54,47 @@ export const languages: Record<SupportedLanguage, {
 export const ui: Record<SupportedLanguage, Record<string, string>> = {
   es: {
     // Navigation
-    'nav.home': 'Inicio',
-    'nav.blog': 'Blog',
-    'nav.contact': 'Contacto',
-    'nav.backToBlog': '← Volver al blog',
+    "nav.home": "Inicio",
+    "nav.blog": "Blog",
+    "nav.contact": "Contacto",
+    "nav.backToBlog": "← Volver al blog",
     // Dates
-    'date.published': 'Publicado',
+    "date.published": "Publicado",
     // Language switcher
-    'lang.switchTo': 'Cambiar idioma',
+    "lang.switchTo": "Cambiar idioma",
     // Blog
-    'blog.readMore': 'Leer más',
-    'blog.author': 'Autor',
-    'blog.category': 'Categoría',
+    "blog.readMore": "Leer más",
+    "blog.author": "Autor",
+    "blog.category": "Categoría",
     // Errors
-    'error.notFound': 'Página no encontrada',
-    'error.goHome': 'Ir al inicio',
+    "error.notFound": "Página no encontrada",
+    "error.goHome": "Ir al inicio",
   },
   en: {
-    'nav.home': 'Home',
-    'nav.blog': 'Blog',
-    'nav.contact': 'Contact',
-    'nav.backToBlog': '← Back to blog',
-    'date.published': 'Published',
-    'lang.switchTo': 'Switch language',
-    'blog.readMore': 'Read more',
-    'blog.author': 'Author',
-    'blog.category': 'Category',
-    'error.notFound': 'Page not found',
-    'error.goHome': 'Go home',
+    "nav.home": "Home",
+    "nav.blog": "Blog",
+    "nav.contact": "Contact",
+    "nav.backToBlog": "← Back to blog",
+    "date.published": "Published",
+    "lang.switchTo": "Switch language",
+    "blog.readMore": "Read more",
+    "blog.author": "Author",
+    "blog.category": "Category",
+    "error.notFound": "Page not found",
+    "error.goHome": "Go home",
   },
   pt: {
-    'nav.home': 'Início',
-    'nav.blog': 'Blog',
-    'nav.contact': 'Contato',
-    'nav.backToBlog': '← Voltar ao blog',
-    'date.published': 'Publicado',
-    'lang.switchTo': 'Mudar idioma',
-    'blog.readMore': 'Ler mais',
-    'blog.author': 'Autor',
-    'blog.category': 'Categoria',
-    'error.notFound': 'Página não encontrada',
-    'error.goHome': 'Ir para início',
+    "nav.home": "Início",
+    "nav.blog": "Blog",
+    "nav.contact": "Contato",
+    "nav.backToBlog": "← Voltar ao blog",
+    "date.published": "Publicado",
+    "lang.switchTo": "Mudar idioma",
+    "blog.readMore": "Ler mais",
+    "blog.author": "Autor",
+    "blog.category": "Categoria",
+    "error.notFound": "Página não encontrada",
+    "error.goHome": "Ir para início",
   },
 };
 
@@ -108,10 +111,13 @@ export function t(lang: SupportedLanguage, key: string): string {
  * @example getLocaleFromPath('/blog/post') => 'es' (default)
  */
 export function getLocaleFromPath(path: string): SupportedLanguage {
-  const segments = path.split('/').filter(Boolean);
+  const segments = path.split("/").filter(Boolean);
   if (segments.length > 0) {
     const firstSegment = segments[0] as SupportedLanguage;
-    if (SUPPORTED_LANGUAGES.includes(firstSegment) && firstSegment !== DEFAULT_LANGUAGE) {
+    if (
+      SUPPORTED_LANGUAGES.includes(firstSegment) &&
+      firstSegment !== DEFAULT_LANGUAGE
+    ) {
       return firstSegment;
     }
   }
@@ -124,8 +130,11 @@ export function getLocaleFromPath(path: string): SupportedLanguage {
  * @example getLocaleFromSlug('sac-2026/index') => 'es'
  */
 export function getLocaleFromSlug(slug: string): SupportedLanguage {
-  const firstPart = slug.split('/')[0];
-  if (SUPPORTED_LANGUAGES.includes(firstPart as SupportedLanguage) && firstPart !== DEFAULT_LANGUAGE) {
+  const firstPart = slug.split("/")[0];
+  if (
+    SUPPORTED_LANGUAGES.includes(firstPart as SupportedLanguage) &&
+    firstPart !== DEFAULT_LANGUAGE
+  ) {
     return firstPart as SupportedLanguage;
   }
   return DEFAULT_LANGUAGE;
@@ -139,7 +148,7 @@ export function getLocaleFromSlug(slug: string): SupportedLanguage {
 export function stripLangPrefix(slug: string): string {
   const lang = getLocaleFromSlug(slug);
   if (lang !== DEFAULT_LANGUAGE) {
-    return slug.replace(`${lang}/`, '');
+    return slug.replace(`${lang}/`, "");
   }
   return slug;
 }
@@ -150,7 +159,7 @@ export function stripLangPrefix(slug: string): string {
  * @example addLangPrefix('blog/post', 'es') => '/blog/post'
  */
 export function addLangPrefix(path: string, lang: SupportedLanguage): string {
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
   if (lang === DEFAULT_LANGUAGE) {
     return cleanPath;
   }
@@ -160,11 +169,13 @@ export function addLangPrefix(path: string, lang: SupportedLanguage): string {
 /**
  * Create a date formatter for a specific language
  */
-export function createDateFormatter(lang: SupportedLanguage): Intl.DateTimeFormat {
+export function createDateFormatter(
+  lang: SupportedLanguage
+): Intl.DateTimeFormat {
   return new Intl.DateTimeFormat(languages[lang].dateLocale, {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
+    day: "numeric",
+    month: "long",
+    year: "numeric",
   });
 }
 
