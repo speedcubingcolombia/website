@@ -1,17 +1,3 @@
----
-## 📚 Recursos útiles y créditos
-
-- [Guía rápida de Markdown (GitHub)](https://guides.github.com/features/mastering-markdown/)
-- [Cómo colaborar en proyectos de GitHub (video)](https://www.youtube.com/watch?v=HbSjyU2vf6Y)
-- [Documentación oficial de GitHub](https://docs.github.com/es)
-
-**Licencia:** MIT
-
-**Créditos:**
-- Proyecto impulsado por la comunidad de Speedcubing Colombia.
-- Basado en tecnologías open source y la colaboración de voluntarios.
----
-
 # Speedcubing Colombia - Sitio Web
 
 Bienvenido al repositorio del sitio web oficial de Speedcubing Colombia. Aquí encontrarás toda la información relevante sobre competencias, noticias, artículos y recursos para la comunidad de cubo Rubik en Colombia y Latinoamérica.
