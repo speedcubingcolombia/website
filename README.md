@@ -1,117 +1,89 @@
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/larry-xue/astro-sassify-template?utm_source=oss&utm_medium=github&utm_campaign=larry-xue%2Fastro-sassify-template&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+---
+## 📚 Recursos útiles y créditos
 
-# Astro Sassify Template
+- [Guía rápida de Markdown (GitHub)](https://guides.github.com/features/mastering-markdown/)
+- [Cómo colaborar en proyectos de GitHub (video)](https://www.youtube.com/watch?v=HbSjyU2vf6Y)
+- [Documentación oficial de GitHub](https://docs.github.com/es)
 
-A modern, responsive Astro template with Tailwind CSS and Alpine.js integration. This template provides a solid foundation for building fast, SEO-friendly websites with a clean design system.
+**Licencia:** MIT
 
-## 🚀 Features
+**Créditos:**
+- Proyecto impulsado por la comunidad de Speedcubing Colombia.
+- Basado en tecnologías open source y la colaboración de voluntarios.
+---
 
-- [Astro](https://astro.build/) - The web framework for content-driven websites
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Alpine.js](https://alpinejs.dev/) - Lightweight JavaScript framework for interactivity
-- Responsive design system with custom color palette
-- Dark mode support
-- Smooth page transitions
-- Performance optimized
-- SEO-friendly
+# Speedcubing Colombia - Sitio Web
 
-## 📦 Project Structure
+Bienvenido al repositorio del sitio web oficial de Speedcubing Colombia. Aquí encontrarás toda la información relevante sobre competencias, noticias, artículos y recursos para la comunidad de cubo Rubik en Colombia y Latinoamérica.
 
-```text
-/
-├── public/             # Static assets
-│   └── favicon.svg
-├── src/
-│   ├── assets/         # Images and other assets
-│   ├── components/     # Reusable UI components
-│   ├── layouts/        # Page layouts
-│   ├── pages/          # Page routes
-│   ├── scripts/        # JavaScript utilities
-│   └── styles/         # Global styles
-│       ├── global.css
-│       └── transitions.css
-├── astro.config.mjs    # Astro configuration
-└── package.json        # Project dependencies
+Este proyecto está pensado para ser colaborativo. Para aportar artículos, noticias o recursos, ¡sigue leyendo para aprender cómo hacerlo fácilmente, incluso si no eres programador!
+
+## 🖥️ ¿Cómo abrir el proyecto en VSCode online?
+
+1. Ingresa al repositorio en GitHub.
+2. Presiona la tecla `.` (punto) en tu teclado, o haz clic en el botón "Code" y selecciona "Open with Codespaces" o "Open in GitHub.dev".
+3. El editor de VSCode online se abrirá en tu navegador, permitiéndote navegar y editar los archivos Markdown fácilmente.
+
+No necesitas instalar nada en tu computador. Todo se hace desde el navegador.
+
+## 🗂️ Estructura del Proyecto
+
+El contenido principal del sitio, incluyendo los artículos del blog, está organizado en carpetas dentro de `src/content/blog/`.
+
+Por ejemplo:
+
+```
+src/
+   content/
+      blog/
+         sample.md
+         en/
+            sac-2026/
+               index.md
+               ...
+         pt/
+            sac-2026/
+               index.md
+               ...
+         sac-2026/
+            index.md
+            ...
 ```
 
-## 🧞 Commands
+Cada archivo `.md` (Markdown) representa un artículo o sección del blog. Hay subcarpetas para diferentes idiomas (`en`, `pt`, español por defecto) y eventos.
 
-All commands are run from the root of the project, from a terminal:
+Puedes agregar nuevos artículos simplemente creando un archivo Markdown en la carpeta correspondiente.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## ✍️ ¿Cómo colaborar en el blog?
 
-## 🎨 Customization
+¡Colaborar es muy fácil y no necesitas ser programador! Solo necesitas una cuenta de GitHub y usar el editor online de VSCode (llamado "Codespaces" o "VSCode online").
 
-### Colors
+### Pasos para agregar o editar un artículo
 
-The template includes a custom color palette defined in `src/styles/global.css`:
+1. **Abre el repositorio en GitHub:**
+   - Ve a [https://github.com/speedcubingcolombia/website/tree/dev](https://github.com/speedcubingcolombia/website/tree/dev).
 
-- Primary: Purple-based color scheme
-- Secondary: Slate-based color scheme
-- Accent: Lime-based color scheme
-- Warning: Yellow-based color scheme
+2. **Abre el proyecto en VSCode online:**
+   - Haz clic en el botón `<> Code` y selecciona "Open with Codespaces" o "Open in VSCode" (puede aparecer como "GitHub.dev").
+   - Alternativamente, presiona la tecla `.` (punto) en la página del repositorio para abrir el editor online.
 
-You can customize these colors by editing the `src/styles/global.css` file.
+3. **Navega a la carpeta del blog:**
+   - En el panel izquierdo, abre `src/content/blog/`.
+   - Elige el idioma y evento, o crea un nuevo archivo `.md` si quieres agregar un artículo nuevo.
 
-### Typography
+4. **Edita o crea tu artículo:**
+   - Haz clic en el archivo Markdown que quieres editar, o crea uno nuevo (por ejemplo, `mi-articulo.md`).
+   - Escribe tu contenido usando formato Markdown. Puedes copiar la estructura de otros archivos como ejemplo.
 
-The template uses the following font families:
+5. **Guarda los cambios y crea un Pull Request:**
+   - En la barra izquierda, haz clic en `Control de Código Fuente`.
+   - Escribe un mensaje describiendo los cambios que realizaste.
+   - Finalmente, haz clic en "Commit changes" o "Guardar cambios".
 
-- Sans: Inter (with system fallbacks)
-- Display: Lexend (with system fallbacks)
+### Consejos para escribir en Markdown
 
-### Animations
-
-Custom animations are included:
-- Fade In
-- Slide Up
-- Slide Down
-
-## 🚀 Getting Started
-
-There are two ways to use this template:
-
-### Option 1: Using Astro CLI (Recommended)
-
-Create a project directly with Astro's official CLI tool:
-
-```bash
-npm create astro@latest -- --template larry-xue/astro-sassify-template
-```
-
-### Option 2: Manual Clone
-
-1. Clone this repository
-   ```bash
-   git clone https://github.com/larry-xue/astro-sassify-template.git my-project
-   cd my-project
-   ```
-
-2. Install dependencies
-   ```bash
-   npm install
-   ```
-
-3. Start the development server
-   ```bash
-   npm run dev
-   ```
-
-4. Visit `http://localhost:4321` in your browser to see your site
-
-## 📝 License
-
-MIT
-
-## 👀 Learn More
-
-- [Astro Documentation](https://docs.astro.build)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Alpine.js Documentation](https://alpinejs.dev/start-here)
+- Usa `#` para títulos, `##` para subtítulos.
+- Usa `*texto*` o `_texto_` para cursiva, `**texto**` para negrita.
+- Para listas, usa `-` o `*` al inicio de cada línea.
+- Puedes insertar imágenes y enlaces fácilmente.
+- Si tienes dudas, revisa otros archivos `.md` como ejemplo o consulta la [Guía de Markdown de GitHub](https://guides.github.com/features/mastering-markdown/).
