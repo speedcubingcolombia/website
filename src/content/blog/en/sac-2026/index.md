@@ -1,5 +1,5 @@
 ---
-title: "SAC 2026: South American Championship Bogotá"
+title: "SAC 2026: South American Championship 2026"
 excerpt: "Everything you need to know about the South American Championship 2026: registration, venue, accommodation, schedule, and tourism in Bogotá."
 date: 2025-11-26
 author: "Speedcubing Colombia Team"
