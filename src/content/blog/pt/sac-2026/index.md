@@ -51,7 +51,7 @@ Boas-vindas o **WCA South American Championship 2026** chega a Bogotá, Colômbi
 
 ## Contato
 
-📧 **E-mail:** <sac2026@speedcubingcolombia.com>  
+📧 **E-mail:** <staff@speedcubingcolombia.org>  
 📱 **Instagram:** [@speedcubingcol](https://instagram.com/speedcubingcol)  
 🌐 **Site:** [speedcubingcolombia.org](https://speedcubingcolombia.org)
 

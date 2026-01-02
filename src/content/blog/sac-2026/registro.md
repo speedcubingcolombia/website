@@ -58,7 +58,7 @@ El registro funciona por orden de llegada. Una vez alcanzado el límite, se abri
 - **Después del 20 de Mayo:** No se otorgarán reembolsos
 - Los reembolsos se procesarán dentro de 30 días hábiles
 
-Para solicitar un reembolso, envía un correo a: <sac2026@speedcubingcolombia.com>
+Para solicitar un reembolso, envía un correo a: <staff@speedcubingcolombia.org>
 
 ## Eventos disponibles
 
@@ -139,7 +139,7 @@ Se abrirá una lista de espera. Si alguien cancela, te contactaremos por correo.
 
 Para preguntas sobre el registro, contáctanos en:
 
-- 📧 Email: <sac2026@speedcubingcolombia.com>
+- 📧 Email: <staff@speedcubingcolombia.org>
 - 💬 WhatsApp: +57 XXX XXX XXXX
 - 📱 Redes sociales: @speedcubingcol
 

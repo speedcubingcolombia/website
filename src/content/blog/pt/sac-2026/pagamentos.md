@@ -17,7 +17,7 @@ Complete sua inscrição usando uma das opções de pagamento disponíveis abaix
 - **Disponibilidade:** Internacional  
 - **Taxas:** ~4,5% sobre transação  
 - **Tempo de processamento:** Instantâneo  
-- **E-mail para pagamentos:** <pagos@speedcubingcolombia.com>  
+- **E-mail para pagamentos:** <staff@speedcubingcolombia.org>  
 
 ### 2. Transferência Bancária (Colômbia)
 
@@ -27,14 +27,14 @@ Complete sua inscrição usando uma das opções de pagamento disponíveis abaix
 - **Titular:** Speedcubing Colombia  
 - **NIT:** XXX.XXX.XXX-X  
 
-⚠️ Após transferir, envie o comprovante para <pagos@speedcubingcolombia.com>
+⚠️ Após transferir, envie o comprovante para <staff@speedcubingcolombia.org>
 
 ### 3. Nequi / Daviplata (Colômbia)
 
 - **Número:** +57 XXX XXX XXXX  
 - **Nome:** Speedcubing Colombia  
 
-⚠️ Após transferir, envie o comprovante para <pagos@speedcubingcolombia.com>
+⚠️ Após transferir, envie o comprovante para <staff@speedcubingcolombia.org>
 
 ### 4. Pago en efectivo (Especie)
 
@@ -58,7 +58,7 @@ Consulte o calendário de competições em [speedcubingcolombia.org](https://spe
 1. Complete seu registro na página da WCA
 2. Selecione seu método de pagamento preferido
 3. Realize o pagamento pelo valor correspondente
-4. Envie o comprovante para <pagos@speedcubingcolombia.com> com:
+4. Envie o comprovante para <staff@speedcubingcolombia.org> com:
    - Seu nome completo
    - Seu ID WCA (se tiver)
    - Captura de tela ou comprovante de pagamento
@@ -70,7 +70,7 @@ Consulte o calendário de competições em [speedcubingcolombia.org](https://spe
 
 Dúvidas sobre pagamentos?
 
-📧 **E-mail:** <pagos@speedcubingcolombia.com>  
+📧 **E-mail:** <staff@speedcubingcolombia.org>  
 💬 **WhatsApp:** +57 XXX XXX XXXX
 
 ---
