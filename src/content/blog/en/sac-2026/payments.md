@@ -40,7 +40,7 @@ Payment must be made **exclusively** via bank transfer to the following account:
 
 After completing the payment, send an email to:
 
-**📩 <staff@speedcubingcolombia.org>**
+**📩 <sac2026@speedcubingcolombia.org>**
 
 **Email subject (required format):**
 

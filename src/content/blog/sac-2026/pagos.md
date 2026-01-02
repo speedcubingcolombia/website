@@ -40,7 +40,7 @@ El pago debe realizarse **únicamente** mediante transferencia bancaria a la sig
 
 Una vez realizado el pago, envía un correo electrónico a:
 
-**📩 <staff@speedcubingcolombia.org>**
+**📩 <sac2026@speedcubingcolombia.org>**
 
 **Asunto del correo (formato obligatorio):**
 

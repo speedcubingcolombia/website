@@ -58,7 +58,7 @@ Registration works on a first-come, first-served basis. Once the limit is reache
 - **After May 20:** No refunds will be issued
 - Refunds will be processed within 30 business days
 
-To request a refund, send an email to: <staff@speedcubingcolombia.org>
+To request a refund, send an email to: <sac2026@speedcubingcolombia.org>
 
 ## Available Events
 
@@ -139,7 +139,7 @@ A waiting list will open. If someone cancels, we will contact you by email.
 
 For questions about registration, contact us at:
 
-- 📧 Email: <staff@speedcubingcolombia.org>
+- 📧 Email: <sac2026@speedcubingcolombia.org>
 - 💬 WhatsApp: +57 XXX XXX XXXX
 - 📱 Social media: @speedcubingcol
 
