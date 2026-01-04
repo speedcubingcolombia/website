@@ -14,13 +14,12 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 
 #### Hotel de lujo ($$$$)
 
-**Hotel Four Points by Sheraton Bogotá**
+**Hotel Zuetana**
 
-- 📍 Distancia: 1.5 km del venue
+- 📍 Distancia: 250 m del venue
 - 💰 Precio aproximado: $150-200 USD/noche
-- ⭐ Incluye: Desayuno, Wi-Fi, gimnasio, piscina
-- 📞 Reservas: +57 1 XXX XXXX
-- 🏷️ Código promocional SAC2026: 10% de descuento
+- ⭐ Incluye: Alojamineto tipo apartamento, Wi-Fi, cocina, lavanderia
+- 📞 Reservas: +57 3134990954
 
 **GHL Hotel Bioxury**
 
