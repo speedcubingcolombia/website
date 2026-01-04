@@ -121,7 +121,7 @@ Hemos creado un grupo de WhatsApp para que competidores puedan:
 - Organizar transporte compartido
 - Ahorrar costos
 
-🔗 Únete aquí: [(https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif)]
+🔗 Únete aquí:(Grupo WhatsApp)[https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif]
 
 ## Alimentación durante el evento
 
