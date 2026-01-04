@@ -21,13 +21,6 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 - ⭐ Incluye: Alojamineto tipo apartamento, Wi-Fi, cocina, lavanderia
 - 📞 Reservas: +57 3134990954
 
-**GHL Hotel Bioxury**
-
-- 📍 Distancia: 2 km del venue
-- 💰 Precio aproximado: $130-180 USD/noche
-- ⭐ Incluye: Desayuno buffet, spa, estacionamiento
-- 📞 Reservas: +57 1 XXX XXXX
-
 #### Hoteles de rango medio ($$$)
 
 **Hotel Dann Carlton Bogotá**
@@ -51,17 +44,19 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 
 #### Hoteles económicos ($$)
 
-**Hotel Viaggio 617**
+**The Palma Home**
 
-- 📍 Distancia: 2.5 km del venue
-- 💰 Precio aproximado: $40-60 USD/noche
-- ⭐ Incluye: Wi-Fi, desayuno básico
+- 📍 Distancia: 900 m del venue
+- 💰 Precio aproximado: $40 USD/noche
+- ⭐ Incluye: TV, sala de estar, baños privados
+- 📞 Reservas: +57 3185735352
 
-**Hotel Comfort Inn & Suites**
+**Casa AloHa 152**
 
-- 📍 Distancia: 5 km del venue
-- 💰 Precio aproximado: $45-65 USD/noche
-- ⭐ Incluye: Desayuno, estacionamiento gratuito
+- 📍 Distancia: 550 m del venue
+- 💰 Precio aproximado: $30 USD/noche
+- ⭐ Incluye: Estacionamiento gratuito, TV, baños privados
+- 📞 Reservas: +57 3212402566
 
 ### Hostales y opciones budget ($)
 
