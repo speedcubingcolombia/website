@@ -56,9 +56,10 @@ Nombre Completo // WCA ID (si aplica) // SAC 2026
 
 ### 🟢 PASO 4 — VERIFICACIÓN
 
-> ⚠️ La inscripción solo será considerada válida una vez el pago haya sido verificado por el equipo organizador.
+⚠️ La inscripción solo será considerada válida una vez el pago haya sido verificado por el equipo organizador.
 
 Posteriormente, recibirás un mensaje de confirmación informando la aprobación de tu participación en la competencia
+
 ---
 
 _Evento oficial World Cube Association_  
