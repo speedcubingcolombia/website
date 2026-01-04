@@ -50,8 +50,7 @@ Puedes agregar nuevos artículos simplemente creando un archivo Markdown en la c
    - Ve a [https://github.com/speedcubingcolombia/website/tree/dev](https://github.com/speedcubingcolombia/website/tree/dev).
 
 2. **Abre el proyecto en VSCode online:**
-   - Haz clic en el botón `<> Code` y selecciona "Open with Codespaces" o "Open in VSCode" (puede aparecer como "GitHub.dev").
-   - Alternativamente, presiona la tecla `.` (punto) en la página del repositorio para abrir el editor online.
+   - Presiona la tecla `.` (punto) en la página del repositorio para abrir el editor online.
 
 3. **Navega a la carpeta del blog:**
    - En el panel izquierdo, abre `src/content/blog/`.
