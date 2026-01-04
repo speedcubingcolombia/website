@@ -12,7 +12,7 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 
 ### Hoteles cercanos (Radio de 2 km)
 
-#### Hotel de lujo ($$$$)
+#### Hotel de lujo 
 
 **Hotel Zuetana**
 
