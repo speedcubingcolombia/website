@@ -121,7 +121,7 @@ Hemos creado un grupo de WhatsApp para que competidores puedan:
 - Organizar transporte compartido
 - Ahorrar costos
 
-🔗 Únete aquí:https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
+🔗 Únete aquí: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
 
 ## Alimentación durante el evento
 
@@ -277,7 +277,6 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 
 ¿Preguntas sobre alojamiento o alimentación?
 
-📧 Email: <alojamiento@sac2026.com>  
-💬 WhatsApp: +57 XXX XXX XXXX
+🔗 Únete aquí: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
 
 ¡Disfruta la gastronomía bogotana! 🍽️
