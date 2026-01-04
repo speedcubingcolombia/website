@@ -123,29 +123,35 @@ Hemos creado un grupo de WhatsApp para que competidores puedan:
 
 🔗 Únete aquí: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
 
-## Alimentación durante el evento
+### Restaurantes cercanos (5-10 min caminando)
 
-### En el venue
+#### Centro Comercial Mazunén
 
-**Cafetería del Colegio Teresiano:**
+**Opciones de comida rápida:**
 
-- Menú del día: $15,000-20,000 COP ($4-5 USD)
-- Snacks y bebidas: $2,000-8,000 COP ($0.50-2 USD)
-- Horario: Durante todo el evento
+- Subway, Restaurante Ritz, El fuerte de la pizza, Jeno's Pizza, Compañia del Sabor
+- Precio: $15,000-25,000 COP ($4-6 USD)
 
-**Food trucks:**
+**Restaurantes casual:**
 
-- Variedad de opciones colombianas e internacionales
-- Precio: $12,000-25,000 COP ($3-6 USD)
+- Cocoa House (postres y comida)
+- Jengibre (café y sándwiches)
+- Precio: $20,000-40,000 COP ($5-10 USD)
 
-**Vending machines:**
+**Restaurantes típicos colombianos:**
 
-- Snacks, bebidas y agua
-- Disponible 24/7 durante el evento
+- La Oliva - Sazón Costeña
+- Parrilla Restaurante
+- Sopitas y Mucho Más
+- Precio: $30,000-60,000 COP ($8-15 USD)
 
-### Restaurantes cercanos (10-15 min)
+**Restaurantes internacionales:**
 
-#### Centro Comercial Parque La Colina
+- Don Malolo (mexicana)
+- La Spaguettata (italiano)
+
+
+#### Centro Comercial Parque La Colina (15 min en carro)
 
 **Opciones de comida rápida:**
 

@@ -10,7 +10,8 @@ tabLabel: "Registro"
 
 📅 **Apertura de registro:** 15 de Febrero de 2026  
 ⏰ **Cierre de registro:** 31 de Mayo de 2026  
-💰 **Fecha límite de reembolso (50%):** 20 de Mayo de 2026  
+💰 **Fecha límite de reembolso (50%):** 20 de Mayo de 2026
+_El reembolso aplica únicamente para las personas que hayan realizado el pago del registro y que, por motivos justificados, no puedan asistir a la competencia._  
 ✏️ **Fecha límite para editar eventos:** 5 de Junio de 2026
 
 ## Cómo registrarse
