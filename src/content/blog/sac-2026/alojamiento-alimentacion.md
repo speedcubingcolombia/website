@@ -10,9 +10,8 @@ tabLabel: "Alojamiento"
 
 Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos de precio. Todos están a máximo 15 minutos del Colegio Teresiano.
 
-### Hoteles cercanos (Radio de 2 km)
+### Hoteles cercanos 
 
-#### Hotel de lujo 
 
 **Hotel Zuetana**
 
@@ -21,7 +20,20 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 - ⭐ Incluye: Alojamineto tipo apartamento, Wi-Fi, cocina, lavanderia
 - 📞 Reservas: +57 3134990954
 
-#### Hoteles de rango medio ($$$)
+**The Palma Home**
+
+- 📍 Distancia: 900 m del venue
+- 💰 Precio aproximado: $40 USD/noche
+- ⭐ Incluye: TV, sala de estar, baños privados
+- 📞 Reservas: +57 3185735352
+
+**Casa AloHa 152**
+
+- 📍 Distancia: 550 m del venue
+- 💰 Precio aproximado: $30 USD/noche
+- ⭐ Incluye: Estacionamiento gratuito, TV, baños privados
+- 📞 Reservas: +57 3212402566
+
 
 **Hotel Dann Carlton Bogotá**
 
@@ -42,21 +54,8 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 - 💰 Precio aproximado: $65-90 USD/noche
 - ⭐ Incluye: Desayuno continental, Wi-Fi
 
-#### Hoteles económicos ($$)
 
-**The Palma Home**
 
-- 📍 Distancia: 900 m del venue
-- 💰 Precio aproximado: $40 USD/noche
-- ⭐ Incluye: TV, sala de estar, baños privados
-- 📞 Reservas: +57 3185735352
-
-**Casa AloHa 152**
-
-- 📍 Distancia: 550 m del venue
-- 💰 Precio aproximado: $30 USD/noche
-- ⭐ Incluye: Estacionamiento gratuito, TV, baños privados
-- 📞 Reservas: +57 3212402566
 
 ### Hostales y opciones budget ($)
 
@@ -115,14 +114,14 @@ Si prefieres más espacio o viajas en grupo, Airbnb es una excelente opción:
 
 ### Grupo de coordinación
 
-Hemos creado un grupo de WhatsApp/Telegram para que competidores puedan:
+Hemos creado un grupo de WhatsApp para que competidores puedan:
 
 - Encontrar roommates
 - Compartir apartamentos
 - Organizar transporte compartido
 - Ahorrar costos
 
-🔗 Únete aquí: [Link próximamente]
+🔗 Únete aquí: [(https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif)]
 
 ## Alimentación durante el evento
 
