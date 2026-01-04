@@ -150,7 +150,6 @@ Hemos creado un grupo de WhatsApp para que competidores puedan:
 - Don Malolo (mexicana)
 - La Spaguettata (italiano)
 
-
 #### Centro Comercial Parque La Colina (15 min en carro)
 
 **Opciones de comida rápida:**
@@ -164,22 +163,7 @@ Hemos creado un grupo de WhatsApp para que competidores puedan:
 - Juan Valdez Café (café y sándwiches)
 - Precio: $20,000-40,000 COP ($5-10 USD)
 
-#### Zona Usaquén (Centro Histórico)
-
-**Restaurantes típicos colombianos:**
-
-- Andrés Carne de Res (experiencia única)
-- La Puerta de la Catedral
-- Precio: $30,000-60,000 COP ($8-15 USD)
-
-**Restaurantes internacionales:**
-
-- Wok (asiático)
-- Di Lucca (italiano)
-- BBC (Bogotá Beer Company - pub)
-- Precio: $35,000-70,000 COP ($9-18 USD)
-
-#### Corredor Calle 140-147
+#### Carrera 19
 
 **Menús ejecutivos:**
 
@@ -191,15 +175,9 @@ Hemos creado un grupo de WhatsApp para que competidores puedan:
 
 Si prefieres comprar comida:
 
-**Éxito Calle 147:**
+**Carulla Cedro Bolivar:**
 
-- Distancia: 2 km
-- Horario: 8:00 AM - 9:00 PM
-- Productos preparados, frutas, snacks
-
-**Carulla Usaquén:**
-
-- Distancia: 3 km
+- Distancia: 600 m
 - Horario: 7:00 AM - 10:00 PM
 - Mayor variedad
 
@@ -218,7 +196,7 @@ Durante tu estadía, no te pierdas:
 🌭 **Salchipapa:** Comida callejera, salchichas y papas fritas  
 ☕ **Café colombiano:** El mejor del mundo  
 🍰 **Obleas:** Postre típico con arequipe  
-🥤 **Agua de panela con limón:** Bebida tradicional
+🥤 **Agua de panela:** Bebida tradicional
 
 ## Opciones vegetarianas y veganas
 
@@ -232,18 +210,18 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 
 **Apps útiles:**
 
-- HappyCow: Encuentra restaurantes veganos/vegetarianos
 - Rappi/Uber Eats: Delivery con filtros dietary
+- HappyCow: Encuentra restaurantes veganos/vegetarianos
 
 ## Presupuesto diario recomendado
 
 **Económico:**
 
-- Desayuno: $8,000 COP ($2 USD)
+- Desayuno: $10,000 COP ($2.50 USD)
 - Almuerzo: $15,000 COP ($4 USD)
 - Cena: $15,000 COP ($4 USD)
 - Snacks: $10,000 COP ($2.50 USD)
-- **Total: ~$50,000 COP (~$12 USD/día)**
+- **Total: $50,000 COP ($12 USD/día)**
 
 **Moderado:**
 
@@ -251,7 +229,7 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 - Almuerzo: $30,000 COP ($8 USD)
 - Cena: $40,000 COP ($10 USD)
 - Snacks/café: $15,000 COP ($4 USD)
-- **Total: ~$100,000 COP (~$26 USD/día)**
+- **Total: $100,000 COP ($26 USD/día)**
 
 **Cómodo:**
 
@@ -259,12 +237,12 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 - Almuerzo: $50,000 COP ($13 USD)
 - Cena: $60,000 COP ($15 USD)
 - Café/snacks: $25,000 COP ($6 USD)
-- **Total: ~$160,000 COP (~$40 USD/día)**
+- **Total: $160,000 COP ($40 USD/día)**
 
 ## Métodos de pago
 
-- 💳 **Tarjetas:** Ampliamente aceptadas (Visa, Mastercard)
 - 💵 **Efectivo:** Útil para tiendas pequeñas y transporte
+- 💳 **Tarjetas:** Ampliamente aceptadas (Visa, Mastercard)
 - 📱 **Apps de pago:** Nequi, Daviplata (si tienes cuenta colombiana)
 
 **Cambio de moneda:**
@@ -275,7 +253,7 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 
 ## Tips adicionales
 
-- **Propinas:** 10% sugerido en restaurantes (a veces incluido en la cuenta)
+- **Propinas:** 10% sugerido en restaurantes (a veces incluido en la cuenta, en Colombia no es obligatorio pagar la propina)
 - **Agua:** El agua del grifo en Bogotá es potable, pero muchos prefieren embotellada
 - **Alergias:** Siempre comunica alergias alimentarias en español: "Soy alérgico/a a..."
 
