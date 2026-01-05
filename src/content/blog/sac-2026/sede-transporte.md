@@ -30,7 +30,7 @@ tabLabel: "Sede"
 **Opción más económica — TransMilenio**
 
 - Estación más cercana: **Mazurén**
-- Valor del pasaje: **COP $3.200** (≈ **USD $0.80**)
+- Valor del pasaje: **COP $3.550** (≈ **USD $0.90**)
 - Desde la estación:
   - Taxi: 5 minutos  
   - Caminata: 15–20 minutos

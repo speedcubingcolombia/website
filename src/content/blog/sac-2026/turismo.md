@@ -165,7 +165,7 @@ tabLabel: "Turismo"
 
 **Cómo llegar:**
 
-- Tour organizado: ~$100,000 COP (~$25 USD) incluye transporte y entrada
+- Tour organizado: $100,000 COP (~$25 USD) incluye transporte y entrada
 - Transporte público: Portal Norte → Zipaquirá (más económico)
 
 **Qué hacer:**
@@ -190,20 +190,6 @@ tabLabel: "Turismo"
 - Requiere reserva anticipada
 - Usa ropa cómoda para caminar
 - Lleva agua y snacks
-
-### Graffiti Tour
-
-**Street art de clase mundial**
-
-- **Dónde:** La Candelaria y otras zonas
-- **Tours gratuitos:** Basados en propina
-- **Duración:** 2-3 horas
-
-**Aprende sobre:**
-
-- Historia política de Colombia
-- Artistas locales e internacionales
-- Movimiento cultural urbano
 
 ## Vida nocturna
 
@@ -313,7 +299,7 @@ Colombia produce el 70% de las esmeraldas del mundo.
 
 📱 **Transporte:**
 
-- Uber, DiDi, Cabify, Beat
+- Uber, InDrive, DiDi, Cabify, Beat
 - Moovit (rutas de TransMilenio)
 
 📱 **Comida:**
@@ -373,23 +359,6 @@ Bogotá es generalmente segura en zonas turísticas, pero:
 - Taxis: Redondear
 - Tours gratuitos: COP 20,000-50,000 según servicio
 
-## Tours organizados por SAC 2026
-
-El equipo organizador está coordinando tours grupales para competidores:
-
-### Tour City + Monserrate (Miércoles 10 de junio)
-
-- Precio: $60,000 COP (~$15 USD)
-- Incluye: Transporte, guía, entradas
-
-### Tour Zipaquirá (Martes 9 de junio)
-
-- Precio: $120,000 COP (~$30 USD)
-- Incluye: Transporte, guía, entrada a catedral, almuerzo
-
-**Reservas:** <tours@sac2026.com>  
-**Cupo limitado:** 40 personas por tour
-
 ## Clima durante junio
 
 Junio es temporada de lluvias en Bogotá:
@@ -399,17 +368,6 @@ Junio es temporada de lluvias en Bogotá:
 - Mañanas generalmente secas
 
 **Consejo:** Planea actividades al aire libre en las mañanas.
-
-## Contacto turístico
-
-🏢 **Punto de Información Turística (PIT):**
-
-- Aeropuerto El Dorado
-- Plaza de Bolívar
-- Terminal de TransMilenio
-
-📧 **Email:** <turismo@sac2026.com>  
-💬 **WhatsApp:** +57 XXX XXX XXXX
 
 ## Recursos adicionales
 
