@@ -10,11 +10,7 @@ tabLabel: "Registro"
 
 📅 **Apertura de registro:** 15 de Febrero de 2026  
 ⏰ **Cierre de registro:** 31 de Mayo de 2026  
-💰 **Fecha límite de reembolso (50%):** 20 de Mayo de 2026.
-
-_El reembolso aplica únicamente para las personas que hayan realizado el pago del registro y que, por motivos justificados, no puedan asistir a la competencia._  
-
-✏️ **Fecha límite para editar eventos:** 5 de Junio de 2026
+✏️ **Fecha límite para editar eventos:** 28 de Mayo de 2026
 
 ## Cómo registrarse
 
@@ -31,9 +27,9 @@ El registro se realiza exclusivamente a través del sitio web oficial de la WCA:
 
 ### Competidores
 
-- **Early bird** (hasta 31 de Marzo): $50 USD
-- **Registro regular** (1 Abril - 30 Abril): $60 USD  
-- **Registro tardío** (1 Mayo - 31 Mayo): $70 USD
+- **Early bird** (hasta 31 de Marzo): $60.000 COP
+- **Registro regular** (1 Abril - 30 Abril): $70.000 COP  
+- **Registro tardío** (1 Mayo - 31 Mayo): $80.000 COP
 
 El registro incluye:
 
@@ -44,24 +40,16 @@ El registro incluye:
 
 ### Espectadores
 
-- **Entrada general:** $10 USD por día
-- **Pase completo (4 días):** $30 USD
+- **Entrada general:** $5.000 COP por día
+- **Pase completo (4 días):** $20.000 COP
 
-Los boletos para espectadores estarán disponibles en el sitio web del evento próximamente.
+Se realizará el pago al momento de ingresar al lugar de la competencia
 
 ## Límite de competidores
 
 **Capacidad máxima:** 350 competidores
 
 El registro funciona por orden de llegada. Una vez alcanzado el límite, se abrirá una lista de espera. Recomendamos registrarse lo antes posible para asegurar tu cupo.
-
-## Política de reembolsos
-
-- **Antes del 20 de Mayo:** Reembolso del 50% del costo de registro
-- **Después del 20 de Mayo:** No se otorgarán reembolsos
-- Los reembolsos se procesarán dentro de 30 días hábiles
-
-Para solicitar un reembolso, envía un correo a: <sac2026@speedcubingcolombia.org>
 
 ## Eventos disponibles
 
@@ -137,13 +125,5 @@ No. SAC 2026 está abierto a competidores de todo el mundo, aunque se prioriza a
 
 **¿Qué pasa si la lista está llena?**  
 Se abrirá una lista de espera. Si alguien cancela, te contactaremos por correo.
-
-## Contacto
-
-Para preguntas sobre el registro, contáctanos en:
-
-- 📧 Email: <sac2026@speedcubingcolombia.org>
-- 💬 WhatsApp: +57 XXX XXX XXXX
-- 📱 Redes sociales: @speedcubingcol
 
 ¡Te esperamos en Bogotá! 🎯
