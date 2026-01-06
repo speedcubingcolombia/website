@@ -1,63 +1,98 @@
 ---
-import '../styles/global.css';
-import '../styles/transitions.css';
-import { ClientRouter } from 'astro:transitions';
+import "../styles/global.css";
+import "../styles/transitions.css";
+import { ClientRouter } from "astro:transitions";
 
 export interface Props {
   title: string;
   description?: string;
+  image?: string;
+  type?: "website" | "article";
 }
 
-const { 
-  title, 
-  description = "Modern SaaS landing page template with responsive design and modular sections."
+const canonicalURL = new URL(
+  Astro.url.pathname,
+  Astro.site || "https://speedcubingcolombia.org"
+);
+
+const {
+  title,
+  description = "Speedcubing Colombia - Organización oficial de la WCA en Colombia. Competencias, rankings y comunidad de cuberos.",
+  image = "/og-image.png",
+  type = "website",
 } = Astro.props;
+
+const fullImageUrl = new URL(
+  image,
+  Astro.site || "https://speedcubingcolombia.org"
+).toString();
 ---
 
 <!doctype html>
-<html lang="en" x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))" :class="{ 'dark': darkMode }">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="Speedcubing Colombia" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullImageUrl} />
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2563eb" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <ClientRouter />
   </head>
-  <body class="antialiased bg-white dark:bg-secondary-950 text-secondary-900 dark:text-secondary-100 transition-colors duration-300">
+  <body
+    class="antialiased bg-white text-secondary-900 transition-colors duration-300"
+  >
+    <!-- Skip to main content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:rounded-lg"
+    >
+      Saltar al contenido principal
+    </a>
     <div id="page-wrapper" class="page-transition-wrapper">
       <slot />
     </div>
     <script>
-      // Check for user preference
-      if (localStorage.getItem('darkMode') === null) {
-        // Check system preference
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          localStorage.setItem('darkMode', 'true');
-          document.documentElement.classList.add('dark');
-        } else {
-          localStorage.setItem('darkMode', 'false');
-        }
-      }
-
       // Handle page transitions
-      document.addEventListener('astro:page-load', () => {
-        // This runs on initial page load and after each navigation
-        const pageWrapper = document.getElementById('page-wrapper');
+      document.addEventListener("astro:page-load", () => {
+        const pageWrapper = document.getElementById("page-wrapper");
         if (pageWrapper) {
-          pageWrapper.classList.add('page-loaded');
+          pageWrapper.classList.add("page-loaded");
         }
       });
 
-      document.addEventListener('astro:before-swap', () => {
-        // This runs before the new page content is swapped in
-        const pageWrapper = document.getElementById('page-wrapper');
+      document.addEventListener("astro:before-swap", () => {
+        const pageWrapper = document.getElementById("page-wrapper");
         if (pageWrapper) {
-          pageWrapper.classList.remove('page-loaded');
+          pageWrapper.classList.remove("page-loaded");
         }
       });
     </script>

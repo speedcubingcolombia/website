@@ -1,0 +1,105 @@
+---
+/**
+ * LanguageSwitcher component for multi-language support
+ * Shows flags for available languages and allows switching between them
+ * Only renders if there are translations available (more than 1 language)
+ * 
+ * @see https://docs.astro.build/en/guides/internationalization/
+ */
+import {
+  languages as langConfig,
+  type SupportedLanguage,
+  t
+} from "../i18n";
+import { getLocalizedBlogUrl } from "../utils/blog";
+
+interface Props {
+  /** Current language code */
+  currentLang?: SupportedLanguage;
+  /** Canonical slug (Spanish) for the current content */
+  currentSlug?: string;
+  /** List of available language codes for this content */
+  availableLanguages?: SupportedLanguage[];
+  class?: string;
+}
+
+const { 
+  currentLang = 'es', 
+  currentSlug = '',
+  availableLanguages = [],
+  class: className = '' 
+} = Astro.props;
+
+// Only show languages that have translations for this content
+const displayLanguages = availableLanguages.length > 0
+  ? Object.values(langConfig).filter(lang => availableLanguages.includes(lang.code))
+  : Object.values(langConfig);
+
+// Don't render if only one language available (no translations)
+const hasTranslations = displayLanguages.length > 1;
+
+/**
+ * Get the URL for a specific language using centralized helpers
+ */
+function getLanguageUrl(targetLang: SupportedLanguage): string {
+  return getLocalizedBlogUrl(currentSlug, targetLang);
+}
+
+const ariaLabel = t(currentLang, 'lang.switchTo');
+---
+
+{hasTranslations && (
+  <div class:list={["language-switcher flex items-center gap-1", className]} x-data="{ open: false }">
+    <div class="relative">
+      <button
+        @click="open = !open"
+        @click.outside="open = false"
+        class="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors"
+        aria-label={ariaLabel}
+        aria-expanded="false"
+        :aria-expanded="open.toString()"
+      >
+        <span class="text-lg" role="img" aria-label={langConfig[currentLang].name}>
+          {langConfig[currentLang].flag}
+        </span>
+        <svg 
+          class="w-4 h-4 text-secondary-500 transition-transform"
+          :class="{ 'rotate-180': open }"
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      
+      <div
+        x-show="open"
+        x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="absolute right-0 mt-2 py-1 w-40 bg-white dark:bg-secondary-800 rounded-lg shadow-lg border border-secondary-200 dark:border-secondary-700 z-50"
+        role="menu"
+        aria-label={ariaLabel}
+      >
+        {displayLanguages.map((lang) => (
+          <a
+            href={getLanguageUrl(lang.code)}
+            class:list={[
+              "flex items-center gap-2 px-3 py-2 hover:bg-secondary-100 dark:hover:bg-secondary-700 transition-colors",
+              { "bg-accent-50 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400": currentLang === lang.code }
+            ]}
+            role="menuitem"
+            aria-current={currentLang === lang.code ? "page" : undefined}
+          >
+            <span class="text-lg" role="img" aria-label={lang.name}>{lang.flag}</span>
+            <span class="text-sm font-medium">{lang.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+)}

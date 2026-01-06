@@ -1,0 +1,136 @@
+---
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+import { formatDate } from "../utils/blog";
+
+const FEATURED_ARTICLE_SLUG = "sac-2026";
+
+async function getFeaturedArticle(): Promise<CollectionEntry<"blog">> {
+  const entry = await getEntry("blog", FEATURED_ARTICLE_SLUG);
+  if (entry) return entry;
+
+  const posts = await getCollection("blog");
+  const sorted = posts.sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+
+  if (sorted.length === 0) {
+    throw new Error("No blog posts available to feature");
+  }
+
+  return sorted[0];
+}
+
+const featuredArticle = await getFeaturedArticle();
+const formattedDate = formatDate(featuredArticle.data.date);
+---
+
+<section class="section bg-secondary-200 dark:bg-secondary-950">
+  <div class="container-custom">
+    <div class="text-center mb-12">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-secondary-900 dark:text-white mb-4"
+      >
+        Artículo Destacado
+      </h2>
+      <p
+        class="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto"
+      >
+        No te pierdas de las noticias más importantes y actualizaciones del
+        mundo del Speedcubing en Colombia.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <a href={`/blog/${featuredArticle.slug}`} class="block group">
+        <article
+          class="card overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1"
+        >
+          <div class="grid md:grid-cols-2 gap-0">
+            <!-- Imagen del artículo -->
+            <div
+              class="relative h-48 md:h-full overflow-hidden flex items-center justify-center bg-gray-100 dark:bg-gray-800"
+            >
+              <img
+                src={featuredArticle.data.image}
+                alt={featuredArticle.data.title}
+                class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Contenido del artículo -->
+            <div class="p-8 flex flex-col justify-between">
+              <div>
+                <!-- Categoría -->
+                <div class="flex items-center mb-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent-100 text-accent-800 dark:bg-accent-900 dark:text-accent-200"
+                  >
+                    {featuredArticle.data.category}
+                  </span>
+                </div>
+
+                <!-- Título -->
+                <h3
+                  class="text-xl md:text-2xl font-bold text-secondary-900 dark:text-white mb-4 leading-tight"
+                >
+                  {featuredArticle.data.title}
+                </h3>
+
+                <!-- Resumen -->
+                <p
+                  class="text-secondary-600 dark:text-secondary-300 mb-6 leading-relaxed"
+                >
+                  {featuredArticle.data.excerpt}
+                </p>
+              </div>
+
+              <!-- Meta información y CTA -->
+              <div>
+                <div
+                  class="flex items-center justify-between text-sm text-secondary-500 dark:text-secondary-400 mb-6"
+                >
+                  <div class="flex items-center space-x-4">
+                    <span>{featuredArticle.data.author}</span>
+                    <span>•</span>
+                    <span>{formattedDate}</span>
+                  </div>
+                  <span>{featuredArticle.data.authorRole}</span>
+                </div>
+
+                <!-- Botón de leer más -->
+                <span
+                  class="btn-primary w-full md:w-auto text-center inline-block"
+                >
+                  Leer Artículo Completo
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </a>
+
+      <!-- Enlace al blog completo -->
+      <div class="text-center mt-12">
+        <a
+          href="/blog"
+          class="inline-flex items-center text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium transition-colors"
+        >
+          Ver todos los artículos
+          <svg
+            class="w-5 h-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
