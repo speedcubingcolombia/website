@@ -221,7 +221,7 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 - Almuerzo: $15,000 COP ($4 USD)
 - Cena: $15,000 COP ($4 USD)
 - Snacks: $10,000 COP ($2.50 USD)
-- **Total: $50,000 COP ($12 USD/día)**
+- **Total: $50,000 COP APROX($12 USD/día)**
 
 **Moderado:**
 
@@ -229,7 +229,7 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 - Almuerzo: $30,000 COP ($8 USD)
 - Cena: $40,000 COP ($10 USD)
 - Snacks/café: $15,000 COP ($4 USD)
-- **Total: $100,000 COP ($26 USD/día)**
+- **Total: $100,000 COP APROX($26 USD/día)**
 
 **Cómodo:**
 
@@ -237,13 +237,13 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 - Almuerzo: $50,000 COP ($13 USD)
 - Cena: $60,000 COP ($15 USD)
 - Café/snacks: $25,000 COP ($6 USD)
-- **Total: $160,000 COP ($40 USD/día)**
+- **Total: $160,000 COP APORX($40 USD/día)**
 
 ## Métodos de pago
 
 - 💵 **Efectivo:** Útil para tiendas pequeñas y transporte
 - 💳 **Tarjetas:** Ampliamente aceptadas (Visa, Mastercard)
-- 📱 **Apps de pago:** Nequi, Daviplata (si tienes cuenta colombiana)
+- 📱 **Apps de pago:** Nequi, Daviplata, Llave Bre-v (si tienes cuenta colombiana)
 
 **Cambio de moneda:**
 
