@@ -31,9 +31,10 @@ récords, comunidad y una experiencia diseñada para marcar un nuevo estándar e
 
 - 📅 **Fechas:** 12, 13, 14 y 15 de junio de 2026  
 - 📍 **Ciudad:** Bogotá D.C., Colombia  
-- 🏟️ **Sede:** Colegio Teresiano – Usaquén  
-- 👥 **Cupo:** Hasta 350 competidores  
+- 🏟️ **Sede:** Coliseo, Colegio Teresiano – Usaquén  
+- 👥 **Cupo:** Hasta 400 competidores  
 - 🧩 **Eventos:** Todos los eventos oficiales WCA  
+La categoría FMC se realizará con antelación en distintos puntos de Sudamérica, por favor hablar con tu delegado regional de la competencia.
 
 ---
 
@@ -48,9 +49,10 @@ se escriben nuevas historias y se vive el cubo al más alto nivel competitivo.
 ---
 
 _Evento oficial World Cube Association_  
-_Organiza: Speedcubing Colombia_
+_Organiza: Speedcubing Colombia y asociación ecuatoriana de speedcubing_ 
 
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" width="200" alt="Asociación Ecuatoriana de Speedcubing">
 </div>
