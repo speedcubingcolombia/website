@@ -13,7 +13,7 @@ tabLabel: "Inicio"
 
 <div align="center">
 
-![SAC 2026 – Campeonato Sudamericano WCA](/sac/compiladoHorizontalDL)
+![SAC 2026 – Campeonato Sudamericano WCA](/sac/CompiladoHorizontalDL.png)
 
 </div>
 
