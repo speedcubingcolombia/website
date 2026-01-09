@@ -29,16 +29,16 @@ El registro se realiza exclusivamente a través del sitio web oficial de la WCA:
 
 ### Competidores
 
-- **Early bird** (hasta 31 de Marzo): $60.000 COP
-- **Registro regular** (1 Abril - 30 Abril): $70.000 COP  
-- **Registro tardío** (1 Mayo - 31 Mayo): $80.000 COP
+- **Primera fecha** (hasta 18 de Marzo): $80.000 COP
+- **Segunda fecha** (19 Marzo - 19 Abril): $100.000 COP  
+- **Tercera fecha** (20 Abril - 28 Mayo): $120.000 COP
 
 El registro incluye:
 
 - Participación en todos los eventos seleccionados
-- Camiseta oficial del SAC 2026
+- Souvenir oficial del SAC 2026
 - Credencial de competidor
-- Kit de bienvenida
+- Atuendo WCA SAC 2026
 
 ### Espectadores
 
@@ -49,9 +49,9 @@ Se realizará el pago al momento de ingresar al lugar de la competencia
 
 ## Límite de competidores
 
-**Capacidad máxima:** 350 competidores
+**Capacidad máxima:** 400 competidores
 
-El registro funciona por orden de llegada. Una vez alcanzado el límite, se abrirá una lista de espera. Recomendamos registrarse lo antes posible para asegurar tu cupo.
+El registro funciona por orden de llegada. Una vez alcanzado el límite, se abrirá una lista de espera. **Recomendamos registrarse lo antes posible para asegurar tu cupo.**
 
 ## Eventos disponibles
 
@@ -65,23 +65,18 @@ SAC 2026 contará con **todos los eventos oficiales WCA:**
 - 5x5x5 Cube
 - 6x6x6 Cube
 - 7x7x7 Cube
-
-### Puzzles especiales
-
 - 3x3x3 One-Handed
 - Clock
 - Megaminx
 - Pyraminx
 - Skewb
 - Square-1
-
-### Variaciones
-
 - 3x3x3 Blindfolded
 - 4x4x4 Blindfolded
 - 5x5x5 Blindfolded
 - 3x3x3 Multi-Blind
-- 3x3x3 Fewest Moves
+
+
 
 ## Requisitos y regulaciones
 
@@ -89,9 +84,9 @@ SAC 2026 contará con **todos los eventos oficiales WCA:**
 
 Para algunos eventos se requieren tiempos de clasificación registrados en la WCA:
 
-- **6x6x6:** 4:30.00 o mejor
-- **7x7x7:** 7:00.00 o mejor
-- **3x3x3 Fewest Moves:** Promedio de 50 movimientos o mejor
+- **4x4x4 Blindfolded** 10:00.00 o mejor antes del 28 de mayo del 2026.
+- **5x5x5 Blindfolded** 20:00.00 o mejor antes del 28 de mayo del 2026.
+- **Multi - Blindfolded** 12 puntos o mejor antes del 28 de mayo del 2026.
 
 Consulta la página oficial del evento para la lista completa de requisitos.
 
@@ -104,7 +99,7 @@ Cada evento tendrá límites de tiempo específicos. Si no completas tu solve de
 La mayoría de eventos utilizarán el formato **Average of 5** (promedio de 5 intentos). Algunos eventos utilizarán:
 
 - **Best of 3:** 6x6x6, 7x7x7
-- **Best of 2:** FMC, MBLD
+- **Best of 2:** MBLD
 - **Mean of 3:** 4x4x4 BLD, 5x5x5 BLD
 
 ## Información adicional
@@ -120,7 +115,7 @@ Puedes modificar los eventos en los que participarás hasta el **5 de junio de 2
 ### Preguntas frecuentes
 
 **¿Puedo registrarme el día del evento?**  
-No. Todo el registro debe hacerse en línea con anticipación.
+**No.** Todo el registro debe hacerse en línea con anticipación.
 
 **¿Necesito ser ciudadano sudamericano para competir?**  
 No. SAC 2026 está abierto a competidores de todo el mundo, aunque se prioriza a competidores sudamericanos si se alcanza el límite de capacidad.
@@ -128,4 +123,4 @@ No. SAC 2026 está abierto a competidores de todo el mundo, aunque se prioriza a
 **¿Qué pasa si la lista está llena?**  
 Se abrirá una lista de espera. Si alguien cancela, te contactaremos por correo.
 
-¡Te esperamos en Bogotá! 🎯
+💛💙❤️¡Te esperamos en COLOMBIA!💛💙❤️
