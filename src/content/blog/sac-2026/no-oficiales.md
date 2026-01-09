@@ -1,7 +1,9 @@
+---
 title: "Categorías no oficiales"
 multiSection: true
 tabLabel: "Categorías no oficiales"
 ---
+
 # Categorías no oficiales
 
 Durante la competencia SAC 2026 tendremos categorías no oficiales tales como:
