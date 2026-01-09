@@ -58,4 +58,5 @@ _Organiza: Speedcubing Colombia_
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+  <img src="/sac/AES.png" width="300" alt="Asociación Ecuatoriana de Speedcubing">
 </div>
