@@ -110,7 +110,7 @@ Si es tu primera competencia WCA, el sistema creará automáticamente tu ID WCA 
 
 ### Cambios después del registro
 
-Puedes modificar los eventos en los que participarás hasta el **5 de junio de 2026** sin costo adicional. Después de esta fecha, no se permitirán cambios.
+Puedes modificar los eventos en los que participarás hasta el **28 de mayo de 2026** sin costo adicional. Después de esta fecha, no se permitirán cambios.
 
 ### Preguntas frecuentes
 
