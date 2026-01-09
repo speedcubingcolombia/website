@@ -247,14 +247,14 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 
 **Cambio de moneda:**
 
-- Casas de cambio en el aeropuerto
-- Bancos en la ciudad
+- Casas de cambio en el aeropuerto y en el centro comercial Salitre plaza, Si realizas un cambio de divisa siempre ve acompañado y procura mantener distancia de otras personas.
+- Bancos en la ciudad. (Bancolombia entre otros)
 - ATMs disponibles (comisiones aplican)
 
 ## Tips adicionales
 
 - **Propinas:** 10% sugerido en restaurantes (a veces incluido en la cuenta, en Colombia no es obligatorio pagar la propina)
-- **Agua:** El agua del grifo en Bogotá es potable, pero muchos prefieren embotellada
+- **Agua:** El agua del grifo en Bogotá es potable, pero muchos prefieren embotellada. 
 - **Alergias:** Siempre comunica alergias alimentarias en español: "Soy alérgico/a a..."
 
 ## Contacto
@@ -263,4 +263,7 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 
 🔗 Únete aquí: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
 
-¡Disfruta la gastronomía bogotana! 🍽️
+También puedes dirigirte al correo: 
+sac2026@speedcubingcolombia.org
+
+¡Disfruta la gastronomía Colombiana! 🍽️
