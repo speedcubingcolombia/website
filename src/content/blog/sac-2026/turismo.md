@@ -3,6 +3,7 @@ title: "Turismo"
 multiSection: true
 tabLabel: "Turismo"
 ---
+![SAC 2026 – Campeonato Sudamericano WCA](/sac/TuristaBogota.jpg)
 
 # Turismo en Bogotá
 
