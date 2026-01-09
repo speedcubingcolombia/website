@@ -15,8 +15,14 @@ Sigue estos pasos para completar correctamente tu inscripción al
 
 **Competidores**
 
-- **COP $80.000**  
-  _(≈ USD $20 – valor de referencia, sujeto a la tasa de cambio vigente)_
+El costo variará de acuerdo a las fechas establecidas para una o todas las categorías es el siguiente:
+
+- **80.000 COP** (18 de enero - 18 de marzo)
+
+- **100.000 COP** (19 de marzo - 19 de Abril)
+
+- **120.000 COP** (20 de abril - 28 de Mayo)
+
 
 **Espectadores**
 
@@ -26,14 +32,18 @@ Sigue estos pasos para completar correctamente tu inscripción al
 ---
 
 ### 🟢 PASO 2 — REALIZA EL PAGO
+Si eres colombiano o tienes cuentas bancarias en Colombia podrás realizar el pago de las siguientes maneras:
 
-El pago debe realizarse **únicamente** mediante transferencia bancaria a la siguiente cuenta:
+**BANCO DAVIVIENDA** mediante transferencia bancaria a la siguiente cuenta:
 
 - **Banco:** Davivienda  
 - **Tipo de cuenta:** Ahorros  
 - **Número de cuenta:** **0550108900738049**  
 - **Titular:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
 
+**LLAVE BRE-V** mediante la siguiente llave:
+
+- **0550108900798043**
 ---
 
 ### 🟢 PASO 3 — ENVÍA EL CORREO DE CONFIRMACIÓN
@@ -50,7 +60,7 @@ Nombre Completo // WCA ID (si aplica) // SAC 2026
 
 - **Comprobante de pago**
 - **Cualquier información adicional relevante**  
-  _(pago internacional, pago grupal, corrección de datos, etc.)_
+  _(pago internacional, pago grupal, corrección de datos, alguna duda sobre la competencia o el pago realizado, etc.)_
 
 ---
 
@@ -63,9 +73,10 @@ Posteriormente, recibirás un mensaje de confirmación informando la aprobación
 ---
 
 _Evento oficial World Cube Association_  
-_Organiza: Speedcubing Colombia_
+_Organiza: Speedcubing Colombia y Asociación Ecuatoriana de Speedcubing_
 
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" width="300" alt="Asociación Ecuatoriana de Speedcubing">
 </div>
