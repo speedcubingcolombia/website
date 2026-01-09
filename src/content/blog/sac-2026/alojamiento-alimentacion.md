@@ -266,4 +266,4 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 También puedes dirigirte al correo: 
 sac2026@speedcubingcolombia.org
 
-¡Disfruta la gastronomía Colombiana! 🍽️
+¡Disfruta la gastronomía Colombiana! 🍽️ 💛💙❤️
