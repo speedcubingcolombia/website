@@ -6,79 +6,76 @@ tabLabel: "Pagamentos"
 
 # Pagamentos
 
-Complete sua inscrição usando uma das opções de pagamento disponíveis abaixo.
+Siga estes passos para concluir corretamente sua inscrição no  
+**Campeonato Sul-Americano WCA 2026 (SAC 2026)**.
 
 ---
 
-## Opções de Pagamento
+### 🟢 PASSO 1 — VALORES
 
-### 1. PayPal
+**Competidores**
 
-- **Disponibilidade:** Internacional  
-- **Taxas:** ~4,5% sobre transação  
-- **Tempo de processamento:** Instantâneo  
-- **E-mail para pagamentos:** <sac2026@speedcubingcolombia.org>  
+O valor variará de acordo com as datas estabelecidas para uma ou todas as categorias, conforme segue:
 
-### 2. Transferência Bancária (Colômbia)
+- **80.000 COP** (18 de janeiro - 18 de março)
+- **100.000 COP** (19 de março - 19 de abril)
+- **120.000 COP** (20 de abril - 28 de maio)
 
-- **Banco:** Bancolombia  
+**Espectadores**
+
+- **COP $5.000 por pessoa, por dia**  
+  _(Pagamento presencial durante o evento, sujeito à disponibilidade)_
+
+---
+
+### 🟢 PASSO 2 — REALIZE O PAGAMENTO
+Se você é colombiano ou possui contas bancárias na Colômbia, poderá realizar o pagamento das seguintes formas:
+
+Para que o registro seja aprovado, é necessário realizar o pagamento no [**LINK SEGUINTE**](), e seu registro será aprovado após verificação pela equipe organizadora.
+
+**BANCO DAVIVIENDA** por meio de transferência bancária para a seguinte conta:
+
+- **Banco:** Davivienda  
 - **Tipo de conta:** Poupança  
-- **Número da conta:** XXXX-XXXX-XXXX  
-- **Titular:** Speedcubing Colombia  
-- **NIT:** XXX.XXX.XXX-X  
+- **Número da conta:** **0550108900738049**  
+- **Titular:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
 
-⚠️ Após transferir, envie o comprovante para <sac2026@speedcubingcolombia.org>
+**CHAVE BRE-V** por meio da seguinte chave:
 
-### 3. Nequi / Daviplata (Colômbia)
+- **0550108900798043**
+---
 
-- **Número:** +57 XXX XXX XXXX  
-- **Nome:** Speedcubing Colombia  
+### 🟢 PASSO 3 — ENVIE O E-MAIL DE CONFIRMAÇÃO
 
-⚠️ Após transferir, envie o comprovante para <sac2026@speedcubingcolombia.org>
+Após realizar o pagamento, envie um e-mail para:
 
-### 4. Pago en efectivo (Especie)
+**📩 <sac2026@speedcubingcolombia.org>**
 
-Disponível apenas em eventos presenciais anteriores ao SAC 2026.  
-Consulte o calendário de competições em [speedcubingcolombia.org](https://speedcubingcolombia.org)
+**Assunto do e-mail (formato obrigatório):**
+
+Nome completo // WCA ID (se aplicável) // SAC 2026
+
+**No corpo do e-mail, você deve incluir:**
+
+- **Comprovante de pagamento**
+- **Qualquer informação adicional relevante**  
+  _(pagamento internacional, pagamento em grupo, correção de dados, alguma dúvida sobre a competição ou o pagamento realizado, etc.)_
 
 ---
 
-## Custos de Inscrição
+### 🟢 PASSO 4 — VERIFICAÇÃO
 
-| Período | Preço |
-|---------|-------|
-| Early bird (até 31 de março) | $50 USD |
-| Inscrição regular (abril) | $60 USD |
-| Inscrição tardia (maio) | $70 USD |
+⚠️ A inscrição só será considerada válida após o pagamento ser verificado pela equipe organizadora.
 
----
-
-## Instruções de Pagamento
-
-1. Complete seu registro na página da WCA
-2. Selecione seu método de pagamento preferido
-3. Realize o pagamento pelo valor correspondente
-4. Envie o comprovante para <sac2026@speedcubingcolombia.org> com:
-   - Seu nome completo
-   - Seu ID WCA (se tiver)
-   - Captura de tela ou comprovante de pagamento
-5. Aguarde a confirmação (máximo 48 horas)
-
----
-
-## Contato
-
-Dúvidas sobre pagamentos?
-
-📧 **E-mail:** <sac2026@speedcubingcolombia.org>  
-💬 **WhatsApp:** +57 XXX XXX XXXX
+Posteriormente, você receberá uma mensagem de confirmação informando a aprovação da sua participação na competição.
 
 ---
 
 _Evento oficial da World Cube Association_  
-_Organizado por: Speedcubing Colombia_
+_Organiza: Speedcubing Colombia e Associação Equatoriana de Speedcubing_
 
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" width="300" alt="Associação Equatoriana de Speedcubing">
 </div>
