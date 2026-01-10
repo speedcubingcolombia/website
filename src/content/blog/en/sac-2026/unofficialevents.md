@@ -38,7 +38,7 @@ Each unofficial category will have a limit of 40 competitors; for Team Blind, 20
 Registration will be done through the following form:
 
 <div style="margin-top: 1.5em; text-align: center;">
- <a href="https://docs.google.com/forms/d/e/1FAIpQLSccsyOmKVuYKVbDRLOckV-pupwsF-KQhL1ugmKJlnQuxtGULw/viewform?usp=preview" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Registration for unofficial events</a>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0LDZDSbDwSEcojS9Cq2JJlA2UkvTUi5d6LBNitY18rA7ang/viewform?usp=preview" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Registration for unofficial events</a>
 </div>
 
 ![Unofficial](/sac/nooficiales.png)
