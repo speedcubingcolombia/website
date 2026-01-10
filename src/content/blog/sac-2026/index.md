@@ -1,6 +1,6 @@
 ---
-title: "SAC 2026: South American Championship 2026"
-excerpt: "Todo lo que necesitas saber sobre el South American Championship 2026: registro, sede, alojamiento, cronograma y turismo en Bogotá."
+title: "SAC 2026: WCA South American Championship 2026"
+excerpt: "Todo lo que necesitas saber sobre el WCA South American Championship 2026: registro, sede, alojamiento, cronograma y turismo en Bogotá."
 date: 2026-06-12
 author: "Speedcubing Colombia"
 authorRole: "Organización SAC 2026"
@@ -17,7 +17,7 @@ tabLabel: "Inicio"
 
 </div>
 
-Bienvenidos a la **página oficial del South American Championship 2026 (SAC 2026)**,  
+Bienvenidos a la **página oficial del WCA South American Championship 2026 (SAC 2026)**,  
 el evento de Speedcubing más importante de Sudamérica y una competencia oficial de la  
 **World Cube Association (WCA)**.
 
@@ -40,7 +40,7 @@ La categoría FMC se realizará con antelación en distintos puntos de Sudaméri
 
 ## Un campeonato continental
 
-El **South American Championship** es mucho más que una competencia.  
+El **WCA South American Championship** es mucho más que una competencia.  
 Es el escenario donde se reúnen los mejores speedcubers de Sudamérica,  
 se escriben nuevas historias y se vive el cubo al más alto nivel competitivo.
 
