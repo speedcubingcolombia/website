@@ -55,7 +55,7 @@ El registro funciona por orden de llegada. Una vez alcanzado el límite, se abri
 
 ## Eventos disponibles
 
-SAC 2026 contará con **todos los eventos oficiales WCA:**
+SAC 2026 contará con **todos los eventos oficiales WCA exceptuando FMC:**
 
 ### Puzzles estándar
 
