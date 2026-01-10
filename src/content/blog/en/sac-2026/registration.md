@@ -12,7 +12,7 @@ tabLabel: "Registration"
 ⏰ **Registration closes:** May 28, 2026  
 ✏️ **Deadline to edit events:** May 28, 2026
 
-Please note that the competition fee varies according to the date. You can check the costs in the [Pagos](speedcubingcolombia.org/blog/sac-2026/pagos) tab.
+Please note that the competition fee varies according to the date. You can check the costs in the [Pagos](https://www.speedcubingcolombia.org/en/blog/sac-2026/pagos) tab.
 
 ## How to register
 

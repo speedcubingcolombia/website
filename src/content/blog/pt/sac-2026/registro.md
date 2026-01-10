@@ -12,7 +12,7 @@ tabLabel: "Registro"
 ⏰ **Encerramento do registro:** 28 de maio de 2026  
 ✏️ **Data limite para editar eventos:** 28 de maio de 2026
 
-Lembre-se de que o custo da competição varia de acordo com a data. Você pode consultar os valores na aba [Pagos](speedcubingcolombia.org/blog/sac-2026/pagos).
+Lembre-se de que o custo da competição varia de acordo com a data. Você pode consultar os valores na aba [Pagos](https://www.speedcubingcolombia.org/pt/blog/sac-2026/pagos).
 
 ## Como se registrar
 
