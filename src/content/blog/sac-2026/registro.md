@@ -98,9 +98,9 @@ Cada evento tendrá límites de tiempo específicos. Si no completas tu solve de
 
 La mayoría de eventos utilizarán el formato **Average of 5** (promedio de 5 intentos). Algunos eventos utilizarán:
 
-- **Best of 3:** 6x6x6, 7x7x7
+- **Mean of 3:** 6x6x6, 7x7x7
 - **Best of 2:** MBLD
-- **Mean of 3:** 4x4x4 BLD, 5x5x5 BLD
+- **Best of 3:** 4x4x4 BLD, 5x5x5 BLD
 
 ## Información adicional
 

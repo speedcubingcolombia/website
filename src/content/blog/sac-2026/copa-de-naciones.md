@@ -22,4 +22,4 @@ Los equipos se deben inscribir en el siguiente formulario y se mostrarán los eq
  <a href="https://docs.google.com/forms/d/e/1FAIpQLSevu8VNkxs6G9FNFlU7FiJQZC8pV7qT3695KioWGMSpHZLNFQ/viewform?usp=header" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Inscripción a la copa de naciones</a>
 </div>
 
-![Copa de naciones](/sac/copadenaciones.png)
+![Copa de naciones](/sac/copadenaciones2.png)
