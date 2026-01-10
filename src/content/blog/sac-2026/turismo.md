@@ -24,7 +24,7 @@ tabLabel: "Turismo"
   - Teleférico: $28,000 COP ida y vuelta (~$7 USD)
   - Funicular: $28,000 COP ida y vuelta
   - A pie: Gratis (requiere buen estado físico, 1-2 horas)
-- **Horario:** Lunes-Sábado 6:30 AM-12:00 PM, Domingo 5:30 AM-5:00 PM
+- **Horario:** Lunes-Sábado 6:30 AM-12:00 PM, domingo 5:30 AM-5:00 PM
 - **Recomendación:** Ve en la mañana para evitar la neblina
 - **Tiempo sugerido:** 2-3 horas
 
@@ -41,7 +41,7 @@ tabLabel: "Turismo"
 
 - **Ubicación:** Centro de Bogotá (Carrera 6 #15-88)
 - **Entrada:** $4,000 COP (~$1 USD), domingos gratis
-- **Horario:** Martes-Sábado 9:00 AM-6:00 PM, Domingo 10:00 AM-4:00 PM
+- **Horario:** Martes-Sábado 9:00 AM-6:00 PM, domingo 10:00 AM-4:00 PM
 - **Tiempo sugerido:** 2-3 horas
 
 **Qué ver:**
@@ -380,8 +380,8 @@ Junio es temporada de lluvias en Bogotá:
 
 - [www.bogota.gov.co/turismo](https://bogota.gov.co)
 - [www.colombia.travel](https://colombia.travel)
-- Instituto Distrital de Turismo
+- [Instituto Distrital de Turismo](https://www.idt.gov.co/)
 
 ---
 
-¡Disfruta tu visita a Bogotá y vive una experiencia inolvidable en SAC 2026! 🇨🇴✨
+¡Disfruta tu visita a Bogotá y vive una experiencia inolvidable en SAC 2026! ✨💛💙❤️

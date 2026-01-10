@@ -8,9 +8,9 @@ tabLabel: "Registro"
 
 ## Fechas importantes
 
-📅 **Apertura de registro:** 18 de Enero de 2026  
-⏰ **Cierre de registro:** 28 de Mayo de 2026  
-✏️ **Fecha límite para editar eventos:** 28 de Mayo de 2026
+📅 **Apertura de registro:** 18 de enero de 2026  
+⏰ **Cierre de registro:** 28 de mayo de 2026  
+✏️ **Fecha límite para editar eventos:** 28 de mayo de 2026
 
 Recuerda que el costo de la competencia varia acorde a la fecha, puedes ver los costos en la pestaña  [Pagos](speedcubingcolombia.org/blog/sac-2026/pagos).
 
@@ -29,9 +29,9 @@ El registro se realiza exclusivamente a través del sitio web oficial de la WCA:
 
 ### Competidores
 
-- **Primera fecha** (hasta 18 de Marzo): $80.000 COP
-- **Segunda fecha** (19 Marzo - 19 Abril): $100.000 COP  
-- **Tercera fecha** (20 Abril - 28 Mayo): $120.000 COP
+- **Primera fecha** (hasta 18 de marzo): $80.000 COP
+- **Segunda fecha** (19 marzo - 19 abril): $100.000 COP  
+- **Tercera fecha** (20 abril - 28 mayo): $120.000 COP
 
 El registro incluye:
 
@@ -115,7 +115,7 @@ Puedes modificar los eventos en los que participarás hasta el **28 de mayo de 2
 ### Preguntas frecuentes
 
 **¿Puedo registrarme el día del evento?**  
-**No.** Todo el registro debe hacerse en línea con anticipación.
+No. Todo el registro debe hacerse en línea con anticipación.
 
 **¿Necesito ser ciudadano sudamericano para competir?**  
 No. SAC 2026 está abierto a competidores de todo el mundo, aunque se prioriza a competidores sudamericanos si se alcanza el límite de capacidad.
