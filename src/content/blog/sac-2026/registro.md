@@ -118,7 +118,7 @@ Puedes modificar los eventos en los que participarás hasta el **28 de mayo de 2
 No. Todo el registro debe hacerse en línea con anticipación.
 
 **¿Necesito ser ciudadano sudamericano para competir?**  
-No. SAC 2026 está abierto a competidores de todo el mundo, aunque se prioriza a competidores sudamericanos si se alcanza el límite de capacidad.
+Cualquier persona de cualquier parte del mundo puede participar en la competencia sin importar la nacionalidad.
 
 **¿Qué pasa si la lista está llena?**  
 Se abrirá una lista de espera. Si alguien cancela, te contactaremos por correo.
