@@ -16,7 +16,7 @@ tabLabel: "Local"
 
 ---
 
-## Informações do Local
+## Informações do local
 
 📍 **Endereço:** Calle 152 # 20-42, Usaquén, Bogotá D.C., Colômbia  
 
@@ -25,31 +25,30 @@ tabLabel: "Local"
 
 ---
 
-## 🚍 Como Chegar
+### 🚍 Como chegar
 
-### Opção Mais Econômica — TransMilenio
+**Opção mais econômica — TransMilenio**
 
 - Estação mais próxima: **Mazurén**
-- Tarifa: **COP $3.200** (≈ **USD $0,80**)
-- Da estação:
+- Valor da passagem: **COP $3.550** (≈ **USD $0.90**)
+- A partir da estação:
   - Táxi: 5 minutos  
-  - A pé: 15–20 minutos
+  - Caminhada: 15–20 minutos
 
-### Do Aeroporto Internacional El Dorado (BOG)
+**Desde o Aeroporto Internacional El Dorado (BOG)**
 
-**Táxi / Aplicativo de transporte**
+- **Táxi / Aplicativos de transporte**
+  - Custo aproximado: **COP $60.000 – $80.000** (≈ **USD $15 – $20**)
+  - Tempo estimado: 45–90 minutos (dependendo do trânsito)
 
-- Custo estimado: **COP $60.000 – $80.000** (≈ **USD $15 – $20**)
-- Tempo estimado: 45–90 minutos (dependendo do trânsito)
-
-### Aplicativos de Transporte Recomendados
+**Aplicativos de transporte recomendados**
 
 - Uber: <https://m.uber.com/ul/>
 - DiDi: <https://web.didiglobal.com/>
 - inDrive: <https://indrive.com/>
 
 ⚠️ **Recomendação de segurança:**  
-Use apenas **táxis oficiais do aeroporto** ou aplicativos de transporte. Evite táxis informais.
+Utilize apenas **táxis oficiais do aeroporto** ou aplicativos de transporte. Evite táxis informais.
 
 ---
 
@@ -59,4 +58,5 @@ _Organizado por: Speedcubing Colombia_
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" width="300" alt="Associação Equatoriana de Speedcubing">
 </div>

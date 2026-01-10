@@ -1,14 +1,14 @@
 ---
-title: "Venue & Transportation"
+title: "Venue and Transportation"
 multiSection: true
 tabLabel: "Venue"
 ---
 
-![SAC 2026 – Venue & Transportation](/sac/mascota_venue.png)
+![SAC 2026 – Venue and Transportation](/sac/mascota_venue.png)
 
 <div align="center">
 
-# 🏫 COLEGIO TERESIANO
+# 🏫 TERESIANO SCHOOL
 
 ## BOGOTÁ, COLOMBIA
 
@@ -16,7 +16,7 @@ tabLabel: "Venue"
 
 ---
 
-## Venue Information
+## Venue information
 
 📍 **Address:** Calle 152 # 20-42, Usaquén, Bogotá D.C., Colombia  
 
@@ -25,38 +25,39 @@ tabLabel: "Venue"
 
 ---
 
-## 🚍 Getting There
+### 🚍 How to get there
 
-### Most Affordable Option — TransMilenio
+**Most affordable option — TransMilenio**
 
 - Nearest station: **Mazurén**
-- Fare: **COP $3,200** (≈ **USD $0.80**)
+- Fare: **COP $3,550** (≈ **USD $0.90**)
 - From the station:
   - Taxi: 5 minutes  
-  - Walking: 15–20 minutes
+  - Walk: 15–20 minutes
 
-### From El Dorado International Airport (BOG)
+**From El Dorado International Airport (BOG)**
 
-**Taxi / Ride-hailing app**
+- **Taxi / Ride-hailing apps**
+  - Approximate cost: **COP $60,000 – $80,000** (≈ **USD $15 – $20**)
+  - Estimated travel time: 45–90 minutes (depending on traffic)
 
-- Estimated cost: **COP $60,000 – $80,000** (≈ **USD $15 – $20**)
-- Estimated time: 45–90 minutes (traffic dependent)
-
-### Recommended Ride-hailing Apps
+**Recommended transportation apps**
 
 - Uber: <https://m.uber.com/ul/>
 - DiDi: <https://web.didiglobal.com/>
 - inDrive: <https://indrive.com/>
 
 ⚠️ **Safety recommendation:**  
-Use **official airport taxis** or ride-hailing apps only. Avoid informal taxis.
+Use only **official airport taxis** or transportation apps. Avoid informal taxis.
 
 ---
 
-_Official World Cube Association Event_  
+_Official World Cube Association event_  
 _Organized by: Speedcubing Colombia_
 
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" width="300" alt="Ecuadorian Speedcubing Association">
 </div>
+
