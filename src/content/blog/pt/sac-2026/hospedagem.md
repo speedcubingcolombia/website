@@ -38,7 +38,6 @@ Selecionamos opções de hospedagem perto do local com diferentes faixas de pre�
 - 📍 Distância: 3 km do local do evento
 - 💰 Preço aproximado: US$ 80–120 por noite **aprox (430-699 BRL)**
 - ⭐ Inclui: Café da manhã, Wi-Fi, centro de negócios
-- 🏷️ **Tarifa especial SAC:** US$ 75 por noite (quarto duplo) **aprox (403 BRL)**
 
 **Hotel Estelar La Fontana**
 

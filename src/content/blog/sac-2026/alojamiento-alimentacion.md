@@ -40,7 +40,7 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 - 📍 Distancia: 3 km del venue
 - 💰 Precio aproximado: $80-120 USD/noche
 - ⭐ Incluye: Desayuno, Wi-Fi, centro de negocios
-- 🏷️ **Tarifa especial SAC:** $75 USD/noche (habitación doble)
+
 
 **Hotel Estelar La Fontana**
 
