@@ -8,7 +8,7 @@ tabLabel: "Registro"
 
 ## Datas importantes
 
-📅 **Abertura do registro:** 18 de janeiro de 2026  
+📅 **Abertura do registro:** 22 de janeiro de 2026  
 ⏰ **Encerramento do registro:** 28 de maio de 2026  
 ✏️ **Data limite para editar eventos:** 28 de maio de 2026
 

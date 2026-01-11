@@ -17,7 +17,7 @@ Siga estes passos para concluir corretamente sua inscrição no
 
 O valor variará de acordo com as datas estabelecidas para uma ou todas as categorias, conforme segue:
 
-- **80.000 COP** (18 de janeiro - 18 de março)
+- **80.000 COP** (22 de janeiro - 18 de março)
 - **100.000 COP** (19 de março - 19 de abril)
 - **120.000 COP** (20 de abril - 28 de maio)
 

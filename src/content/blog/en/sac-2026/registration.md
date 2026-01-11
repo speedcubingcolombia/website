@@ -8,7 +8,7 @@ tabLabel: "Registration"
 
 ## Important dates
 
-📅 **Registration opens:** January 18, 2026  
+📅 **Registration opens:** January 22, 2026  
 ⏰ **Registration closes:** May 28, 2026  
 ✏️ **Deadline to edit events:** May 28, 2026
 

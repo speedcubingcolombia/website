@@ -17,7 +17,7 @@ Sigue estos pasos para completar correctamente tu inscripción al
 
 El costo variará de acuerdo a las fechas establecidas para una o todas las categorías es el siguiente:
 
-- **80.000 COP** (18 de enero - 18 de marzo)
+- **80.000 COP** (22 de enero - 18 de marzo)
 - **100.000 COP** (19 de marzo - 19 de abril)
 - **120.000 COP** (20 de abril - 28 de mayo)
 
