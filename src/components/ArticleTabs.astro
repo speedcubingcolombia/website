@@ -101,20 +101,22 @@ const basePath = `${langPrefix}/blog`;
           ))
         }
       </div>
-      <!-- Indicador de scroll derecho -->
-      <div
+      <!-- Botón de navegación derecho -->
+      <button
         id="scroll-indicator-right"
         class="scroll-indicator-right"
-        aria-hidden="true"
+        aria-label="Scroll right"
+        type="button"
       >
-      </div>
-      <!-- Indicador de scroll izquierdo -->
-      <div
+      </button>
+      <!-- Botón de navegación izquierdo -->
+      <button
         id="scroll-indicator-left"
         class="scroll-indicator-left hidden"
-        aria-hidden="true"
+        aria-label="Scroll left"
+        type="button"
       >
-      </div>
+      </button>
     </div>
   </div>
 </nav>
@@ -187,6 +189,24 @@ const basePath = `${langPrefix}/blog`;
       }
     }
 
+    // Función para desplazar suavemente
+    function scrollBy(distance) {
+      container.scrollBy({
+        left: distance,
+        behavior: "smooth",
+      });
+    }
+
+    // Click en botón derecho
+    indicatorRight.addEventListener("click", () => {
+      scrollBy(200);
+    });
+
+    // Click en botón izquierdo
+    indicatorLeft.addEventListener("click", () => {
+      scrollBy(-200);
+    });
+
     // Actualizar indicadores al hacer scroll
     container.addEventListener("scroll", () => {
       updateIndicators();
@@ -235,9 +255,18 @@ const basePath = `${langPrefix}/blog`;
     top: 0;
     bottom: 0;
     width: 80px;
-    pointer-events: none;
+    pointer-events: auto;
     z-index: 10;
     transition: opacity 0.3s ease;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .scroll-indicator-right:hover::after,
+  .scroll-indicator-left:hover::after {
+    opacity: 1;
+    animation-play-state: paused;
   }
 
   .scroll-indicator-right {
