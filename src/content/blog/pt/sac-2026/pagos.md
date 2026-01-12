@@ -29,6 +29,7 @@ O valor variará de acordo com as datas estabelecidas para uma ou todas as categ
 ---
 
 ### 🟢 PASSO 2 — REALIZE O PAGAMENTO
+
 Se você é colombiano ou possui contas bancárias na Colômbia, poderá realizar o pagamento das seguintes formas:
 
 Para que o registro seja aprovado, é necessário realizar o pagamento no [**LINK SEGUINTE**](), e seu registro será aprovado após verificação pela equipe organizadora.
@@ -43,6 +44,7 @@ Para que o registro seja aprovado, é necessário realizar o pagamento no [**LIN
 **CHAVE BRE-V** por meio da seguinte chave:
 
 - **0550108900798043**
+
 ---
 
 ### 🟢 PASSO 3 — ENVIE O E-MAIL DE CONFIRMAÇÃO
@@ -68,14 +70,3 @@ Nome completo // WCA ID (se aplicável) // SAC 2026
 ⚠️ A inscrição só será considerada válida após o pagamento ser verificado pela equipe organizadora.
 
 Posteriormente, você receberá uma mensagem de confirmação informando a aprovação da sua participação na competição.
-
----
-
-_Evento oficial da World Cube Association_  
-_Organiza: Speedcubing Colombia e Associação Equatoriana de Speedcubing_
-
-<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
- <img src="/sac/wca.svg" width="200" alt="World Cube Association">
- <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
- <img src="/sac/AES.png" width="300" alt="Associação Equatoriana de Speedcubing">
-</div>

@@ -49,14 +49,3 @@ tabLabel: "Local"
 
 ⚠️ **Recomendação de segurança:**  
 Utilize apenas **táxis oficiais do aeroporto** ou aplicativos de transporte. Evite táxis informais.
-
----
-
-_Evento oficial da World Cube Association_  
-_Organizado por: Speedcubing Colombia_
-
-<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
- <img src="/sac/wca.svg" width="200" alt="World Cube Association">
- <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
- <img src="/sac/AES.png" width="300" alt="Associação Equatoriana de Speedcubing">
-</div>

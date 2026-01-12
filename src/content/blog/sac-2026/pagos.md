@@ -21,7 +21,6 @@ El costo variará de acuerdo a las fechas establecidas para una o todas las cate
 - **100.000 COP** (19 de marzo - 19 de abril)
 - **120.000 COP** (20 de abril - 28 de mayo)
 
-
 **Espectadores**
 
 - **COP $5.000 por persona, por día**  
@@ -30,6 +29,7 @@ El costo variará de acuerdo a las fechas establecidas para una o todas las cate
 ---
 
 ### 🟢 PASO 2 — REALIZA EL PAGO
+
 Si eres colombiano o tienes cuentas bancarias en Colombia podrás realizar el pago de las siguientes maneras:
 
 Para que el registro quede aprobado se debe realizar el pago al [**Siguiente LINK**]() y tu registro será aprobado una vez sea verificado por el  equipo organizador.
@@ -44,6 +44,7 @@ Para que el registro quede aprobado se debe realizar el pago al [**Siguiente LIN
 **LLAVE BRE-V** mediante la siguiente llave:
 
 - **0550108900798043**
+
 ---
 
 ### 🟢 PASO 3 — ENVÍA EL CORREO DE CONFIRMACIÓN
@@ -69,14 +70,3 @@ Nombre Completo // WCA ID (si aplica) // SAC 2026
 ⚠️ La inscripción solo será considerada válida una vez el pago haya sido verificado por el equipo organizador.
 
 Posteriormente, recibirás un mensaje de confirmación informando la aprobación de tu participación en la competencia
-
----
-
-_Evento oficial World Cube Association_  
-_Organiza: Speedcubing Colombia y Asociación Ecuatoriana de Speedcubing_
-
-<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
- <img src="/sac/wca.svg" width="200" alt="World Cube Association">
- <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
- <img src="/sac/AES.png" width="300" alt="Asociación Ecuatoriana de Speedcubing">
-</div>
