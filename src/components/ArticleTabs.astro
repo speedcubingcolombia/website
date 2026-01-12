@@ -77,7 +77,7 @@ const basePath = `${langPrefix}/blog`;
     <div class="hidden md:block relative pb-2">
       <div
         id="tabs-container"
-        class="flex gap-2 overflow-x-auto scrollbar-hide scroll-smooth"
+        class="flex gap-2 overflow-x-auto scrollbar-hide"
       >
         {
           tabs.map((tab) => (
@@ -165,6 +165,12 @@ const basePath = `${langPrefix}/blog`;
 
     if (!container || !indicatorRight || !indicatorLeft) return;
 
+    // Restaurar posición de scroll guardada
+    const savedScrollPosition = sessionStorage.getItem("tabsScrollPosition");
+    if (savedScrollPosition) {
+      container.scrollLeft = parseInt(savedScrollPosition, 10);
+    }
+
     function updateIndicators() {
       const hasOverflow = container.scrollWidth > container.clientWidth;
       const isAtStart = container.scrollLeft <= 5;
@@ -182,7 +188,11 @@ const basePath = `${langPrefix}/blog`;
     }
 
     // Actualizar indicadores al hacer scroll
-    container.addEventListener("scroll", updateIndicators);
+    container.addEventListener("scroll", () => {
+      updateIndicators();
+      // Guardar posición de scroll
+      sessionStorage.setItem("tabsScrollPosition", container.scrollLeft.toString());
+    });
 
     // Actualizar en resize
     window.addEventListener("resize", updateIndicators);

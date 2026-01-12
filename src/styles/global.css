@@ -210,6 +210,18 @@
   .prose blockquote {
     @apply border-l-4 border-primary-500 pl-4 italic text-secondary-700 dark:text-secondary-200;
   }
+
+  .prose a {
+    @apply text-primary-600 dark:text-primary-400 font-semibold underline underline-offset-2 transition-colors duration-200;
+  }
+
+  .prose a:hover {
+    @apply text-primary-700 dark:text-primary-300;
+  }
+
+  .prose a:focus-visible {
+    @apply outline-hidden ring-2 ring-primary-500 dark:ring-primary-400 rounded;
+  }
 }
 
 /* Animations */
