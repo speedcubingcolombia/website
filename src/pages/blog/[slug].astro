@@ -5,27 +5,27 @@ import Footer from "../../components/Footer.astro";
 import Header from "../../components/Header.astro";
 import LanguageSwitcher from "../../components/LanguageSwitcher.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getAvailableLanguages } from "../../utils/blog";
+import {
+  filterPostsByLanguage,
+  formatDateUTC,
+  generateTabs,
+  getAvailableLanguages,
+  getBaseSlug,
+  sortSections,
+} from "../../utils/blog";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
+  const posts = filterPostsByLanguage(allPosts, "es");
 
-  // Filter only Spanish posts (no language prefix like en/ or pt/)
-  const posts = allPosts.filter(
-    (post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/")
-  );
-
-  // Artículos sin secciones múltiples (archivos .md simples)
+  // Simple posts (no multiSection)
   const simplePosts = posts.filter((post) => !post.data.multiSection);
 
-  // Artículos con secciones múltiples (agrupar por base slug)
+  // Multi-section posts grouped by base slug
   const multiSectionPosts = new Map<string, CollectionEntry<"blog">[]>();
   posts.forEach((post) => {
     if (post.data.multiSection) {
-      // Obtener el base slug (antes del / si existe, sino el slug completo)
-      const baseSlug = post.slug.includes("/")
-        ? post.slug.split("/")[0]
-        : post.slug;
+      const baseSlug = getBaseSlug(post.slug);
       if (!multiSectionPosts.has(baseSlug)) {
         multiSectionPosts.set(baseSlug, []);
       }
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 
   const paths: any[] = [];
 
-  // Rutas para artículos simples
+  // Routes for simple posts
   simplePosts.forEach((post) => {
     paths.push({
       params: { slug: post.slug },
@@ -43,24 +43,11 @@ export async function getStaticPaths() {
     });
   });
 
-  // Rutas para el index de artículos multi-sección
+  // Routes for multi-section article indexes
   multiSectionPosts.forEach((sections, baseSlug) => {
-    // Ordenar: sin slash primero (index normalizado), luego index explícito, luego alfabéticamente
-    sections.sort((a, b) => {
-      const aIsNormalizedIndex = !a.slug.includes("/");
-      const bIsNormalizedIndex = !b.slug.includes("/");
-      const aIsIndex = a.slug.endsWith("/index");
-      const bIsIndex = b.slug.endsWith("/index");
-
-      if (aIsNormalizedIndex) return -1;
-      if (bIsNormalizedIndex) return 1;
-      if (aIsIndex) return -1;
-      if (bIsIndex) return 1;
-      return a.slug.localeCompare(b.slug);
-    });
-
-    // El index es el primero después de ordenar
+    sortSections(sections);
     const indexPost = sections[0];
+
     paths.push({
       params: { slug: baseSlug },
       props: {
@@ -86,11 +73,7 @@ interface Props {
 
 const { post, multiSection, allSections, baseSlug } = Astro.props;
 const { Content } = await post.render();
-const formattedDate = new Intl.DateTimeFormat("es-CO", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-}).format(post.data.date);
+const formattedDate = formatDateUTC(post.data.date, "es-CO");
 const canonicalUrl = Astro.site
   ? new URL(`/blog/${post.slug}`, Astro.site).toString()
   : `/blog/${post.slug}`;
@@ -99,28 +82,10 @@ const canonicalUrl = Astro.site
 const canonicalSlug = baseSlug || post.slug;
 const availableLanguages = await getAvailableLanguages(canonicalSlug);
 
-// Si es multi-sección, preparar las pestañas
-let tabs: any[] = [];
+// Generate tabs for multi-section articles
+let tabs = [];
 if (multiSection && allSections && baseSlug) {
-  tabs = [
-    // Agregar el tab de Inicio usando el post actual (que es el index)
-    {
-      label: post.data.tabLabel || post.data.title,
-      slug: "index",
-      isActive: true, // Siempre activo en esta página
-    },
-    // Agregar el resto de las secciones (solo las que tienen '/' en el slug, excluyendo el index normalizado)
-    ...allSections
-      .filter((section) => section.slug.includes("/")) // Solo subsecciones con '/'
-      .map((section) => {
-        const sectionSlug = section.slug.split("/")[1];
-        return {
-          label: section.data.tabLabel || section.data.title,
-          slug: sectionSlug,
-          isActive: false, // Nunca activas en la página index
-        };
-      }),
-  ];
+  tabs = generateTabs(allSections, "index", post, "es");
 }
 ---
 
@@ -132,7 +97,7 @@ if (multiSection && allSections && baseSlug) {
 >
   <Header />
   <main id="main-content">
-    <article class="pt-32 pb-16 md:pt-40 md:pb-24">
+    <article class="pt-24 pb-16 md:pt-28 md:pb-24">
       <div class="container-custom max-w-4xl">
         <div class="mb-8 flex justify-between items-center">
           <a

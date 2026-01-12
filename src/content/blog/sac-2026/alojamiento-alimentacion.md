@@ -4,14 +4,13 @@ multiSection: true
 tabLabel: "Alojamiento"
 ---
 
-# Alojamiento y Alimentación
+# Alojamiento Y Alimentación
 
 ## Hoteles recomendados
 
 Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos de precio. Todos están a máximo 15 minutos del Colegio Teresiano.
 
-### Hoteles cercanos 
-
+### Hoteles cercanos
 
 **Hotel Zuetana**
 
@@ -34,13 +33,11 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 - ⭐ Incluye: Estacionamiento gratuito, TV, baños privados
 - 📞 Reservas: +57 3212402566
 
-
 **Hotel Dann Carlton Bogotá**
 
 - 📍 Distancia: 3 km del venue
 - 💰 Precio aproximado: $80-120 USD/noche
 - ⭐ Incluye: Desayuno, Wi-Fi, centro de negocios
-
 
 **Hotel Estelar La Fontana**
 
@@ -53,9 +50,6 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 - 📍 Distancia: 3.5 km del venue
 - 💰 Precio aproximado: $65-90 USD/noche
 - ⭐ Incluye: Desayuno continental, Wi-Fi
-
-
-
 
 ### Hostales y opciones budget ($)
 
@@ -254,16 +248,16 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 ## Tips adicionales
 
 - **Propinas:** 10% sugerido en restaurantes (a veces incluido en la cuenta, en Colombia no es obligatorio pagar la propina)
-- **Agua:** El agua del grifo en Bogotá es potable, pero muchos prefieren embotellada. 
+- **Agua:** El agua del grifo en Bogotá es potable, pero muchos prefieren embotellada.
 - **Alergias:** Siempre comunica alergias alimentarias en español: "Soy alérgico/a a..."
 
 ## Contacto
 
 ¿Preguntas sobre alojamiento o alimentación?
 
-🔗 Únete aquí: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
+🔗 Únete aquí: <https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif>
 
-También puedes dirigirte al correo: 
-sac2026@speedcubingcolombia.org
+También puedes dirigirte al correo:
+<sac2026@speedcubingcolombia.org>
 
 ¡Disfruta la gastronomía Colombiana! 🍽️ 💛💙❤️

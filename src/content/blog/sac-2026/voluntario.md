@@ -3,7 +3,7 @@ title: "Voluntario"
 multiSection: true
 tabLabel: "Voluntario"
 ---
-# VOLUNTARIOS DE LA COMPETENCIA
+# Voluntarios De La Competencia
 
 Si deseas ser voluntario de la competencia más grande que se realizará en sudamérica esta es tu oportunidad, deberás responder algunas preguntas.
 

@@ -74,28 +74,47 @@ const basePath = `${langPrefix}/blog`;
     </div>
 
     <!-- Desktop: Pestañas horizontales -->
-    <div class="hidden md:flex gap-2 pb-2">
-      {
-        tabs.map((tab) => (
-          <a
-            href={
-              tab.slug === "index"
-                ? `${basePath}/${baseSlug}`
-                : `${basePath}/${baseSlug}/${tab.slug}`
-            }
-            class={`
-            px-4 py-2 rounded-lg font-medium text-sm whitespace-nowrap transition-colors
+    <div class="hidden md:block relative pb-2">
+      <div
+        id="tabs-container"
+        class="flex gap-2 overflow-x-auto scrollbar-hide"
+      >
+        {
+          tabs.map((tab) => (
+            <a
+              href={
+                tab.slug === "index"
+                  ? `${basePath}/${baseSlug}`
+                  : `${basePath}/${baseSlug}/${tab.slug}`
+              }
+              class={`
+            px-4 py-2 rounded-lg font-medium text-sm whitespace-nowrap transition-colors flex-shrink-0
             ${
               tab.isActive
                 ? "bg-primary-600 text-white shadow-sm"
                 : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
             }
           `}
-          >
-            {tab.label}
-          </a>
-        ))
-      }
+            >
+              {tab.label}
+            </a>
+          ))
+        }
+      </div>
+      <!-- Indicador de scroll derecho -->
+      <div
+        id="scroll-indicator-right"
+        class="scroll-indicator-right"
+        aria-hidden="true"
+      >
+      </div>
+      <!-- Indicador de scroll izquierdo -->
+      <div
+        id="scroll-indicator-left"
+        class="scroll-indicator-left hidden"
+        aria-hidden="true"
+      >
+      </div>
     </div>
   </div>
 </nav>
@@ -139,15 +158,65 @@ const basePath = `${langPrefix}/blog`;
     }
   }
 
+  function initScrollIndicators() {
+    const container = document.getElementById("tabs-container");
+    const indicatorRight = document.getElementById("scroll-indicator-right");
+    const indicatorLeft = document.getElementById("scroll-indicator-left");
+
+    if (!container || !indicatorRight || !indicatorLeft) return;
+
+    // Restaurar posición de scroll guardada
+    const savedScrollPosition = sessionStorage.getItem("tabsScrollPosition");
+    if (savedScrollPosition) {
+      container.scrollLeft = parseInt(savedScrollPosition, 10);
+    }
+
+    function updateIndicators() {
+      const hasOverflow = container.scrollWidth > container.clientWidth;
+      const isAtStart = container.scrollLeft <= 5;
+      const isAtEnd =
+        container.scrollLeft >=
+        container.scrollWidth - container.clientWidth - 5;
+
+      if (!hasOverflow) {
+        indicatorRight.classList.add("hidden");
+        indicatorLeft.classList.add("hidden");
+      } else {
+        indicatorRight.classList.toggle("hidden", isAtEnd);
+        indicatorLeft.classList.toggle("hidden", isAtStart);
+      }
+    }
+
+    // Actualizar indicadores al hacer scroll
+    container.addEventListener("scroll", () => {
+      updateIndicators();
+      // Guardar posición de scroll
+      sessionStorage.setItem("tabsScrollPosition", container.scrollLeft.toString());
+    });
+
+    // Actualizar en resize
+    window.addEventListener("resize", updateIndicators);
+
+    // Actualizar inicialmente
+    updateIndicators();
+  }
+
   // Inicializar en carga inicial
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initTabsMenu);
+    document.addEventListener("DOMContentLoaded", () => {
+      initTabsMenu();
+      initScrollIndicators();
+    });
   } else {
     initTabsMenu();
+    initScrollIndicators();
   }
 
   // Reinicializar después de transiciones de Astro
-  document.addEventListener("astro:after-swap", initTabsMenu);
+  document.addEventListener("astro:after-swap", () => {
+    initTabsMenu();
+    initScrollIndicators();
+  });
 </script>
 
 <style>
@@ -158,5 +227,104 @@ const basePath = `${langPrefix}/blog`;
 
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  .scroll-indicator-right,
+  .scroll-indicator-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+  }
+
+  .scroll-indicator-right {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.9) 40%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .scroll-indicator-left {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.9) 40%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  :global(.dark) .scroll-indicator-right {
+    background: linear-gradient(
+      to left,
+      rgba(17, 24, 39, 1) 0%,
+      rgba(17, 24, 39, 0.9) 40%,
+      rgba(17, 24, 39, 0) 100%
+    );
+  }
+
+  :global(.dark) .scroll-indicator-left {
+    background: linear-gradient(
+      to right,
+      rgba(17, 24, 39, 1) 0%,
+      rgba(17, 24, 39, 0.9) 40%,
+      rgba(17, 24, 39, 0) 100%
+    );
+  }
+
+  .scroll-indicator-right::after,
+  .scroll-indicator-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  .scroll-indicator-right::after {
+    right: 16px;
+    border-width: 8px 0 8px 10px;
+    border-color: transparent transparent transparent #6b7280;
+    animation: pulse-right 2s ease-in-out infinite;
+  }
+
+  .scroll-indicator-left::after {
+    left: 16px;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #6b7280
+    border-width: 6px 8px 6px 0;
+    border-color: transparent #9ca3af transparent transparent;
+    animation: pulse-left 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-right {
+    0%,
+    100% {
+      transform: translateY(-50%) translateX(0);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(-50%) translateX(4px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse-left {
+    0%,
+    100% {
+      transform: translateY(-50%) translateX(0);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(-50%) translateX(-4px);
+      opacity: 1;
+    }
   }
 </style>

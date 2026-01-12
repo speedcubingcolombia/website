@@ -4,17 +4,18 @@ multiSection: true
 tabLabel: "Nations Cup"
 ---
 
-### Nations Cup
+# Nations Cup
 
 A maximum of **16 teams** will be accepted, which will qualify based on their **overall average**. At least **one team per country** will be approved. If a country has two or more teams, the country name will be listed followed by **Roman numeral numbering**.
 
 _Example_
+
 - Colombia V  
 - Brazil I  
 - Brazil II  
 - Chile IV  
 
-# Team Registration
+## Team Registration
 
 Teams must register using the following form. The **approved teams** will be published on this same page on **May 28, 2026**.
 

@@ -4,13 +4,15 @@ multiSection: true
 tabLabel: "Sede"
 ---
 
+# Sede Y Transporte
+
 ![SAC 2026 – Sede y Transporte](/sac/mascota_venue.png)
 
 <div align="center">
 
-# 🏫 COLEGIO TERESIANO
+## 🏫 COLEGIO TERESIANO
 
-## BOGOTÁ, COLOMBIA
+### BOGOTÁ, COLOMBIA
 
 </div>
 
@@ -49,14 +51,3 @@ tabLabel: "Sede"
 
 ⚠️ **Recomendación de seguridad:**  
 Utiliza únicamente **taxis oficiales del aeropuerto** o aplicaciones de transporte. Evita taxis informales.
-
----
-
-_Evento oficial World Cube Association_  
-_Organiza: Speedcubing Colombia_
-
-<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
- <img src="/sac/wca.svg" width="200" alt="World Cube Association">
- <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
-  <img src="/sac/AES.png" width="300" alt="Asociación Ecuatoriana de Speedcubing">
-</div>

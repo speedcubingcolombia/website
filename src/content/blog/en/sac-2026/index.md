@@ -1,7 +1,7 @@
 ---
 title: "SAC 2026: WCA South American Championship 2026"
 excerpt: "Everything you need to know about the WCA South American Championship 2026: registration, venue, accommodation, schedule, and tourism in Bogotá."
-date: 2026-06-12
+date: 2026-01-12
 author: "Speedcubing Colombia"
 authorRole: "SAC 2026 Organization"
 authorAvatar: "/sac/ssc.png"
@@ -51,8 +51,8 @@ new stories are written, and cubing is experienced at the highest competitive le
 _Official World Cube Association event_  
 _Organized by: Speedcubing Colombia and the Ecuadorian Speedcubing Association_
 
-<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
- <img src="/sac/wca.svg" width="200" alt="World Cube Association">
- <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
- <img src="/sac/AES.png" width="300" alt="Ecuadorian Speedcubing Association">
+<div style="display: flex; justify-content: center; gap: clamp(8px, 2vw, 32px); align-items: center;">
+ <img src="/sac/wca.svg" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="World Cube Association">
+ <img src="/sac/ssc.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Ecuadorian Speedcubing Association">
 </div>

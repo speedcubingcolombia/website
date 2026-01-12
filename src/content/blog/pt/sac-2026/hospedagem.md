@@ -4,7 +4,7 @@ multiSection: true
 tabLabel: "Hospedagem"
 ---
 
-# Hospedagem e Alimentação
+# Hospedagem E Alimentação
 
 ## Hotéis Recomendados
 
@@ -50,7 +50,6 @@ Selecionamos opções de hospedagem perto do local com diferentes faixas de pre�
 - 📍 Distância: 3,5 km do local do evento
 - 💰 Preço aproximado: US$ 65–90 por noite **aprox (350-484 BRL)**
 - ⭐ Inclui: Café da manhã continental, Wi-Fi
-
 
 ### Hostels e opções econômicas ($)
 
@@ -130,6 +129,7 @@ Criamos um grupo de WhatsApp para que competidores possam:
 **Restaurantes casuais:**
 
 -Cocoa House (sobremesas e refeições)
+
 - Jengibre (café e sanduíches)
 - Preço: COP $20.000 – 40.000 ($ 5–10 USD) ($27-54 BRL)
 
@@ -256,10 +256,9 @@ Bogotá possui excelente oferta para vegetarianos e veganos:
 
 Dúvidas sobre hospedagem ou alimentação?
 
-🔗 Junte-se aqui: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
+🔗 Junte-se aqui: <https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif>
 
 Ou escreva para:
-sac2026@speedcubingcolombia.org
+<sac2026@speedcubingcolombia.org>
 
 ¡Aproveite a gastronomia colombiana! 🍽️ 💛💙❤️
-

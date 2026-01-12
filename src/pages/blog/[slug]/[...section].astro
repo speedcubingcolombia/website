@@ -105,6 +105,7 @@ const formattedDate = new Intl.DateTimeFormat("es-CO", {
   day: "numeric",
   month: "long",
   year: "numeric",
+  timeZone: "UTC",
 }).format(mainPost.data.date);
 
 // Preparar las pestañas - incluir manualmente el index ya que allSections no lo tiene
@@ -152,7 +153,7 @@ const availableLanguages = await getAvailableLanguages(canonicalSlug);
 >
   <Header />
   <main id="main-content">
-    <article class="pt-32 pb-16 md:pt-40 md:pb-24">
+    <article class="pt-24 pb-16 md:pt-28 md:pb-24">
       <div class="container-custom max-w-4xl">
         <div class="mb-8 flex justify-between items-center">
           <a

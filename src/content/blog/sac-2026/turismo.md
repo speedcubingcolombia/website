@@ -9,7 +9,7 @@ tabLabel: "Turismo"
 
 </div>
 
-# Turismo en Bogotá
+# Turismo En Bogotá
 
 ¡Aprovecha tu visita al SAC 2026 para conocer lo mejor de Bogotá! La capital colombiana ofrece cultura, historia, naturaleza y gastronomía de clase mundial.
 

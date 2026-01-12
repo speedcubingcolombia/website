@@ -4,13 +4,15 @@ multiSection: true
 tabLabel: "Venue"
 ---
 
+# Venue And Transportation
+
 ![SAC 2026 – Venue and Transportation](/sac/mascota_venue.png)
 
 <div align="center">
 
-# 🏫 TERESIANO SCHOOL
+## 🏫 TERESIANO SCHOOL
 
-## BOGOTÁ, COLOMBIA
+### BOGOTÁ, COLOMBIA
 
 </div>
 
@@ -49,15 +51,3 @@ tabLabel: "Venue"
 
 ⚠️ **Safety recommendation:**  
 Use only **official airport taxis** or transportation apps. Avoid informal taxis.
-
----
-
-_Official World Cube Association event_  
-_Organized by: Speedcubing Colombia_
-
-<div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
- <img src="/sac/wca.svg" width="200" alt="World Cube Association">
- <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
- <img src="/sac/AES.png" width="300" alt="Ecuadorian Speedcubing Association">
-</div>
-

@@ -59,7 +59,7 @@ const ariaLabel = t(currentLang, 'lang.switchTo');
         aria-expanded="false"
         :aria-expanded="open.toString()"
       >
-        <span class="text-lg" role="img" aria-label={langConfig[currentLang].name}>
+        <span class="text-xl leading-none" role="img" aria-label={langConfig[currentLang].name} style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; display: inline-block; width: 1.5em; height: 1.5em; line-height: 1.5em; text-align: center;">
           {langConfig[currentLang].flag}
         </span>
         <svg 
@@ -95,7 +95,7 @@ const ariaLabel = t(currentLang, 'lang.switchTo');
             role="menuitem"
             aria-current={currentLang === lang.code ? "page" : undefined}
           >
-            <span class="text-lg" role="img" aria-label={lang.name}>{lang.flag}</span>
+            <span class="text-xl leading-none flex-shrink-0" role="img" aria-label={lang.name} style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; display: inline-block; width: 1.5em; height: 1.5em; line-height: 1.5em; text-align: center;">{lang.flag}</span>
             <span class="text-sm font-medium">{lang.name}</span>
           </a>
         ))}

@@ -1,9 +1,9 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import {
-  SUPPORTED_LANGUAGES,
-  type SupportedLanguage,
   DEFAULT_LANGUAGE,
   languages,
+  SUPPORTED_LANGUAGES,
+  type SupportedLanguage,
 } from "../i18n";
 
 // Re-export i18n types for backwards compatibility
@@ -23,6 +23,7 @@ export const dateFormatter = new Intl.DateTimeFormat("es-CO", {
   day: "numeric",
   month: "long",
   year: "numeric",
+  timeZone: "UTC",
 });
 
 /**
@@ -175,4 +176,124 @@ export async function getBlogPosts(): Promise<BlogListEntry[]> {
       slug: post.slug.replace("/index", ""),
       formattedDate: dateFormatter.format(post.data.date),
     }));
+}
+
+/**
+ * Formats a date with timezone UTC to avoid off-by-one errors
+ */
+export function formatDateUTC(date: Date, locale: string = "es-CO"): string {
+  return new Intl.DateTimeFormat(locale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
+/**
+ * Filters blog posts by language
+ */
+export function filterPostsByLanguage(
+  posts: CollectionEntry<"blog">[],
+  lang: SupportedLanguage
+): CollectionEntry<"blog">[] {
+  if (lang === DEFAULT_LANGUAGE) {
+    // Spanish: no language prefix
+    return posts.filter(
+      (post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/")
+    );
+  }
+  // Other languages: must have lang/ prefix
+  return posts.filter((post) => post.slug.startsWith(`${lang}/`));
+}
+
+/**
+ * Removes language prefix from slug
+ */
+export function removeLanguagePrefix(
+  slug: string,
+  lang: SupportedLanguage
+): string {
+  if (lang === DEFAULT_LANGUAGE) return slug;
+  const prefix = `${lang}/`;
+  return slug.startsWith(prefix) ? slug.slice(prefix.length) : slug;
+}
+
+/**
+ * Gets the base slug (first part before /)
+ */
+export function getBaseSlug(slug: string): string {
+  return slug.includes("/") ? slug.split("/")[0] : slug;
+}
+
+/**
+ * Sorts multi-section posts: index first, then alphabetically
+ */
+export function sortSections(sections: CollectionEntry<"blog">[]): void {
+  sections.sort((a, b) => {
+    const aIsNormalizedIndex = !a.slug.includes("/");
+    const bIsNormalizedIndex = !b.slug.includes("/");
+    const aIsIndex = a.slug.endsWith("/index");
+    const bIsIndex = b.slug.endsWith("/index");
+
+    if (aIsNormalizedIndex) return -1;
+    if (bIsNormalizedIndex) return 1;
+    if (aIsIndex) return -1;
+    if (bIsIndex) return 1;
+    return a.slug.localeCompare(b.slug);
+  });
+}
+
+/**
+ * Generates tabs for multi-section articles
+ */
+export interface Tab {
+  label: string;
+  slug: string;
+  isActive: boolean;
+}
+
+export function generateTabs(
+  allSections: CollectionEntry<"blog">[],
+  currentSlug: string,
+  indexPost: CollectionEntry<"blog">,
+  lang: SupportedLanguage = DEFAULT_LANGUAGE
+): Tab[] {
+  return [
+    {
+      label: indexPost.data.tabLabel || indexPost.data.title,
+      slug: "index",
+      isActive: currentSlug === "index",
+    },
+    ...allSections
+      .filter((section) => {
+        const slugWithoutLang = removeLanguagePrefix(section.slug, lang);
+        return slugWithoutLang.includes("/");
+      })
+      .map((section) => {
+        const slugWithoutLang = removeLanguagePrefix(section.slug, lang);
+        const sectionSlug = slugWithoutLang.split("/")[1];
+        return {
+          label: section.data.tabLabel || section.data.title,
+          slug: sectionSlug,
+          isActive: sectionSlug === currentSlug,
+        };
+      }),
+  ];
+}
+
+/**
+ * Finds the index post for a multi-section article
+ */
+export async function findIndexPost(
+  baseSlug: string,
+  lang: SupportedLanguage = DEFAULT_LANGUAGE
+): Promise<CollectionEntry<"blog"> | undefined> {
+  const allPosts = await getCollection("blog");
+  const prefix = lang === DEFAULT_LANGUAGE ? "" : `${lang}/`;
+
+  return (
+    allPosts.find((p) => p.slug === `${prefix}${baseSlug}`) ||
+    allPosts.find((p) => p.slug === `${prefix}${baseSlug}/index`)
+  );
 }
