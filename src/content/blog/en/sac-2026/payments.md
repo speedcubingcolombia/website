@@ -6,7 +6,7 @@ tabLabel: "Payments"
 
 # Payments
 
-Follow these steps to complete your registration for the  
+Follow these steps to correctly complete your registration for the  
 **WCA South American Championship 2026 (SAC 2026)**.
 
 ---
@@ -15,8 +15,11 @@ Follow these steps to complete your registration for the
 
 **Competitors**
 
-- **COP $80,000**  
-  _(≈ USD $20 – reference value, subject to exchange rate changes)_
+The fee will vary according to the established dates for one or all categories, as follows:
+
+- **80,000 COP** (January 22 – March 18)
+- **100,000 COP** (March 19 – April 19)
+- **120,000 COP** (April 20 – May 28)
 
 **Spectators**
 
@@ -26,44 +29,53 @@ Follow these steps to complete your registration for the
 ---
 
 ### 🟢 STEP 2 — MAKE THE PAYMENT
+If you are Colombian or have bank accounts in Colombia, you may make the payment using the following methods:
 
-Payment must be made **exclusively** via bank transfer to the following account:
+For the registration to be approved, payment must be made through the [**FOLLOWING LINK**](), and your registration will be approved once it has been verified by the organizing team.
+
+**BANCO DAVIVIENDA** via bank transfer to the following account:
 
 - **Bank:** Davivienda  
 - **Account type:** Savings  
 - **Account number:** **0550108900738049**  
 - **Account holder:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
 
+**BRE-V KEY** using the following key:
+
+- **0550108900798043**
 ---
 
-### 🟢 STEP 3 — SEND CONFIRMATION EMAIL
+### 🟢 STEP 3 — SEND THE CONFIRMATION EMAIL
 
-After completing the payment, send an email to:
+Once the payment has been made, send an email to:
 
 **📩 <sac2026@speedcubingcolombia.org>**
 
-**Email subject (required format):**
+**Email subject (mandatory format):**
 
 Full Name // WCA ID (if applicable) // SAC 2026
 
-**Email body must include:**
+**In the body of the email, you must include:**
 
 - **Proof of payment**
 - **Any additional relevant information**  
-  _(international payment, group payment, data correction, etc.)_
+  _(international payment, group payment, data correction, any questions about the competition or the payment made, etc.)_
 
 ---
 
 ### 🟢 STEP 4 — VERIFICATION
 
-> ⚠️ Registration is only valid once payment has been verified by the organizing team.
+⚠️ Registration will only be considered valid once the payment has been verified by the organizing team.
+
+Afterwards, you will receive a confirmation message informing you of the approval of your participation in the competition.
 
 ---
 
-_Official World Cube Association Event_  
-_Organized by: Speedcubing Colombia_
+_Official World Cube Association event_  
+_Organized by: Speedcubing Colombia and the Ecuadorian Speedcubing Association_
 
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" width="300" alt="Ecuadorian Speedcubing Association">
 </div>

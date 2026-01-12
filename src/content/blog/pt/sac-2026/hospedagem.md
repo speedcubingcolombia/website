@@ -10,81 +10,69 @@ tabLabel: "Hospedagem"
 
 Selecionamos opções de hospedagem perto do local com diferentes faixas de preço. Todos estão a no máximo 15 minutos do Colégio Teresiano.
 
-### Hotéis Próximos (Raio de 2 km)
+### Hotéis próximos
 
-#### Hotéis de Luxo ($$$$)
+**Hotel Zuetana**
 
-**Hotel Four Points by Sheraton Bogotá**
+- 📍 Distância: 250 m do local do evento
+- 💰 Preço aproximado: US$ 150–200 por noite **aprox (806-1075 BRL)**
+- ⭐ Inclui: Acomodação tipo apartamento, Wi-Fi, cozinha, lavanderia
+- 📞 Reservas: +57 3134990954
 
-- 📍 Distância: 1,5 km do local
-- 💰 Preço aproximado: $150-200 USD/noite
-- ⭐ Inclui: Café da manhã, Wi-Fi, academia, piscina
-- 📞 Reservas: +57 1 XXX XXXX
-- 🏷️ Código promocional SAC2026: 10% de desconto
+**The Palma Home**
 
-**GHL Hotel Bioxury**
+- 📍 Distância: 900 m do local do evento
+- 💰 Preço aproximado: US$ 40 por noite **aprox (215 BRL)**
+- ⭐ Inclui: TV, sala de estar, banheiros privativos
+- 📞 Reservas: +57 3185735352
 
-- 📍 Distância: 2 km do local
-- 💰 Preço aproximado: $130-180 USD/noite
-- ⭐ Inclui: Café da manhã buffet, spa, estacionamento
-- 📞 Reservas: +57 1 XXX XXXX
+**Casa AloHa 152**
 
-#### Hotéis de Categoria Média ($$$)
+- 📍 Distância: 550 m do local do evento
+- 💰 Preço aproximado: US$ 30 por noite **aprox (162 BRL)**
+- ⭐ Inclui: Estacionamento gratuito, TV, banheiros privativos
+- 📞 Reservas: +57 3212402566
 
 **Hotel Dann Carlton Bogotá**
 
-- 📍 Distância: 3 km do local
-- 💰 Preço aproximado: $80-120 USD/noite
+- 📍 Distância: 3 km do local do evento
+- 💰 Preço aproximado: US$ 80–120 por noite **aprox (430-699 BRL)**
 - ⭐ Inclui: Café da manhã, Wi-Fi, centro de negócios
-- 🏷️ **Tarifa especial SAC:** $75 USD/noite (quarto duplo)
 
 **Hotel Estelar La Fontana**
 
-- 📍 Distância: 4 km do local
-- 💰 Preço aproximado: $70-100 USD/noite
-- ⭐ Inclui: Café da manhã, estacionamento, academia
+- 📍 Distância: 4 km do local do evento
+- 💰 Preço aproximado: US$ 70–100 por noite **aprox (376-537 BRL)**
+- ⭐ Inclui: Café da manhã, estacionamento, gym (Academia)
 
 **Sonesta Hotel Bogotá**
 
-- 📍 Distância: 3,5 km do local
-- 💰 Preço aproximado: $65-90 USD/noite
+- 📍 Distância: 3,5 km do local do evento
+- 💰 Preço aproximado: US$ 65–90 por noite **aprox (350-484 BRL)**
 - ⭐ Inclui: Café da manhã continental, Wi-Fi
 
-#### Hotéis Econômicos ($$)
 
-**Hotel Viaggio 617**
-
-- 📍 Distância: 2,5 km do local
-- 💰 Preço aproximado: $40-60 USD/noite
-- ⭐ Inclui: Wi-Fi, café da manhã básico
-
-**Hotel Comfort Inn & Suites**
-
-- 📍 Distância: 5 km do local
-- 💰 Preço aproximado: $45-65 USD/noite
-- ⭐ Inclui: Café da manhã, estacionamento gratuito
-
-### Hostels e Opções Econômicas ($)
+### Hostels e opções econômicas ($)
 
 **Selina Parque 93**
 
-- 📍 Distância: 6 km do local
-- 💰 Dormitórios: $15-25 USD/noite
-- 💰 Quartos privados: $35-50 USD/noite
+- 📍 Distância: 6 km do local do evento
+- 💰 Dormitórios: US$ 15–25 por noite **aprox (81-135 BRL)**
+- 💰 Quartos privativos: US$ 35–50 por noite
 - ⭐ Ambiente jovem, coworking, bar
 
 **Masaya Hostel Bogotá**
 
-- 📍 Distância: 8 km (zona Chapinero)
-- 💰 Dormitórios: $12-20 USD/noite
-- 💰 Quartos privados: $30-45 USD/noite
-- ⭐ Ótimo para conhecer outros viajantes
+- 📍 Distância: 8 km (região de Chapinero)
+- 💰 Dormitórios: US$ 12–20 por noite **aprox (65-108 BRL)**
+- 💰 Quartos privativos: US$ 30–45 por noite **aprox (162-242 BRL)**
+- ⭐ Excelente para conhecer outros viajantes
 
 **Cranky Croc Hostel**
 
-- 📍 Distância: 10 km (zona La Candelaria)
-- 💰 Dormitórios: $10-18 USD/noite
-- 💰 Quartos privados: $25-40 USD/noite
+- 📍 Distância: 10 km (região de La Candelaria)
+- 💰 Dormitórios: US$ 10–18 por noite **aprox (54-97 BRL)**
+- 💰 Quartos privativos: US$ 25–40 por noite **aprox (135-215 BRL)**
 - ⭐ Localização central para turismo
 
 ## Airbnb e Apartamentos
@@ -94,26 +82,26 @@ Se você prefere mais espaço ou está viajando em grupo, o Airbnb é uma excele
 ### Zonas Recomendadas para Buscar no Airbnb
 
 1. **Usaquén** (ideal, mais próximo do local)
-   - Apartamentos completos: $60-120 USD/noite
-   - Quartos privados: $25-50 USD/noite
+   - Apartamentos completos: $60-120 USD/noite **aprox (323-645 BRL)**
+   - Quartos privados: $25-50 USD/noite **aprox (135-267 BRL)**
 
 2. **Chicó / Virrey**
-   - Apartamentos completos: $70-140 USD/noite
+   - Apartamentos completos: $70-140 USD/noite **aprox (376-732 BRL)**
    - Zona segura, muitos restaurantes
 
 3. **Parque de la 93**
-   - Apartamentos completos: $80-150 USD/noite
+   - Apartamentos completos: $80-150 USD/noite **aprox (430-806 BRL)**
    - Vida noturna, restaurantes, muito turístico
 
 4. **Cedritos**
-   - Apartamentos completos: $50-100 USD/noite
+   - Apartamentos completos: $50-100 USD/noite **aprox (269-537 BRL)**
    - Mais econômico, perto do local
 
 ### Dicas para Reservar no Airbnb
 
 - Procure "Superhost" para melhor experiência
 - Leia as avaliações cuidadosamente
-- Verifique a distância real até o local usando o Google Maps
+- Verifique a distância real até o local usando o *Google Maps*
 - Pergunte ao anfitrião sobre transporte para o Colégio Teresiano
 - Considere dividir apartamento com outros competidores
 
@@ -121,156 +109,157 @@ Se você prefere mais espaço ou está viajando em grupo, o Airbnb é uma excele
 
 ### Grupo de Coordenação
 
-Criamos um grupo de WhatsApp/Telegram para que competidores possam:
+Criamos um grupo de WhatsApp para que competidores possam:
 
 - Encontrar companheiros de quarto
 - Dividir apartamentos
 - Organizar transporte compartilhado
 - Economizar custos
 
-🔗 Entre aqui: [Link em breve]
-
-## Alimentação Durante o Evento
-
-### No Local
-
-**Cantina do Colégio Teresiano:**
-
-- Menu do dia: COP 15.000-20.000 ($4-5 USD)
-- Lanches e bebidas: COP 2.000-8.000 ($0,50-2 USD)
-- Horário: Durante todo o evento
-
-**Food trucks:**
-
-- Variedade de opções colombianas e internacionais
-- Preço: COP 12.000-25.000 ($3-6 USD)
-
-**Máquinas de venda automática:**
-
-- Lanches, bebidas e água
-- Disponível 24/7 durante o evento
+🔗 Entre aqui: [Grupo de WhatsApp](https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif)
 
 ### Restaurantes Próximos (10-15 min)
 
-#### Shopping Parque La Colina
+#### Shopping Mazurén
+
+**Opções de fast food:**
+
+- Subway, Restaurante Ritz, El fuerte de la pizza, Jeno's Pizza, Compañia del Sabor
+- Preço: COP 15.000-25.000 ($4-6 USD) ($22-33 BRL)
+
+**Restaurantes casuais:**
+
+-Cocoa House (sobremesas e refeições)
+- Jengibre (café e sanduíches)
+- Preço: COP $20.000 – 40.000 ($ 5–10 USD) ($27-54 BRL)
+
+**Restaurantes típicos colombianos:**
+
+- La Oliva - Sazón Costeña
+- Parrilla Restaurante
+- Sopitas y Mucho Más
+- Precio: $30,000-60,000 COP ($8-15 USD) ($25 - 48 BRL)
+
+**Restaurantes internacionais:**
+
+- Don Malolo (mexicana)
+- La Spaguettata (italiano)
+
+### Centro Comercial Parque La Colina (15 min de carro)
 
 **Opções de fast food:**
 
 - McDonald's, Subway, KFC
-- Preço: COP 15.000-25.000 ($4-6 USD)
+- Precio: $15,000-25,000 COP ($4-6 USD) ($13 - 20 BRL)
 
 **Restaurantes casuais:**
 
 - Crepes & Waffles (sobremesas e refeições)
 - Juan Valdez Café (café e sanduíches)
-- Preço: COP 20.000-40.000 ($5-10 USD)
+- Precio: $20,000-40,000 COP ($5-10 USD) ($17 - 34 BRL)
 
-#### Zona Usaquén (Centro Histórico)
+### Carrera 19
 
-**Restaurantes colombianos tradicionais:**
+**Menus executivos:**
 
-- Andrés Carne de Res (experiência única)
-- La Puerta de la Catedral
-- Preço: COP 30.000-60.000 ($8-15 USD)
+- Variedade de restaurantes colombianos
+- Menu do dia (almoço completo): $15,000-25,000 COP ($4-6 USD) ($13 - 20 BRL)
+- Horário: 11:30 AM - 3:00 PM
 
-**Restaurantes internacionais:**
+### Supermercados próximos
 
-- Wok (asiático)
-- Di Lucca (italiano)
-- BBC (Bogotá Beer Company - pub)
-- Preço: COP 35.000-70.000 ($9-18 USD)
+Se você preferir comprar comida:
 
-### Supermercados Próximos
+**Carulla Cedro Bolívar:**
 
-Se você prefere comprar comida:
-
-**Éxito Calle 147:**
-
-- Distância: 2 km
-- Horário: 8:00 - 21:00
-- Produtos preparados, frutas, lanches
-
-**Carulla Usaquén:**
-
-- Distância: 3 km
-- Horário: 7:00 - 22:00
+- Distância: 600 m
+- Horário: 7:00 AM - 10:00 PM
 - Maior variedade
 
-## Comida Típica Colombiana que Você Deve Provar
+**Lojas de bairro:**
 
-Durante sua estadia, não perca:
+- Múltiplas opções perto do venue
+- Snacks, bebidas, itens básicos
+- Preço mais econômico
 
-🍲 **Ajiaco:** Sopa típica de Bogotá com frango, batatas criollas e milho  
-🥟 **Empanadas:** Fritas, de carne ou frango  
-🌭 **Salchipapa:** Comida de rua, salsichas e batatas fritas  
-☕ **Café colombiano:** O melhor do mundo  
-🍰 **Obleas:** Sobremesa típica com doce de leite  
-🥤 **Água de panela com limão:** Bebida tradicional
+## Comida típica colombiana que você deve experimentar
 
-## Opções Vegetarianas e Veganas
+Durante sua estadia, não esqueça:
 
-Bogotá tem excelente oferta para vegetarianos e veganos:
+🍲 **Ajiaco:** Sopa típica de Bogotá com frango, batatas crioulas e milho
+🥟 **Empanadas:** Fritas, de carne ou frango
+🌭 **Salchipapa:** Comida de rua, salsichas e batatas fritas
+☕ **Café colombiano:** O melhor do mundo
+🍰 **Obleas:** Sobremesa típica com arequipe
+🥤 **Água de panela:** Bebida tradicional
 
-**Restaurantes especializados perto do local:**
+## Opções vegetarianas e veganas
+
+Bogotá possui excelente oferta para vegetarianos e veganos:
+
+**Restaurantes especializados próximos ao venue:**
 
 - Quinua y Amaranto (vegano, Usaquén)
-- Salud y Vida (vegetariano, vários locais)
-- El Macrobiotico (naturista)
+- Salud y Vida (vegetariano, várias unidades)
+- El Macrobiótico (naturista)
 
 **Apps úteis:**
 
-- HappyCow: Encontre restaurantes veganos/vegetarianos
 - Rappi/Uber Eats: Delivery com filtros alimentares
+- HappyCow: Encontre restaurantes veganos/vegetarianos
 
-## Orçamento Diário Recomendado
+## Orçamento diário recomendado
 
 **Econômico:**
 
-- Café da manhã: COP 8.000 ($2 USD)
-- Almoço: COP 15.000 ($4 USD)
-- Jantar: COP 15.000 ($4 USD)
-- Lanches: COP 10.000 ($2,50 USD)
-- **Total: ~COP 50.000 (~$12 USD/dia)**
+- Café da manhã: $10,000 COP ($2.50 USD) ($8 BRL)
+- Almoço: $15,000 COP ($4 USD) ($13 BRL)
+- Jantar: $15,000 COP ($4 USD) ($13 BRL)
+- Snacks: $10,000 COP ($2.50 USD) ($8 BRL)
+- **Total: $50,000 COP APROX ($12 USD/dia) ($38 BRL)**
 
 **Moderado:**
 
-- Café da manhã: COP 15.000 ($4 USD)
-- Almoço: COP 30.000 ($8 USD)
-- Jantar: COP 40.000 ($10 USD)
-- Lanches/café: COP 15.000 ($4 USD)
-- **Total: ~COP 100.000 (~$26 USD/dia)**
+- Café da manhã: $15,000 COP ($4 USD) ($13 BRL)
+- Almoço: $30,000 COP ($8 USD) ($25 BRL)
+- Jantar: $40,000 COP ($10 USD) ($34 BRL)
+- Snacks/café: $15,000 COP ($4 USD) ($13 BRL)
+- **Total: $100,000 COP APROX ($26 USD/dia) ($85 BRL)**
 
 **Confortável:**
 
-- Café da manhã: COP 25.000 ($6 USD)
-- Almoço: COP 50.000 ($13 USD)
-- Jantar: COP 60.000 ($15 USD)
-- Café/lanches: COP 25.000 ($6 USD)
-- **Total: ~COP 160.000 (~$40 USD/dia)**
+- Café da manhã: $25,000 COP ($6 USD) ($20 BRL)
+- Almoço: $50,000 COP ($13 USD) ($42 BRL)
+- Jantar: $60,000 COP ($15 USD) ($48 BRL)
+- Café/snacks: $25,000 COP ($6 USD) ($20 BRL)
+- **Total: $160,000 COP APROX ($40 USD/dia) ($130 BRL)**
 
-## Métodos de Pagamento
+## Métodos de pagamento
 
-- 💳 **Cartões:** Amplamente aceitos (Visa, Mastercard)
 - 💵 **Dinheiro:** Útil para lojas pequenas e transporte
-- 📱 **Apps de pagamento:** Nequi, Daviplata (se tiver conta colombiana)
+- 💳 **Cartões:** Amplamente aceitos (Visa, Mastercard)
+- 📱 **Apps de pagamento:** Nequi, Daviplata, Llave Bre-v (se você tiver conta colombiana)
 
-**Câmbio de moeda:**
+**Câmbio:**
 
-- Casas de câmbio no aeroporto
-- Bancos na cidade
-- Caixas eletrônicos disponíveis (taxas aplicáveis)
+- As casas de câmbio no aeroporto e no shopping Salitre Plaza. Ao trocar dinheiro, vá sempre acompanhado e mantenha distância de outras pessoas.
+- Bancos na cidade (Bancolombia, entre outros)
+- Caixas eletrônicos disponíveis (podem aplicar taxas)
 
-## Dicas Adicionais
+## Dicas adicionais
 
-- **Gorjetas:** 10% sugerido em restaurantes (às vezes incluído na conta)
-- **Água:** A água da torneira em Bogotá é potável, mas muitos preferem engarrafada
-- **Alergias:** Sempre comunique alergias alimentares em espanhol: "Soy alérgico/a a..."
+- **Gorjetas:** 10% sugerido em restaurantes (às vezes incluído na conta, na Colômbia não é obrigatório)
+- **Água:** A água da torneira em Bogotá é potável, mas muitos preferem água engarrafada.
+- **Alergias:** Sempre informe alergias alimentares em espanhol: "Soy alérgico/a a..."
 
 ## Contato
 
 Dúvidas sobre hospedagem ou alimentação?
 
-📧 E-mail: <hospedagem@sac2026.com>  
-💬 WhatsApp: +57 XXX XXX XXXX
+🔗 Junte-se aqui: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
 
-Aproveite a gastronomia bogotana! 🍽️
+Ou escreva para:
+sac2026@speedcubingcolombia.org
+
+¡Aproveite a gastronomia colombiana! 🍽️ 💛💙❤️
+

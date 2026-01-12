@@ -40,7 +40,7 @@ Hemos seleccionado opciones de alojamiento cerca del venue con diferentes rangos
 - 📍 Distancia: 3 km del venue
 - 💰 Precio aproximado: $80-120 USD/noche
 - ⭐ Incluye: Desayuno, Wi-Fi, centro de negocios
-- 🏷️ **Tarifa especial SAC:** $75 USD/noche (habitación doble)
+
 
 **Hotel Estelar La Fontana**
 
@@ -266,4 +266,4 @@ Bogotá tiene excelente oferta para vegetarianos y veganos:
 También puedes dirigirte al correo: 
 sac2026@speedcubingcolombia.org
 
-¡Disfruta la gastronomía Colombiana! 🍽️
+¡Disfruta la gastronomía Colombiana! 🍽️ 💛💙❤️

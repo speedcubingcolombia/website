@@ -1,7 +1,7 @@
 ---
-title: "South American Championship 2026"
-excerpt: "12-15 de junho de 2026 em Bogotá, Colômbia. O campeonato continental oficial da WCA. Inscreva-se agora e faça parte do maior evento de speedcubing da América do Sul."
-date: 2025-06-22
+title: "SAC 2026: WCA South American Championship 2026"
+excerpt: "Tudo o que você precisa saber sobre o Campeonato Sul-Americano 2026: inscrição, sede, hospedagem, cronograma e turismo em Bogotá."
+date: 2026-06-12
 author: "Speedcubing Colombia"
 authorRole: "Organização SAC 2026"
 authorAvatar: "/sac/ssc.png"
@@ -13,54 +13,46 @@ tabLabel: "Início"
 
 <div align="center">
 
-![South American Championship 2026](/sac/compilado_horizontal.png)
+![SAC 2026 – Campeonato Sul-Americano WCA](/sac/CompiladoHorizontalDL.png)
 
 </div>
 
-Boas-vindas o **WCA South American Championship 2026** chega a Bogotá, Colômbia, reunindo os melhores speedcubers de todo o continente para competir no evento mais aguardado do ano.
+Bem-vindos à **página oficial do Campeonato WCA South American Championship (SAC 2026)**,  
+o evento de Speedcubing mais importante da América do Sul e uma competição oficial da  
+**World Cube Association (WCA)**.
 
-🗓️ **Datas:** 12 a 15 de junho de 2026  
-📍 **Local:** Colegio Teresiano – Bogotá, Colômbia  
-🏅 **Eventos:** Todos os 17 eventos oficiais da WCA  
-🌎 **Participantes:** Competidores de toda a América do Sul e convidados
-
----
-
-## Informações-chave
-
-- ✅ **Todos os 17** eventos oficiais da WCA  
-- ✅ **Limite de 350** competidores  
-- ✅ **4 dias** de competição  
-- ✅ **Status de Campeonato Continental WCA**
+De **12 a 15 de junho de 2026**, **Bogotá, Colômbia**, será o ponto de encontro dos  
+melhores competidores do continente para quatro dias de competição de alto nível,  
+recordes, comunidade e uma experiência projetada para estabelecer um novo padrão na região.
 
 ---
 
-## Datas Importantes
+## Informações principais
 
-| Etapa | Data |
-|---|---|
-| Início das inscrições | 15 de fevereiro de 2026 |
-| Fim do Early Bird | 31 de março de 2026 |
-| Inscrição regular | 1 a 30 de abril de 2026 |
-| Inscrição tardia | 1 a 31 de maio de 2026 |
-| Prazo para reembolso (50%) | 20 de maio de 2026 |
-| Prazo para editar eventos | 5 de junho de 2026 |
-| **Competição** | **12 a 15 de junho de 2026** |
+- 📅 **Datas:** 12, 13, 14 e 15 de junho de 2026  
+- 📍 **Cidade:** Bogotá D.C., Colômbia  
+- 🏟️ **Local:** Coliseu, Colégio Teresiano – Usaquén  
+- 👥 **Vagas:** Até 400 competidores  
+- 🧩 **Eventos:** Todos os eventos oficiais da WCA  
+A categoria FMC será realizada antecipadamente em diferentes pontos da América do Sul. Por favor, entre em contato com o seu delegado regional da competição.
 
 ---
 
-## Contato
+## Um campeonato continental
 
-📧 **E-mail:** <sac2026@speedcubingcolombia.org>  
-📱 **Instagram:** [@speedcubingcol](https://instagram.com/speedcubingcol)  
-🌐 **Site:** [speedcubingcolombia.org](https://speedcubingcolombia.org)
+O **Campeonato Sul-Americano** é muito mais do que uma competição.  
+É o palco onde os melhores speedcubers da América do Sul se reúnem,  
+novas histórias são escritas e o cubo é vivido no mais alto nível competitivo.
+
+**Um continente. Um campeonato. Bogotá 2026.**
 
 ---
 
 _Evento oficial da World Cube Association_  
-_Organizado por: Speedcubing Colombia_
+_Organiza: Speedcubing Colombia e Associação Equatoriana de Speedcubing_
 
 <div style="display: flex; justify-content: center; gap: 32px; align-items: center;">
  <img src="/sac/wca.svg" width="200" alt="World Cube Association">
  <img src="/sac/ssc.png" width="200" alt="Speedcubing Colombia">
+ <img src="/sac/AES.png" width="300" alt="Associação Equatoriana de Speedcubing">
 </div>

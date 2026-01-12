@@ -8,11 +8,11 @@ tabLabel: "Registro"
 
 ## Fechas importantes
 
-📅 **Apertura de registro:** 18 de Enero de 2026  
-⏰ **Cierre de registro:** 28 de Mayo de 2026  
-✏️ **Fecha límite para editar eventos:** 28 de Mayo de 2026
+📅 **Apertura de registro:** 22 de enero de 2026  
+⏰ **Cierre de registro:** 28 de mayo de 2026  
+✏️ **Fecha límite para editar eventos:** 28 de mayo de 2026
 
-Recuerda que el costo de la competencia varia acorde a la fecha, puedes ver los costos en la pestaña  [Pagos](speedcubingcolombia.org/blog/sac-2026/pagos).
+Recuerda que el costo de la competencia varia acorde a la fecha, puedes ver los costos en la pestaña  [Pagos](https://www.speedcubingcolombia.org/blog/sac-2026/pagos).
 
 ## Cómo registrarse
 
@@ -29,9 +29,9 @@ El registro se realiza exclusivamente a través del sitio web oficial de la WCA:
 
 ### Competidores
 
-- **Primera fecha** (hasta 18 de Marzo): $80.000 COP
-- **Segunda fecha** (19 Marzo - 19 Abril): $100.000 COP  
-- **Tercera fecha** (20 Abril - 28 Mayo): $120.000 COP
+- **Primera fecha** (hasta 18 de marzo): $80.000 COP
+- **Segunda fecha** (19 marzo - 19 abril): $100.000 COP  
+- **Tercera fecha** (20 abril - 28 mayo): $120.000 COP
 
 El registro incluye:
 
@@ -55,7 +55,7 @@ El registro funciona por orden de llegada. Una vez alcanzado el límite, se abri
 
 ## Eventos disponibles
 
-SAC 2026 contará con **todos los eventos oficiales WCA:**
+SAC 2026 contará con **todos los eventos oficiales WCA exceptuando FMC:**
 
 ### Puzzles estándar
 
@@ -98,9 +98,9 @@ Cada evento tendrá límites de tiempo específicos. Si no completas tu solve de
 
 La mayoría de eventos utilizarán el formato **Average of 5** (promedio de 5 intentos). Algunos eventos utilizarán:
 
-- **Best of 3:** 6x6x6, 7x7x7
+- **Mean of 3:** 6x6x6, 7x7x7
 - **Best of 2:** MBLD
-- **Mean of 3:** 4x4x4 BLD, 5x5x5 BLD
+- **Best of 3:** 4x4x4 BLD, 5x5x5 BLD
 
 ## Información adicional
 
@@ -115,10 +115,10 @@ Puedes modificar los eventos en los que participarás hasta el **28 de mayo de 2
 ### Preguntas frecuentes
 
 **¿Puedo registrarme el día del evento?**  
-**No.** Todo el registro debe hacerse en línea con anticipación.
+No. Todo el registro debe hacerse en línea con anticipación.
 
 **¿Necesito ser ciudadano sudamericano para competir?**  
-No. SAC 2026 está abierto a competidores de todo el mundo, aunque se prioriza a competidores sudamericanos si se alcanza el límite de capacidad.
+Cualquier persona de cualquier parte del mundo puede participar en la competencia sin importar la nacionalidad.
 
 **¿Qué pasa si la lista está llena?**  
 Se abrirá una lista de espera. Si alguien cancela, te contactaremos por correo.

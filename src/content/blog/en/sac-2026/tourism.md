@@ -3,47 +3,52 @@ title: "Tourism"
 multiSection: true
 tabLabel: "Tourism"
 ---
+<div align="center">
+
+![SAC 2026 – WCA South American Championship](/sac/TuristaBogota.jpg)
+
+</div>
 
 # Tourism in Bogotá
 
 Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Colombian capital offers world-class culture, history, nature, and gastronomy.
 
-## Must-See Places
+## Must-see places
 
-### 🏔️ Cerro de Monserrate
+### 🏔️ Monserrate Hill
 
 **The icon of Bogotá**
 
-- **What it is:** Sanctuary at 3,152 meters with panoramic views of the entire city
+- **What it is:** A sanctuary at 3,152 meters with panoramic views of the entire city
 - **How to get up:**
-  - Cable car: COP 28,000 round trip (~$7 USD)
-  - Funicular: COP 28,000 round trip
-  - On foot: Free (requires good physical condition, 1-2 hours)
-- **Hours:** Monday-Saturday 6:30 AM-12:00 PM, Sunday 5:30 AM-5:00 PM
+  - Cable car: $28,000 COP round trip (~$7 USD)
+  - Funicular: $28,000 COP round trip
+  - On foot: Free (requires good physical condition, 1–2 hours)
+- **Schedule:** Monday–Saturday 6:30 AM–12:00 PM, Sunday 5:30 AM–5:00 PM
 - **Recommendation:** Go in the morning to avoid fog
-- **Suggested time:** 2-3 hours
+- **Suggested time:** 2–3 hours
 
-**What to do:**
+**Things to do:**
 
-- Visit the sanctuary of Señor Caído
-- Enjoy the view of Bogotá
+- Visit the Lord of the Fallen Sanctuary
+- Enjoy the panoramic view of Bogotá
 - Eat at traditional restaurants
-- Buy handicrafts
+- Buy local handicrafts
 
-### 🏛️ Gold Museum (Museo del Oro)
+### 🏛️ Gold Museum
 
 **One of the most important collections in the world**
 
 - **Location:** Downtown Bogotá (Carrera 6 #15-88)
-- **Admission:** COP 4,000 (~$1 USD), Sundays free
-- **Hours:** Tuesday-Saturday 9:00 AM-6:00 PM, Sunday 10:00 AM-4:00 PM
-- **Suggested time:** 2-3 hours
+- **Admission:** $4,000 COP (~$1 USD), free on Sundays
+- **Schedule:** Tuesday–Saturday 9:00 AM–6:00 PM, Sunday 10:00 AM–4:00 PM
+- **Suggested time:** 2–3 hours
 
 **What to see:**
 
-- More than 34,000 pre-Columbian gold pieces
+- Over 34,000 pieces of pre-Columbian gold
 - The Muisca raft (legend of El Dorado)
-- Collections of indigenous cultures
+- Indigenous culture collections
 
 ### 🎨 Botero Museum
 
@@ -51,8 +56,8 @@ Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Col
 
 - **Location:** La Candelaria (Calle 11 #4-41)
 - **Admission:** FREE
-- **Hours:** Wednesday-Monday 9:00 AM-7:00 PM
-- **Suggested time:** 1.5-2 hours
+- **Schedule:** Wednesday–Monday 9:00 AM–7:00 PM
+- **Suggested time:** 1.5–2 hours
 
 **What to see:**
 
@@ -64,65 +69,65 @@ Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Col
 
 **The colonial historic center**
 
-- **What it is:** Historic neighborhood with colorful colonial houses
-- **Admission:** Free (walk through the streets)
-- **Suggested time:** 3-4 hours
+- **What it is:** A historic neighborhood with colorful colonial houses
+- **Admission:** Free (walking through the streets)
+- **Suggested time:** 3–4 hours
 
-**What to do:**
+**Things to do:**
 
-- Walk through cobblestone streets
+- Walk along cobblestone streets
 - Visit Plaza de Bolívar
 - Enter colonial churches
 - Explore street art (amazing murals)
 - Have coffee in historic cafés
 
-**Sites in La Candelaria:**
+**Places in La Candelaria:**
 
-- Casa de la Moneda (Mint House)
+- Casa de la Moneda
 - Teatro Colón
 - Chorro de Quevedo (birthplace of Bogotá)
 - Eje Ambiental (pedestrian street)
 
 ### 🌿 José Celestino Mutis Botanical Garden
 
-**The city's green lung**
+**The city’s green lung**
 
 - **Location:** Calle 63 #68-95
-- **Admission:** COP 3,500 (~$1 USD)
-- **Hours:** Tuesday-Sunday 8:00 AM-5:00 PM
-- **Suggested time:** 2-3 hours
+- **Admission:** $3,500 COP (~$1 USD)
+- **Schedule:** Tuesday–Sunday 8:00 AM–5:00 PM
+- **Suggested time:** 2–3 hours
 
-**What to do:**
+**Things to do:**
 
-- Tour the orchid garden
-- Visit the Andean forest
+- Visit the orchid garden
+- Explore the Andean forest
 - Learn about native flora
 - Relax by the lakes
 
 ### 🌳 Simón Bolívar Park
 
-**The Central Park of Bogotá**
+**Bogotá’s Central Park**
 
 - **Location:** Central area
 - **Admission:** Free
-- **Suggested time:** 1-2 hours
+- **Suggested time:** 1–2 hours
 
 **Activities:**
 
-- Walks and jogging
-- Cycling (you can rent a bike)
-- Picnic
+- Walking and jogging
+- Cycling (bike rental available)
+- Picnics
 - Outdoor sports
 
-### 🍴 Gastronomic Zone - Usaquén
+### 🍴 Usaquén Gastronomic Zone
 
 **Flea market and restaurants**
 
-- **Location:** Carrera 6A con Calle 119 (near the venue!)
-- **When:** Sundays is market day
+- **Location:** Carrera 6A with Calle 119 (near the venue!)
+- **When:** Sundays are market days
 - **Admission:** Free
 
-**What to do:**
+**Things to do:**
 
 - Have breakfast or lunch at traditional restaurants
 - Explore the flea market (handicrafts, antiques)
@@ -135,13 +140,13 @@ Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Col
 - La Puerta de la Catedral
 - Usaquén Zona T (multiple options)
 
-### 🍻 Zona Rosa and Parque de la 93
+### 🍻 Zona Rosa & Parque de la 93
 
 **Nightlife and gastronomy**
 
 - **Location:** Zona T, Parque de la 93
-- **What to do:**
-  - Dinner at international restaurants
+- **Things to do:**
+  - Dine at international restaurants
   - Bars and nightclubs
   - Craft breweries
   - Cafés
@@ -152,23 +157,23 @@ Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Col
 - Apache Pizza
 - Ice cream area (multiple options)
 
-## Recommended Tours
+## Recommended trips
 
-### Day Trip: Zipaquirá (Salt Cathedral)
+### Day trip: Zipaquirá (Salt Cathedral)
 
 **An underground wonder**
 
-- **What it is:** Catholic cathedral built inside a salt mine
+- **What it is:** A Catholic cathedral built inside a salt mine
 - **Distance:** 49 km north of Bogotá
-- **Travel time:** 1-1.5 hours
-- **Admission:** COP 75,000 (~$19 USD)
+- **Travel time:** 1–1.5 hours
+- **Admission:** $75,000 COP (~$19 USD)
 
 **How to get there:**
 
-- Organized tour: ~COP 100,000 (~$25 USD) includes transportation and admission
-- Public transport: Portal Norte → Zipaquirá (more affordable)
+- Organized tour: $100,000 COP (~$25 USD), includes transport and entrance
+- Public transport: Portal Norte → Zipaquirá (cheaper)
 
-**What to do:**
+**Things to do:**
 
 - Tour the underground cathedral
 - Watch the light show
@@ -177,40 +182,26 @@ Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Col
 
 **Suggested time:** Full day
 
-### Day Trip: Guatavita Lagoon
+### Day trip: Guatavita Lagoon
 
-**The origin of the legend of El Dorado**
+**The origin of the El Dorado legend**
 
 - **What it is:** Sacred lagoon of the Muisca people
 - **Distance:** 75 km northeast
-- **Admission:** COP 18,000 (~$4.50 USD)
+- **Admission:** $18,000 COP (~$4.50 USD)
 
 **Recommendation:**
 
-- Requires advance reservation
-- Wear comfortable walking clothes
+- Advance reservation required
+- Wear comfortable clothes
 - Bring water and snacks
-
-### Graffiti Tour
-
-**World-class street art**
-
-- **Where:** La Candelaria and other areas
-- **Free tours:** Tip-based
-- **Duration:** 2-3 hours
-
-**Learn about:**
-
-- Colombia's political history
-- Local and international artists
-- Urban cultural movement
 
 ## Nightlife
 
-### Zona Rosa (Calle 82-85)
+### Zona Rosa (Calle 82–85)
 
-- Bars and nightclubs
-- Varied music (electronic, salsa, reggaeton)
+- Bars and clubs
+- Varied music
 - International atmosphere
 
 ### Parque de la 93
@@ -222,44 +213,44 @@ Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Col
 ### La Candelaria
 
 - Bohemian bars
-- Live music (rock, jazz)
+- Live music
 - More affordable
 
 **Safety recommendations:**
 
-- Use taxis or apps (Uber, Didi) at night
-- Don't walk alone in unfamiliar areas
-- Keep your valuables safe
+- Use taxis or ride-sharing apps at night
+- Avoid walking alone in unfamiliar areas
+- Keep your belongings safe
 
-## Colombian Coffee
+## Colombian coffee
 
-Colombia produces the best coffee in the world. **Don't leave without trying it.**
+Colombia produces the best coffee in the world. **Don’t leave without trying it.**
 
-### Recommended Cafés
+### Recommended cafés
 
-**Amor Perfecto** (Specialty coffee)
+**Amor Perfecto** (specialty coffee)
 
-- Various locations
-- Artisanal brewing methods
+- Multiple locations
+- Artisan brewing methods
 
 **Azahar Coffee**
 
 - Colombian origin coffee
-- House roasted
+- In-house roasting
 
 **Juan Valdez** (national chain)
 
 - Multiple locations
-- Typical Colombian experience
+- Traditional Colombian experience
 
-### Coffee Tours
+### Coffee tours
 
-- **Hacienda Coloma:** Complete coffee process tour
-- **Nearby coffee farm:** Half-day tours available
+- **Hacienda Coloma:** Full coffee process tour
+- **Nearby coffee farms:** Half-day tours available
 
-## Shopping and Souvenirs
+## Shopping and souvenirs
 
-### Colombian Handicrafts
+### Colombian handicrafts
 
 **Usaquén (Sunday market):**
 
@@ -267,53 +258,53 @@ Colombia produces the best coffee in the world. **Don't leave without trying it.
 - Ráquira ceramics
 - Filigree jewelry
 
-**Specialized stores:**
+**Specialty shops:**
 
-- Artesanías de Colombia (official chain)
+- Artesanías de Colombia
 - Galería Cano
-- Stores in La Candelaria
+- Shops in La Candelaria
 
-### Colombian Emeralds
+### Colombian emeralds
 
-Colombia produces 70% of the world's emeralds.
+Colombia produces 70% of the world’s emeralds.
 
 **Where to buy:**
 
 - International Emerald Center
-- Certified jewelers in Zona Rosa
-- **Tip:** Ask for certificate of authenticity
+- Certified jewelry stores in Zona Rosa
+- **Tip:** Always request an authenticity certificate
 
-### Chocolate and Coffee
+### Chocolate and coffee
 
-- Juan Valdez coffee shops
-- Chocolates Santander
+- Juan Valdez stores
+- Santander chocolates
 - Supermarkets (more affordable)
 
-## Tourist Transportation
+## Tourist transportation
 
 ### TransMilenio
 
-- Articulated bus network
-- TuLlave card: COP 7,000 + top-ups
-- Cost per trip: COP 2,950
+- Articulated bus system
+- TuLlave card: $7,000 COP + reloads
+- Cost per ride: $2,950 COP
 
-### Public Bicycle System
+### Public bike system
 
-- **Ciclovía on Sundays:** 120 km of streets closed to traffic for cyclists
-- Hours: 7:00 AM - 2:00 PM
+- **Sunday Ciclovía:** 120 km of streets closed to traffic
+- Schedule: 7:00 AM – 2:00 PM
 - Free
 
-### Tourist Bus Tours
+### Tourist bus tours
 
 - **Bogotá City Tour:** Hop-on hop-off bus
-- Price: COP 35,000 (~$9 USD)
+- Price: $35,000 COP (~$9 USD)
 - Includes main attractions
 
-## Useful Apps in Bogotá
+## Useful apps in Bogotá
 
 📱 **Transportation:**
 
-- Uber, DiDi, Cabify, Beat
+- Uber, InDrive, DiDi, Cabify, Beat
 - Moovit (TransMilenio routes)
 
 📱 **Food:**
@@ -328,97 +319,69 @@ Colombia produces 70% of the world's emeralds.
 - TripAdvisor
 - Bogotá Pass
 
-## Weather and What to Bring
+## Weather and what to bring
 
-**Bogotá's climate:**
+**Bogotá climate:**
 
 - Average temperature: 14°C (57°F)
-- It can rain at any time
+- Rain can occur at any time
 - Sunny days but cold nights
 
 **What to bring:**
 
 - 🧥 Light jacket or coat
-- ☔ Umbrella or raincoat
+- ☔ Umbrella or rain jacket
 - 👟 Comfortable walking shoes
 - 🧴 Sunscreen (high altitude, strong sun)
 - 💧 Reusable water bottle
 
-## Important Information
+## Important information
 
 ### Safety
 
 Bogotá is generally safe in tourist areas, but:
 
 - Keep your belongings close
-- Avoid displaying valuable items
-- Use official taxis or apps
-- Consult locals about areas to avoid
+- Avoid displaying valuables
+- Use official taxis or ride-sharing apps
+- Ask locals about areas to avoid
 
 ### Language
 
 - **Spanish** is the official language
-- In tourist areas there are English speakers
+- English is spoken in tourist areas
 - Translation apps are very useful
 
 ### Currency
 
 - **Colombian Peso (COP)**
-- $1 USD ≈ COP 4,000-4,500
+- $1 USD ≈ $4,000–4,500 COP
 - Credit cards widely accepted
 
 ### Tips
 
-- Restaurants: 10% (sometimes included)
-- Taxis: Round up
-- Free tours: COP 20,000-50,000 depending on service
-
-## Tours Organized by SAC 2026
-
-The organizing team is coordinating group tours for competitors:
-
-### City + Monserrate Tour (Wednesday, June 10)
-
-- Price: COP 60,000 (~$15 USD)
-- Includes: Transportation, guide, admissions
-
-### Zipaquirá Tour (Tuesday, June 9)
-
-- Price: COP 120,000 (~$30 USD)
-- Includes: Transportation, guide, cathedral admission, lunch
-
-**Reservations:** <tours@sac2026.com>  
-**Limited capacity:** 40 people per tour
+- Restaurants: 10% suggested (sometimes included)
+- Taxis: Rounding up is common
+- Free tours: COP 20,000–50,000 depending on service
 
 ## Weather in June
 
 June is rainy season in Bogotá:
 
-- Temperatures: 8-19°C (46-66°F)
+- Temperatures: 8–19°C (46–66°F)
 - Frequent afternoon rain
-- Mornings generally dry
+- Mornings are generally dry
 
 **Tip:** Plan outdoor activities in the mornings.
 
-## Tourism Contact
-
-🏢 **Tourist Information Point (PIT):**
-
-- El Dorado Airport
-- Plaza de Bolívar
-- TransMilenio Terminal
-
-📧 **Email:** <tourism@sac2026.com>  
-💬 **WhatsApp:** +57 XXX XXX XXXX
-
-## Additional Resources
+## Additional resources
 
 🌐 **Useful websites:**
 
 - [www.bogota.gov.co/turismo](https://bogota.gov.co)
 - [www.colombia.travel](https://colombia.travel)
-- District Tourism Institute
+- [District Tourism Institute](https://www.idt.gov.co/)
 
 ---
 
-Enjoy your visit to Bogotá and have an unforgettable experience at SAC 2026! 🇨🇴✨
+Enjoy your visit to Bogotá and live an unforgettable experience at SAC 2026! ✨💛💙❤️

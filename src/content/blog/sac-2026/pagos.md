@@ -17,11 +17,9 @@ Sigue estos pasos para completar correctamente tu inscripción al
 
 El costo variará de acuerdo a las fechas establecidas para una o todas las categorías es el siguiente:
 
-- **80.000 COP** (18 de enero - 18 de marzo)
-
-- **100.000 COP** (19 de marzo - 19 de Abril)
-
-- **120.000 COP** (20 de abril - 28 de Mayo)
+- **80.000 COP** (22 de enero - 18 de marzo)
+- **100.000 COP** (19 de marzo - 19 de abril)
+- **120.000 COP** (20 de abril - 28 de mayo)
 
 
 **Espectadores**
@@ -33,6 +31,8 @@ El costo variará de acuerdo a las fechas establecidas para una o todas las cate
 
 ### 🟢 PASO 2 — REALIZA EL PAGO
 Si eres colombiano o tienes cuentas bancarias en Colombia podrás realizar el pago de las siguientes maneras:
+
+Para que el registro quede aprobado se debe realizar el pago al [**Siguiente LINK**]() y tu registro será aprobado una vez sea verificado por el  equipo organizador.
 
 **BANCO DAVIVIENDA** mediante transferencia bancaria a la siguiente cuenta:
 
