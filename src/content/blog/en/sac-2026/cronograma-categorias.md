@@ -4,7 +4,7 @@ multiSection: true
 tabLabel: "Schedule"
 ---
 
-# Official Schedule
+# Schedule
 
 The complete and up-to-date event schedule is available on the official WCA website. We recommend checking it frequently, as it may be subject to changes before and during the competition.
 

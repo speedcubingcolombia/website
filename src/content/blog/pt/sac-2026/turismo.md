@@ -9,7 +9,7 @@ tabLabel: "Turismo"
 
 </div>
 
-# Turismo em Bogotá
+# Turismo Em Bogotá
 
 Aproveite sua visita ao SAC 2026 para conhecer o melhor de Bogotá! A capital colombiana oferece cultura, história, natureza e gastronomia de nível mundial.
 
@@ -289,12 +289,15 @@ A Colômbia produz o melhor café do mundo. **Não vá embora sem experimentar.*
 ## Apps úteis
 
 📱 Transporte:
+
 - Uber, InDrive, DiDi
 
 📱 Comida:
+
 - Rappi, Uber Eats
 
 📱 Turismo:
+
 - Google Maps, TripAdvisor
 
 ## Clima e o que levar
@@ -306,17 +309,21 @@ A Colômbia produz o melhor café do mundo. **Não vá embora sem experimentar.*
 ## Informações importantes
 
 ### Segurança
+
 - Cuide de seus pertences
 - Use transporte oficial
 
 ### Idioma
+
 - Espanhol
 - Inglês em áreas turísticas
 
 ### Moeda
+
 - Peso colombiano (COP)
 
 ### Gorjetas
+
 - 10% sugerido
 
 ---

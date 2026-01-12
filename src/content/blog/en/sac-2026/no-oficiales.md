@@ -4,7 +4,7 @@ multiSection: true
 tabLabel: "Unofficial events"
 ---
 
-# Unofficial events
+# Unofficial Events
 
 During the SAC 2026 competition, we will have unofficial events such as:
 
@@ -13,27 +13,25 @@ During the SAC 2026 competition, we will have unofficial events such as:
 - FTO (Octahedron)
 - Team Blind (3x3 blind in pairs)
 
-# Requirements to participate
+## Requirements to participate
 
-Be registered in the official SAC 2026 Bogotá comp
+Be registered in the official SAC 2026 Bogotá competition  
 Have a WCA ID  
 Register by May 28 using the form at the end of this tab. Each category will have a maximum of 40 participants (competitors). Spots will be assigned according to registration order (20 spots) and by ranking in the respective category on Cubingcontests.com (this data will be taken on May 29, 2026). Participation lists will be published on this page on May 31, 2026.
 
-# Participation format
+## Participation format
 
 Each competitor or team must appear at the indicated time in the corresponding area. Bringing your own judge is required. To avoid interference with official categories, unofficial categories will be held in time slots, during which solves can be done at any moment. Once the time slot ends, there will be no further opportunity to participate. The top 10 participants or teams will advance to the final rounds.
 
-# Results of unofficial events
+## Results of unofficial events
 
-All times for unofficial events will be published on the [cubing contest.](https://cubingcontests.com/) website:
+All times for unofficial events will be published on the [Cubing Contest](https://cubingcontests.com/) website.
 
-- https://cubingcontests.com/
-
-# Capacity
+## Capacity
 
 Each unofficial category will have a limit of 40 competitors; for Team Blind, 20 teams. If the limit is reached, a waiting list will be enabled for the unofficial categories.
 
-# Registration for unofficial events
+## Registration for unofficial events
 
 Registration will be done through the following form:
 

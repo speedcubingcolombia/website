@@ -9,7 +9,7 @@ tabLabel: "Tourism"
 
 </div>
 
-# Tourism in Bogotá
+# Tourism In Bogotá
 
 Take advantage of your visit to SAC 2026 to explore the best of Bogotá! The Colombian capital offers world-class culture, history, nature, and gastronomy.
 

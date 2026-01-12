@@ -4,7 +4,7 @@ multiSection: true
 tabLabel: "Cronograma"
 ---
 
-# Cronograma Oficial
+# Cronograma
 
 O cronograma completo e atualizado do evento está disponível na página oficial da WCA. Recomendamos consultá-lo com frequência, pois ele pode estar sujeito a alterações antes e durante a competição.
 

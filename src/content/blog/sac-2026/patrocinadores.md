@@ -2,9 +2,8 @@
 title: "Patrocinadores"
 multiSection: true
 tabLabel: "Patrocinadores"
-
-
 ---
+
 # Patrocinadores
 
 Nos enorgullese de todo corazón contar con la participación de tan importantes patrocinadores para el torneo más grande del continente sudamericano, esperamos contar con la participación de todos y si deseas que tu empresa o marca aparezca en la competencia WCA SAC 2026 escribemos al siguiente correo: <sac2026@speedcubingcolombia.org>

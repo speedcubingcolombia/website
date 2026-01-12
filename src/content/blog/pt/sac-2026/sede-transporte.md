@@ -4,13 +4,15 @@ multiSection: true
 tabLabel: "Local"
 ---
 
+# Local E Transporte
+
 ![SAC 2026 – Local e Transporte](/sac/mascota_venue.png)
 
 <div align="center">
 
-# 🏫 COLÉGIO TERESIANO
+## 🏫 COLÉGIO TERESIANO
 
-## BOGOTÁ, COLÔMBIA
+### BOGOTÁ, COLÔMBIA
 
 </div>
 

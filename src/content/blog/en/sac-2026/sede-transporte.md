@@ -4,13 +4,15 @@ multiSection: true
 tabLabel: "Venue"
 ---
 
+# Venue And Transportation
+
 ![SAC 2026 – Venue and Transportation](/sac/mascota_venue.png)
 
 <div align="center">
 
-# 🏫 TERESIANO SCHOOL
+## 🏫 TERESIANO SCHOOL
 
-## BOGOTÁ, COLOMBIA
+### BOGOTÁ, COLOMBIA
 
 </div>
 

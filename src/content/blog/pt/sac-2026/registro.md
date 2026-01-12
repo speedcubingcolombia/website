@@ -12,7 +12,7 @@ tabLabel: "Registro"
 ⏰ **Encerramento do registro:** 28 de maio de 2026  
 ✏️ **Data limite para editar eventos:** 28 de maio de 2026
 
-Lembre-se de que o custo da competição varia de acordo com a data. Você pode consultar os valores na aba [Pagos](https://www.speedcubingcolombia.org/pt/blog/sac-2026/pagos).
+Lembre-se de que o custo da competição varia de acordo com a data. Você pode consultar os valores na aba [Pagamentos](https://www.speedcubingcolombia.org/pt/blog/sac-2026/pagos).
 
 ## Como se registrar
 
@@ -20,7 +20,7 @@ O registro é realizado exclusivamente através do site oficial da WCA:
 
 1. **Crie sua conta WCA** (caso ainda não tenha) em [worldcubeassociation.org](https://www.worldcubeassociation.org/)
 2. Procure por [**"SAC 2026"**](https://www.worldcubeassociation.org/competitions/SAC2026) ou **"South American Championship 2026"** no calendário de competições
-3. Clique em **"Register"**
+3. Clique em **"Registrar"**
 4. Selecione os eventos nos quais deseja competir
 5. Conclua o pagamento conforme as instruções
 6. Aguarde a confirmação da equipe organizadora

@@ -32,7 +32,7 @@ El costo variará de acuerdo a las fechas establecidas para una o todas las cate
 
 Si eres colombiano o tienes cuentas bancarias en Colombia podrás realizar el pago de las siguientes maneras:
 
-Para que el registro quede aprobado se debe realizar el pago al [**Siguiente LINK**]() y tu registro será aprobado una vez sea verificado por el  equipo organizador.
+Para que el registro quede aprobado se debe realizar el pago al [**siguiente link**]() y tu registro será aprobado una vez sea verificado por el  equipo organizador.
 
 **BANCO DAVIVIENDA** mediante transferencia bancaria a la siguiente cuenta:
 
@@ -41,7 +41,7 @@ Para que el registro quede aprobado se debe realizar el pago al [**Siguiente LIN
 - **Número de cuenta:** **0550108900738049**  
 - **Titular:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
 
-**LLAVE BRE-V** mediante la siguiente llave:
+**LLAVE Bre-B** mediante la siguiente llave:
 
 - **0550108900798043**
 

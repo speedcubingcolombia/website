@@ -4,7 +4,7 @@ multiSection: true
 tabLabel: "Accommodation"
 ---
 
-# Accommodation and Food
+# Accommodation And Food
 
 ## Recommended Hotels
 
@@ -255,9 +255,9 @@ Bogotá has excellent vegetarian and vegan offerings:
 
 Questions about accommodation or food?
 
-🔗 Join here: https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif
+🔗 Join here: <https://chat.whatsapp.com/CRLSt78Uqdy7sXQTXweuif>
 
 You can also contact us via email:  
-sac2026@speedcubingcolombia.org
+<sac2026@speedcubingcolombia.org>
 
 Enjoy Colombian gastronomy! 🍽️ 💛💙❤️

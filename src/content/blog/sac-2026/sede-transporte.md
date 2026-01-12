@@ -4,13 +4,15 @@ multiSection: true
 tabLabel: "Sede"
 ---
 
+# Sede Y Transporte
+
 ![SAC 2026 – Sede y Transporte](/sac/mascota_venue.png)
 
 <div align="center">
 
-# 🏫 COLEGIO TERESIANO
+## 🏫 COLEGIO TERESIANO
 
-## BOGOTÁ, COLOMBIA
+### BOGOTÁ, COLOMBIA
 
 </div>
 

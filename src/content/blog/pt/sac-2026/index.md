@@ -1,7 +1,7 @@
 ---
 title: "SAC 2026: WCA South American Championship 2026"
 excerpt: "Tudo o que você precisa saber sobre o Campeonato Sul-Americano 2026: inscrição, sede, hospedagem, cronograma e turismo em Bogotá."
-date: 2026-06-12
+date: 2026-01-12
 author: "Speedcubing Colombia"
 authorRole: "Organização SAC 2026"
 authorAvatar: "/sac/ssc.png"

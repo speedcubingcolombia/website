@@ -32,7 +32,7 @@ The fee will vary according to the established dates for one or all categories, 
 
 If you are Colombian or have bank accounts in Colombia, you may make the payment using the following methods:
 
-For the registration to be approved, payment must be made through the [**FOLLOWING LINK**](), and your registration will be approved once it has been verified by the organizing team.
+For the registration to be approved, payment must be made through the [**following link**](), and your registration will be approved once it has been verified by the organizing team.
 
 **BANCO DAVIVIENDA** via bank transfer to the following account:
 
@@ -41,7 +41,7 @@ For the registration to be approved, payment must be made through the [**FOLLOWI
 - **Account number:** **0550108900738049**  
 - **Account holder:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
 
-**BRE-V KEY** using the following key:
+**Bre-B KEY** using the following key:
 
 - **0550108900798043**
 

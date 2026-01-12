@@ -4,17 +4,18 @@ multiSection: true
 tabLabel: "Copa das nações"
 ---
 
-### Copa das nações
+# Copa Das Nações
 
 Será aceito um máximo de 16 equipes, que se classificarão pelo seu desempenho médio geral. No mínimo, será aprovada uma equipe por país. Caso haja dois ou mais times do mesmo país, será utilizado o nome do país seguido de uma enumeração em números romanos.
 
 _Exemplo_
+
 - Colômbia V
 - Brasil I
 - Brasil II
 - Chile IV
 
-# Inscrição da equipe
+## Inscrição da equipe
 
 As equipes devem se inscrever no formulário a seguir, e as equipes aprovadas serão exibidas nesta mesma página no dia 28 de maio de 2026.
 

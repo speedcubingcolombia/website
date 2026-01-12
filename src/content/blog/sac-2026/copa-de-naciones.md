@@ -4,17 +4,18 @@ multiSection: true
 tabLabel: "Copa de naciones"
 ---
 
-### Copa de naciones
+# Copa De Naciones
 
 Se recibirá un máximo de 16 equipos los cuales clasificarán por su promedio general. Como mínimo se aprobará un equipo por país en el caso de tener dos o más equipos por país se colocará el nombre del país y después una enumeración con números romanos
 
 _Ejemplo_
+
 - Colombia V
 - Brasil I
 - Brasil II
 - Chile IV
 
-# Inscripción del equipo
+## Inscripción del equipo
 
 Los equipos se deben inscribir en el siguiente formulario y se mostrarán los equipos aprobados en esta misma página el día 28 de mayo del 2026.
 
