@@ -15,7 +15,7 @@ Sigue estos pasos para completar correctamente tu inscripción al
 
 **Competidores**
 
-El costo variará de acuerdo a las fechas establecidas para una o todas las categorías es el siguiente:
+El costo variará de acuerdo a las siguientes fechas:
 
 - **80.000 COP** (22 de enero - 18 de marzo)
 - **100.000 COP** (19 de marzo - 19 de abril)
@@ -43,8 +43,11 @@ Para que el registro quede aprobado se debe realizar el pago al [**siguiente lin
 
 **LLAVE Bre-B** mediante la siguiente llave:
 
-- **0550108900798043**
+- **@DAVICORPSPEECOLO**
 
+Puedes escanear el QR para pagar con llave Bre-b:
+
+![QR llave bre-b](/sac/pagosbrebqr.jpg)
 ---
 
 ### 🟢 PASO 3 — ENVÍA EL CORREO DE CONFIRMACIÓN

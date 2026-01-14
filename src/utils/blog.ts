@@ -43,21 +43,57 @@ export const SLUG_TRANSLATIONS: Record<
   string,
   Partial<Record<SupportedLanguage, string>>
 > = {
-  // SAC 2026 sections with translated URLs
-  "sac-2026/registro": {
-    en: "sac-2026/registration",
-    pt: "sac-2026/inscricao",
-  },
-  "sac-2026/pagos": { en: "sac-2026/payments", pt: "sac-2026/pagamentos" },
-  "sac-2026/cronograma": { en: "sac-2026/schedule" },
-  "sac-2026/sede-transporte": { en: "sac-2026/venue", pt: "sac-2026/local" },
-  "sac-2026/alojamiento-alimentacion": {
+  // SAC 2026 translations - each file uses its own language name
+  "sac-2026/alojamiento": {
+    es: "sac-2026/alojamiento",
     en: "sac-2026/accommodation",
     pt: "sac-2026/hospedagem",
   },
-  "sac-2026/turismo": { en: "sac-2026/tourism" },
-  "sac-2026/patrocinadores": { en: "sac-2026/sponsors" },
-  "sac-2026/staff": { pt: "sac-2026/equipe" },
+  "sac-2026/pagos": {
+    es: "sac-2026/pagos",
+    en: "sac-2026/payments",
+    pt: "sac-2026/pagamentos",
+  },
+  "sac-2026/registro": {
+    es: "sac-2026/registro",
+    en: "sac-2026/registration",
+    pt: "sac-2026/registro",
+  },
+  "sac-2026/patrocinadores": {
+    es: "sac-2026/patrocinadores",
+    en: "sac-2026/sponsors",
+    pt: "sac-2026/patrocinadores",
+  },
+  "sac-2026/turismo": {
+    es: "sac-2026/turismo",
+    en: "sac-2026/tourism",
+    pt: "sac-2026/turismo",
+  },
+  "sac-2026/sede-transporte": {
+    es: "sac-2026/sede-transporte",
+    en: "sac-2026/venue-transport",
+    pt: "sac-2026/local-transporte",
+  },
+  "sac-2026/voluntario": {
+    es: "sac-2026/voluntario",
+    en: "sac-2026/volunteer",
+    pt: "sac-2026/voluntario",
+  },
+  "sac-2026/copa-de-naciones": {
+    es: "sac-2026/copa-de-naciones",
+    en: "sac-2026/nations-cup",
+    pt: "sac-2026/copa-de-nacoes",
+  },
+  "sac-2026/cronograma-categorias": {
+    es: "sac-2026/cronograma-categorias",
+    en: "sac-2026/schedule-categories",
+    pt: "sac-2026/cronograma-categorias",
+  },
+  "sac-2026/no-oficiales": {
+    es: "sac-2026/no-oficiales",
+    en: "sac-2026/unofficial-events",
+    pt: "sac-2026/nao-oficiais",
+  },
 };
 
 /**

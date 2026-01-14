@@ -15,7 +15,7 @@ Follow these steps to correctly complete your registration for the
 
 **Competitors**
 
-The fee will vary according to the established dates for one or all categories, as follows:
+The fee will vary according to the following dates:
 
 - **80,000 COP** (January 22 – March 18)
 - **100,000 COP** (March 19 – April 19)
@@ -43,8 +43,11 @@ For the registration to be approved, payment must be made through the [**followi
 
 **Bre-B KEY** using the following key:
 
-- **0550108900798043**
+- **@DAVICORPSPEECOLO**
 
+You can scan the QR code to pay using the Bre-B key:
+
+![QR llave bre-b](/sac/pagosbrebqr.jpg)
 ---
 
 ### 🟢 STEP 3 — SEND THE CONFIRMATION EMAIL
@@ -57,7 +60,7 @@ Once the payment has been made, send an email to:
 
 Full Name // WCA ID (if applicable) // SAC 2026
 
-**In the body of the email, you must include:**
+**In the body of the email, you have to include:**
 
 - **Proof of payment**
 - **Any additional relevant information**  

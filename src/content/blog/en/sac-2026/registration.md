@@ -82,9 +82,9 @@ SAC 2026 will feature **all official WCA events except FMC:**
 
 Some events require qualification times registered in the WCA:
 
-- **4x4x4 Blindfolded** 10:00.00 or better before May 28, 2026.
-- **5x5x5 Blindfolded** 20:00.00 or better before May 28, 2026.
-- **Multi - Blindfolded** 12 points or better before May 28, 2026.
+- **4x4x4 Blindfolded** Better than 10:00.00 before May 18, 2026.
+- **5x5x5 Blindfolded** Better than 20:00.00 before May 18, 2026.
+- **Multi - Blindfolded** Better than 12 points before May 18, 2026.
 
 Check the official event page for the complete list of requirements.
 

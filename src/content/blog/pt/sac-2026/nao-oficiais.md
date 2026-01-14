@@ -17,7 +17,7 @@ Durante a competição SAC 2026, teremos eventos não oficiais, tais como:
 
 Estar inscrito no torneio oficial SAC 2026 Bogotá  
 Ter WCA ID  
-Inscrever-se até 28 de maio por meio do formulário ao final desta aba. Para cada categoria haverá um máximo de 40 participantes (competidores). As vagas serão atribuídas de acordo com a ordem de inscrição (20 vagas) e pelo ranking da respectiva categoria no Cubingcontests.com (esses dados serão considerados em 29 de maio de 2026). As listas de participantes serão publicadas nesta página no dia 31 de maio de 2026.
+Inscrever-se até 28 de maio por meio do formulário ao final desta aba. Para cada categoria haverá um máximo de 40 participantes (competidores). As vagas serão atribuídas de acordo com a ordem de inscrição (20 vagas). As listas de participantes serão publicadas nesta página no dia 31 de maio de 2026.
 
 ## Dinâmica de participação
 
@@ -33,7 +33,7 @@ Cada uma dos eventos não oficiais terá um limite de 40 competidores; para Team
 
 ## Inscrição em eventos não oficiais
 
-A inscrição será realizada por meio do seguinte formulário:
+Inscrever-se até 28 de maio por meio do formulário disponível no final desta aba:
 
 <div style="margin-top: 1.5em; text-align: center;">
  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-Gz7l4GFSDJzibgy-JpoVr73bxalcVc6vNKhlVezjFOSedQ/viewform?usp=preview" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Inscrição não oficiais</a>

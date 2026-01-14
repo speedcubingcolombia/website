@@ -44,6 +44,10 @@ El **WCA South American Championship** es mucho más que una competencia.
 Es el escenario donde se reúnen los mejores speedcubers de Sudamérica,  
 se escriben nuevas historias y se vive el cubo al más alto nivel competitivo.
 
+## Aviso de filmación
+
+Ten en cuenta que durante el **WCA South American Championship 2026** habrá grabaciones y fotografías de forma frecuente; por lo tanto, al asistir al evento, otorgas tu consentimiento para que tu imagen sea utilizada por la World Cube Association y sus socios en sus plataformas de marketing y redes sociales.
+
 **Un continente. Un campeonato. Bogotá 2026.**
 
 ---
