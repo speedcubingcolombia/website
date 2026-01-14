@@ -15,7 +15,7 @@ Follow these steps to correctly complete your registration for the
 
 **Competitors**
 
-The fee will vary according to the established dates for one or all categories, as follows:
+The fee will vary according to the following dates:
 
 - **80,000 COP** (January 22 – March 18)
 - **100,000 COP** (March 19 – April 19)

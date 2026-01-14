@@ -15,7 +15,7 @@ Sigue estos pasos para completar correctamente tu inscripción al
 
 **Competidores**
 
-El costo variará de acuerdo a las fechas establecidas para una o todas las categorías es el siguiente:
+El costo variará de acuerdo a las siguientes fechas:
 
 - **80.000 COP** (22 de enero - 18 de marzo)
 - **100.000 COP** (19 de marzo - 19 de abril)
