@@ -47,7 +47,7 @@ For the registration to be approved, payment must be made through the [**followi
 
 You can scan the QR code to pay using the Bre-B key:
 
-![QR llave bre-b](pagosbrebqr.jpg)
+![QR llave bre-b](/sac/pagosbrebqr.jpg)
 ---
 
 ### 🟢 STEP 3 — SEND THE CONFIRMATION EMAIL

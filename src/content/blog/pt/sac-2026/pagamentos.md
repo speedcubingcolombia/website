@@ -47,7 +47,7 @@ Para que o registro seja aprovado, é necessário realizar o pagamento no [**lin
 
 Você pode escanear o QR para pagar com a chave Bre-B:
 
-![QR llave bre-b](pagosbrebqr.jpg)
+![QR llave bre-b](/sac/pagosbrebqr.jpg)
 ---
 
 ### 🟢 PASSO 3 — ENVIE O E-MAIL DE CONFIRMAÇÃO
