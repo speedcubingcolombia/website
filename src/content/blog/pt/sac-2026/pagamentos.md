@@ -43,8 +43,11 @@ Para que o registro seja aprovado, é necessário realizar o pagamento no [**lin
 
 **CHAVE Bre-B** por meio da seguinte chave:
 
-- **0550108900798043**
+- **@DAVICORPSPEECOLO**
 
+Você pode escanear o QR para pagar com a chave Bre-B:
+
+![QR llave bre-b](pagosbrebqr.jpg)
 ---
 
 ### 🟢 PASSO 3 — ENVIE O E-MAIL DE CONFIRMAÇÃO
