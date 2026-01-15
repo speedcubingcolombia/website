@@ -32,7 +32,7 @@ O custo variará de acordo com as seguintes datas:
 
 Se você é colombiano ou possui contas bancárias na Colômbia, poderá realizar o pagamento das seguintes formas:
 
-Para que o registro seja aprovado, é necessário realizar o pagamento no [**link seguinte**](), e seu registro será aprovado após verificação pela equipe organizadora.
+Para que o registro seja aprovado, é necessário realizar o pagamento no [**link seguinte**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed), e seu registro será aprovado após verificação pela equipe organizadora.
 
 **BANCO DAVIVIENDA** por meio de transferência bancária para a seguinte conta:
 
