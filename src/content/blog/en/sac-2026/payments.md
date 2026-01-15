@@ -32,7 +32,7 @@ The fee will vary according to the following dates:
 
 If you are Colombian or have bank accounts in Colombia, you may make the payment using the following methods:
 
-For the registration to be approved, payment must be made through the [**following link**](), and your registration will be approved once it has been verified by the organizing team.
+For the registration to be approved, payment must be made through the [**following link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed), and your registration will be approved once it has been verified by the organizing team.
 
 **BANCO DAVIVIENDA** via bank transfer to the following account:
 
