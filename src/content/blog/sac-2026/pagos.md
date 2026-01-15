@@ -32,8 +32,6 @@ El costo variará de acuerdo a las siguientes fechas:
 
 Si eres colombiano o tienes cuentas bancarias en Colombia podrás realizar el pago de las siguientes maneras:
 
-Para que el registro quede aprobado se debe realizar el pago al [**siguiente link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed) y tu registro será aprobado una vez sea verificado por el  equipo organizador.
-
 **BANCO DAVIVIENDA** mediante transferencia bancaria a la siguiente cuenta:
 
 - **Banco:** Davivienda  
@@ -48,6 +46,10 @@ Para que el registro quede aprobado se debe realizar el pago al [**siguiente lin
 Puedes escanear el QR para pagar con llave Bre-b:
 
 ![QR llave bre-b](/sac/pagosbrebqr.jpg)
+
+Si eres un competidor de afuera de Colombia podrás realizar el pago mediante el link de pago Epayco:
+
+Para que el registro quede aprobado se debe realizar el pago al [**siguiente link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed) y tu registro será aprobado una vez sea verificado por el  equipo organizador.
 ---
 
 ### 🟢 PASO 3 — ENVÍA EL CORREO DE CONFIRMACIÓN

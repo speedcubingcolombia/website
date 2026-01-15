@@ -32,8 +32,6 @@ The fee will vary according to the following dates:
 
 If you are Colombian or have bank accounts in Colombia, you may make the payment using the following methods:
 
-For the registration to be approved, payment must be made through the [**following link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed), and your registration will be approved once it has been verified by the organizing team.
-
 **BANCO DAVIVIENDA** via bank transfer to the following account:
 
 - **Bank:** Davivienda  
@@ -48,6 +46,11 @@ For the registration to be approved, payment must be made through the [**followi
 You can scan the QR code to pay using the Bre-B key:
 
 ![QR llave bre-b](/sac/pagosbrebqr.jpg)
+
+If you are a competitor from outside Colombia, you may complete the payment using the Epayco payment link:
+
+For your registration to be approved, you must complete the payment through the [**following link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed), and your registration will be approved once it has been verified by the organizing team.
+
 ---
 
 ### 🟢 STEP 3 — SEND THE CONFIRMATION EMAIL
