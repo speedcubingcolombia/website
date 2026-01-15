@@ -50,6 +50,7 @@ Puedes escanear el QR para pagar con llave Bre-b:
 Si eres un competidor de afuera de Colombia podrás realizar el pago mediante el link de pago Epayco:
 
 Para que el registro quede aprobado se debe realizar el pago al [**siguiente link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed) y tu registro será aprobado una vez sea verificado por el  equipo organizador.
+
 ---
 
 ### 🟢 PASO 3 — ENVÍA EL CORREO DE CONFIRMACIÓN
