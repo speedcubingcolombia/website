@@ -30,9 +30,9 @@ El costo variará de acuerdo a las siguientes fechas:
 
 ### 🟢 PASO 2 — REALIZA EL PAGO
 
-Si eres colombiano o tienes cuentas bancarias en Colombia podrás realizar el pago de las siguientes maneras:
+Puedes realizar el pago por alguno de los siguientes médios:
 
-**BANCO DAVIVIENDA** mediante transferencia bancaria a la siguiente cuenta:
+1. Bre-B o transferencia bancaria nacional
 
 - **Banco:** Davivienda  
 - **Tipo de cuenta:** Ahorros  
@@ -47,9 +47,9 @@ Puedes escanear el QR para pagar con llave Bre-b:
 
 ![QR llave bre-b](/sac/pagosbrebqr.jpg)
 
-Si eres un competidor de afuera de Colombia podrás realizar el pago mediante el link de pago Epayco:
-
-Para que el registro quede aprobado se debe realizar el pago al [**siguiente link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed) y tu registro será aprobado una vez sea verificado por el  equipo organizador.
+2. ePayco [**Tarjeta internacional Epayco**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed)
+3. PayPal [**Tarjeta internacional Paypal**](https://www.paypal.com/ncp/payment/37TXFDUF6BTX6)
+4. Stripe de Brasil en el sitio oficial de la WCA [**Registrarse WCA**](https://www.worldcubeassociation.org/competitions/SAC2026/register)
 
 ---
 

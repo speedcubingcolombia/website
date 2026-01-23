@@ -30,12 +30,12 @@ The fee will vary according to the following dates:
 
 ### 🟢 STEP 2 — MAKE THE PAYMENT
 
-If you are Colombian or have bank accounts in Colombia, you may make the payment using the following methods:
+You can complete the payment using one of the following methods:
 
-**BANCO DAVIVIENDA** via bank transfer to the following account:
+1.  Bre-B or national bank transfer
 
 - **Bank:** Davivienda  
-- **Account type:** Savings  
+- **Account type:** Savings  (Ahorros)
 - **Account number:** **0550108900738049**  
 - **Account holder:** **CORPORACIÓN SPEEDCUBING COLOMBIA**
 
@@ -43,13 +43,14 @@ If you are Colombian or have bank accounts in Colombia, you may make the payment
 
 - **@DAVICORPSPEECOLO**
 
-You can scan the QR code to pay using the Bre-B key:
+You can scan the QR code to pay using Bre-B key:
 
-![QR llave bre-b](/sac/pagosbrebqr.jpg)
+![Bre-B key QR](/sac/pagosbrebqr.jpg)
 
-If you are a competitor from outside Colombia, you may complete the payment using the Epayco payment link:
+2. ePayco [**International card via ePayco**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed)
+3. PayPal [**International card via PayPal**](https://www.paypal.com/ncp/payment/37TXFDUF6BTX6)
+4. Brazil Stripe via the official WCA website [**WCA Registration**](https://www.worldcubeassociation.org/competitions/SAC2026/register)
 
-For your registration to be approved, you must complete the payment through the [**following link**](https://payco.link/92f54fec-afc1-417b-9da6-e09192ee69ed), and your registration will be approved once it has been verified by the organizing team.
 
 ---
 
