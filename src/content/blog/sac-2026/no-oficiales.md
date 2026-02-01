@@ -15,9 +15,7 @@ Durante la competencia SAC 2026 tendremos categorías no oficiales tales como:
 
 ## Requisitos para participar
 
-Estar inscrito en el torneo oficial SAC 2026 Bogotá
-Tener WCA ID.
-Inscribirse hasta 28 de mayo  por medio del formulario en el formulario al final de esta pestaña. Para cada categoría habrá un máximo de 40 participantes (competidores). Los cupos serán asignados de acuerdo al orden de inscripción (20 cupos). Las listas de participación serán publicadas en esta página el día 31 de mayo de 2026.
+Estar inscrito en el torneo oficial SAC 2026 Bogotá Tener WCA ID. Inscribirse hasta 28 de mayo por medio del formulario en el formulario al final de esta pestaña. Para cada categoría habrá un máximo de 40 participantes (competidores). Los cupos serán asignados de acuerdo al orden de inscripción (20 cupos). Las listas de participación serán publicadas en esta página el día 31 de mayo de 2026.
 
 ## Dinámica de participación
 
@@ -38,5 +36,14 @@ El registro se hará a través del siguiente formulario:
 <div style="margin-top: 1.5em; text-align: center;">
  <a href="https://docs.google.com/forms/d/e/1FAIpQLSccsyOmKVuYKVbDRLOckV-pupwsF-KQhL1ugmKJlnQuxtGULw/viewform?usp=preview" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Inscripción a categorías no oficiales</a>
 </div>
+
+## Link resultados y cubing contest
+
+### [Resultados en vivo](https://cubingcontests.com/competitions/SAC2026)
+
+### [Detalles de la competencia](https://cubingcontests.com/competitions/SAC2026/events)
+
+### [Reglas](https://cubingcontests.com/rules)
+
 
 ![No oficiales](/sac/nooficiales.png)
