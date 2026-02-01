@@ -15,9 +15,13 @@ Durante a competição SAC 2026, teremos eventos não oficiais, tais como:
 
 ## Requisitos para participar
 
-Estar inscrito no torneio oficial SAC 2026 Bogotá  
-Ter WCA ID  
-Inscrever-se até 28 de maio por meio do formulário ao final desta aba. Para cada categoria haverá um máximo de 40 participantes (competidores). As vagas serão atribuídas de acordo com a ordem de inscrição (20 vagas). As listas de participantes serão publicadas nesta página no dia 31 de maio de 2026.
+Estar inscrito no torneio oficial SAC 2026 Bogotá.  
+Ter WCA ID.  
+Inscrever-se até 28 de maio por meio do formulário disponível ao final desta aba.  
+Para cada categoria haverá um máximo de 40 participantes (competidores).  
+As vagas serão atribuídas de acordo com a ordem de inscrição (20 vagas).  
+As listas de participação serão publicadas nesta página no dia 31 de maio de 2026.
+
 
 ## Dinâmica de participação
 
