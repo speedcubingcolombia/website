@@ -43,4 +43,13 @@ Inscrever-se até 28 de maio por meio do formulário disponível no final desta 
  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-Gz7l4GFSDJzibgy-JpoVr73bxalcVc6vNKhlVezjFOSedQ/viewform?usp=preview" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Inscrição não oficiais</a>
 </div>
 
+## Link de resultados e Cubing Contests
+
+### [Resultados ao vivo](https://cubingcontests.com/competitions/SAC2026)
+
+### [Detalhes da competição](https://cubingcontests.com/competitions/SAC2026/events)
+
+### [Regras](https://cubingcontests.com/rules)
+
+
 ![Não oficiais](/sac/nooficiales.png)

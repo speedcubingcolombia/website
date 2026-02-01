@@ -37,4 +37,13 @@ El registro se hará a través del siguiente formulario:
  <a href="https://docs.google.com/forms/d/e/1FAIpQLSccsyOmKVuYKVbDRLOckV-pupwsF-KQhL1ugmKJlnQuxtGULw/viewform?usp=preview" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Inscripción a categorías no oficiales</a>
 </div>
 
+## Link resultados y cubing contest
+
+### [Resultados en vivo](https://cubingcontests.com/competitions/SAC2026)
+
+### [Detalles de la competencia](https://cubingcontests.com/competitions/SAC2026/events)
+
+### [Reglas](https://cubingcontests.com/rules)
+
+
 ![No oficiales](/sac/nooficiales.png)
