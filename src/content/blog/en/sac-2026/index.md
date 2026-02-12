@@ -32,7 +32,7 @@ records, community, and an experience designed to set a new standard in the regi
 - 📅 **Dates:** June 12, 13, 14, and 15, 2026  
 - 📍 **City:** Bogotá D.C., Colombia  
 - 🏟️ **Venue:** Coliseum, Teresiano School – Usaquén  
-- 👥 **Capacity:** Up to 400 competitors  
+- 👥 **Capacity:** Up to 500 competitors  
 - 🧩 **Events:** All official WCA events  
 The FMC category will be held in advance in different locations across South America. Please contact your regional competition delegate for more information.
 

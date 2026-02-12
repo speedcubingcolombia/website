@@ -32,7 +32,7 @@ récords, comunidad y una experiencia diseñada para marcar un nuevo estándar e
 - 📅 **Fechas:** 12, 13, 14 y 15 de junio de 2026  
 - 📍 **Ciudad:** Bogotá D.C., Colombia  
 - 🏟️ **Sede:** Coliseo, Colegio Teresiano – Usaquén  
-- 👥 **Cupo:** Hasta 400 competidores  
+- 👥 **Cupo:** Hasta 500 competidores  
 - 🧩 **Eventos:** Todos los eventos oficiales WCA  
 La categoría FMC se realizará con antelación en distintos puntos de Sudamérica, por favor hablar con tu delegado regional de la competencia.
 

@@ -49,7 +49,7 @@ O pagamento será realizado no momento da entrada no local da competição
 
 ## Limite de competidores
 
-**Capacidade máxima:** 400 competidores
+**Capacidade máxima:** 500 competidores
 
 O registro funciona por ordem de chegada. Assim que o limite for atingido, será aberta uma lista de espera. **Recomendamos registrar-se o quanto antes para garantir sua vaga.**
 
