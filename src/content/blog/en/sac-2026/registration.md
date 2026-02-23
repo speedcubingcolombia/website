@@ -49,7 +49,7 @@ Payment will be made upon entry to the competition venue
 
 ## Competitor limit
 
-**Maximum capacity:** 400 competitors
+**Maximum capacity:** 500 competitors
 
 Registration works on a first-come, first-served basis. Once the limit is reached, a waiting list will be opened. **We recommend registering as early as possible to secure your spot.**
 
