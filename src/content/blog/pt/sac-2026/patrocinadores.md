@@ -12,4 +12,5 @@ Temos orgulho, de todo o coração, de contar com a participação de patrocinad
  <img src="/sac/wca.svg" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="World Cube Association">
  <img src="/sac/ssc.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Speedcubing Colombia">
  <img src="/sac/AES.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Associação Equatoriana de Speedcubing">
+ <img src="/sac/live_escenografos.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="live escenografos">
 </div>
