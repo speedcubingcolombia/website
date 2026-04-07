@@ -84,23 +84,23 @@ const jsonLd = JSON.stringify({
       />
     </div>
 
-    <div class="flex items-center mb-6">
-      <span
-        class="inline-block px-3 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm"
-      >
-        {mainPost.data.category}
-      </span>
-      {
-        formattedDate && (
-          <>
-            <span class="mx-2 text-gray-300 dark:text-gray-600">&bull;</span>
-            <span class="text-gray-600 dark:text-gray-400">
-              {formattedDate}
+    {
+      (mainPost.data.category || formattedDate) && (
+        <div class="flex items-center mb-6">
+          {mainPost.data.category && (
+            <span class="inline-block px-3 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm">
+              {mainPost.data.category}
             </span>
-          </>
-        )
-      }
-    </div>
+          )}
+          {mainPost.data.category && formattedDate && (
+            <span class="mx-2 text-gray-300 dark:text-gray-600">&bull;</span>
+          )}
+          {formattedDate && (
+            <span class="text-gray-600 dark:text-gray-400">{formattedDate}</span>
+          )}
+        </div>
+      )
+    }
 
     <h1
       class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white"
@@ -108,21 +108,29 @@ const jsonLd = JSON.stringify({
       {mainPost.data.title}
     </h1>
 
-    <div class={`flex items-center ${tabs.length > 1 ? "mb-0" : "mb-8"}`}>
-      <img
-        src={mainPost.data.authorAvatar}
-        alt={mainPost.data.author}
-        class="w-12 h-12 mr-4 object-contain"
-      />
-      <div>
-        <p class="font-semibold text-gray-900 dark:text-white">
-          {mainPost.data.author}
-        </p>
-        <p class="text-gray-600 dark:text-gray-400">
-          {mainPost.data.authorRole}
-        </p>
-      </div>
-    </div>
+    {
+      mainPost.data.author && (
+        <div class={`flex items-center ${tabs.length > 1 ? "mb-0" : "mb-8"}`}>
+          {mainPost.data.authorAvatar && (
+            <img
+              src={mainPost.data.authorAvatar}
+              alt={mainPost.data.author}
+              class="w-12 h-12 mr-4 object-contain"
+            />
+          )}
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white">
+              {mainPost.data.author}
+            </p>
+            {mainPost.data.authorRole && (
+              <p class="text-gray-600 dark:text-gray-400">
+                {mainPost.data.authorRole}
+              </p>
+            )}
+          </div>
+        </div>
+      )
+    }
 
     {
       showFeaturedImage && mainPost.data.image && (

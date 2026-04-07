@@ -425,18 +425,20 @@ export function buildAlternateUrls(
 export async function getBlogPosts(
   lang: SupportedLanguage = DEFAULT_LANGUAGE
 ): Promise<BlogListEntry[]> {
-  const posts = await getCollection("blog");
+  const allPosts = await getCollection("blog");
+  const posts = filterPostsByLanguage(allPosts, lang);
 
   const displayPosts = posts.filter((post) => {
-    if (!post.slug.includes("/")) return true;
-    return post.slug.endsWith("/index");
+    const slug = removeLanguagePrefix(post.slug, lang);
+    if (!slug.includes("/")) return true;
+    return slug.endsWith("/index");
   });
 
   return displayPosts
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0))
     .map((post) => ({
       ...post,
-      slug: post.slug.replace("/index", ""),
-      formattedDate: formatDateI18n(post.data.date, lang),
+      slug: removeLanguagePrefix(post.slug, lang).replace("/index", ""),
+      formattedDate: post.data.date ? formatDateI18n(post.data.date, lang) : "",
     }));
 }
