@@ -39,7 +39,9 @@ const jsonLd = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
   headline: mainPost.data.title,
-  ...(mainPost.data.image && { image: mainPost.data.image }),
+  ...(mainPost.data.image && {
+    image: new URL(mainPost.data.image, "https://speedcubingcolombia.org").toString(),
+  }),
   ...(mainPost.data.date && {
     datePublished: mainPost.data.date.toISOString(),
   }),
