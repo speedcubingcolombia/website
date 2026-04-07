@@ -2,8 +2,8 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import HeroSection from "../components/HeroSection.astro";
-import Layout from "../layouts/Layout.astro";
 import { SITE_CONFIG, SOCIAL_LINKS } from "../config/site";
+import Layout from "../layouts/Layout.astro";
 
 const organizationJsonLd = JSON.stringify({
   "@context": "https://schema.org",
@@ -13,10 +13,7 @@ const organizationJsonLd = JSON.stringify({
   email: SITE_CONFIG.email,
   telephone: SITE_CONFIG.phone,
   description: SITE_CONFIG.description,
-  sameAs: [
-    SOCIAL_LINKS.instagram,
-    SOCIAL_LINKS.youtube,
-  ],
+  sameAs: [SOCIAL_LINKS.instagram, SOCIAL_LINKS.youtube],
 });
 ---
 
@@ -81,11 +78,6 @@ const organizationJsonLd = JSON.stringify({
             <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Lo que nos guía
             </h2>
-            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Estos principios nos ayudan a proteger la integridad de las
-              competencias y a brindar una experiencia segura y formativa para
-              toda la comunidad Speedcubing del país.
-            </p>
           </div>
 
           <div class="grid md:grid-cols-3 gap-8">
@@ -98,25 +90,28 @@ const organizationJsonLd = JSON.stringify({
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                   ></path>
                 </svg>
               </div>
               <h3
                 class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
               >
-                Integridad Deportiva
+                Transparencia
               </h3>
               <p class="text-gray-600 dark:text-gray-300">
-                Actuamos con imparcialidad y transparencia para que cada
-                resultado refleje el esfuerzo real de los competidores y cumpla
-                con los lineamientos de la WCA.
+                Procesos claros en registro, resultados y manejo de recursos.
+                Cada decisión es abierta y verificable.
               </p>
             </div>
 
@@ -129,23 +124,28 @@ const organizationJsonLd = JSON.stringify({
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
               </div>
               <h3
                 class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
               >
-                Formación Continua
+                Alcance Nacional
               </h3>
               <p class="text-gray-600 dark:text-gray-300">
-                Creamos talleres, guías y espacios de mentoría para que las
-                personas desarrollen nuevas habilidades.
+                Llevar competencias oficiales a todas las regiones de Colombia
+                para que nadie se quede sin la oportunidad de competir.
               </p>
             </div>
 
@@ -158,25 +158,23 @@ const organizationJsonLd = JSON.stringify({
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   ></path>
                 </svg>
               </div>
               <h3
                 class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
               >
-                Comunidad y Servicio
+                Voluntariado
               </h3>
               <p class="text-gray-600 dark:text-gray-300">
-                Escuchamos a la comunidad, respondemos a sus necesidades y
-                trabajamos de forma colaborativa para que cada evento sea una
-                experiencia memorable.
+                Todo lo que hacemos es posible gracias a personas que donan su
+                tiempo por amor al deporte.
               </p>
             </div>
           </div>
@@ -193,9 +191,8 @@ const organizationJsonLd = JSON.stringify({
               Conoce a quienes lideran Speedcubing Colombia
             </h2>
             <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Actualmente contamos con un equipo directivo voluntario que
-              coordina competencias, alianzas y procesos formativos en todo el
-              país.
+              Actualmente contamos con un equipo voluntario que coordina
+              competencias, alianzas y procesos formativos en todo el país.
             </p>
           </div>
 
@@ -292,11 +289,11 @@ const organizationJsonLd = JSON.stringify({
                 Juan Felipe Gómez
               </h3>
               <p class="text-primary-600 dark:text-primary-400 mb-2">
-                Coordinador de Sistemas
+                Coordinador de Tecnología
               </p>
               <p class="text-gray-600 dark:text-gray-300 text-sm">
                 Gestiona la infraestructura tecnológica, plataformas digitales y
-                sistemas de registro para las competencias.
+                sistemas de registro para las competencias de la asociación.
               </p>
             </div>
           </div>
@@ -484,7 +481,29 @@ const organizationJsonLd = JSON.stringify({
                       Junior Delegate
                     </p>
                     <p class="text-xs text-gray-600 dark:text-gray-400">
-                      Risaralda
+                      Pereira
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <div
+                      class="rounded-full overflow-hidden w-24 h-24 mx-auto mb-3"
+                    >
+                      <img
+                        src="https://avatars.worldcubeassociation.org/p79gmtsf5fb3wafqja8jb3b2wm29"
+                        alt="Juan Nicolás Pinzón"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h5
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Juan Nicolás Pinzón
+                    </h5>
+                    <p class="text-xs text-primary-600 dark:text-primary-400">
+                      Junior Delegate
+                    </p>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">
+                      Bogotá
                     </p>
                   </div>
                 </div>
