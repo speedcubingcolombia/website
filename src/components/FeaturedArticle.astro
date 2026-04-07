@@ -1,12 +1,13 @@
 ---
 import { getCollection, getEntry, type CollectionEntry } from "astro:content";
-import { formatDate } from "../utils/blog";
-
-const FEATURED_ARTICLE_SLUG = "sac-2026";
+import { formatDate } from "../i18n";
+import { FEATURED_ARTICLE_SLUG } from "../config/site";
 
 async function getFeaturedArticle(): Promise<CollectionEntry<"blog">> {
-  const entry = await getEntry("blog", FEATURED_ARTICLE_SLUG);
-  if (entry) return entry;
+  if (FEATURED_ARTICLE_SLUG) {
+    const entry = await getEntry("blog", FEATURED_ARTICLE_SLUG);
+    if (entry) return entry;
+  }
 
   const posts = await getCollection("blog");
   const sorted = posts.sort(
@@ -21,7 +22,7 @@ async function getFeaturedArticle(): Promise<CollectionEntry<"blog">> {
 }
 
 const featuredArticle = await getFeaturedArticle();
-const formattedDate = formatDate(featuredArticle.data.date);
+const formattedDate = formatDate(featuredArticle.data.date, "es");
 ---
 
 <section class="section bg-secondary-200 dark:bg-secondary-950">
