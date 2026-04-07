@@ -3,6 +3,21 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import HeroSection from "../components/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
+import { SITE_CONFIG, SOCIAL_LINKS } from "../config/site";
+
+const organizationJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_CONFIG.name,
+  url: SITE_CONFIG.url,
+  email: SITE_CONFIG.email,
+  telephone: SITE_CONFIG.phone,
+  description: SITE_CONFIG.description,
+  sameAs: [
+    SOCIAL_LINKS.instagram,
+    SOCIAL_LINKS.youtube,
+  ],
+});
 ---
 
 <Layout title="Nuestra Organización - Speedcubing Colombia">
@@ -49,6 +64,9 @@ import Layout from "../layouts/Layout.astro";
               src="/comunidad.jpg"
               alt="Comunidad de Speedcubing Colombia"
               class="w-full h-auto"
+              loading="lazy"
+              width="600"
+              height="400"
             />
           </div>
         </div>
@@ -188,6 +206,9 @@ import Layout from "../layouts/Layout.astro";
                   src="https://avatars.worldcubeassociation.org/uploads/user/avatar/2011CAST02/1682382888.jpeg"
                   alt="Michael Castillo"
                   class="w-full h-full object-cover"
+                  loading="lazy"
+                  width="128"
+                  height="128"
                 />
               </div>
               <h3
@@ -210,6 +231,9 @@ import Layout from "../layouts/Layout.astro";
                   src="https://avatars.worldcubeassociation.org/uploads/user/avatar/2011EDUA01/1549425103.jpg"
                   alt="Eduard García"
                   class="w-full h-full object-cover"
+                  loading="lazy"
+                  width="128"
+                  height="128"
                 />
               </div>
               <h3
@@ -232,6 +256,9 @@ import Layout from "../layouts/Layout.astro";
                   src="https://avatars.worldcubeassociation.org/uploads/user/avatar/2014JIME05/1462386582.jpg"
                   alt="Diego Casas"
                   class="w-full h-full object-cover"
+                  loading="lazy"
+                  width="128"
+                  height="128"
                 />
               </div>
               <h3
@@ -254,6 +281,9 @@ import Layout from "../layouts/Layout.astro";
                   src="https://avatars.worldcubeassociation.org/i4two5raw0l0cmsd96bw46krc9ks"
                   alt="Juan Felipe Gómez"
                   class="w-full h-full object-cover"
+                  loading="lazy"
+                  width="128"
+                  height="128"
                 />
               </div>
               <h3
@@ -465,5 +495,6 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
   </main>
+  <script type="application/ld+json" set:html={organizationJsonLd} />
   <Footer />
 </Layout>
