@@ -1,7 +1,10 @@
 ---
 import { FOOTER_LINKS, SITE_CONFIG } from "../config/site";
+import { getLocaleFromPath, t } from "../i18n";
 import SocialLinks from "./SocialLinks.astro";
 
+const currentPath = new URL(Astro.request.url).pathname;
+const lang = getLocaleFromPath(currentPath);
 const currentYear = new Date().getFullYear();
 ---
 
@@ -9,7 +12,11 @@ const currentYear = new Date().getFullYear();
   <div class="container-custom">
     <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
       <div class="md:col-span-2 lg:col-span-2">
-        <a href="/" class="flex items-center mb-6" aria-label="Ir al inicio">
+        <a
+          href="/"
+          class="flex items-center mb-6"
+          aria-label={t(lang, "a11y.goHome")}
+        >
           <img
             class="h-8 w-auto text-primary-400"
             src="/favicon.svg"
@@ -20,8 +27,7 @@ const currentYear = new Date().getFullYear();
           </span>
         </a>
         <p class="text-gray-400 mb-6 max-w-md">
-          Promoviendo el crecimiento del Speedcubing en Colombia a través de
-          competencias oficiales WCA y el fortalecimiento de nuestra comunidad.
+          {t(lang, "footer.description")}
         </p>
         <SocialLinks variant="light" />
       </div>
@@ -29,7 +35,9 @@ const currentYear = new Date().getFullYear();
       {
         FOOTER_LINKS.map((column) => (
           <div>
-            <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
+            <h3 class="text-lg font-semibold mb-4">
+              {t(lang, column.titleKey)}
+            </h3>
             <ul class="space-y-2">
               {column.links.map((link) => (
                 <li>
@@ -43,7 +51,7 @@ const currentYear = new Date().getFullYear();
                         }
                       : {})}
                   >
-                    {link.text}
+                    {t(lang, link.key)}
                   </a>
                 </li>
               ))}
@@ -57,14 +65,14 @@ const currentYear = new Date().getFullYear();
       <div class="flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-400 text-sm mb-4 md:mb-0">
           &copy; {currentYear}
-          {SITE_CONFIG.name}. Todos los derechos reservados.
+          {SITE_CONFIG.name}. {t(lang, "footer.allRightsReserved")}.
         </p>
         <div class="flex space-x-6">
           <a
             href="/privacy-policy"
             class="text-gray-400 hover:text-primary-400 text-sm transition-colors"
           >
-            Políticas de Privacidad
+            {t(lang, "footer.privacyPolicy")}
           </a>
         </div>
       </div>
