@@ -349,10 +349,10 @@ function getStatusText(status: string): string {
 
   // Read event data from server-rendered JSON (single source of truth)
   const allEvents = JSON.parse(
-    document.getElementById("events-data")!.textContent!
+    document.getElementById("events-data")?.textContent || "[]"
   );
 
-  function formatDate(dateString: string): string {
+  function formatDate(dateString) {
     const date = new Date(dateString);
     return date.toLocaleDateString("es-CO", {
       year: "numeric",
@@ -361,7 +361,7 @@ function getStatusText(status: string): string {
     });
   }
 
-  function getStatusColor(status: string): string {
+  function getStatusColor(status) {
     switch (status) {
       case "registration-open":
         return "bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300";
@@ -374,7 +374,7 @@ function getStatusText(status: string): string {
     }
   }
 
-  function getStatusText(status: string): string {
+  function getStatusText(status) {
     switch (status) {
       case "registration-open":
         return "Inscripciones Abiertas";
@@ -390,7 +390,7 @@ function getStatusText(status: string): string {
   function getFilteredEvents() {
     if (selectedCity === "todas") return allEvents;
     return allEvents.filter(
-      (event: { city: string }) => event.city === selectedCity
+      (event) => event.city === selectedCity
     );
   }
 
@@ -404,7 +404,7 @@ function getStatusText(status: string): string {
     return Math.ceil(getFilteredEvents().length / ITEMS_PER_PAGE);
   }
 
-  function renderEventCard(event: any, index: number): string {
+  function renderEventCard(event, index) {
     const statusBtn =
       event.status === "registration-open"
         ? `Registrarse Ahora <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>`
@@ -444,7 +444,7 @@ function getStatusText(status: string): string {
         <div class="mb-6">
           <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Categorías:</p>
           <div class="flex flex-wrap gap-1">
-            ${event.events.map((e: string) => `<span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded">${e}</span>`).join("")}
+            ${event.events.map((e) => `<span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300 rounded">${e}</span>`).join("")}
           </div>
         </div>
         <div class="border-t border-gray-200 dark:border-gray-700 pt-4">
@@ -469,7 +469,7 @@ function getStatusText(status: string): string {
     updatePaginationControls(totalPages);
   }
 
-  function updatePaginationControls(totalPages: number) {
+  function updatePaginationControls(totalPages) {
     const container = document.getElementById("pagination-controls");
     if (!container) return;
 
@@ -499,7 +499,7 @@ function getStatusText(status: string): string {
     container.innerHTML = html;
   }
 
-  function changePage(newPage: number) {
+  function changePage(newPage) {
     const totalPages = getTotalPages();
     if (newPage >= 1 && newPage <= totalPages) {
       currentPage = newPage;
@@ -514,7 +514,7 @@ function getStatusText(status: string): string {
   document
     .getElementById("city-filter")
     ?.addEventListener("change", (e) => {
-      selectedCity = (e.target as HTMLSelectElement).value;
+      selectedCity = e.target.value;
       currentPage = 1;
       updateDisplay();
     });
@@ -523,13 +523,13 @@ function getStatusText(status: string): string {
   document
     .getElementById("pagination-controls")
     ?.addEventListener("click", (e) => {
-      const btn = (e.target as HTMLElement).closest("[data-page]");
+      const btn = e.target.closest("[data-page]");
       if (!btn || btn.hasAttribute("disabled")) return;
 
       const page = btn.getAttribute("data-page");
       if (page === "prev") changePage(currentPage - 1);
       else if (page === "next") changePage(currentPage + 1);
-      else changePage(parseInt(page!, 10));
+      else if (page) changePage(parseInt(page, 10));
     });
 
   // Initialize pagination on load
