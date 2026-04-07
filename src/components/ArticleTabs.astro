@@ -78,6 +78,7 @@ const basePath = `${langPrefix}/blog`;
       <div
         id="tabs-container"
         class="flex gap-2 overflow-x-auto scrollbar-hide"
+        role="tablist"
       >
         {
           tabs.map((tab) => (
@@ -87,6 +88,8 @@ const basePath = `${langPrefix}/blog`;
                   ? `${basePath}/${baseSlug}`
                   : `${basePath}/${baseSlug}/${tab.slug}`
               }
+              role="tab"
+              aria-selected={tab.isActive ? "true" : "false"}
               class={`
             px-4 py-2 rounded-lg font-medium text-sm whitespace-nowrap transition-colors flex-shrink-0
             ${
@@ -327,9 +330,7 @@ const basePath = `${langPrefix}/blog`;
   .scroll-indicator-left::after {
     left: 16px;
     border-width: 8px 10px 8px 0;
-    border-color: transparent #6b7280
-    border-width: 6px 8px 6px 0;
-    border-color: transparent #9ca3af transparent transparent;
+    border-color: transparent #6b7280 transparent transparent;
     animation: pulse-left 2s ease-in-out infinite;
   }
 

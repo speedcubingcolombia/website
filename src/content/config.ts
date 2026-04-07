@@ -3,22 +3,17 @@ import { defineCollection, z } from "astro:content";
 const blog = defineCollection({
   type: "content",
   schema: z.object({
-    title: z.string(),
-    // Campos requeridos solo para artículos principales (index)
-    // Opcionales para sub-secciones que heredan del principal
-    excerpt: z.string().optional(),
+    title: z.string().min(1),
+    // Required for main articles (index), optional for sub-sections that inherit from parent
+    excerpt: z.string().min(1).optional(),
     date: z.date().optional(),
-    author: z.string().optional(),
-    authorRole: z.string().optional(),
-    // Acepta URLs completas o rutas locales (ej: /sac/logo.png)
-    authorAvatar: z.string().optional(),
-    category: z.string().optional(),
-    // Acepta URLs completas o rutas locales (ej: /sac/imagen.png)
-    image: z.string().optional(),
-    // Indica si este artículo tiene múltiples secciones
+    author: z.string().min(1).optional(),
+    authorRole: z.string().min(1).optional(),
+    authorAvatar: z.string().url().or(z.string().startsWith("/")).optional(),
+    category: z.string().min(1).optional(),
+    image: z.string().url().or(z.string().startsWith("/")).optional(),
     multiSection: z.boolean().optional(),
-    // Para artículos con secciones: texto de la pestaña
-    tabLabel: z.string().optional(),
+    tabLabel: z.string().min(1).optional(),
   }),
 });
 

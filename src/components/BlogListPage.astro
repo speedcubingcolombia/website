@@ -62,6 +62,7 @@ const nextHref =
               data-category-filter
               data-category="all"
               data-active
+              aria-pressed="true"
             >
               Todas las publicaciones
             </button>
@@ -71,6 +72,7 @@ const nextHref =
                 class="category-pill px-4 py-2 rounded-full font-medium text-sm transition-colors bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
                 data-category-filter
                 data-category={normalizeCategory(category)}
+                aria-pressed="false"
               >
                 {category}
               </button>
@@ -194,6 +196,7 @@ const nextHref =
     const setActive = (button, active) => {
       if (!button) return;
       button.toggleAttribute("data-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
       button.classList.toggle("bg-primary-600", active);
       button.classList.toggle("text-white", active);
       button.classList.toggle("shadow-sm", active);

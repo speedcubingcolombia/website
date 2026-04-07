@@ -1,5 +1,15 @@
 // Enhanced page transitions
+
+// Track listeners for cleanup on navigation
+let parallaxCleanup = null;
+
 document.addEventListener("astro:page-load", () => {
+  // Clean up previous parallax listener if any
+  if (parallaxCleanup) {
+    parallaxCleanup();
+    parallaxCleanup = null;
+  }
+
   // Add animation classes to elements with data-animate attribute
   const animatedElements = document.querySelectorAll("[data-animate]");
 
@@ -7,29 +17,40 @@ document.addEventListener("astro:page-load", () => {
     const animationType = element.getAttribute("data-animate");
     const delay = element.getAttribute("data-delay") || index * 100;
 
-    // Set animation delay
     element.style.animationDelay = `${delay}ms`;
 
-    // Add animation class based on data-animate attribute
     setTimeout(() => {
       element.classList.add(animationType);
       element.classList.add("animated");
     }, 10);
   });
 
-  // Parallax effect for elements with data-parallax attribute
+  // Parallax effect with throttle and cleanup
   const parallaxElements = document.querySelectorAll("[data-parallax]");
 
   if (parallaxElements.length > 0) {
+    let ticking = false;
+
     const handleParallax = () => {
-      parallaxElements.forEach((element) => {
-        const speed = element.getAttribute("data-parallax") || 0.1;
-        const yPos = -(window.scrollY * speed);
-        element.style.transform = `translateY(${yPos}px)`;
+      if (ticking) return;
+      ticking = true;
+
+      requestAnimationFrame(() => {
+        parallaxElements.forEach((element) => {
+          const speed = element.getAttribute("data-parallax") || 0.1;
+          const yPos = -(window.scrollY * speed);
+          element.style.transform = `translateY(${yPos}px)`;
+        });
+        ticking = false;
       });
     };
 
-    window.addEventListener("scroll", handleParallax);
+    window.addEventListener("scroll", handleParallax, { passive: true });
+
+    // Store cleanup function
+    parallaxCleanup = () => {
+      window.removeEventListener("scroll", handleParallax);
+    };
   }
 
   // Smooth scroll for anchor links
@@ -40,17 +61,18 @@ document.addEventListener("astro:page-load", () => {
       e.preventDefault();
 
       const targetId = link.getAttribute("href");
+      if (!targetId) return;
+
       const targetElement = document.querySelector(targetId);
+      if (!targetElement) return;
 
-      if (targetElement) {
-        const offsetTop =
-          targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const offsetTop =
+        targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-        window.scrollTo({
-          top: offsetTop,
-          behavior: "smooth",
-        });
-      }
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
     });
   });
 
@@ -69,12 +91,10 @@ document.addEventListener("astro:page-load", () => {
 document.addEventListener(
   "astro:before-preparation",
   ({ from, to, direction }) => {
-    // Store navigation direction in localStorage to use it after page load
     if (from && to) {
       const fromPath = new URL(from).pathname;
       const toPath = new URL(to).pathname;
 
-      // Determine navigation direction based on path depth
       const fromDepth = fromPath.split("/").filter(Boolean).length;
       const toDepth = toPath.split("/").filter(Boolean).length;
 
@@ -98,7 +118,6 @@ document.addEventListener("astro:page-load", () => {
   if (navDirection) {
     document.documentElement.setAttribute("data-navigation", navDirection);
 
-    // Clean up after transition completes
     setTimeout(() => {
       localStorage.removeItem("navigationDirection");
     }, 1000);
