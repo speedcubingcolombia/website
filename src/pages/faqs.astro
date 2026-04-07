@@ -3,6 +3,104 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import HeroSection from "../components/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
+
+const sections = [
+  {
+    id: "speedcubing",
+    title: "Speedcubing 101",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />`,
+    questions: [
+      {
+        q: "¿Qué es el speedcubing?",
+        a: "Es la práctica de resolver cubos de Rubik y otros rompecabezas retorcidos en el menor tiempo posible. Las pruebas más comunes son 3x3, 2x2, 4x4, pyraminx, skewb y clock, pero existen más de 17 eventos oficiales avalados por la WCA.",
+      },
+      {
+        q: "¿Necesito un cubo especial?",
+        a: "Solo debe ser un rompecabezas con piezas sólidas (sin magnetos sueltos o partes modificadas) que gire con normalidad. Puedes competir con tu propio cubo, siempre que cumpla el reglamento WCA.",
+      },
+      {
+        q: "¿Hay edad mínima o máxima?",
+        a: "No. Hemos tenido competidores de 5 hasta 60+ años. Los menores de edad deben asistir con un adulto responsable que firme su consentimiento.",
+      },
+    ],
+  },
+  {
+    id: "wca",
+    title: "World Cube Association",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />`,
+    questions: [
+      {
+        q: "¿Qué es la WCA?",
+        a: "La World Cube Association (WCA) es el organismo que regula las competencias oficiales en todo el mundo. Define el reglamento, certifica récords y acredita al equipo de delegados que velan por el cumplimiento de las reglas.",
+      },
+      {
+        q: "¿Qué hace un delegado WCA?",
+        a: "Supervisa el evento, entrena a los jueces voluntarios, resuelve dudas reglamentarias y valida cada resultado antes de subirlo a la base de datos oficial. Sin delegado no hay competencia avalada.",
+      },
+      {
+        q: "¿Cómo se publican los resultados?",
+        a: "Una vez termina la competencia, el delegado sube tiempos y rankings a worldcubeassociation.org. Cada competidor tiene un perfil con sus mejores marcas por evento.",
+      },
+    ],
+  },
+  {
+    id: "competencias",
+    title: "Competencias oficiales",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />`,
+    questions: [
+      {
+        q: "¿Cómo funcionan las rondas?",
+        a: "Cada evento puede tener una o varias rondas. Para avanzar necesitas cumplir el corte establecido (tiempo máximo o top n promedios). Los cortes se publican en la página del evento antes del registro.",
+      },
+      {
+        q: "¿Cuántos intentos tengo?",
+        a: "En la mayoría de eventos haces 5 solves y se calcula un promedio de 5 (se descarta el mejor y el peor). Algunas pruebas usan promedio de 3 o mejor de 3, según el reglamento WCA.",
+      },
+      {
+        q: "¿Qué pasa si hay empate?",
+        a: "Se compara primero el mejor tiempo simple, luego el segundo mejor, y así sucesivamente. Si persiste el empate, el reglamento define criterios adicionales o se programa un desempate.",
+      },
+    ],
+  },
+  {
+    id: "participacion",
+    title: "Inscripción y regulaciones",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />`,
+    questions: [
+      {
+        q: "¿Cómo me registro?",
+        a: "Ingresa al evento en worldcubeassociation.org, selecciona los eventos en los que quieres competir y completa el pago indicado por la organización. Recibirás un correo de confirmación cuando el delegado apruebe tu registro.",
+      },
+      {
+        q: "¿Debo conocer el reglamento?",
+        a: "Sí. No tienes que memorizarlo completo, pero es importante entender procesos básicos: inspección, manejo del cubo antes/después del solve, sanciones y roles de juez-scrambler. Puedes revisar el resumen en regulations.wca.",
+      },
+      {
+        q: "¿Qué pasa si nunca he competido?",
+        a: "En la mesa de bienvenida te asignamos un mentor que explica el flujo completo y te acompaña en tu primera ronda. También recibirás tu ID WCA después del primer evento oficial.",
+      },
+    ],
+  },
+  {
+    id: "logistica",
+    title: "Logística del evento",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />`,
+    questions: [
+      {
+        q: "¿Qué debo llevar el día de la competencia?",
+        a: "Tu documento de identidad, los cubos con los que vas a competir, hidratación ligera y una chaqueta. El cronómetro Stackmat, tapetes y cubos de práctica para calentamiento los aporta la organización.",
+      },
+      {
+        q: "¿Puedo llevar acompañantes?",
+        a: "Sí, cada competidor puede ingresar con familiares o amigos sin costo adicional, siempre y cuando respeten las zonas restringidas y sigan las indicaciones del staff.",
+      },
+      {
+        q: "¿Qué pasa si llego tarde?",
+        a: "Los horarios son estrictos. Si no te presentas antes de cerrar una ronda, pierdes tu turno. Recomendamos llegar 30 minutos antes para registrarte, organizar tus cubos y, si quieres, apoyar como juez.",
+      },
+    ],
+  },
+];
 ---
 
 <Layout title="Preguntas frecuentes - Speedcubing Colombia">
@@ -14,382 +112,103 @@ import Layout from "../layouts/Layout.astro";
       description="Todo lo esencial sobre competencias oficiales, la WCA y la comunidad colombiana en un solo lugar."
     />
 
-    <section class="py-16 bg-white dark:bg-gray-800">
+    <section class="py-16 bg-white dark:bg-secondary-950">
       <div class="container-custom">
         <div class="max-w-4xl mx-auto">
-          <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <a
-              href="#speedcubing"
-              class="px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 font-medium text-sm hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors"
-            >
-              Speedcubing 101
-            </a>
-            <a
-              href="#wca"
-              class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-            >
-              World Cube Association
-            </a>
-            <a
-              href="#competencias"
-              class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-            >
-              Competencias
-            </a>
-            <a
-              href="#participacion"
-              class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-            >
-              Inscripcion y Regulaciones
-            </a>
-            <a
-              href="#logistica"
-              class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-            >
-              Logistica del evento
-            </a>
+          <!-- Section navigation pills -->
+          <div class="flex flex-wrap justify-center gap-3 mb-14">
+            {
+              sections.map((section, i) => (
+                <a
+                  href={`#${section.id}`}
+                  class={`px-4 py-2 rounded-xl font-medium text-sm transition-all duration-200 hover:-translate-y-0.5 ${
+                    i === 0
+                      ? "bg-primary-600 text-white shadow-md shadow-primary-500/20"
+                      : "bg-secondary-100 dark:bg-secondary-800 text-secondary-600 dark:text-secondary-300 hover:bg-secondary-200 dark:hover:bg-secondary-700"
+                  }`}
+                >
+                  {section.title}
+                </a>
+              ))
+            }
           </div>
 
-          <div id="speedcubing" class="mb-16">
-            <h2
-              class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
-            >
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 6v6l4 2"></path>
-                </svg>
-              </span>
-              Speedcubing 101
-            </h2>
+          <!-- FAQ sections -->
+          {
+            sections.map((section, sectionIndex) => (
+              <div id={section.id} class="mb-14 last:mb-0 faq-section" style={`animation-delay: ${sectionIndex * 100}ms`}>
+                <h2 class="text-2xl font-display font-bold text-secondary-900 dark:text-white mb-6 flex items-center gap-3">
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-primary-100 dark:bg-primary-900/50">
+                    <svg class="w-5 h-5 text-primary-600 dark:text-primary-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" set:html={section.icon} />
+                  </span>
+                  {section.title}
+                </h2>
 
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Que es el speedcubing?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Es la practica de resolver cubos de Rubik y otros rompecabezas
-                  retorcidos en el menor tiempo posible. Las pruebas mas comunes
-                  son 3x3, 2x2, 4x4, pyraminx, skewb y clock, pero existen mas
-                  de 17 eventos oficiales avalados por la WCA.
-                </p>
+                <div class="space-y-3">
+                  {section.questions.map((faq) => (
+                    <details class="group rounded-xl border border-secondary-200 dark:border-secondary-700/50 bg-white dark:bg-secondary-900/50 transition-all duration-200 hover:border-primary-300 dark:hover:border-primary-700/50 hover:shadow-sm">
+                      <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none select-none">
+                        <h3 class="text-base font-semibold text-secondary-800 dark:text-secondary-100 group-open:text-primary-600 dark:group-open:text-primary-400 transition-colors">
+                          {faq.q}
+                        </h3>
+                        <span class="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg bg-secondary-100 dark:bg-secondary-800 group-open:bg-primary-100 dark:group-open:bg-primary-900/50 transition-colors">
+                          <svg class="w-4 h-4 text-secondary-500 dark:text-secondary-400 group-open:text-primary-600 dark:group-open:text-primary-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </span>
+                      </summary>
+                      <div class="px-6 pb-5 pt-0">
+                        <p class="text-secondary-600 dark:text-secondary-300 leading-relaxed">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </details>
+                  ))}
+                </div>
               </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Necesito un cubo especial?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Solo debe ser un rompecabezas con piezas solidas (sin magnetos
-                  sueltos o partes modificadas) que gire con normalidad. Puedes
-                  competir con tu propio cubo, siempre que cumpla el reglamento
-                  WCA.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Hay edad minima o maxima?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  No. Hemos tenido competidores de 5 hasta 60+ anos. Los menores
-                  de edad deben asistir con un adulto responsable que firme su
-                  consentimiento.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div id="wca" class="mb-16">
-            <h2
-              class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
-            >
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"></path>
-                </svg>
-              </span>
-              World Cube Association
-            </h2>
-
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Que es la WCA?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  La World Cube Association (WCA) es el organismo que regula las
-                  competencias oficiales en todo el mundo. Define el reglamento,
-                  certifica records y acredita al equipo de delegados que velan
-                  por el cumplimiento de las reglas.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Que hace un delegado WCA?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Supervisa el evento, entrena a los jueces voluntarios,
-                  resuelve dudas reglamentarias y valida cada resultado antes de
-                  subirlo a la base de datos oficial. Sin delegado no hay
-                  competencia avalada.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Como se publican los resultados?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Una vez termina la competencia, el delegado sube tiempos y
-                  rankings a worldcubeassociation.org. Cada competidor tiene un
-                  perfil con sus mejores marcas por evento.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div id="competencias" class="mb-16">
-            <h2
-              class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
-            >
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 7h18M3 12h18M3 17h18"></path>
-                </svg>
-              </span>
-              Competencias oficiales
-            </h2>
-
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Como funcionan las rondas?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Cada evento puede tener una o varias rondas. Para avanzar
-                  necesitas cumplir el corte establecido (tiempo maximo o top n
-                  promedios). Los cortes se publican en la pagina del evento
-                  antes del registro.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Cuantos intentos tengo?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  En la mayoria de eventos haces 5 solves y se calcula un
-                  promedio de 5 (se descarta el mejor y el peor). Algunas
-                  pruebas usan promedio de 3 o mejor de 3, segun el reglamento
-                  WCA.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Que pasa si hay empate?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Se compara primero el mejor tiempo simple, luego el segundo
-                  mejor, y asi sucesivamente. Si persiste el empate, el
-                  reglamento define criterios adicionales o se programa un
-                  desempate.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div id="participacion" class="mb-16">
-            <h2
-              class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
-            >
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 11c0 1.657-1.79 3-4 3s-4-1.343-4-3 1.79-3 4-3 4 1.343 4 3z M6 14v3m4-3v3m6-6h4v6"
-                  ></path>
-                </svg>
-              </span>
-              Inscripcion y regulaciones
-            </h2>
-
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Como me registro?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Ingresa al evento en worldcubeassociation.org, selecciona los
-                  eventos en los que quieres competir y completa el pago
-                  indicado por la organizacion. Recibiras un correo de
-                  confirmacion cuando el delegado apruebe tu registro.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Debo conocer el reglamento?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Si. No tienes que memorizarlo completo, pero es importante
-                  entender procesos basicos: inspeccion, manejo del cubo
-                  antes/despues del solve, sanciones y roles de juez-scrambler.
-                  Puedes revisar el resumen en regulations.wca.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Que pasa si nunca he competido?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  En la mesa de bienvenida te asignamos un mentor que explica el
-                  flujo completo y te acompana en tu primera ronda. Tambien
-                  recibiras tu ID WCA despues del primer evento oficial.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div id="logistica" class="mb-8">
-            <h2
-              class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
-            >
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zm0 4c-4.418 0-8 1.79-8 4v3h16v-3c0-2.21-3.582-4-8-4z"
-                  ></path>
-                </svg>
-              </span>
-              Logistica del evento
-            </h2>
-
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Que debo llevar el dia de la competencia?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Tu documento de identidad, los cubos con los que vas a
-                  competir, hidratacion ligera y una chaqueta. El cronometro
-                  Stackmat, tapetes y cubos de practica para calentamiento los
-                  aporta la organizacion.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Puedo llevar acompanantes?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Si, cada competidor puede ingresar con familiares o amigos sin
-                  costo adicional, siempre y cuando respeten las zonas
-                  restringidas y sigan las indicaciones del staff.
-                </p>
-              </div>
-
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3
-                  class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
-                >
-                  Que pasa si llego tarde?
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Los horarios son estrictos. Si no te presentas antes de cerrar
-                  una ronda, pierdes tu turno. Recomendamos llegar 30 minutos
-                  antes para registrarte, organizar tus cubos y, si quieres,
-                  apoyar como juez.
-                </p>
-              </div>
-            </div>
-          </div>
+            ))
+          }
         </div>
       </div>
     </section>
   </main>
   <Footer />
 </Layout>
+
+<style>
+  /* Remove default details marker */
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Smooth open/close */
+  details[open] > div {
+    animation: accordion-open 0.3s ease-out;
+  }
+
+  @keyframes accordion-open {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .faq-section {
+    animation: faq-enter 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes faq-enter {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

@@ -2,48 +2,75 @@
 
 ---
 
-<section class="relative pt-24 pb-20 md:pt-28 overflow-hidden hero-section">
+<section class="relative pt-24 pb-16 md:pt-28 md:pb-24 overflow-hidden hero-section">
+  <!-- Layered background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50/40 dark:from-secondary-950 dark:via-secondary-950 dark:to-primary-950/50"></div>
+
+  <!-- Geometric grid pattern -->
+  <div class="absolute inset-0 hero-grid opacity-[0.035] dark:opacity-[0.05]"></div>
+
+  <!-- Decorative cube shapes -->
+  <div class="absolute top-20 right-[5%] w-24 h-24 md:w-32 md:h-32 border-2 border-primary-300/20 dark:border-primary-500/10 rounded-xl rotate-12 geo-float" style="animation-delay: 0s" aria-hidden="true"></div>
+  <div class="absolute top-[60%] left-[3%] w-16 h-16 md:w-20 md:h-20 border-2 border-accent-400/20 dark:border-accent-500/10 rounded-lg -rotate-6 geo-float" style="animation-delay: 2s" aria-hidden="true"></div>
+  <div class="absolute bottom-16 right-[15%] w-12 h-12 bg-primary-400/8 dark:bg-primary-500/5 rounded-md rotate-45 geo-float" style="animation-delay: 4s" aria-hidden="true"></div>
+  <div class="absolute top-[40%] right-[25%] w-6 h-6 bg-accent-400/15 dark:bg-accent-500/10 rounded-sm rotate-12 geo-float" style="animation-delay: 1s" aria-hidden="true"></div>
+
+  <!-- Gradient orb -->
+  <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-primary-400/10 dark:bg-primary-500/5 rounded-full blur-3xl" aria-hidden="true"></div>
+  <div class="absolute -top-24 -right-24 w-72 h-72 bg-accent-400/8 dark:bg-accent-500/5 rounded-full blur-3xl" aria-hidden="true"></div>
+
   <div class="container-custom relative z-10">
-    <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
-      <div
-        class="order-2 md:order-1 slide-up md:col-span-2"
-        transition:animate="slide"
-      >
-        <h1
-          class="mb-4 md:mb-6 text-secondary-900 dark:text-white leading-tight"
-        >
-          <span class="text-primary-600 dark:text-primary-400"
-            >Speedcubing Colombia</span
-          ><br />
-          Organización oficial de la WCA en Colombia
+    <div class="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+      <!-- Content — 3 cols -->
+      <div class="order-2 md:order-1 md:col-span-3 hero-content">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-primary-100/80 dark:bg-primary-900/40 border border-primary-200/60 dark:border-primary-700/30 hero-badge">
+          <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
+          <span class="text-sm font-semibold text-primary-700 dark:text-primary-300 tracking-wide">Organización oficial WCA en Colombia</span>
+        </div>
+
+        <h1 class="mb-5 md:mb-6 leading-[1.1] hero-title">
+          <span class="block text-secondary-900 dark:text-white">
+            Hacemos del
+          </span>
+          <span class="block text-primary-600 dark:text-primary-400 font-display">
+            Speedcubing
+          </span>
+          <span class="block text-secondary-900 dark:text-white">
+            un deporte para todos
+          </span>
         </h1>
-        <p
-          class="text-lg md:text-xl text-secondary-600 dark:text-secondary-300 mb-6 md:mb-8 max-w-lg"
-        >
-          Únete a nuestra comunidad, participa en competencias oficiales, mejora
-          tus tiempos y conecta con Speedcubers apasionados de todo el país.
+
+        <p class="text-lg md:text-xl text-secondary-500 dark:text-secondary-400 mb-8 md:mb-10 max-w-xl leading-relaxed hero-desc">
+          Competencias oficiales WCA, comunidad activa y el impulso que el cubing necesita en Colombia. Únete.
         </p>
-        <div class="flex flex-wrap gap-3 md:gap-4">
-          <a href="/blog" class="btn-primary"> Publicaciones </a>
-          <a href="/company" class="btn-outline flex items-center">
+
+        <div class="flex flex-wrap gap-3 md:gap-4 hero-buttons">
+          <a href="/blog" class="group relative inline-flex items-center gap-2 px-7 py-3.5 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-primary-500/25 hover:shadow-xl hover:shadow-primary-500/30 hover:-translate-y-0.5">
+            Publicaciones
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a href="/company" class="inline-flex items-center px-7 py-3.5 border-2 border-secondary-300 dark:border-secondary-600 text-secondary-700 dark:text-secondary-300 font-semibold rounded-xl hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-all duration-300 hover:-translate-y-0.5">
             Nosotros
           </a>
-          <a href="/contact" class="btn-outline flex items-center">
+          <a href="/contact" class="inline-flex items-center px-7 py-3.5 border-2 border-secondary-300 dark:border-secondary-600 text-secondary-700 dark:text-secondary-300 font-semibold rounded-xl hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-all duration-300 hover:-translate-y-0.5">
             Contacto
           </a>
         </div>
       </div>
 
-      <div
-        class="order-1 md:order-2 relative fade-in"
-        transition:animate="fade"
-      >
-        <!-- Speedcubing Colombia Logo -->
-        <div class="w-full max-w-48 md:max-w-lg mx-auto">
+      <!-- Logo — 2 cols -->
+      <div class="order-1 md:order-2 md:col-span-2 relative hero-visual" transition:animate="fade">
+        <div class="relative w-full max-w-[220px] md:max-w-[340px] mx-auto">
+          <!-- Glow ring behind logo -->
+          <div class="absolute inset-0 -m-6 md:-m-10 rounded-full bg-gradient-to-br from-primary-400/15 to-accent-400/10 dark:from-primary-500/10 dark:to-accent-500/8 blur-2xl logo-glow" aria-hidden="true"></div>
+
           <img
             src="/logo_name.png"
             alt="Speedcubing Colombia Logo"
-            class="w-full h-auto drop-shadow-xl floating-logo"
+            class="relative w-full h-auto drop-shadow-2xl floating-logo"
             width="512"
             height="512"
           />
@@ -54,21 +81,78 @@
 </section>
 
 <style>
-  /* Add keyframes for floating animation */
-  @keyframes float {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
+  /* Grid pattern */
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(37, 99, 235, 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(37, 99, 235, 0.4) 1px, transparent 1px);
+    background-size: 56px 56px;
   }
 
-  /* Apply floating animation to the logo */
+  /* Floating geometric shapes */
+  .geo-float {
+    animation: geo-float 10s ease-in-out infinite;
+  }
+
+  @keyframes geo-float {
+    0%, 100% { transform: translateY(0) rotate(var(--tw-rotate, 0deg)); }
+    50% { transform: translateY(-16px) rotate(var(--tw-rotate, 0deg)); }
+  }
+
+  /* Logo float */
   .floating-logo {
-    animation: float 6s ease-in-out infinite;
+    animation: logo-float 6s ease-in-out infinite;
+  }
+
+  @keyframes logo-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  /* Logo glow pulse */
+  .logo-glow {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+  }
+
+  /* Staggered entrance animations */
+  .hero-badge {
+    animation: hero-enter 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 100ms;
+  }
+
+  .hero-title {
+    animation: hero-enter 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 200ms;
+  }
+
+  .hero-desc {
+    animation: hero-enter 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 350ms;
+  }
+
+  .hero-buttons {
+    animation: hero-enter 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 500ms;
+  }
+
+  .hero-visual {
+    animation: hero-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 150ms;
+  }
+
+  @keyframes hero-enter {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 </style>
