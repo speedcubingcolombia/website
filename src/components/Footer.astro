@@ -1,6 +1,6 @@
 ---
 import { FOOTER_LINKS, SITE_CONFIG } from "../config/site";
-import { getLocaleFromPath, t } from "../i18n";
+import { addLangPrefix, getLocaleFromPath, t } from "../i18n";
 import SocialLinks from "./SocialLinks.astro";
 
 const currentPath = new URL(Astro.request.url).pathname;
@@ -42,7 +42,11 @@ const currentYear = new Date().getFullYear();
               {column.links.map((link) => (
                 <li>
                   <a
-                    href={link.url}
+                    href={
+                      "external" in link && link.external
+                        ? link.url
+                        : addLangPrefix(link.url, lang)
+                    }
                     class="text-gray-400 hover:text-primary-400 transition-colors"
                     {...("external" in link && link.external
                       ? {

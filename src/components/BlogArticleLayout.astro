@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { t, languages, formatDate, type SupportedLanguage } from "../i18n";
+import { formatDate, languages, t, type SupportedLanguage } from "../i18n";
 import type { Tab } from "../utils/blog";
 import ArticleTabs from "./ArticleTabs.astro";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
@@ -31,6 +31,7 @@ const {
 
 const langPrefix = languages[lang].prefix;
 const blogUrl = `${langPrefix}/blog`;
+const siteBase = Astro.site || new URL("https://speedcubingcolombia.org");
 const formattedDate = mainPost.data.date
   ? formatDate(mainPost.data.date, lang)
   : "";
@@ -40,7 +41,7 @@ const jsonLd = JSON.stringify({
   "@type": "Article",
   headline: mainPost.data.title,
   ...(mainPost.data.image && {
-    image: new URL(mainPost.data.image, "https://speedcubingcolombia.org").toString(),
+    image: new URL(mainPost.data.image, siteBase).toString(),
   }),
   ...(mainPost.data.date && {
     datePublished: mainPost.data.date.toISOString(),
@@ -51,7 +52,7 @@ const jsonLd = JSON.stringify({
   publisher: {
     "@type": "Organization",
     name: "Speedcubing Colombia",
-    url: "https://speedcubingcolombia.org",
+    url: siteBase.toString().replace(/\/$/, ""),
   },
   mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
   ...(mainPost.data.excerpt && { description: mainPost.data.excerpt }),
@@ -98,7 +99,9 @@ const jsonLd = JSON.stringify({
             <span class="mx-2 text-gray-300 dark:text-gray-600">&bull;</span>
           )}
           {formattedDate && (
-            <span class="text-gray-600 dark:text-gray-400">{formattedDate}</span>
+            <span class="text-gray-600 dark:text-gray-400">
+              {formattedDate}
+            </span>
           )}
         </div>
       )
