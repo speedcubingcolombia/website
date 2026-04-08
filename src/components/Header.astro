@@ -2,8 +2,9 @@
 import { NAV_ITEMS } from "../config/site";
 import { addLangPrefix, getLocaleFromPath, t } from "../i18n";
 
-const currentPath = new URL(Astro.request.url).pathname;
+const currentPath = new URL(Astro.request.url).pathname.replace(/\/$/, "") || "/";
 const lang = getLocaleFromPath(currentPath);
+const homeUrl = addLangPrefix("/", lang);
 
 const localizedNav = NAV_ITEMS.map((item) => ({
   ...item,
@@ -11,8 +12,9 @@ const localizedNav = NAV_ITEMS.map((item) => ({
 }));
 
 const isActive = (path: string) => {
-  if (path === "/" && currentPath === "/") return true;
-  if (path !== "/" && currentPath.startsWith(path)) return true;
+  const normalizedPath = path.replace(/\/$/, "") || "/";
+  if (normalizedPath === "/" && currentPath === "/") return true;
+  if (normalizedPath !== "/" && currentPath.startsWith(normalizedPath)) return true;
   return false;
 };
 ---
@@ -22,7 +24,7 @@ const isActive = (path: string) => {
   role="banner"
 >
   <div class="container-custom flex items-center justify-between">
-    <a href="/" class="flex items-center" aria-label={t(lang, "a11y.goHome")}>
+    <a href={homeUrl} class="flex items-center" aria-label={t(lang, "a11y.goHome")}>
       <img src="/navbar_logo.png" alt="Speedcubing Colombia Logo" />
     </a>
 

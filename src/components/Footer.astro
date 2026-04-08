@@ -13,7 +13,7 @@ const currentYear = new Date().getFullYear();
     <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
       <div class="md:col-span-2 lg:col-span-2">
         <a
-          href="/"
+          href={addLangPrefix("/", lang)}
           class="flex items-center mb-6"
           aria-label={t(lang, "a11y.goHome")}
         >
@@ -73,7 +73,7 @@ const currentYear = new Date().getFullYear();
         </p>
         <div class="flex space-x-6">
           <a
-            href="/privacy-policy"
+            href={addLangPrefix("/privacy-policy", lang)}
             class="text-gray-400 hover:text-primary-400 text-sm transition-colors"
           >
             {t(lang, "footer.privacyPolicy")}
