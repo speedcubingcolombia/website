@@ -91,4 +91,12 @@ if (highlightText) {
       transform: translateY(0);
     }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .inner-float,
+    .inner-hero-title,
+    .inner-hero-desc {
+      animation: none;
+    }
+  }
 </style>

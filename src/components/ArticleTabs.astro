@@ -78,7 +78,6 @@ const basePath = `${langPrefix}/blog`;
       <div
         id="tabs-container"
         class="flex gap-2 overflow-x-auto scrollbar-hide"
-        role="tablist"
       >
         {
           tabs.map((tab) => (
@@ -88,8 +87,7 @@ const basePath = `${langPrefix}/blog`;
                   ? `${basePath}/${baseSlug}`
                   : `${basePath}/${baseSlug}/${tab.slug}`
               }
-              role="tab"
-              aria-selected={tab.isActive ? "true" : "false"}
+              aria-current={tab.isActive ? "page" : undefined}
               class={`
             px-4 py-2 rounded-lg font-medium text-sm whitespace-nowrap transition-colors flex-shrink-0
             ${
