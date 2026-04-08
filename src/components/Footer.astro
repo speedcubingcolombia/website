@@ -1,6 +1,6 @@
 ---
 import { FOOTER_LINKS, SITE_CONFIG } from "../config/site";
-import { addLangPrefix, getLocaleFromPath, t } from "../i18n";
+import { getLocaleFromPath, t } from "../i18n";
 import SocialLinks from "./SocialLinks.astro";
 
 const currentPath = new URL(Astro.request.url).pathname;
@@ -13,7 +13,7 @@ const currentYear = new Date().getFullYear();
     <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
       <div class="md:col-span-2 lg:col-span-2">
         <a
-          href={addLangPrefix("/", lang)}
+          href="/"
           class="flex items-center mb-6"
           aria-label={t(lang, "a11y.goHome")}
         >
@@ -42,11 +42,7 @@ const currentYear = new Date().getFullYear();
               {column.links.map((link) => (
                 <li>
                   <a
-                    href={
-                      "external" in link && link.external
-                        ? link.url
-                        : addLangPrefix(link.url, lang)
-                    }
+                    href={link.url}
                     class="text-gray-400 hover:text-primary-400 transition-colors"
                     {...("external" in link && link.external
                       ? {
@@ -73,7 +69,7 @@ const currentYear = new Date().getFullYear();
         </p>
         <div class="flex space-x-6">
           <a
-            href={addLangPrefix("/privacy-policy", lang)}
+            href="/privacy-policy"
             class="text-gray-400 hover:text-primary-400 text-sm transition-colors"
           >
             {t(lang, "footer.privacyPolicy")}
