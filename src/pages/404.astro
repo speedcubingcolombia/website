@@ -7,30 +7,120 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Página No Encontrada - Speedcubing Colombia">
   <Header />
   <main id="main-content">
-    <section class="py-20 md:py-32">
-      <div class="container-custom text-center">
-        <h1
-          class="text-9xl font-bold text-primary-600 dark:text-primary-400 mb-8"
-        >
-          404
-        </h1>
-        <h2
-          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
-        >
-          Página No Encontrada
+    <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-secondary-50 dark:bg-secondary-950 pt-24 md:pt-28">
+      <!-- Floating cube grid background -->
+      <div class="absolute inset-0 cube-grid-bg opacity-[0.04] dark:opacity-[0.06]"></div>
+
+      <!-- Scattered geometric accents -->
+      <div class="absolute top-[15%] left-[8%] w-16 h-16 border-2 border-primary-300/30 dark:border-primary-600/20 rotate-12 rounded-md floating-shape" style="animation-delay: 0s"></div>
+      <div class="absolute top-[25%] right-[12%] w-10 h-10 border-2 border-accent-400/30 dark:border-accent-500/20 -rotate-6 rounded-sm floating-shape" style="animation-delay: 1.5s"></div>
+      <div class="absolute bottom-[20%] left-[15%] w-8 h-8 bg-primary-400/10 dark:bg-primary-500/10 rotate-45 rounded-sm floating-shape" style="animation-delay: 3s"></div>
+      <div class="absolute bottom-[30%] right-[8%] w-14 h-14 border-2 border-primary-200/20 dark:border-primary-700/15 rotate-[22deg] rounded-md floating-shape" style="animation-delay: 2s"></div>
+
+      <div class="container-custom relative z-10 text-center px-4">
+        <!-- The scrambled cube -->
+        <div class="cube-scene mx-auto mb-10">
+          <div class="scrambled-cube">
+            <!-- Front face (white center scrambled) -->
+            <div class="cube-face cube-front">
+              <span class="tile tile-red"></span>
+              <span class="tile tile-white"></span>
+              <span class="tile tile-green"></span>
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-white"></span>
+              <span class="tile tile-orange"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-white"></span>
+              <span class="tile tile-red"></span>
+            </div>
+            <!-- Right face (red center scrambled) -->
+            <div class="cube-face cube-right">
+              <span class="tile tile-white"></span>
+              <span class="tile tile-green"></span>
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-red"></span>
+              <span class="tile tile-white"></span>
+              <span class="tile tile-orange"></span>
+              <span class="tile tile-red"></span>
+              <span class="tile tile-green"></span>
+            </div>
+            <!-- Top face (blue center scrambled) -->
+            <div class="cube-face cube-top">
+              <span class="tile tile-orange"></span>
+              <span class="tile tile-red"></span>
+              <span class="tile tile-white"></span>
+              <span class="tile tile-green"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-red"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-orange"></span>
+            </div>
+            <!-- Back face (yellow center scrambled) -->
+            <div class="cube-face cube-back">
+              <span class="tile tile-green"></span>
+              <span class="tile tile-orange"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-red"></span>
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-white"></span>
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-green"></span>
+              <span class="tile tile-orange"></span>
+            </div>
+            <!-- Left face (orange center scrambled) -->
+            <div class="cube-face cube-left">
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-red"></span>
+              <span class="tile tile-white"></span>
+              <span class="tile tile-orange"></span>
+              <span class="tile tile-green"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-white"></span>
+            </div>
+            <!-- Bottom face (green center scrambled) -->
+            <div class="cube-face cube-bottom">
+              <span class="tile tile-white"></span>
+              <span class="tile tile-yellow"></span>
+              <span class="tile tile-orange"></span>
+              <span class="tile tile-blue"></span>
+              <span class="tile tile-green"></span>
+              <span class="tile tile-red"></span>
+              <span class="tile tile-green"></span>
+              <span class="tile tile-orange"></span>
+              <span class="tile tile-yellow"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 404 number with glitch effect -->
+        <div class="relative inline-block mb-6">
+          <h1 class="text-[8rem] md:text-[12rem] font-display font-black leading-none tracking-tighter text-primary-600 dark:text-primary-400 error-number select-none">
+            404
+          </h1>
+          <div class="absolute inset-0 text-[8rem] md:text-[12rem] font-display font-black leading-none tracking-tighter text-accent-500/20 dark:text-accent-400/15 error-number-ghost select-none" aria-hidden="true">
+            404
+          </div>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-display font-bold text-secondary-800 dark:text-secondary-100 mb-4">
+          Este cubo <span class="text-accent-500">no tiene solución</span>
         </h2>
-        <p
-          class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
-        >
-          La página que buscas pudo haber sido eliminada, cambió de nombre, o no
-          está disponible temporalmente.
+        <p class="text-lg text-secondary-500 dark:text-secondary-400 mb-10 max-w-lg mx-auto leading-relaxed">
+          Parece que esta ruta no existe. Puede que haya cambiado de lugar o simplemente no sea un movimiento válido.
         </p>
+
         <div class="flex justify-center gap-4 flex-wrap">
-          <a href="/" class="btn-primary"> Volver al Inicio </a>
-          <a
-            href="mailto:soporte@speedcubingcolombia.org"
-            class="btn-secondary"
-          >
+          <a href="/" class="group relative inline-flex items-center gap-2 px-7 py-3.5 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-primary-500/25 hover:shadow-xl hover:shadow-primary-500/30 hover:-translate-y-0.5">
+            <svg class="w-5 h-5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            Volver al Inicio
+          </a>
+          <a href="/contact" class="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-secondary-300 dark:border-secondary-600 text-secondary-700 dark:text-secondary-300 font-semibold rounded-xl hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-all duration-300 hover:-translate-y-0.5">
             Contactar Soporte
           </a>
         </div>
@@ -39,3 +129,121 @@ import Layout from "../layouts/Layout.astro";
   </main>
   <Footer />
 </Layout>
+
+<style>
+  /* Cube grid background pattern */
+  .cube-grid-bg {
+    background-image:
+      linear-gradient(rgba(37, 99, 235, 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(37, 99, 235, 0.3) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Floating decorative shapes */
+  .floating-shape {
+    animation: float-drift 8s ease-in-out infinite;
+  }
+
+  @keyframes float-drift {
+    0%, 100% { transform: translateY(0) rotate(var(--tw-rotate, 0deg)); }
+    50% { transform: translateY(-18px) rotate(var(--tw-rotate, 0deg)); }
+  }
+
+  /* 3D Cube scene */
+  .cube-scene {
+    width: 120px;
+    height: 120px;
+    perspective: 600px;
+  }
+
+  .scrambled-cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: cube-tumble 12s ease-in-out infinite;
+  }
+
+  .cube-face {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3px;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    backface-visibility: visible;
+  }
+
+  .tile {
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), inset 0 -1px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Standard Rubik's cube colors */
+  .tile-white  { background: #ffffff; }
+  .tile-yellow { background: #ffd500; }
+  .tile-red    { background: #b71234; }
+  .tile-orange { background: #ff5800; }
+  .tile-blue   { background: #0046ad; }
+  .tile-green  { background: #009b48; }
+
+  .cube-front {
+    transform: translateZ(60px);
+  }
+
+  .cube-back {
+    transform: rotateY(180deg) translateZ(60px);
+  }
+
+  .cube-right {
+    transform: rotateY(90deg) translateZ(60px);
+  }
+
+  .cube-left {
+    transform: rotateY(-90deg) translateZ(60px);
+  }
+
+  .cube-top {
+    transform: rotateX(90deg) translateZ(60px);
+  }
+
+  .cube-bottom {
+    transform: rotateX(-90deg) translateZ(60px);
+  }
+
+  @keyframes cube-tumble {
+    0%   { transform: rotateX(-20deg) rotateY(-30deg); }
+    25%  { transform: rotateX(-15deg) rotateY(30deg); }
+    50%  { transform: rotateX(-25deg) rotateY(120deg); }
+    75%  { transform: rotateX(-10deg) rotateY(210deg); }
+    100% { transform: rotateX(-20deg) rotateY(330deg); }
+  }
+
+  /* 404 text effects */
+  .error-number {
+    text-shadow: 0 4px 30px rgba(37, 99, 235, 0.15);
+  }
+
+  .error-number-ghost {
+    animation: ghost-drift 4s ease-in-out infinite;
+  }
+
+  @keyframes ghost-drift {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(3px, -2px); }
+    50% { transform: translate(-2px, 3px); }
+    75% { transform: translate(2px, 1px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .floating-shape,
+    .scrambled-cube,
+    .error-number-ghost {
+      animation: none;
+    }
+  }
+</style>

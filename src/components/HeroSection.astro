@@ -7,7 +7,6 @@ interface Props {
 
 const { title, highlightText, description } = Astro.props;
 
-// Split the title to insert the highlighted text if provided
 let titleStart = title;
 let titleEnd = "";
 
@@ -20,45 +19,84 @@ if (highlightText) {
 }
 ---
 
-<!-- Hero Section -->
-<section
-  class="relative overflow-hidden bg-linear-to-b from-primary-100 to-white dark:from-primary-950 dark:to-secondary-950 pt-20 md:pt-24 pb-16 md:pb-20"
->
-  <div class="absolute inset-0 z-0 opacity-30">
-    <div class="absolute inset-0 bg-grid-pattern"></div>
-  </div>
+<section class="relative overflow-hidden pt-20 md:pt-24 pb-16 md:pb-20">
+  <!-- Layered gradient background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-primary-50 via-primary-100/50 to-white dark:from-primary-950 dark:via-primary-950/80 dark:to-secondary-950"></div>
+
+  <!-- Grid pattern -->
+  <div class="absolute inset-0 inner-hero-grid opacity-[0.03] dark:opacity-[0.04]"></div>
+
+  <!-- Geometric accents -->
+  <div class="absolute top-12 left-[8%] w-14 h-14 border-2 border-primary-300/15 dark:border-primary-600/10 rounded-lg rotate-12 inner-float" style="animation-delay: 0s" aria-hidden="true"></div>
+  <div class="absolute top-16 right-[10%] w-10 h-10 border-2 border-accent-400/15 dark:border-accent-500/10 rounded-md -rotate-6 inner-float" style="animation-delay: 2s" aria-hidden="true"></div>
+  <div class="absolute bottom-8 left-[20%] w-8 h-8 bg-primary-400/8 dark:bg-primary-500/5 rounded-sm rotate-45 inner-float" style="animation-delay: 1s" aria-hidden="true"></div>
+
+  <!-- Bottom gradient fade -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-secondary-950 to-transparent"></div>
 
   <div class="container-custom relative z-10">
     <div class="text-center max-w-3xl mx-auto px-4">
-      <h1
-        class="text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 text-gray-900 dark:text-white animate-slide-down"
-      >
+      <h1 class="text-3xl md:text-4xl lg:text-5xl mb-5 md:mb-6 text-secondary-900 dark:text-white inner-hero-title">
         {
           highlightText ? (
             <>
-              {titleStart}
-              <span class="text-accent-500">{highlightText}</span>
-              {titleEnd}
+              {titleStart}<span class="text-accent-500 dark:text-accent-400">{highlightText}</span>{titleEnd}
             </>
           ) : (
             title
           )
         }
       </h1>
-      <p
-        class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up"
-        style="animation-delay: 200ms"
-      >
+      <p class="text-lg md:text-xl text-secondary-500 dark:text-secondary-400 leading-relaxed max-w-2xl mx-auto inner-hero-desc">
         {description}
       </p>
     </div>
   </div>
-
-  <!-- Animated Shapes -->
-  <div class="absolute -bottom-16 left-0 right-0 flex justify-center">
-    <div
-      class="w-48 md:w-64 h-48 md:h-64 bg-accent-400 rounded-full filter blur-3xl opacity-20 animate-pulse"
-    >
-    </div>
-  </div>
 </section>
+
+<style>
+  .inner-hero-grid {
+    background-image:
+      linear-gradient(rgba(37, 99, 235, 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(37, 99, 235, 0.4) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .inner-float {
+    animation: inner-drift 10s ease-in-out infinite;
+  }
+
+  @keyframes inner-drift {
+    0%, 100% { transform: translateY(0) rotate(var(--tw-rotate, 0deg)); }
+    50% { transform: translateY(-10px) rotate(var(--tw-rotate, 0deg)); }
+  }
+
+  .inner-hero-title {
+    animation: inner-enter 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 100ms;
+  }
+
+  .inner-hero-desc {
+    animation: inner-enter 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 250ms;
+  }
+
+  @keyframes inner-enter {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .inner-float,
+    .inner-hero-title,
+    .inner-hero-desc {
+      animation: none;
+    }
+  }
+</style>

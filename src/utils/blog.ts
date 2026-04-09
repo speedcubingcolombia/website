@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import {
   DEFAULT_LANGUAGE,
+  formatDate as formatDateI18n,
   languages,
   SUPPORTED_LANGUAGES,
   type SupportedLanguage,
@@ -16,17 +17,6 @@ export type BlogListEntry = CollectionEntry<"blog"> & {
 };
 
 /**
- * Formateador de fechas reutilizable para español (default)
- * @deprecated Use formatDate from src/i18n instead for localized dates
- */
-export const dateFormatter = new Intl.DateTimeFormat("es-CO", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-  timeZone: "UTC",
-});
-
-/**
  * Mapping of canonical slugs (Spanish) to translated slugs per language.
  *
  * This enables URL translation (e.g., /blog/sac-2026/registro → /en/blog/sac-2026/registration)
@@ -34,16 +24,11 @@ export const dateFormatter = new Intl.DateTimeFormat("es-CO", {
  * NOTE: For content that uses the same slug across languages (most cases),
  * you don't need to add an entry here - the system auto-detects based on folder structure.
  * Only add entries when the URL slug differs between languages.
- *
- * @example
- * // Only needed when translated URL differs from Spanish:
- * "sac-2026/registro": { es: "sac-2026/registro", en: "sac-2026/registration", pt: "sac-2026/inscricao" }
  */
 export const SLUG_TRANSLATIONS: Record<
   string,
   Partial<Record<SupportedLanguage, string>>
 > = {
-  // SAC 2026 translations - each file uses its own language name
   "sac-2026/alojamiento": {
     es: "sac-2026/alojamiento",
     en: "sac-2026/accommodation",
@@ -116,7 +101,6 @@ export function getCanonicalSlug(
 ): string {
   if (fromLang === DEFAULT_LANGUAGE) return slug;
 
-  // Check if this slug is a translation
   for (const [canonicalSlug, translations] of Object.entries(
     SLUG_TRANSLATIONS
   )) {
@@ -125,7 +109,6 @@ export function getCanonicalSlug(
     }
   }
 
-  // No translation found - slug is probably the same as canonical
   return slug;
 }
 
@@ -139,25 +122,20 @@ export async function getAvailableLanguages(
   const allPosts = await getCollection("blog");
   const availableLanguages: SupportedLanguage[] = [];
 
-  // Normalize the canonical slug (remove /index if present)
   const normalizedCanonical = canonicalSlug.replace("/index", "");
 
   for (const lang of SUPPORTED_LANGUAGES) {
-    // Get the expected slug for this language
     const expectedSlug = getTranslatedSlug(normalizedCanonical, lang);
 
     const exists = allPosts.some((post) => {
-      // Get the slug without index suffix
       let postSlug = post.slug.replace("/index", "");
 
       if (lang === DEFAULT_LANGUAGE) {
-        // Spanish: no prefix, must not start with any language prefix
         const hasLangPrefix = SUPPORTED_LANGUAGES.some(
           (l) => l !== DEFAULT_LANGUAGE && postSlug.startsWith(`${l}/`)
         );
         return !hasLangPrefix && postSlug === expectedSlug;
       } else {
-        // Other languages: must have lang/ prefix
         const prefix = `${lang}/`;
         if (!postSlug.startsWith(prefix)) return false;
         const slugWithoutPrefix = postSlug.slice(prefix.length);
@@ -173,8 +151,6 @@ export async function getAvailableLanguages(
 
 /**
  * Build a localized blog URL
- * @example getLocalizedBlogUrl("sac-2026", "en") => "/en/blog/sac-2026"
- * @example getLocalizedBlogUrl("sac-2026/registro", "en") => "/en/blog/sac-2026/registration"
  */
 export function getLocalizedBlogUrl(
   canonicalSlug: string,
@@ -186,47 +162,6 @@ export function getLocalizedBlogUrl(
 }
 
 /**
- * Formatea una fecha usando el formato estándar del sitio (español por defecto)
- * Para fechas localizadas, use formatDate de src/i18n
- */
-export function formatDate(date: Date): string {
-  return dateFormatter.format(date);
-}
-
-export async function getBlogPosts(): Promise<BlogListEntry[]> {
-  const posts = await getCollection("blog");
-
-  // Agrupar posts multi-sección y solo mostrar el index
-  const displayPosts = posts.filter((post) => {
-    // Si no tiene '/', es un post simple
-    if (!post.slug.includes("/")) return true;
-    // Si tiene '/', solo mostrar el index
-    return post.slug.endsWith("/index");
-  });
-
-  return displayPosts
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-    .map((post) => ({
-      ...post,
-      // Normalizar el slug para posts multi-sección (quitar /index)
-      slug: post.slug.replace("/index", ""),
-      formattedDate: dateFormatter.format(post.data.date),
-    }));
-}
-
-/**
- * Formats a date with timezone UTC to avoid off-by-one errors
- */
-export function formatDateUTC(date: Date, locale: string = "es-CO"): string {
-  return new Intl.DateTimeFormat(locale, {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    timeZone: "UTC",
-  }).format(date);
-}
-
-/**
  * Filters blog posts by language
  */
 export function filterPostsByLanguage(
@@ -234,12 +169,10 @@ export function filterPostsByLanguage(
   lang: SupportedLanguage
 ): CollectionEntry<"blog">[] {
   if (lang === DEFAULT_LANGUAGE) {
-    // Spanish: no language prefix
     return posts.filter(
       (post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/")
     );
   }
-  // Other languages: must have lang/ prefix
   return posts.filter((post) => post.slug.startsWith(`${lang}/`));
 }
 
@@ -263,25 +196,31 @@ export function getBaseSlug(slug: string): string {
 }
 
 /**
- * Sorts multi-section posts: index first, then alphabetically
+ * Sorts multi-section posts: index first, then alphabetically.
+ * The lang parameter ensures language prefixes are stripped before comparison.
  */
-export function sortSections(sections: CollectionEntry<"blog">[]): void {
+export function sortSections(
+  sections: CollectionEntry<"blog">[],
+  lang: SupportedLanguage = DEFAULT_LANGUAGE
+): void {
   sections.sort((a, b) => {
-    const aIsNormalizedIndex = !a.slug.includes("/");
-    const bIsNormalizedIndex = !b.slug.includes("/");
-    const aIsIndex = a.slug.endsWith("/index");
-    const bIsIndex = b.slug.endsWith("/index");
+    const aSlug = removeLanguagePrefix(a.slug, lang);
+    const bSlug = removeLanguagePrefix(b.slug, lang);
+    const aIsNormalizedIndex = !aSlug.includes("/");
+    const bIsNormalizedIndex = !bSlug.includes("/");
+    const aIsIndex = aSlug.endsWith("/index");
+    const bIsIndex = bSlug.endsWith("/index");
 
     if (aIsNormalizedIndex) return -1;
     if (bIsNormalizedIndex) return 1;
     if (aIsIndex) return -1;
     if (bIsIndex) return 1;
-    return a.slug.localeCompare(b.slug);
+    return aSlug.localeCompare(bSlug);
   });
 }
 
 /**
- * Generates tabs for multi-section articles
+ * Tab definition for multi-section article navigation
  */
 export interface Tab {
   label: string;
@@ -289,6 +228,9 @@ export interface Tab {
   isActive: boolean;
 }
 
+/**
+ * Generates tabs for multi-section articles
+ */
 export function generateTabs(
   allSections: CollectionEntry<"blog">[],
   currentSlug: string,
@@ -332,4 +274,171 @@ export async function findIndexPost(
     allPosts.find((p) => p.slug === `${prefix}${baseSlug}`) ||
     allPosts.find((p) => p.slug === `${prefix}${baseSlug}/index`)
   );
+}
+
+// ---------------------------------------------------------------------------
+// Static path generation utilities
+// ---------------------------------------------------------------------------
+
+/** Props returned by getSlugPaths for [slug].astro routes */
+export interface SlugPathProps {
+  post: CollectionEntry<"blog">;
+  multiSection: boolean;
+  allSections: CollectionEntry<"blog">[];
+  baseSlug: string;
+}
+
+/**
+ * Generates static paths for [slug].astro routes.
+ * Handles both simple posts and multi-section article indexes.
+ */
+export async function getSlugPaths(lang: SupportedLanguage) {
+  const allPosts = await getCollection("blog");
+  const posts = filterPostsByLanguage(allPosts, lang);
+  const paths: { params: { slug: string }; props: SlugPathProps }[] = [];
+
+  // Simple posts (no multiSection)
+  posts
+    .filter((post) => !post.data.multiSection)
+    .forEach((post) => {
+      const slug = removeLanguagePrefix(post.slug, lang);
+      paths.push({
+        params: { slug },
+        props: { post, multiSection: false, allSections: [], baseSlug: slug },
+      });
+    });
+
+  // Multi-section posts grouped by base slug
+  const groups = new Map<string, CollectionEntry<"blog">[]>();
+  posts
+    .filter((p) => p.data.multiSection)
+    .forEach((post) => {
+      const slug = removeLanguagePrefix(post.slug, lang);
+      const base = getBaseSlug(slug);
+      if (!groups.has(base)) groups.set(base, []);
+      groups.get(base)!.push(post);
+    });
+
+  groups.forEach((sections, base) => {
+    sortSections(sections, lang);
+    paths.push({
+      params: { slug: base },
+      props: {
+        post: sections[0],
+        multiSection: true,
+        allSections: sections,
+        baseSlug: base,
+      },
+    });
+  });
+
+  return paths;
+}
+
+/** Props returned by getSectionPaths for [slug]/[...section].astro routes */
+export interface SectionPathProps {
+  post: CollectionEntry<"blog">;
+  mainPost: CollectionEntry<"blog">;
+  allSections: CollectionEntry<"blog">[];
+  baseSlug: string;
+  currentSection: string;
+}
+
+/**
+ * Generates static paths for [slug]/[...section].astro routes.
+ * Only generates paths for sub-sections (not the index, which is handled by [slug].astro).
+ */
+export async function getSectionPaths(lang: SupportedLanguage) {
+  const allPosts = await getCollection("blog");
+  const posts = filterPostsByLanguage(allPosts, lang);
+  const paths: { params: { slug: string; section: string }; props: SectionPathProps }[] = [];
+
+  // Group posts by base slug (only those in folders, i.e., with "/" in slug)
+  const groups = new Map<string, CollectionEntry<"blog">[]>();
+  posts.forEach((post) => {
+    const slug = removeLanguagePrefix(post.slug, lang);
+    const parts = slug.split("/");
+    if (parts.length > 1) {
+      const base = parts[0];
+      if (!groups.has(base)) groups.set(base, []);
+      groups.get(base)!.push(post);
+    }
+  });
+
+  groups.forEach((sections, base) => {
+    sortSections(sections, lang);
+
+    // Find the index post for metadata
+    const prefix = lang === DEFAULT_LANGUAGE ? "" : `${lang}/`;
+    const indexPost =
+      allPosts.find((p) => p.slug === `${prefix}${base}`) ||
+      allPosts.find((p) => p.slug === `${prefix}${base}/index`) ||
+      sections[0];
+
+    sections.forEach((post) => {
+      const slug = removeLanguagePrefix(post.slug, lang);
+      const section = slug.split("/")[1];
+      const isIndex = section === "index" || !slug.includes("/");
+
+      if (!isIndex) {
+        paths.push({
+          params: { slug: base, section },
+          props: {
+            post,
+            mainPost: indexPost,
+            allSections: sections,
+            baseSlug: base,
+            currentSection: section,
+          },
+        });
+      }
+    });
+  });
+
+  return paths;
+}
+
+/**
+ * Builds alternate URL map for hreflang tags.
+ * Returns a Record of lang code → full URL for each available language.
+ */
+export function buildAlternateUrls(
+  canonicalSlug: string,
+  availableLanguages: SupportedLanguage[],
+  site: URL | undefined
+): Record<string, string> {
+  const base = site || new URL("https://speedcubingcolombia.org");
+  const urls: Record<string, string> = {};
+
+  for (const lang of availableLanguages) {
+    const blogPath = getLocalizedBlogUrl(canonicalSlug, lang);
+    urls[lang] = new URL(blogPath, base).toString();
+  }
+
+  return urls;
+}
+
+// ---------------------------------------------------------------------------
+// Blog listing utilities
+// ---------------------------------------------------------------------------
+
+export async function getBlogPosts(
+  lang: SupportedLanguage = DEFAULT_LANGUAGE
+): Promise<BlogListEntry[]> {
+  const allPosts = await getCollection("blog");
+  const posts = filterPostsByLanguage(allPosts, lang);
+
+  const displayPosts = posts.filter((post) => {
+    const slug = removeLanguagePrefix(post.slug, lang);
+    if (!slug.includes("/")) return true;
+    return slug.endsWith("/index");
+  });
+
+  return displayPosts
+    .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0))
+    .map((post) => ({
+      ...post,
+      slug: removeLanguagePrefix(post.slug, lang).replace("/index", ""),
+      formattedDate: post.data.date ? formatDateI18n(post.data.date, lang) : "",
+    }));
 }

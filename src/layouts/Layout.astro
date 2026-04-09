@@ -2,12 +2,21 @@
 import "../styles/global.css";
 import "../styles/transitions.css";
 import { ClientRouter } from "astro:transitions";
+import {
+  getLocaleFromPath,
+  languages,
+  t,
+  type SupportedLanguage,
+} from "../i18n";
 
 export interface Props {
   title: string;
   description?: string;
   image?: string;
   type?: "website" | "article";
+  lang?: SupportedLanguage;
+  /** Alternate language URLs for hreflang tags (lang code → full URL) */
+  alternateUrls?: Record<string, string>;
 }
 
 const canonicalURL = new URL(
@@ -20,7 +29,11 @@ const {
   description = "Speedcubing Colombia - Organización oficial de la WCA en Colombia. Competencias, rankings y comunidad de cuberos.",
   image = "/og-image.png",
   type = "website",
+  lang = getLocaleFromPath(Astro.url.pathname),
+  alternateUrls = {},
 } = Astro.props;
+
+const ogLocale = languages[lang].dateLocale.replace("-", "_");
 
 const fullImageUrl = new URL(
   image,
@@ -29,12 +42,18 @@ const fullImageUrl = new URL(
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
+    {Object.entries(alternateUrls).map(([hrefLang, url]) => (
+      <link rel="alternate" hreflang={hrefLang} href={url} />
+    ))}
+    {alternateUrls["es"] && (
+      <link rel="alternate" hreflang="x-default" href={alternateUrls["es"]} />
+    )}
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
@@ -45,7 +64,7 @@ const fullImageUrl = new URL(
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={fullImageUrl} />
-    <meta property="og:locale" content="es_CO" />
+    <meta property="og:locale" content={ogLocale} />
     <meta property="og:site_name" content="Speedcubing Colombia" />
 
     <!-- Twitter -->
@@ -75,7 +94,7 @@ const fullImageUrl = new URL(
       href="#main-content"
       class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:rounded-lg"
     >
-      Saltar al contenido principal
+      {t(lang, "a11y.skipToContent")}
     </a>
     <div id="page-wrapper" class="page-transition-wrapper">
       <slot />
