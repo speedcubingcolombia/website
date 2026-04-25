@@ -13,5 +13,5 @@ Nos enorgullese de todo corazón contar con la participación de tan importantes
  <img src="/sac/ssc.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Speedcubing Colombia">
  <img src="/sac/AES.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Asociación Ecuatoriana de Speedcubing">
  <img src="/sac/live_escenografos.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="live escenografos">
- <img src="/sac/RevivetucompuByJaironpaez.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Revive tu compu">
+ <img src="/sac/revive.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Revive tu compu">
 </div>
