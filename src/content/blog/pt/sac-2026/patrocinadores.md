@@ -14,4 +14,8 @@ Temos orgulho, de todo o coração, de contar com a participação de patrocinad
  <img src="/sac/AES.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Associação Equatoriana de Speedcubing">
  <img src="/sac/live_escenografos.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="live escenografos">
   <img src="/sac/revive.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Revive tu compu">
+   <a href="https://www.gancube.com/" target="_blank">
+  <img src="/sac/gan.png" 
+       style="width: clamp(80px, 22vw, 200px); height: auto;" 
+       alt="GAN CUBE">
 </div>
