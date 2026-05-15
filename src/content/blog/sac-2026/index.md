@@ -61,6 +61,9 @@ _Organiza: Speedcubing Colombia y Asociación Ecuatoriana de Speedcubing_
  <img src="/sac/AES.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Asociación Ecuatoriana de Speedcubing">
  <img src="/sac/live_escenografos.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Live escenografos">
   <img src="/sac/revive.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Revive tu compu">
-  <img src="/sac/gan.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="GAN CUBE">
-</a>
+
 </div>
+<div style="display: flex; justify-content: center; gap: clamp(8px, 2vw, 32px); align-items: center;">
+ <a href="https://www.gancube.com/" target="_blank">
+ <img src="/sac/gan.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="GAN CUBE">
+ </div>

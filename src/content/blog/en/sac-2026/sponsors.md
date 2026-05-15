@@ -14,8 +14,9 @@ We are truly proud to count on the participation of such important sponsors for 
  <img src="/sac/AES.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Ecuadorian Speedcubing Association">
  <img src="/sac/live_escenografos.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="live escenografos">
   <img src="/sac/revive.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="Revive tu compu">
-   <a href="https://www.gancube.com/" target="_blank">
-  <img src="/sac/gan.png" 
-       style="width: clamp(80px, 22vw, 200px); height: auto;" 
-       alt="GAN CUBE">
+
 </div>
+<div style="display: flex; justify-content: center; gap: clamp(8px, 2vw, 32px); align-items: center;">
+ <a href="https://www.gancube.com/" target="_blank">
+ <img src="/sac/gan.png" style="width: clamp(80px, 22vw, 200px); height: auto;" alt="GAN CUBE">
+ </div>
