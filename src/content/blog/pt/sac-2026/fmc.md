@@ -10,19 +10,8 @@ tabLabel: "FMC SAC 2026"
 
 # Fewest Move Cube South American Championship 2026
 
-Nesta aba você encontrará o link de inscrição e registro para o campeonato sul-americano de FMC.
+Este torneio será realizado de forma simultânea em diferentes cidades do continente. Todas as informações, inscrição e registro estão na página oficial da WCA:
 
-Este torneio será realizado de forma simultânea em diferentes cidades do continente, portanto, revise atentamente as informações e confirme, no formulário de inscrição, em qual sede deseja participar.
-
-## Sedes
-
-### Colômbia
-### Venezuela
-### Equador
-### Peru
-### Brasil
-### Bolívia
-### Paraguai
-### Argentina
-### Uruguai
-### Chile
+<div style="margin-top: 1.5em; text-align: center;">
+ <a href="https://www.worldcubeassociation.org/competitions/FMCSAC2026" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Ver competição na WCA</a>
+</div>
