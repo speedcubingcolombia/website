@@ -48,6 +48,11 @@ new stories are written, and cubing is experienced at the highest competitive le
 
 Be aware that filming and photography at the **WCA South American Championship 2026** will be prevelant, you therefore consent to your image being used by the World Cube Association and its partners in their marketing and social media platforms by attending.
 
+## SAC 2026 Website
+
+Visit the dedicated event website, developed by our collaborator **Legión Cubo**:
+<a href="https://www.elsac2026.com/" target="_blank" style="font-weight: bold;">www.elsac2026.com</a>
+
 **One continent. One championship. Bogotá 2026.**
 
 ---

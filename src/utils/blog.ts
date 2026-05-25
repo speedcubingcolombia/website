@@ -79,6 +79,11 @@ export const SLUG_TRANSLATIONS: Record<
     en: "sac-2026/unofficial-events",
     pt: "sac-2026/nao-oficiais",
   },
+  "sac-2026/colaboradores": {
+    es: "sac-2026/colaboradores",
+    en: "sac-2026/collaborators",
+    pt: "sac-2026/colaboradores",
+  },
 };
 
 /**

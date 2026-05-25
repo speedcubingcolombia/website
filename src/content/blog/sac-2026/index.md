@@ -48,6 +48,11 @@ se escriben nuevas historias y se vive el cubo al más alto nivel competitivo.
 
 Ten en cuenta que durante el **WCA South American Championship 2026** habrá grabaciones y fotografías de forma frecuente; por lo tanto, al asistir al evento, otorgas tu consentimiento para que tu imagen sea utilizada por la World Cube Association y sus socios en sus plataformas de marketing y redes sociales.
 
+## Página web del SAC 2026
+
+Visita la página web dedicada al evento, desarrollada por nuestro colaborador **Legión Cubo**:
+<a href="https://www.elsac2026.com/" target="_blank" style="font-weight: bold;">www.elsac2026.com</a>
+
 **Un continente. Un campeonato. Bogotá 2026.**
 
 ---
