@@ -43,6 +43,13 @@ Register by May 28 through the form available at the end of this tab:
  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0LDZDSbDwSEcojS9Cq2JJlA2UkvTUi5d6LBNitY18rA7ang/viewform?usp=preview" target="_blank" style="display: inline-block; background: #1976d2; color: #fff; padding: 0.75em 1.5em; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Registration for unofficial events</a>
 </div>
 
+## Participants unofficial-event
+
+![kilo](/sac/kilo.png)
+![fto](/sac/fto.png)
+![Mirror](/sac/Mirror.png)
+![team](/sac/team.png)
+
 ## Results link and Cubing Contests
 
 ### [Live results](https://cubingcontests.com/competitions/SAC2026)

@@ -35,6 +35,16 @@ Todos os tempos dos eventos não oficiais serão publicados no site [Cubing Cont
 
 Cada uma dos eventos não oficiais terá um limite de 40 competidores; para Team Blind, 20 equipes. Caso as vagas sejam preenchidas, será aberta uma lista de espera para as categorias não oficiais.
 
+## Participantes
+
+## Participants unofficial-event
+
+![kilo](/sac/kilo.png)
+![fto](/sac/fto.png)
+![Mirror](/sac/Mirror.png)
+![team](/sac/team.png)
+
+
 ## Inscrição em eventos não oficiais
 
 Inscrever-se até 28 de maio por meio do formulário disponível no final desta aba:
