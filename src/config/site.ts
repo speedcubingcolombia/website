@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
 } as const;
 
 /** Slug of the blog post featured on the homepage. Set to "" to auto-select the latest post. */
-export const FEATURED_ARTICLE_SLUG = "sac-2026";
+export const FEATURED_ARTICLE_SLUG = "convocatoria-nats-2026";
 
 export const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/speedcubingcolombia",
