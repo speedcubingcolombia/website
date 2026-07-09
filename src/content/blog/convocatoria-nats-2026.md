@@ -262,5 +262,3 @@ Escríbenos a **<nats2026@speedcubingcolombia.org>** y con gusto resolvemos tus 
     <span style="color:#c3ccf5;">✉️ nats2026@speedcubingcolombia.org</span>
   </div>
 </div>
-
-<p style="text-align:center;color:#1A2E7A;font-weight:700;margin-top:1.5rem;">💛💙❤️ Un país. Un nacional. Tu ciudad. 💛💙❤️</p>

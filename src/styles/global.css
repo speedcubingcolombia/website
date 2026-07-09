@@ -222,6 +222,23 @@
   .prose a:focus-visible {
     @apply outline-hidden ring-2 ring-primary-500 dark:ring-primary-400 rounded;
   }
+
+  .prose table {
+    @apply w-full my-6 text-sm md:text-base border-collapse;
+  }
+
+  .prose th,
+  .prose td {
+    @apply border border-secondary-300 dark:border-secondary-700 px-4 py-3 text-left align-top;
+  }
+
+  .prose thead th {
+    @apply bg-primary-600 text-white font-semibold;
+  }
+
+  .prose tbody tr:nth-child(even) {
+    @apply bg-secondary-100 dark:bg-secondary-900/60;
+  }
 }
 
 /* Animations */
