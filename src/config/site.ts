@@ -6,7 +6,7 @@
 export const SITE_CONFIG = {
   name: "Speedcubing Colombia",
   description:
-    "Asociación sin ánimo de lucro que promueve el Speedcubing en Colombia. Competencias oficiales WCA, rankings y comunidad de cuberos.",
+    "Organización Regional de la WCA en Colombia, sin ánimo de lucro. Competencias oficiales WCA, rankings y comunidad de cuberos.",
   url: "https://speedcubingcolombia.org",
   email: "contacto@speedcubingcolombia.org",
   phone: "+57 300 4682985",
