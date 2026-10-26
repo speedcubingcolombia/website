@@ -1,0 +1,13 @@
+// Cloudflare Workers config: the site is static, so the Worker only serves
+// the files Astro builds into dist/ (no server code).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "website",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // Unknown paths get dist/404.html with a 404 status.
+    "not_found_handling": "404-page"
+  }
+  // Custom domains are added when switching away from Vercel (see README).
+}

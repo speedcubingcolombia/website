@@ -52,3 +52,22 @@ Content schema is defined with Zod in `src/content/config.ts`.
 - Dynamic routes use Astro's `getStaticPaths()` for pre-rendering multilingual content
 - `LanguageSwitcher` only renders when translations exist for the current page
 - Site uses Astro ClientRouter for page transitions
+
+## Deploy (Cloudflare Workers, static assets)
+
+The site is moving from Vercel to Cloudflare. `wrangler.jsonc` serves `dist/` as static files; there is no server code. npm is the package manager (`package-lock.json`).
+
+- `npm run preview:cloudflare`: build and serve locally exactly as Cloudflare will (`http://localhost:8787`).
+- `npm run deploy`: build and publish (needs `npx wrangler login` into the Speedcubing Colombia Cloudflare account).
+- Paths: `/company` redirects to `/company/` (matches the canonical URLs); unknown paths get `404.html` with status 404.
+
+Switching the domain from Vercel (one time):
+
+1. `npm run deploy` and check the `*.workers.dev` URL it prints.
+2. In Cloudflare DNS, delete the `@` and `www` records that point to Vercel.
+3. Add to `wrangler.jsonc` and deploy again:
+   `"routes": [{ "pattern": "speedcubingcolombia.org", "custom_domain": true }, { "pattern": "www.speedcubingcolombia.org", "custom_domain": true }]`
+4. Cloudflare dashboard → Rules → Redirect Rules: redirect `www.speedcubingcolombia.org/*` to `https://speedcubingcolombia.org/${1}` (301). The apex is the canonical host.
+5. Check the site, then remove the project and domain from Vercel.
+
+Images: compress before adding them to `public/` (at most ~1920 px wide; PNG for graphics, JPEG for photos). Keep file names: posts and external pages link to them.

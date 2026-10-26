@@ -1,6 +1,6 @@
 {
   "name": "speedcubingcolombia-website",
-  "description": "Sitio web oficial de Speedcubing Colombia - Organización oficial de la WCA en Colombia",
+  "description": "Sitio web oficial de Speedcubing Colombia - Organización Regional de la WCA en Colombia",
   "author": "Speedcubing Colombia",
   "license": "MIT",
   "homepage": "https://speedcubingcolombia.org",
@@ -14,7 +14,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro build && astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "astro build && wrangler deploy",
+    "preview:cloudflare": "astro build && wrangler dev"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.8",
@@ -22,5 +24,8 @@
     "alpinejs": "^3.14.9",
     "astro": "^5.10.1",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "wrangler": "^4.153.0"
   }
 }
