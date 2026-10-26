@@ -61,6 +61,5 @@ The site is served by Cloudflare (account "Speedcubing Colombia"). `wrangler.jso
 - `npm run deploy`: build and publish (needs `npx wrangler login` with access to the Speedcubing Colombia account).
 - Paths: `/company` redirects to `/company/` (matches the canonical URLs); unknown paths get `404.html` with status 404.
 - `www.speedcubingcolombia.org/*` redirects to `https://speedcubingcolombia.org/${1}` (301) with a Redirect Rule in the Cloudflare dashboard (Rules → Redirect Rules). The apex is the canonical host.
-- Test URL: `https://website.speedcubingcolombia-website.workers.dev`.
 
 Images: compress before adding them to `public/` (at most ~1920 px wide; PNG for graphics, JPEG for photos). Keep file names: posts and external pages link to them.
