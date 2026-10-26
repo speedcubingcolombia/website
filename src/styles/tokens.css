@@ -1,0 +1,289 @@
+/*
+  Speedcubing Colombia design tokens.
+
+  Source of truth: speedcubingcolombia/website, src/styles/tokens.css.
+  The apps (payments, competitions) keep a byte-identical copy; their CI
+  compares it with this file and fails if they drift apart. Change it here
+  first, then copy it to the apps.
+
+  Plain CSS (no Tailwind), so it works in the Astro site, in the React app and
+  in the HTML pages served by a Worker. Light theme only.
+*/
+
+:root {
+  /* Blue: links, focus, information. */
+  --scc-primary-50: #eff6ff;
+  --scc-primary-100: #dbeafe;
+  --scc-primary-200: #bfdbfe;
+  --scc-primary-300: #93c5fd;
+  --scc-primary-400: #60a5fa;
+  --scc-primary-500: #3b82f6;
+  --scc-primary-600: #2563eb;
+  --scc-primary-700: #1d4ed8;
+  --scc-primary-800: #1e40af;
+  --scc-primary-900: #1e3a8a;
+  --scc-primary-950: #172554;
+
+  /* Warm grays: text, borders, backgrounds. */
+  --scc-secondary-50: #fafaf9;
+  --scc-secondary-100: #f5f5f4;
+  --scc-secondary-200: #e7e5e4;
+  --scc-secondary-300: #d6d3d1;
+  --scc-secondary-400: #a8a29e;
+  --scc-secondary-500: #78716c;
+  --scc-secondary-600: #57534e;
+  --scc-secondary-700: #44403c;
+  --scc-secondary-800: #292524;
+  --scc-secondary-900: #1c1917;
+  --scc-secondary-950: #0c0a09;
+
+  /* Amber: main buttons and highlights. */
+  --scc-accent-50: #fefdf8;
+  --scc-accent-100: #fdf6e3;
+  --scc-accent-200: #fbedc2;
+  --scc-accent-300: #f8df97;
+  --scc-accent-400: #f4cc63;
+  --scc-accent-500: #efb034;
+  --scc-accent-600: #e09112;
+  --scc-accent-700: #bc7311;
+  --scc-accent-800: #975a16;
+  --scc-accent-900: #7c4a17;
+  --scc-accent-950: #452508;
+
+  /* Orange: warnings on the site. */
+  --scc-warning-50: #fff7ed;
+  --scc-warning-100: #ffedd5;
+  --scc-warning-200: #fed7aa;
+  --scc-warning-300: #fdba74;
+  --scc-warning-400: #fb923c;
+  --scc-warning-500: #f97316;
+  --scc-warning-600: #ea580c;
+  --scc-warning-700: #c2410c;
+  --scc-warning-800: #9a3412;
+  --scc-warning-900: #7c2d12;
+  --scc-warning-950: #431407;
+
+  /* Status (notices, badges). */
+  --scc-ok: #15803d;
+  --scc-ok-soft: #dcfce7;
+  --scc-warn: #b45309;
+  --scc-warn-soft: #fef3c7;
+  --scc-bad: #b91c1c;
+  --scc-bad-soft: #fee2e2;
+
+  /* Colombian flag, for the strip under the header. */
+  --scc-flag-yellow: #fcd116;
+  --scc-flag-blue: #003893;
+  --scc-flag-red: #ce1126;
+
+  /* Fonts are self-hosted by each project (Fontsource variable fonts). */
+  --scc-font-sans: "Inter Variable", Inter, system-ui, sans-serif;
+  --scc-font-display: "Lexend Variable", Lexend, system-ui, sans-serif;
+
+  --scc-radius: 0.5rem;
+  --scc-radius-card: 0.75rem;
+  --scc-shadow-card: 0 1px 3px rgb(0 0 0 / 0.08), 0 1px 2px rgb(0 0 0 / 0.04);
+  --scc-shadow-button: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  color-scheme: light;
+}
+
+/* Visible focus for keyboard users, everywhere. */
+:focus-visible {
+  outline: 2px solid var(--scc-primary-600);
+  outline-offset: 2px;
+}
+
+/* Colombian flag strip: yellow half, blue and red quarters. Goes right under the header. */
+.scc-flag {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--scc-flag-yellow) 0 50%,
+    var(--scc-flag-blue) 50% 75%,
+    var(--scc-flag-red) 75%
+  );
+}
+
+/* Header used by the apps: SCC logo (links to the site) and the section name. */
+.scc-header {
+  background: #fff;
+  border-bottom: 1px solid var(--scc-secondary-200);
+}
+.scc-header-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+}
+.scc-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.scc-brand img {
+  height: 40px;
+  width: auto;
+}
+.scc-section {
+  font-family: var(--scc-font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--scc-secondary-600);
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--scc-secondary-300);
+  text-decoration: none;
+}
+.scc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+}
+.scc-nav a {
+  font-weight: 500;
+  color: var(--scc-secondary-600);
+  text-decoration: none;
+}
+.scc-nav a:hover,
+.scc-nav a[aria-current="page"] {
+  color: var(--scc-accent-600);
+}
+
+/* Footer used by the apps, same look as the site footer. */
+.scc-footer {
+  background: #111827;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+.scc-footer-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.scc-footer strong {
+  display: block;
+  font-family: var(--scc-font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+.scc-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+.scc-footer a {
+  color: #d1d5db;
+  text-decoration: none;
+}
+.scc-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Buttons: amber with dark text for the main action; outlined for the rest. */
+.scc-btn,
+.scc-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--scc-radius);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+.scc-btn {
+  border: 0;
+  background: var(--scc-accent-400);
+  color: #000;
+  box-shadow: var(--scc-shadow-button);
+}
+.scc-btn:hover {
+  background: var(--scc-accent-500);
+}
+.scc-btn-outline {
+  border: 2px solid var(--scc-secondary-300);
+  background: #fff;
+  color: var(--scc-secondary-900);
+}
+.scc-btn-outline:hover {
+  background: var(--scc-secondary-100);
+}
+.scc-btn:disabled,
+.scc-btn-outline:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Card and notices. */
+.scc-card {
+  background: #fff;
+  border: 1px solid var(--scc-secondary-200);
+  border-radius: var(--scc-radius-card);
+  box-shadow: var(--scc-shadow-card);
+}
+.scc-notice {
+  border: 1px solid;
+  border-radius: var(--scc-radius);
+  padding: 0.75rem 1rem;
+}
+.scc-notice.info {
+  background: var(--scc-primary-50);
+  border-color: var(--scc-primary-300);
+}
+.scc-notice.success {
+  background: var(--scc-ok-soft);
+  border-color: var(--scc-ok);
+}
+.scc-notice.warning {
+  background: var(--scc-warn-soft);
+  border-color: var(--scc-warn);
+}
+.scc-notice.error {
+  background: var(--scc-bad-soft);
+  border-color: var(--scc-bad);
+}
+
+/* Small status label (for example "Pagado", "En revisión"). */
+.scc-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--scc-secondary-100);
+  color: var(--scc-secondary-700);
+}
+.scc-badge.info {
+  background: var(--scc-primary-100);
+  color: var(--scc-primary-800);
+}
+.scc-badge.success {
+  background: var(--scc-ok-soft);
+  color: var(--scc-ok);
+}
+.scc-badge.warning {
+  background: var(--scc-warn-soft);
+  color: var(--scc-warn);
+}
+.scc-badge.error {
+  background: var(--scc-bad-soft);
+  color: var(--scc-bad);
+}

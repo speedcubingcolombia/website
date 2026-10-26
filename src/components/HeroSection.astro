@@ -21,33 +21,33 @@ if (highlightText) {
 
 <section class="relative overflow-hidden pt-20 md:pt-24 pb-16 md:pb-20">
   <!-- Layered gradient background -->
-  <div class="absolute inset-0 bg-gradient-to-b from-primary-50 via-primary-100/50 to-white dark:from-primary-950 dark:via-primary-950/80 dark:to-secondary-950"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-primary-50 via-primary-100/50 to-white"></div>
 
   <!-- Grid pattern -->
-  <div class="absolute inset-0 inner-hero-grid opacity-[0.03] dark:opacity-[0.04]"></div>
+  <div class="absolute inset-0 inner-hero-grid opacity-[0.03]"></div>
 
   <!-- Geometric accents -->
-  <div class="absolute top-12 left-[8%] w-14 h-14 border-2 border-primary-300/15 dark:border-primary-600/10 rounded-lg rotate-12 inner-float" style="animation-delay: 0s" aria-hidden="true"></div>
-  <div class="absolute top-16 right-[10%] w-10 h-10 border-2 border-accent-400/15 dark:border-accent-500/10 rounded-md -rotate-6 inner-float" style="animation-delay: 2s" aria-hidden="true"></div>
-  <div class="absolute bottom-8 left-[20%] w-8 h-8 bg-primary-400/8 dark:bg-primary-500/5 rounded-sm rotate-45 inner-float" style="animation-delay: 1s" aria-hidden="true"></div>
+  <div class="absolute top-12 left-[8%] w-14 h-14 border-2 border-primary-300/15 rounded-lg rotate-12 inner-float" style="animation-delay: 0s" aria-hidden="true"></div>
+  <div class="absolute top-16 right-[10%] w-10 h-10 border-2 border-accent-400/15 rounded-md -rotate-6 inner-float" style="animation-delay: 2s" aria-hidden="true"></div>
+  <div class="absolute bottom-8 left-[20%] w-8 h-8 bg-primary-400/8 rounded-sm rotate-45 inner-float" style="animation-delay: 1s" aria-hidden="true"></div>
 
   <!-- Bottom gradient fade -->
-  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-secondary-950 to-transparent"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
 
   <div class="container-custom relative z-10">
     <div class="text-center max-w-3xl mx-auto px-4">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl mb-5 md:mb-6 text-secondary-900 dark:text-white inner-hero-title">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl mb-5 md:mb-6 text-secondary-900 inner-hero-title">
         {
           highlightText ? (
             <>
-              {titleStart}<span class="text-accent-500 dark:text-accent-400">{highlightText}</span>{titleEnd}
+              {titleStart}<span class="text-accent-500">{highlightText}</span>{titleEnd}
             </>
           ) : (
             title
           )
         }
       </h1>
-      <p class="text-lg md:text-xl text-secondary-500 dark:text-secondary-400 leading-relaxed max-w-2xl mx-auto inner-hero-desc">
+      <p class="text-lg md:text-xl text-secondary-500 leading-relaxed max-w-2xl mx-auto inner-hero-desc">
         {description}
       </p>
     </div>

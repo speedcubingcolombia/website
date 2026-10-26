@@ -25,16 +25,16 @@ const featuredArticle = await getFeaturedArticle();
 const formattedDate = formatDate(featuredArticle.data.date, "es");
 ---
 
-<section class="section bg-secondary-200 dark:bg-secondary-950">
+<section class="section bg-secondary-200">
   <div class="container-custom">
     <div class="text-center mb-12">
       <h2
-        class="text-3xl md:text-4xl font-bold text-secondary-900 dark:text-white mb-4"
+        class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4"
       >
         Artículo Destacado
       </h2>
       <p
-        class="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto"
+        class="text-lg text-secondary-600 max-w-2xl mx-auto"
       >
         No te pierdas de las noticias más importantes y actualizaciones del
         mundo del Speedcubing en Colombia.
@@ -49,7 +49,7 @@ const formattedDate = formatDate(featuredArticle.data.date, "es");
           <div class="grid md:grid-cols-2 gap-0">
             <!-- Imagen del artículo -->
             <div
-              class="relative h-48 md:h-full overflow-hidden flex items-center justify-center bg-gray-100 dark:bg-gray-800"
+              class="relative h-48 md:h-full overflow-hidden flex items-center justify-center bg-gray-100"
             >
               <img
                 src={featuredArticle.data.image}
@@ -65,7 +65,7 @@ const formattedDate = formatDate(featuredArticle.data.date, "es");
                 <!-- Categoría -->
                 <div class="flex items-center mb-4">
                   <span
-                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent-100 text-accent-800 dark:bg-accent-900 dark:text-accent-200"
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent-100 text-accent-800"
                   >
                     {featuredArticle.data.category}
                   </span>
@@ -73,14 +73,14 @@ const formattedDate = formatDate(featuredArticle.data.date, "es");
 
                 <!-- Título -->
                 <h3
-                  class="text-xl md:text-2xl font-bold text-secondary-900 dark:text-white mb-4 leading-tight"
+                  class="text-xl md:text-2xl font-bold text-secondary-900 mb-4 leading-tight"
                 >
                   {featuredArticle.data.title}
                 </h3>
 
                 <!-- Resumen -->
                 <p
-                  class="text-secondary-600 dark:text-secondary-300 mb-6 leading-relaxed"
+                  class="text-secondary-600 mb-6 leading-relaxed"
                 >
                   {featuredArticle.data.excerpt}
                 </p>
@@ -89,7 +89,7 @@ const formattedDate = formatDate(featuredArticle.data.date, "es");
               <!-- Meta información y CTA -->
               <div>
                 <div
-                  class="flex items-center justify-between text-sm text-secondary-500 dark:text-secondary-400 mb-6"
+                  class="flex items-center justify-between text-sm text-secondary-500 mb-6"
                 >
                   <div class="flex items-center space-x-4">
                     <span>{featuredArticle.data.author}</span>
@@ -114,7 +114,7 @@ const formattedDate = formatDate(featuredArticle.data.date, "es");
       <div class="text-center mt-12">
         <a
           href="/blog"
-          class="inline-flex items-center text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium transition-colors"
+          class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors"
         >
           Ver todos los artículos
           <svg

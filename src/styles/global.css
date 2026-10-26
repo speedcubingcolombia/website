@@ -1,59 +1,58 @@
 @import "tailwindcss";
+@import "./tokens.css";
 
-@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Colors and fonts come from tokens.css (shared with the apps). */
+  --color-primary-50: var(--scc-primary-50);
+  --color-primary-100: var(--scc-primary-100);
+  --color-primary-200: var(--scc-primary-200);
+  --color-primary-300: var(--scc-primary-300);
+  --color-primary-400: var(--scc-primary-400);
+  --color-primary-500: var(--scc-primary-500);
+  --color-primary-600: var(--scc-primary-600);
+  --color-primary-700: var(--scc-primary-700);
+  --color-primary-800: var(--scc-primary-800);
+  --color-primary-900: var(--scc-primary-900);
+  --color-primary-950: var(--scc-primary-950);
+  --color-secondary-50: var(--scc-secondary-50);
+  --color-secondary-100: var(--scc-secondary-100);
+  --color-secondary-200: var(--scc-secondary-200);
+  --color-secondary-300: var(--scc-secondary-300);
+  --color-secondary-400: var(--scc-secondary-400);
+  --color-secondary-500: var(--scc-secondary-500);
+  --color-secondary-600: var(--scc-secondary-600);
+  --color-secondary-700: var(--scc-secondary-700);
+  --color-secondary-800: var(--scc-secondary-800);
+  --color-secondary-900: var(--scc-secondary-900);
+  --color-secondary-950: var(--scc-secondary-950);
+  --color-accent-50: var(--scc-accent-50);
+  --color-accent-100: var(--scc-accent-100);
+  --color-accent-200: var(--scc-accent-200);
+  --color-accent-300: var(--scc-accent-300);
+  --color-accent-400: var(--scc-accent-400);
+  --color-accent-500: var(--scc-accent-500);
+  --color-accent-600: var(--scc-accent-600);
+  --color-accent-700: var(--scc-accent-700);
+  --color-accent-800: var(--scc-accent-800);
+  --color-accent-900: var(--scc-accent-900);
+  --color-accent-950: var(--scc-accent-950);
+  --color-warning-50: var(--scc-warning-50);
+  --color-warning-100: var(--scc-warning-100);
+  --color-warning-200: var(--scc-warning-200);
+  --color-warning-300: var(--scc-warning-300);
+  --color-warning-400: var(--scc-warning-400);
+  --color-warning-500: var(--scc-warning-500);
+  --color-warning-600: var(--scc-warning-600);
+  --color-warning-700: var(--scc-warning-700);
+  --color-warning-800: var(--scc-warning-800);
+  --color-warning-900: var(--scc-warning-900);
+  --color-warning-950: var(--scc-warning-950);
+  --font-sans: var(--scc-font-sans);
+  --font-display: var(--scc-font-display);
+}
 
 @theme {
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
-
-  --color-secondary-50: #fafaf9;
-  --color-secondary-100: #f5f5f4;
-  --color-secondary-200: #e7e5e4;
-  --color-secondary-300: #d6d3d1;
-  --color-secondary-400: #a8a29e;
-  --color-secondary-500: #78716c;
-  --color-secondary-600: #57534e;
-  --color-secondary-700: #44403c;
-  --color-secondary-800: #292524;
-  --color-secondary-900: #1c1917;
-  --color-secondary-950: #0c0a09;
-
-  --color-accent-50: #fefdf8;
-  --color-accent-100: #fdf6e3;
-  --color-accent-200: #fbedc2;
-  --color-accent-300: #f8df97;
-  --color-accent-400: #f4cc63;
-  --color-accent-500: #efb034;
-  --color-accent-600: #e09112;
-  --color-accent-700: #bc7311;
-  --color-accent-800: #975a16;
-  --color-accent-900: #7c4a17;
-  --color-accent-950: #452508;
-
-  --color-warning-50: #fff7ed;
-  --color-warning-100: #ffedd5;
-  --color-warning-200: #fed7aa;
-  --color-warning-300: #fdba74;
-  --color-warning-400: #fb923c;
-  --color-warning-500: #f97316;
-  --color-warning-600: #ea580c;
-  --color-warning-700: #c2410c;
-  --color-warning-800: #9a3412;
-  --color-warning-900: #7c2d12;
-  --color-warning-950: #431407;
-
-  --font-sans: Inter, system-ui, sans-serif;
-  --font-display: Lexend, system-ui, sans-serif;
-
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-up: slideUp 0.5s ease-in-out;
   --animate-slide-down: slideDown 0.5s ease-in-out;
@@ -123,7 +122,7 @@
 }
 
 @utility btn-outline {
-  @apply btn border-2 border-secondary-300 dark:border-secondary-700 hover:bg-secondary-100 dark:hover:bg-secondary-800 text-secondary-900 dark:text-secondary-100;
+  @apply btn border-2 border-secondary-300 hover:bg-secondary-100 text-secondary-900
 }
 
 @utility container-custom {
@@ -135,7 +134,7 @@
 }
 
 @utility card {
-  @apply bg-white dark:bg-secondary-900 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-secondary-200 dark:border-secondary-800;
+  @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-secondary-200
 }
 
 @layer base {
@@ -171,7 +170,7 @@
 
 @layer base {
   .prose {
-    @apply text-secondary-800 dark:text-secondary-100 leading-relaxed;
+    @apply text-secondary-800 leading-relaxed;
   }
 
   .prose > * + * {
@@ -179,20 +178,20 @@
   }
 
   .prose h2 {
-    @apply text-3xl font-semibold text-secondary-900 dark:text-white mt-10 mb-4;
+    @apply text-3xl font-semibold text-secondary-900 mt-10 mb-4;
   }
 
   .prose h3 {
-    @apply text-2xl font-semibold text-secondary-900 dark:text-white mt-8 mb-3;
+    @apply text-2xl font-semibold text-secondary-900 mt-8 mb-3;
   }
 
   .prose p {
-    @apply text-base md:text-lg text-secondary-700 dark:text-secondary-200 leading-relaxed;
+    @apply text-base md:text-lg text-secondary-700 leading-relaxed;
   }
 
   .prose ul,
   .prose ol {
-    @apply pl-6 mb-6 text-secondary-700 dark:text-secondary-200;
+    @apply pl-6 mb-6 text-secondary-700
   }
 
   .prose ul {
@@ -208,19 +207,19 @@
   }
 
   .prose blockquote {
-    @apply border-l-4 border-primary-500 pl-4 italic text-secondary-700 dark:text-secondary-200;
+    @apply border-l-4 border-primary-500 pl-4 italic text-secondary-700
   }
 
   .prose a {
-    @apply text-primary-600 dark:text-primary-400 font-semibold underline underline-offset-2 transition-colors duration-200;
+    @apply text-primary-600 font-semibold underline underline-offset-2 transition-colors duration-200;
   }
 
   .prose a:hover {
-    @apply text-primary-700 dark:text-primary-300;
+    @apply text-primary-700
   }
 
   .prose a:focus-visible {
-    @apply outline-hidden ring-2 ring-primary-500 dark:ring-primary-400 rounded;
+    @apply outline-hidden ring-2 ring-primary-500 rounded;
   }
 
   .prose table {
@@ -229,7 +228,7 @@
 
   .prose th,
   .prose td {
-    @apply border border-secondary-300 dark:border-secondary-700 px-4 py-3 text-left align-top;
+    @apply border border-secondary-300 px-4 py-3 text-left align-top;
   }
 
   .prose thead th {
@@ -237,7 +236,7 @@
   }
 
   .prose tbody tr:nth-child(even) {
-    @apply bg-secondary-100 dark:bg-secondary-900/60;
+    @apply bg-secondary-100
   }
 }
 
@@ -261,5 +260,5 @@
 
 /* Focus styles for keyboard navigation */
 :focus-visible {
-  @apply outline-hidden ring-2 ring-primary-500 dark:ring-primary-400;
+  @apply outline-hidden ring-2 ring-primary-500
 }

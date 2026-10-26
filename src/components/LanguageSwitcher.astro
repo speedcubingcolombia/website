@@ -54,7 +54,7 @@ const ariaLabel = t(currentLang, 'lang.switchTo');
       <button
         @click="open = !open"
         @click.outside="open = false"
-        class="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors"
+        class="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-secondary-100 transition-colors"
         aria-label={ariaLabel}
         aria-expanded="false"
         :aria-expanded="open.toString()"
@@ -81,7 +81,7 @@ const ariaLabel = t(currentLang, 'lang.switchTo');
         x-transition:leave="transition ease-in duration-75"
         x-transition:leave-start="transform opacity-100 scale-100"
         x-transition:leave-end="transform opacity-0 scale-95"
-        class="absolute right-0 mt-2 py-1 w-40 bg-white dark:bg-secondary-800 rounded-lg shadow-lg border border-secondary-200 dark:border-secondary-700 z-50"
+        class="absolute right-0 mt-2 py-1 w-40 bg-white rounded-lg shadow-lg border border-secondary-200 z-50"
         role="menu"
         aria-label={ariaLabel}
       >
@@ -89,8 +89,8 @@ const ariaLabel = t(currentLang, 'lang.switchTo');
           <a
             href={getLanguageUrl(lang.code)}
             class:list={[
-              "flex items-center gap-2 px-3 py-2 hover:bg-secondary-100 dark:hover:bg-secondary-700 transition-colors",
-              { "bg-accent-50 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400": currentLang === lang.code }
+              "flex items-center gap-2 px-3 py-2 hover:bg-secondary-100 transition-colors",
+              { "bg-accent-50 text-accent-600": currentLang === lang.code }
             ]}
             role="menuitem"
             aria-current={currentLang === lang.code ? "page" : undefined}

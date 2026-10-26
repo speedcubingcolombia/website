@@ -128,7 +128,7 @@ const sections = [
       description="Encuentra respuestas a las preguntas más comunes sobre speedcubing, competencias oficiales y la comunidad en Colombia."
     />
 
-    <section class="py-16 bg-white dark:bg-secondary-950">
+    <section class="py-16 bg-white">
       <div class="container-custom">
         <div class="max-w-4xl mx-auto">
           <!-- Section navigation pills -->
@@ -140,7 +140,7 @@ const sections = [
                   class={`px-4 py-2 rounded-xl font-medium text-sm transition-all duration-200 hover:-translate-y-0.5 ${
                     i === 0
                       ? "bg-primary-600 text-white shadow-md shadow-primary-500/20"
-                      : "bg-secondary-100 dark:bg-secondary-800 text-secondary-600 dark:text-secondary-300 hover:bg-secondary-200 dark:hover:bg-secondary-700"
+                      : "bg-secondary-100 text-secondary-600 hover:bg-secondary-200"
                   }`}
                 >
                   {section.title}
@@ -157,10 +157,10 @@ const sections = [
                 class="mb-14 last:mb-0 faq-section"
                 style={`animation-delay: ${sectionIndex * 100}ms`}
               >
-                <h2 class="text-2xl font-display font-bold text-secondary-900 dark:text-white mb-6 flex items-center gap-3">
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-primary-100 dark:bg-primary-900/50">
+                <h2 class="text-2xl font-display font-bold text-secondary-900 mb-6 flex items-center gap-3">
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-primary-100">
                     <svg
-                      class="w-5 h-5 text-primary-600 dark:text-primary-400"
+                      class="w-5 h-5 text-primary-600"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -172,14 +172,14 @@ const sections = [
 
                 <div class="space-y-3">
                   {section.questions.map((faq) => (
-                    <details class="group rounded-xl border border-secondary-200 dark:border-secondary-700/50 bg-white dark:bg-secondary-900/50 transition-all duration-200 hover:border-primary-300 dark:hover:border-primary-700/50 hover:shadow-sm">
+                    <details class="group rounded-xl border border-secondary-200 bg-white transition-all duration-200 hover:border-primary-300 hover:shadow-sm">
                       <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none select-none">
-                        <h3 class="text-base font-semibold text-secondary-800 dark:text-secondary-100 group-open:text-primary-600 dark:group-open:text-primary-400 transition-colors">
+                        <h3 class="text-base font-semibold text-secondary-800 group-open:text-primary-600 transition-colors">
                           {faq.q}
                         </h3>
-                        <span class="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg bg-secondary-100 dark:bg-secondary-800 group-open:bg-primary-100 dark:group-open:bg-primary-900/50 transition-colors">
+                        <span class="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg bg-secondary-100 group-open:bg-primary-100 transition-colors">
                           <svg
-                            class="w-4 h-4 text-secondary-500 dark:text-secondary-400 group-open:text-primary-600 dark:group-open:text-primary-400 transition-transform group-open:rotate-180"
+                            class="w-4 h-4 text-secondary-500 group-open:text-primary-600 transition-transform group-open:rotate-180"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -194,7 +194,7 @@ const sections = [
                         </span>
                       </summary>
                       <div class="px-6 pb-5 pt-0">
-                        <p class="text-secondary-600 dark:text-secondary-300 leading-relaxed">
+                        <p class="text-secondary-600 leading-relaxed">
                           {faq.a}
                         </p>
                       </div>
