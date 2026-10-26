@@ -58,7 +58,7 @@ Content schema is defined with Zod in `src/content/config.ts`.
 The site is served by Cloudflare (account "Speedcubing Colombia"). `wrangler.jsonc` serves `dist/` as static files on speedcubingcolombia.org and www (custom domains); there is no server code. npm is the package manager (`package-lock.json`).
 
 - `npm run preview:cloudflare`: build and serve locally exactly as Cloudflare will (`http://localhost:8787`).
-- `npm run deploy`: build and publish (needs `npx wrangler login` with access to the Speedcubing Colombia account).
+- Publishing is automatic: every push to `main` runs `.github/workflows/deploy.yml` (secret `CLOUDFLARE_API_TOKEN`). Pull requests only build (`ci.yml`). By hand: Actions → Deploy → Run workflow, or `npm run deploy` with `npx wrangler login`.
 - Paths: `/company` redirects to `/company/` (matches the canonical URLs); unknown paths get `404.html` with status 404.
 - `www.speedcubingcolombia.org/*` redirects to `https://speedcubingcolombia.org/${1}` (301) with a Redirect Rule in the Cloudflare dashboard (Rules → Redirect Rules). The apex is the canonical host.
 
