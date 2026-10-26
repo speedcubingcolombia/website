@@ -72,3 +72,4 @@ Puedes agregar nuevos artículos simplemente creando un archivo Markdown en la c
 - Para listas, usa `-` o `*` al inicio de cada línea.
 - Puedes insertar imágenes y enlaces fácilmente.
 - Si tienes dudas, revisa otros archivos `.md` como ejemplo o consulta la [Guía de Markdown de GitHub](https://guides.github.com/features/mastering-markdown/).
+- Antes de subir imágenes, redúcelas (por ejemplo con [Squoosh](https://squoosh.app)): máximo unos 1920 px de ancho y, si se puede, menos de 300 KB.
