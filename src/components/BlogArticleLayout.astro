@@ -65,7 +65,7 @@ const jsonLd = JSON.stringify({
     <div class="mb-8 flex justify-between items-center">
       <a
         href={blogUrl}
-        class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+        class="inline-flex items-center text-gray-600 hover:text-primary-600 transition-colors"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -91,15 +91,15 @@ const jsonLd = JSON.stringify({
       (mainPost.data.category || formattedDate) && (
         <div class="flex items-center mb-6">
           {mainPost.data.category && (
-            <span class="inline-block px-3 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm">
+            <span class="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-600 font-medium text-sm">
               {mainPost.data.category}
             </span>
           )}
           {mainPost.data.category && formattedDate && (
-            <span class="mx-2 text-gray-300 dark:text-gray-600">&bull;</span>
+            <span class="mx-2 text-gray-300">&bull;</span>
           )}
           {formattedDate && (
-            <span class="text-gray-600 dark:text-gray-400">
+            <span class="text-gray-600">
               {formattedDate}
             </span>
           )}
@@ -108,7 +108,7 @@ const jsonLd = JSON.stringify({
     }
 
     <h1
-      class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white"
+      class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900"
     >
       {mainPost.data.title}
     </h1>
@@ -124,11 +124,11 @@ const jsonLd = JSON.stringify({
             />
           )}
           <div>
-            <p class="font-semibold text-gray-900 dark:text-white">
+            <p class="font-semibold text-gray-900">
               {mainPost.data.author}
             </p>
             {mainPost.data.authorRole && (
-              <p class="text-gray-600 dark:text-gray-400">
+              <p class="text-gray-600">
                 {mainPost.data.authorRole}
               </p>
             )}
@@ -156,18 +156,18 @@ const jsonLd = JSON.stringify({
   }
 
   <div class="container-custom max-w-4xl">
-    <div class="prose prose-lg dark:prose-invert max-w-none">
+    <div class="prose prose-lg max-w-none">
       <slot />
     </div>
 
-    <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-      <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-xl font-semibold mb-6 text-gray-900">
         {t(lang, "blog.shareArticle")}
       </h3>
       <div class="flex flex-wrap gap-4">
         <a
           href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(mainPost.data.title)}&url=${encodeURIComponent(canonicalUrl)}`}
-          class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
+          class="p-2 bg-gray-100 rounded-full text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition-colors"
           aria-label={t(lang, "blog.shareTwitter")}
         >
           <svg
@@ -183,7 +183,7 @@ const jsonLd = JSON.stringify({
         </a>
         <a
           href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(canonicalUrl)}&title=${encodeURIComponent(mainPost.data.title)}`}
-          class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
+          class="p-2 bg-gray-100 rounded-full text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition-colors"
           aria-label={t(lang, "blog.shareLinkedin")}
         >
           <svg
@@ -199,7 +199,7 @@ const jsonLd = JSON.stringify({
         </a>
         <a
           href={`https://www.facebook.com/sharer.php?u=${encodeURIComponent(canonicalUrl)}`}
-          class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary-100 hover:text-primary-600 dark:hover:bg-primary-900/50 dark:hover:text-primary-400 transition-colors"
+          class="p-2 bg-gray-100 rounded-full text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition-colors"
           aria-label={t(lang, "blog.shareFacebook")}
         >
           <svg
