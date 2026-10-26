@@ -3,11 +3,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "website",
+  // Speedcubing Colombia account, so a deploy never lands in a personal account.
+  "account_id": "61b4e1dea57a5a0f75a3aa63a014dbfd",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./dist",
     // Unknown paths get dist/404.html with a 404 status.
     "not_found_handling": "404-page"
-  }
-  // Custom domains are added when switching away from Vercel (see README).
+  },
+  // Cloudflare creates the DNS records and certificates for these hostnames.
+  // www redirects to the apex with a Redirect Rule (see CLAUDE.md).
+  "routes": [
+    { "pattern": "speedcubingcolombia.org", "custom_domain": true },
+    { "pattern": "www.speedcubingcolombia.org", "custom_domain": true }
+  ]
 }
