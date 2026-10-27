@@ -113,7 +113,8 @@
 .scc-header-inner {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 0.75rem 1rem;
+  /* Same height as the site header (py-4 + 40px logo) in every app. */
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -127,6 +128,8 @@
   text-decoration: none;
 }
 .scc-brand img {
+  /* Block, so the height doesn't depend on whether the app uses Tailwind's reset. */
+  display: block;
   height: 40px;
   width: auto;
 }
