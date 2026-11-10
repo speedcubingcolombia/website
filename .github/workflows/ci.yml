@@ -1,6 +1,8 @@
 # Builds the site on every pull request, so a broken build is caught before merging.
 name: CI
 on:
+  # Lets dependabot-auto-merge.yml run these checks before merging.
+  workflow_call:
   pull_request:
 jobs:
   build:
