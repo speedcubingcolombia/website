@@ -1,0 +1,32 @@
+# Weekly dependency updates. Minor and patch bumps arrive grouped in one PR per
+# ecosystem; major bumps get their own PR because they can break things.
+# Grouped minor/patch PRs merge on their own once CI passes
+# (see .github/workflows/dependabot-auto-merge.yml).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:00"
+      timezone: America/Bogota
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+      security:
+        applies-to: security-updates
+        update-types: [minor, patch]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:00"
+      timezone: America/Bogota
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+      security:
+        applies-to: security-updates
+        update-types: [minor, patch]
