@@ -5,6 +5,10 @@
 # the Free plan, so GitHub's native auto-merge would not wait for CI. Instead this
 # workflow runs CI itself (as a reusable workflow) and merges only if it passes.
 #
+# main requires one approving review, so the workflow approves the update first.
+# That needs "Allow GitHub Actions to create and approve pull requests" in the org
+# and repo Actions settings.
+#
 # The merge uses GITHUB_TOKEN, so it does not trigger push workflows (deploys):
 # merged updates go live with the next regular push to main.
 name: Dependabot auto-merge
@@ -29,6 +33,12 @@ jobs:
     steps:
       - id: meta
         uses: dependabot/fetch-metadata@v2
+      - name: Approve minor and patch updates
+        if: steps.meta.outputs.update-type != 'version-update:semver-major'
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Merge minor and patch updates
         if: steps.meta.outputs.update-type != 'version-update:semver-major'
         run: gh pr merge --rebase --delete-branch "$PR_URL"
