@@ -1,6 +1,6 @@
 ---
 title: "Convocatoria de Sede: Colombian Nationals 2026"
-excerpt: "Buscamos la ciudad y el equipo que serán la sede del campeonato nacional de cubo de Rubik más grande del país. Conoce los requisitos, la guía de presupuesto y postula tu propuesta antes del 30 de agosto de 2026."
+excerpt: "Buscamos la ciudad y el equipo que serían la sede del campeonato nacional de cubo de Rubik más grande del país. Conoce los requisitos, la guía de presupuesto y la guía de presupuesto de la convocatoria, que cerró el 30 de agosto de 2026. La sede elegida es Paipa (Boyacá)."
 date: 2026-07-09
 author: "Speedcubing Colombia"
 authorAvatar: "/sac/ssc.png"
@@ -9,19 +9,20 @@ image: "/nats2026/trofeos_nats_2025.jpg"
 ---
 
 <div style="border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#1A2E7A 0%,#0f1c4d 100%);color:#ffffff;padding:clamp(24px,5vw,48px);margin:0 0 2.5rem;box-shadow:0 20px 45px -20px rgba(26,46,122,0.6);">
-  <div style="display:inline-flex;align-items:center;gap:8px;background:#FFD700;color:#1A2E7A;font-weight:800;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;">🏆 Convocatoria abierta</div>
+  <div style="display:inline-flex;align-items:center;gap:8px;background:#FFD700;color:#1A2E7A;font-weight:800;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;">🔒 Convocatoria cerrada</div>
   <h2 style="color:#ffffff;font-size:clamp(1.8rem,4.5vw,2.8rem);line-height:1.1;font-weight:800;margin:1rem 0 0.75rem;">Sé la sede del Colombian Nationals 2026</h2>
-  <p style="color:#e6ebff;font-size:clamp(1rem,2.5vw,1.2rem);max-width:640px;margin:0 0 1.75rem;">El campeonato nacional de speedcubing más grande de Colombia busca ciudad y equipo anfitrión. Tu región puede escribir el próximo capítulo de esta historia.</p>
+  <p style="color:#e6ebff;font-size:clamp(1rem,2.5vw,1.2rem);max-width:640px;margin:0 0 1.75rem;">La convocatoria ya cerró y la sede elegida es <strong style="color:#FFD700;">Paipa (Boyacá)</strong>. Dejamos esta página como referencia para futuras ediciones.</p>
   <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
-    <a href="mailto:nats2026@speedcubingcolombia.org?subject=Propuesta%20de%20sede%20-%20Colombian%20Nationals%202026" style="display:inline-block;background:#FFD700;color:#1A2E7A;font-weight:800;padding:14px 28px;border-radius:12px;text-decoration:none;font-size:1.05rem;">📨 Envía tu propuesta</a>
     <div style="display:flex;flex-direction:column;line-height:1.2;">
-      <span style="color:#FFD700;font-weight:800;font-size:1.1rem;">⏳ Cierre: 30 de agosto de 2026</span>
+      <span style="color:#FFD700;font-weight:800;font-size:1.1rem;">🔒 Cerró el 30 de agosto de 2026</span>
       <span style="color:#c3ccf5;font-size:0.9rem;">nats2026@speedcubingcolombia.org</span>
     </div>
   </div>
 </div>
 
 <div style="height:6px;width:100%;border-radius:999px;background:linear-gradient(90deg,#FFD700 0%,#FFD700 33%,#1A2E7A 33%,#1A2E7A 66%,#C8102E 66%,#C8102E 100%);margin:0 0 2.5rem;"></div>
+
+> **Convocatoria cerrada: la sede elegida es Paipa (Boyacá).** El plazo para enviar propuestas terminó el 30 de agosto de 2026. El contenido que sigue se conserva tal como se publicó, como guía para quienes quieran postularse en próximas ediciones.
 
 **Speedcubing Colombia** abre la convocatoria para elegir la **ciudad y el equipo organizador** del **Colombian Nationals 2026**, el campeonato nacional oficial de la WCA más grande del país. Si tu comunidad sueña con recibir a los mejores cuberos de Colombia, esta es tu oportunidad de postularte.
 
@@ -231,7 +232,7 @@ Un buen presupuesto es realista y **equilibra ingresos y egresos**. Usa estas l�
 Cualquier equipo o comunidad de speedcubing en Colombia con la capacidad de cumplir los requisitos obligatorios. No necesitas haber organizado un nacional antes, pero sí demostrar organización y compromiso.
 
 **¿Hasta cuándo puedo enviar la propuesta?**
-La fecha límite es el **30 de agosto de 2026**. Recomendamos no dejarlo para el último día.
+La fecha límite fue el **30 de agosto de 2026**. La convocatoria ya está cerrada.
 
 **¿Cómo envío mi propuesta?**
 Al correo **<nats2026@speedcubingcolombia.org>**, con toda la documentación (carta de autorización del lugar, equipo, cronograma, presupuesto y plan audiovisual).
@@ -254,11 +255,10 @@ Escríbenos a **<nats2026@speedcubingcolombia.org>** y con gusto resolvemos tus 
 ---
 
 <div style="border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#1A2E7A 0%,#0f1c4d 100%);color:#ffffff;padding:clamp(28px,5vw,52px);margin:2.5rem 0 1rem;text-align:center;box-shadow:0 20px 45px -20px rgba(26,46,122,0.6);">
-  <h2 style="color:#ffffff;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin:0 0 0.75rem;">¿Lista tu ciudad para hacer historia?</h2>
-  <p style="color:#e6ebff;font-size:clamp(1rem,2.5vw,1.15rem);max-width:600px;margin:0 auto 1.75rem;">Reúne a tu equipo, arma tu propuesta y postúlate para ser la sede del Colombian Nationals 2026.</p>
-  <a href="mailto:nats2026@speedcubingcolombia.org?subject=Propuesta%20de%20sede%20-%20Colombian%20Nationals%202026" style="display:inline-block;background:#FFD700;color:#1A2E7A;font-weight:800;padding:16px 34px;border-radius:12px;text-decoration:none;font-size:1.1rem;">📨 Envía tu propuesta</a>
+  <h2 style="color:#ffffff;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin:0 0 0.75rem;">Convocatoria cerrada</h2>
+  <p style="color:#e6ebff;font-size:clamp(1rem,2.5vw,1.15rem);max-width:600px;margin:0 auto 1.75rem;">La sede elegida es Paipa (Boyacá). Gracias a todas las comunidades que se postularon para ser la sede del Colombian Nationals 2026.</p>
   <div style="margin-top:1.5rem;display:inline-flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;color:#FFD700;font-weight:700;">
-    <span>⏳ Cierre: 30 de agosto de 2026</span>
+    <span>🔒 Cerró el 30 de agosto de 2026</span>
     <span style="color:#c3ccf5;">✉️ nats2026@speedcubingcolombia.org</span>
   </div>
 </div>

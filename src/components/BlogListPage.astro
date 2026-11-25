@@ -61,7 +61,6 @@ const nextHref =
               class="category-pill px-4 py-2 rounded-full font-medium text-sm transition-colors bg-primary-600 text-white shadow-sm"
               data-category-filter
               data-category="all"
-              data-active
               aria-pressed="true"
             >
               Todas las publicaciones
@@ -91,12 +90,26 @@ const nextHref =
               style={`animation-delay: ${index * 100}ms;`}
             >
               <a href={`/blog/${post.slug}`} class="block">
-                <img
-                  src={post.data.image}
-                  alt={post.data.title}
-                  class="w-full h-48 object-cover"
-                  loading="lazy"
-                />
+                {post.data.image ? (
+                  <img
+                    src={post.data.image}
+                    alt={post.data.title}
+                    class="w-full h-48 object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div
+                    class="w-full h-48 flex items-center justify-center bg-primary-50"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src="/navbar_logo.svg"
+                      alt=""
+                      class="h-20 w-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
               </a>
               <div class="p-6">
                 <div class="flex items-center mb-4">
@@ -182,69 +195,35 @@ const nextHref =
   <Footer />
 </Layout>
 
-<script is:inline>
-  const initCategoryFilters = () => {
-    const filterButtons = Array.from(
-      document.querySelectorAll("[data-category-filter]")
-    );
-    const cards = Array.from(document.querySelectorAll("[data-post-card]"));
+<script>
+  // One delegated listener: it survives ClientRouter navigations and never
+  // binds twice, because module scripts run once per full page load.
+  const ACTIVE_CLASSES = ["bg-primary-600", "text-white", "shadow-sm"];
+  const INACTIVE_CLASSES = ["bg-gray-100", "text-gray-700"];
 
-    if (!filterButtons.length || !cards.length) {
-      return;
-    }
+  document.addEventListener("click", (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+    const button = target?.closest<HTMLElement>("[data-category-filter]");
+    if (!button) return;
 
-    const setActive = (button, active) => {
-      if (!button) return;
-      button.toggleAttribute("data-active", active);
-      button.setAttribute("aria-pressed", active ? "true" : "false");
-      button.classList.toggle("bg-primary-600", active);
-      button.classList.toggle("text-white", active);
-      button.classList.toggle("shadow-sm", active);
-      button.classList.toggle("bg-gray-100", !active);
-      button.classList.toggle("", !active);
-      button.classList.toggle("text-gray-700", !active);
-      button.classList.toggle("", !active);
-    };
+    const category = button.dataset.category ?? "all";
 
-    const applyFilter = (category) => {
-      cards.forEach((card) => {
-        const matches =
-          category === "all" || card.dataset.category === category;
-        card.classList.toggle("hidden", !matches);
+    document
+      .querySelectorAll<HTMLElement>("[data-category-filter]")
+      .forEach((pill) => {
+        const active = pill === button;
+        pill.setAttribute("aria-pressed", String(active));
+        ACTIVE_CLASSES.forEach((name) => pill.classList.toggle(name, active));
+        INACTIVE_CLASSES.forEach((name) =>
+          pill.classList.toggle(name, !active)
+        );
       });
-    };
 
-    filterButtons.forEach((button) => {
-      if (button.dataset.bound === "true") {
-        return;
-      }
-
-      button.dataset.bound = "true";
-
-      button.addEventListener("click", () => {
-        const { category = "all" } = button.dataset;
-        filterButtons.forEach((btn) => setActive(btn, btn === button));
-        applyFilter(category);
+    document
+      .querySelectorAll<HTMLElement>("[data-post-card]")
+      .forEach((card) => {
+        card.hidden =
+          category !== "all" && card.dataset.category !== category;
       });
-    });
-
-    const activeButton =
-      filterButtons.find((button) => button.hasAttribute("data-active")) ||
-      filterButtons[0];
-
-    if (activeButton) {
-      filterButtons.forEach((btn) => setActive(btn, btn === activeButton));
-      applyFilter(activeButton.dataset.category || "all");
-    }
-  };
-
-  if (document.readyState !== "loading") {
-    initCategoryFilters();
-  } else {
-    document.addEventListener("DOMContentLoaded", initCategoryFilters);
-  }
-
-  document.addEventListener("astro:page-load", () => {
-    initCategoryFilters();
   });
 </script>
