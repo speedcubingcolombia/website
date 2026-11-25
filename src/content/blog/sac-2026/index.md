@@ -17,6 +17,8 @@ tabLabel: "Inicio"
 
 </div>
 
+> **Este evento se realizó del 12 al 15 de junio de 2026.** Consulta los [resultados en el sitio de la WCA](https://www.worldcubeassociation.org/competitions/SAC2026/results/all).
+
 Bienvenidos a la **página oficial del WCA South American Championship 2026 (SAC 2026)**,  
 el evento de Speedcubing más importante de Sudamérica y una competencia oficial de la  
 **World Cube Association (WCA)**.
