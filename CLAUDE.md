@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-**Framework:** Astro 5 static site with TypeScript (strict), Tailwind CSS v4, and Alpine.js for interactivity.
+**Framework:** Astro 7 static site with TypeScript (strict), Tailwind CSS v4, and Alpine.js for interactivity.
 
 **Purpose:** Multilingual website for Speedcubing Colombia (WCA organization).
 
@@ -36,7 +36,7 @@ Language variants for blog content use subfolders: `src/content/blog/en/`, `src/
 
 URL slugs are translated per-language via `SLUG_TRANSLATIONS` in `src/utils/blog.ts`. Blog utilities (filtering, sorting, pagination, tab generation) are also in that file. `POSTS_PER_PAGE = 6`.
 
-Content schema is defined with Zod in `src/content/config.ts`.
+Content schema is defined with Zod in `src/content.config.ts` (glob loader; entry ids are the URL slugs).
 
 ### Key Files
 

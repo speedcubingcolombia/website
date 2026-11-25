@@ -13,6 +13,8 @@ export { SUPPORTED_LANGUAGES, type SupportedLanguage } from "../i18n";
 export const POSTS_PER_PAGE = 6;
 
 export type BlogListEntry = CollectionEntry<"blog"> & {
+  /** URL slug: the entry id without the language prefix. */
+  slug: string;
   formattedDate: string;
 };
 
@@ -133,7 +135,7 @@ export async function getAvailableLanguages(
     const expectedSlug = getTranslatedSlug(normalizedCanonical, lang);
 
     const exists = allPosts.some((post) => {
-      let postSlug = post.slug.replace("/index", "");
+      let postSlug = post.id.replace("/index", "");
 
       if (lang === DEFAULT_LANGUAGE) {
         const hasLangPrefix = SUPPORTED_LANGUAGES.some(
@@ -175,10 +177,10 @@ export function filterPostsByLanguage(
 ): CollectionEntry<"blog">[] {
   if (lang === DEFAULT_LANGUAGE) {
     return posts.filter(
-      (post) => !post.slug.startsWith("en/") && !post.slug.startsWith("pt/")
+      (post) => !post.id.startsWith("en/") && !post.id.startsWith("pt/")
     );
   }
-  return posts.filter((post) => post.slug.startsWith(`${lang}/`));
+  return posts.filter((post) => post.id.startsWith(`${lang}/`));
 }
 
 /**
@@ -209,8 +211,8 @@ export function sortSections(
   lang: SupportedLanguage = DEFAULT_LANGUAGE
 ): void {
   sections.sort((a, b) => {
-    const aSlug = removeLanguagePrefix(a.slug, lang);
-    const bSlug = removeLanguagePrefix(b.slug, lang);
+    const aSlug = removeLanguagePrefix(a.id, lang);
+    const bSlug = removeLanguagePrefix(b.id, lang);
     const aIsNormalizedIndex = !aSlug.includes("/");
     const bIsNormalizedIndex = !bSlug.includes("/");
     const aIsIndex = aSlug.endsWith("/index");
@@ -250,11 +252,11 @@ export function generateTabs(
     },
     ...allSections
       .filter((section) => {
-        const slugWithoutLang = removeLanguagePrefix(section.slug, lang);
+        const slugWithoutLang = removeLanguagePrefix(section.id, lang);
         return slugWithoutLang.includes("/");
       })
       .map((section) => {
-        const slugWithoutLang = removeLanguagePrefix(section.slug, lang);
+        const slugWithoutLang = removeLanguagePrefix(section.id, lang);
         const sectionSlug = slugWithoutLang.split("/")[1];
         return {
           label: section.data.tabLabel || section.data.title,
@@ -276,8 +278,8 @@ export async function findIndexPost(
   const prefix = lang === DEFAULT_LANGUAGE ? "" : `${lang}/`;
 
   return (
-    allPosts.find((p) => p.slug === `${prefix}${baseSlug}`) ||
-    allPosts.find((p) => p.slug === `${prefix}${baseSlug}/index`)
+    allPosts.find((p) => p.id === `${prefix}${baseSlug}`) ||
+    allPosts.find((p) => p.id === `${prefix}${baseSlug}/index`)
   );
 }
 
@@ -306,7 +308,7 @@ export async function getSlugPaths(lang: SupportedLanguage) {
   posts
     .filter((post) => !post.data.multiSection)
     .forEach((post) => {
-      const slug = removeLanguagePrefix(post.slug, lang);
+      const slug = removeLanguagePrefix(post.id, lang);
       paths.push({
         params: { slug },
         props: { post, multiSection: false, allSections: [], baseSlug: slug },
@@ -318,7 +320,7 @@ export async function getSlugPaths(lang: SupportedLanguage) {
   posts
     .filter((p) => p.data.multiSection)
     .forEach((post) => {
-      const slug = removeLanguagePrefix(post.slug, lang);
+      const slug = removeLanguagePrefix(post.id, lang);
       const base = getBaseSlug(slug);
       if (!groups.has(base)) groups.set(base, []);
       groups.get(base)!.push(post);
@@ -361,7 +363,7 @@ export async function getSectionPaths(lang: SupportedLanguage) {
   // Group posts by base slug (only those in folders, i.e., with "/" in slug)
   const groups = new Map<string, CollectionEntry<"blog">[]>();
   posts.forEach((post) => {
-    const slug = removeLanguagePrefix(post.slug, lang);
+    const slug = removeLanguagePrefix(post.id, lang);
     const parts = slug.split("/");
     if (parts.length > 1) {
       const base = parts[0];
@@ -376,12 +378,12 @@ export async function getSectionPaths(lang: SupportedLanguage) {
     // Find the index post for metadata
     const prefix = lang === DEFAULT_LANGUAGE ? "" : `${lang}/`;
     const indexPost =
-      allPosts.find((p) => p.slug === `${prefix}${base}`) ||
-      allPosts.find((p) => p.slug === `${prefix}${base}/index`) ||
+      allPosts.find((p) => p.id === `${prefix}${base}`) ||
+      allPosts.find((p) => p.id === `${prefix}${base}/index`) ||
       sections[0];
 
     sections.forEach((post) => {
-      const slug = removeLanguagePrefix(post.slug, lang);
+      const slug = removeLanguagePrefix(post.id, lang);
       const section = slug.split("/")[1];
       const isIndex = section === "index" || !slug.includes("/");
 
@@ -434,7 +436,7 @@ export async function getBlogPosts(
   const posts = filterPostsByLanguage(allPosts, lang);
 
   const displayPosts = posts.filter((post) => {
-    const slug = removeLanguagePrefix(post.slug, lang);
+    const slug = removeLanguagePrefix(post.id, lang);
     if (!slug.includes("/")) return true;
     return slug.endsWith("/index");
   });
@@ -443,7 +445,7 @@ export async function getBlogPosts(
     .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0))
     .map((post) => ({
       ...post,
-      slug: removeLanguagePrefix(post.slug, lang).replace("/index", ""),
+      slug: removeLanguagePrefix(post.id, lang).replace("/index", ""),
       formattedDate: post.data.date ? formatDateI18n(post.data.date, lang) : "",
     }));
 }
